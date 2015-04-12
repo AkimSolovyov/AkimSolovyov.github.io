@@ -1,0 +1,8 @@
+article > p:first-of-type {
+font-size: 1.2em;
+}
+
+article > p:last-of-type {
+color:#999;
+}
+
