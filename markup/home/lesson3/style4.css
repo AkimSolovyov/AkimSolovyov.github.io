@@ -8,6 +8,7 @@
 }
 
 :link[target=_blank]:after {
+    font-family:Cambria;
     content: '\21F1';
     margin-left: 5px;
     position: absolute;
