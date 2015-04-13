@@ -1,0 +1,13 @@
+@charset="utf-8";
+
+:link[href*="http"] {
+    color: #f70;
+}
+
+:link[href*="google"] {
+    color: #666;
+}
+
+:link[target=_blank]:after {
+  content: '⇱';
+}
