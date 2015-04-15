@@ -1,5 +1,5 @@
 @charset="utf-8";
-:link[href*="http"] {
+:link[href*="://"] {
     color: #f70;
 }
 
