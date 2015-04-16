@@ -1,5 +1,5 @@
 @charset="utf-8";
-:link[href*="://"] {
+a:link[href*="://"] {
     color: #f70;
 }
 
@@ -13,5 +13,5 @@ a:link[target="_blank"]:after {
     margin-left: 5px;
     position: absolute;
     color: #f70;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 }
