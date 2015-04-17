@@ -43,10 +43,16 @@ h1 {
     font-size: 8px;
 }
 
+.pages a:link {
+    color: rgb(161, 58, 209);
+}
+
 .pages a:hover {
     background-color: rgb(161, 58, 209);
     color: white;
 }
+
+
 
 .pages span {
     color: black;
