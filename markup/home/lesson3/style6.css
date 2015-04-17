@@ -6,7 +6,8 @@ label {
     cursor: pointer;
     text-decoration: underline;
     padding-left: 15px;
-    padding-right: 35px;
+    padding-right: 30px;
+    font-size: 14px;
 }
 
 span {
@@ -15,6 +16,8 @@ span {
     color: white;
     border-radius: 7px;
     font-weight: bold;
+    font-size: 12px;
+    font-family:monospace;
 }
 
 label[for="red"] {

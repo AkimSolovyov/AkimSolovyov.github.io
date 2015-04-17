@@ -24,13 +24,13 @@ nav {
 
 .menu_item a {
     display: inline-block;
-    padding-top: 7px;
+    padding-top: 10px;
     width: 104px;
-    height: 33px;
+    height: 30px;
     color: white;
-    font-family: "Impact", monospace;
+    font-family: Impact, monospace;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: -0.05em;
