@@ -43,7 +43,7 @@ h1 {
     font-size: 8px;
 }
 
-.pages a:link {
+.pages a {
     color: rgb(161, 58, 209);
 }
 
@@ -53,13 +53,12 @@ h1 {
 }
 
 
-
 .pages span {
     color: black;
     vertical-align: bottom;
 }
 
-.chosen {
+a.chosen  {
     background-color: rgb(161, 58, 209);
     color: white;
 }
