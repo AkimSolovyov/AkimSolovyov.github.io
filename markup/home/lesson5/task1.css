@@ -36,7 +36,12 @@
     vertical-align: middle;
 }
 
-.menu_item a:hover {
+.menu_item:hover a {
+    background-color: rgb(238, 238, 238);
+    color: rgb(160, 160, 160);
+}
+
+.menu_item:hover {
     background-color: rgb(238, 238, 238);
     color: rgb(160, 160, 160);
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
