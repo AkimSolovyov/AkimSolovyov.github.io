@@ -1,7 +1,7 @@
 .container {
     width: auto;
     height: 40px;
-    background: rgb(166, 77, 255);
+    background: rgb(26, 164, 255);
     position: absolute;
     left: 0;
     top: 15px;
@@ -9,35 +9,30 @@
     right: 0;
 }
 
-ul {
+nav {
     width: 900px;
     margin: auto;
-    text-align: justify;
 }
 
 .menu_item {
-    float: left;
+    display: inline-block;
     height: 40px;
-    width: 100px;
+    width: 60px;
     margin-right: 2px;
     text-align: center;
-    list-style-type: none;
 }
 
 .menu_item a {
-    float: left;
+    display: inline-block;
     padding-top: 10px;
-    width: 104px;
+    width: 70px;
     height: 30px;
     color: white;
     font-family: Impact, monospace;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
-}
 
-.menu_item:last-of-type {
-    float: right;
 }
 
 .menu_item a:hover {
