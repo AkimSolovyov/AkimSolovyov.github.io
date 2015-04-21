@@ -1,0 +1,165 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300);
+@-webkit-keyframes content-opacity {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes content-opacity {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@-o-keyframes content-opacity {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@keyframes content-opacity {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+s
+/* used for wrapper animation after the load of the page */
+@-webkit-keyframes show {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes show {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@-o-keyframes show {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@keyframes show {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+html {
+  background-color: rgb(44, 44, 44);
+  webkit-font-smoothing: antialiased;
+  font: 1em/1.5em "Raleway";
+  font-weight: normal; }
+
+.tabs-wrapper {
+  margin: 5% 5% 0 5%;
+}
+
+  .tabs-wrapper input[type=radio] {
+    display: none; }
+  .tabs-wrapper label {
+    transition: background 0.4s ease-in-out, height 0.2s linear;
+    display: inline-block;
+    cursor: pointer;
+    color: #dbdbd3;
+    width: 20%;
+    height: 3em;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: #525252;
+    text-align: center;
+    line-height: 3em; }
+    .tabs-wrapper label:last-of-type {
+      border-bottom: none; }
+    .tabs-wrapper label:hover {
+      background: #667876;
+      /*@include transform (translate(0,-0.2em));*/ }
+    @media screen and (max-width: 1600px) {
+      .tabs-wrapper label {
+        width: 12%; } }
+    @media screen and (max-width: 900px) {
+      .tabs-wrapper label {
+        width: 15%; } }
+    @media screen and (max-width: 1600px) {
+      .tabs-wrapper label {
+        width: 100%;
+        display: block;
+        border-bottom: 2px solid #4d4c47;
+        border-radius: 0; } }
+  @media screen and (max-width: 1600px) {
+    .tabs-wrapper {
+      margin: 0; } }
+
+#tab1:checked + label, #tab2:checked + label, #tab3:checked + label, #tab4:checked + label, #tab5:checked + label,
+#tab6:checked + label, #tab7:checked + label {
+  background: #1e9d00;
+  color: #f2f2f2; }
+
+.tab-body {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+  padding: 10px;
+}
+
+.tab-body-wrapper {
+  min-height: 600px;
+  background: #f7eec6;
+  border-top: #1e9d00 5px solid;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-animation-delay: 0.2s;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: show;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 0.2s;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-name: show;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 0.2s;
+  -o-animation-duration: 1.5s;
+  -o-animation-name: show;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  animation-duration: 1.5s;
+  animation-name: show;
+  animation-fill-mode: forwards; }
+  @media screen and (max-width: 600px) {
+    .tab-body-wrapper {
+      border: none;
+      border-radius: 0;
+        height: 50%;} }
+
+#tab1:checked ~ .tab-body-wrapper #tab-body-1, #tab2:checked ~ .tab-body-wrapper #tab-body-2, #tab3:checked ~ .tab-body-wrapper #tab-body-3, #tab4:checked ~ .tab-body-wrapper #tab-body-4, #tab5:checked ~ .tab-body-wrapper #tab-body-5, #tab6:checked ~ .tab-body-wrapper #tab-body-6, #tab7:checked ~ .tab-body-wrapper #tab-body-7 {
+  position: relative;
+  top: 0px;
+  -webkit-animation-delay: 0.2s;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-name: content-opacity;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 0.2s;
+  -moz-animation-duration: 0.8s;
+  -moz-animation-name: content-opacity;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 0.2s;
+  -o-animation-duration: 0.8s;
+  -o-animation-name: content-opacity;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  animation-duration: 0.8s;
+  animation-name: content-opacity;
+  animation-fill-mode: forwards;
+   }

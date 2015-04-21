@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Samsung Galaxy Note 10.1 (2014 edition)",
+    "type": "tablet pc",
+    "display": "10,1",
+    "madeBy": "Samsung",
+    "ram": "3Gb",
+    "flash": "16Gb",
+    "price": "9000",
+    "os": "Android 4.3"
+  },
+  {
+    "name": "ASUS Google Nexus 7",
+    "type": "tablet pc",
+    "display": "7",
+    "madeBy": "ASUS",
+    "ram": "2Gb",
+    "flash": "16Gb",
+    "price": "4000",
+    "os": "Android 4.3"
+  },
+  {
+    "name": "Lenovo IdeaTab S6000 3G",
+    "type": "tablet pc",
+    "display": "10,1",
+    "madeBy": "Lenovo",
+    "ram": "1Gb",
+    "flash": "16Gb",
+    "price": "4500",
+    "os": "Android 4.2"
+  },
+  {
+    "name": "Apple iPad mini Wi-Fi 16 GB",
+    "type": "tablet pc",
+    "display": "7,9",
+    "madeBy": "Apple",
+    "ram": "0,5Gb",
+    "flash": "16Gb",
+    "price": "6500",
+    "os": "iOS6"
+  },
+  {
+    "name": "Lenovo Yoga Tablet 8",
+    "type": "tablet pc",
+    "display": "8",
+    "madeBy": "Lenovo",
+    "ram": "1Gb",
+    "flash": "16Gb",
+    "price": "4000",
+    "os": "Android 4.2"
+  },
+  {
+    "name": "Samsung Galaxy TabPRO 8.4 Black",
+    "type": "tablet pc",
+    "display": "8,4",
+    "madeBy": "Samsung",
+    "ram": "2Gb",
+    "flash": "16Gb",
+    "price": "6300",
+    "os": "Android 4.4"
+  },
+  {
+    "name": "Lenovo Miix 2 8",
+    "type": "tablet pc",
+    "display": "8",
+    "madeBy": "Lenovo",
+    "ram": "3Gb",
+    "flash": "64Gb",
+    "price": "4700",
+    "os": "Windows 8.1"
+  },
+  {
+    "name": "Samsung Google Nexus 10 32GB",
+    "type": "tablet pc",
+    "display": "10,1",
+    "madeBy": "Samsung",
+    "ram": "2Gb",
+    "flash": "32Gb",
+    "price": "5400",
+    "os": "Android 4.2"
+  },
+  {
+    "name": "ASUS Transformer Pad TF300T-A1",
+    "type": "transformer",
+    "display": "10,1",
+    "madeBy": "ASUS",
+    "ram": "1Gb",
+    "flash": "16Gb",
+    "price": "3000",
+    "os": "Android 4.0"
+  },
+  {
+    "name": "Dell Venue 7",
+    "type": "tablet pc",
+    "display": "7",
+    "madeBy": "Dell",
+    "ram": "1Gb",
+    "flash": "8Gb",
+    "price": "1700",
+    "os": "Android 4.2"
+  },
+  {
+    "name": "Dell Venue 8 Pro",
+    "type": "tablet pc",
+    "display": "8",
+    "madeBy": "Dell",
+    "ram": "2Gb",
+    "flash": "32Gb",
+    "price": "3400",
+    "os": "Windows 8.1"
+  },
+  {
+    "name": "LG G Pad 8.3",
+    "type": "tablet pc",
+    "display": "8.3",
+    "madeBy": "LG",
+    "ram": "2Gb",
+    "flash": "16Gb",
+    "price": "4700",
+    "os": "Android 4.2"
+  },
+  {
+    "name": "Dell Latitude 10",
+    "type": "tablet pc",
+    "display": "10,1",
+    "madeBy": "Dell",
+    "ram": "2Gb",
+    "flash": "32Gb",
+    "price": "4333",
+    "os": "Windows 8 32-bit"
+  },
+  {
+    "name": "Impression ImPad 0211/60",
+    "type": "tablet pc",
+    "display": "10,1",
+    "madeBy": "Impression",
+    "ram": "2Gb",
+    "flash": "60Gb",
+    "price": "4100",
+    "os": "Windows 7"
+  },
+  {
+    "name": "Acer Iconia B1-710-L401",
+    "type": "tablet pc",
+    "display": "7",
+    "madeBy": "Acer",
+    "ram": "1Gb",
+    "flash": "8Gb",
+    "price": "1000",
+    "os": "Android 4.1"
+  },
+  {
+    "name": "Acer Iconia W3",
+    "type": "tablet pc",
+    "display": "8,1",
+    "madeBy": "Acer",
+    "ram": "2Gb",
+    "flash": "32Gb",
+    "price": "4700",
+    "os": "Windows 8"
+  },
+  {
+    "name": "Dell XPS 10",
+    "type": "tablet pc",
+    "display": "10,1",
+    "madeBy": "Dell",
+    "ram": "3Gb",
+    "flash": "64Gb",
+    "price": "5800",
+    "os": "Windows RT"
+  },
+  {
+    "name": "Sony Xperia Tablet S 16 GB 3G",
+    "type": "tablet pc",
+    "display": "9,4",
+    "madeBy": "Sony",
+    "ram": "1Gb",
+    "flash": "16Gb",
+    "price": "4999",
+    "os": "Android 4.0.3"
+  },
+  {
+    "name": "Acer Iconia Tab W510",
+    "type": "transformer",
+    "display": "10,1",
+    "madeBy": "Acer",
+    "ram": "2Gb",
+    "flash": "64Gb",
+    "price": "8200",
+    "os": "Windows 8 32-bit"
+  },
+  {
+    "name": "Dell Venue 11 Pro",
+    "type": "tablet pc",
+    "display": "10,8",
+    "madeBy": "Dell",
+    "ram": "4Gb",
+    "flash": "128Gb",
+    "price": "12000",
+    "os": "Windows 8.1"
+  }
+]

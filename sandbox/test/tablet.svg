@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="744.09448"
+   height="1052.3622"
+   id="svg2">
+  <defs
+     id="defs4">
+    <clipPath
+       id="clipPath3141">
+      <path
+         d="M 0,400 400,400 400,0 0,0 0,400 z"
+         id="path3143" />
+    </clipPath>
+    <clipPath
+       id="clipPath3064">
+      <path
+         d="M 0,400 400,400 400,0 0,0 0,400 z"
+         id="path3066" />
+    </clipPath>
+    <clipPath
+       id="clipPath2999">
+      <path
+         d="M 0,400 400,400 400,0 0,0 0,400 z"
+         id="path3001" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <g
+       transform="matrix(1.25,0,0,-1.25,482.09003,711.37157)"
+       id="g3145">
+      <path
+         d="m 0,0 c 0,-0.55 -0.45,-1 -1,-1 l -174.988,0 c -0.55,0 -1,0.45 -1,1 l 0,305.826 c 0,0.55 0.45,1 1,1 l 174.988,0 c 0.55,0 1,-0.45 1,-1 L 0,0 z"
+         id="path3147"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       transform="matrix(1.25,0,0,-1.25,409.9489,534.13518)"
+       id="g3149"
+       style="fill:#ffffff">
+      <path
+         d="m 0,0 c 0,-0.55 -0.45,-1 -1,-1 l -59.564,0 c -0.55,0 -1,0.45 -1,1 l 0,44.173 c 0,0.55 0.45,1 1,1 l 59.564,0 c 0.55,0 1,-0.45 1,-1 L 0,0 z"
+         id="path3151"
+         style="fill:#ffffff;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       transform="matrix(1.25,0,0,-1.25,409.9489,477.53243)"
+       id="g3153">
+      <path
+         d="m 0,0 -30.184,-30.184 c -0.388,-0.389 -1.025,-0.389 -1.414,0 l -29.966,29.966"
+         id="path3155"
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       transform="matrix(1.25,0,0,-1.25,355.43965,512.93955)"
+       id="g3157">
+      <path
+         d="M 0,0 -17.957,-17.957"
+         id="path3159"
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       transform="matrix(1.25,0,0,-1.25,409.9489,535.38518)"
+       id="g3161">
+      <path
+         d="M 0,0 -17.957,17.957"
+         id="path3163"
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       transform="matrix(1.25,0,0,-1.25,453.99928,637.33469)"
+       id="g3165">
+      <path
+         d="m 0,0 c 0,-0.55 -0.45,-1 -1,-1 l -130.045,0 c -0.55,0 -1,0.45 -1,1 l 0,209.401 c 0,0.55 0.45,1 1,1 l 130.045,0 c 0.55,0 1,-0.45 1,-1 L 0,0 z"
+         id="path3167"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       transform="matrix(1.25,0,0,-1.25,385.5129,675.71605)"
+       id="g3169">
+      <path
+         d="m 0,0 c 0,6.203 -5.029,11.231 -11.232,11.231 -6.205,0 -11.235,-5.028 -11.235,-11.231 0,-6.204 5.03,-11.233 11.235,-11.233 C -5.029,-11.233 0,-6.204 0,0 z"
+         id="path3171"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       transform="matrix(1.25,0,0,-1.25,358.8284,353.49068)"
+       id="g3173">
+      <path
+         d="M 0,0 20.229,0"
+         id="path3175"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+  </g>
+</svg>

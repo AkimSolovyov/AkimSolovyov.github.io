@@ -1,0 +1,14 @@
+<div class="goods-template">
+    <div class="prod">
+                <div class="name">
+                    %name%
+                </div>
+                <div class="madeBy">
+                    <span>Manufacturer: </span>
+                    %madeBy%
+                </div>
+                <div class="type">
+                    <span>Type: </span>
+                    %type%
+                </div>
+    </div>

@@ -1,0 +1,236 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>jQuery simple gallery template</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+    <style>
+        body {
+            background-color: rgb(44, 44, 44);
+        }
+        .gallery_slider {
+            display: table;
+            position: relative;
+            width: 1024px;
+            height: 768px;
+            // overflow: hidden;
+            margin: 0 auto;
+        }
+        .gallery_slider_container img {
+            width: 1024px;
+            float: left;
+        }
+        .gallery_slider_control {
+            width: 50px;
+            height: 150px;
+            opacity: 0.6;
+            position: absolute;
+            top: 50%;
+            margin: -75px 0 0;
+            box-shadow: 0;
+            border: 0;
+            outline: 0;
+        }
+        .gallery_slider_control-prev {
+            left: -6%;
+        }
+        .gallery_slider_control-next {
+            right: -6%;
+        }
+        .gallery_slider_control:active {
+            box-shadow: inset 0 0 5px #000;
+        }
+        .gallery img {
+            display: inline;
+            width: 200px;
+            height: 130px;
+            float: left;
+            margin: 10px 10px 0 0;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            transition: 1s;
+        }
+        .gallery img:hover {
+            -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, .6), inset 0 0 20px rgba(255, 255, 255, 1);
+            -moz-box-shadow: 0 0 20px rgba(255, 255, 255, .6), inset 0 0 20px rgba(255, 255, 255, 1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, .6), inset 0 0 20px rgba(255, 255, 255, 1);
+        }
+        .gallery_slider_box {
+            display: none;
+            position: fixed;
+            z-index: 10001;
+            width: 100%;
+            height: 100%;
+        }
+        .gallery_slider_box_popup {
+            display: block;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10000;
+        }
+        .gallery_slider_container {
+            display: table-cell;
+            vertical-align: middle;
+            -webkit-box-shadow: 3px 3px 3px 0px rgba(50, 50, 50, 0.35);
+            -moz-box-shadow: 3px 3px 3px 0px rgba(50, 50, 50, 0.35);
+            box-shadow: 3px 3px 3px 0px rgba(50, 50, 50, 0.35);
+        }
+        .gallery_slider_container img {
+            -moz-box-shadow: 0 0 25px #000;
+            -webkit-box-shadow: 0 0 25px #000;
+            box-shadow: 0px 0px 25px #000;
+        }
+        .blackout {
+            color: #000000;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            z-index: 999;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gallery_slider_box">
+        <div class="gallery_slider_box_popup">
+            <div class="gallery_slider">
+                <button class="gallery_slider_control gallery_slider_control-next js-slide_next">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAABTDAAAUwwEVcE1CAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAGlQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtnayigAAACJ0Uk5TAAIFChYYGhsoKjBCS05fYGFqf4CDoLK9xMbQ1ebo8PX6/XP1Za0AAAC1SURBVChTdZLBVoNQDESviGARlD4QCyJ93v//SBfQ0y7MLGdyJskksKNs07SuU2pLHlEM2QM5FXe+WXzA0tz4c1bnsauqbpzVfD7qs279rarfNDcAxaKX+u5bX3QpgEG3Bx7qTROUWXt4fQJOh5vmklZnYPh6gevHrszaknQEBn/e0M9ngFETk3Z7p9+kfp+ATidWrXZhx/UdKl1jIbQKm4fjhguGkcQhhrHHh4pPGz8D/7zPH+sIITGkR7T+AAAAAElFTkSuQmCCb61fd1c4136ddd7524cc1a4adbe9bd3b" />
+                </button>
+                <button class="gallery_slider_control gallery_slider_control-prev js-slide_prev">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAABTDAAAUwwEVcE1CAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAGZQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATug2UwAAACF0Uk5TAAIFChYYGhsoKjBCS05gYWp/gIOfsr3ExtDV5ufw9fr9UuBpsQAAALZJREFUKFN1kkF2g0AMQ38phYZCyAyhgVIy/fe/ZBeBFxYZLWU/2ZIND5RtGJdlDG3JEUVMbkihePLN7AFzs/OXpE5DV1XdMKnpsvUnXfu9q181NQDFrLf6qVvfdC6AqOuBh3rVAGXSTecEvH1Cr6mk1enBn+/w8R2BSVuCDgDvV+Xr1wgMGhi1A04/avzTCHQ6smgF5/tuLwKVLvlCVio7PLtu1mA2knyI2djzh8qfNv8MvHiff6zdICU452RrAAAAAElFTkSuQmCCaf07616d582cafc3b6186ff160a931b9" />
+                </button>
+
+                <div class="gallery_slider_container">
+                    <!-- here we place picture-clones on thumbclick-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="blackout">
+
+        <div class="gallery">
+
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-37676.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-57339.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-8988.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-38205.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-13805.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-76251.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-74515.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-60704.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-100200.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-21048.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-4257.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-51301.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-5756.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-68008.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-10824.png" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-90814.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-104672.jpg" alt="picture" />
+            <img src="http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-91138.jpg" alt="picture" />
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        "use strict";
+        $(document).ready(function () {
+
+            var clone,
+                thumb,
+                picNum = $(".gallery").children().length - 1;
+
+            console.log(picNum, thumb);
+
+            $(".js-slide_next").click(function () {
+                next();
+            });
+
+            $(".js-slide_prev").click(function () {
+                previous();
+            });
+
+            $('.gallery img').click(function () {
+                thumb = $(this).index();
+                $(".gallery_slider_box").show();
+                $(".blackout").css("opacity", "0.1");
+                load();
+            });
+
+
+            function load() {
+                clone = $(".gallery img").eq(thumb).clone();
+                $(".gallery_slider_container").append(clone);
+                console.log(thumb);
+            }
+
+
+
+            function next() {
+                console.log(thumb);
+                if (thumb <= picNum - 1) {
+                    clone = clone = $(".gallery img").eq(++thumb).clone();
+
+                } else {
+                    clone = clone = $(".gallery img").eq(0).clone();
+                    thumb = 0;
+
+                }
+
+                $(".gallery_slider_container img").fadeIn(300).fadeOut(300, function () {
+                    $(this).remove();
+                    $(".gallery_slider_container").append(clone);
+
+                });
+
+
+            }
+
+            function previous() {
+                console.log(thumb);
+                clone = clone = $(".gallery img").eq(--thumb).clone();
+                $(".gallery_slider_container img").fadeIn(300).fadeOut(300, function () {
+                    $(this).remove();
+                    $(".gallery_slider_container").append(clone);
+                });
+            }
+
+
+            $(document).keydown(function (event) { // exit on escape and key controls
+                if (event.keyCode == "27") {
+                    $(".gallery_slider_box").hide();
+                    $(".blackout").css("opacity", "1");
+                    $(".gallery_slider_container img").remove(); //deleting previous pic for re-click on thumb
+                }
+
+                if (event.keyCode == "37") {
+                    previous();
+                }
+
+                if (event.keyCode == "39") {
+                    next();
+                }
+
+            });
+
+        });
+    </script>
+
+</body>
+
+
+</html>

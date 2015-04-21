@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tasker</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/underscore-min.js"></script>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="clock" class="light">
+                <div class="display">
+                    <div class="weekdays"></div>
+                    <div class="ampm"></div>
+                    <div class="alarm"></div>
+                    <div class="digits"></div>
+                </div>
+            </div>
+            <ul class="nav nav-tabs ">
+                <li id="mon"><a href="#s1" data-toggle="tab">Понедельник</a></li>
+                <li id="tue"><a href="#s2" data-toggle="tab">Вторник</a></li>
+                <li id="wed"><a href="#s3" data-toggle="tab">Среда</a></li>
+                <li id="thu"><a href="#s4" data-toggle="tab">Четверг</a></li>
+                <li id="fri"><a href="#s5" data-toggle="tab">Пятница</a></li>
+                <li id="sat"><a href="#s6" data-toggle="tab">Суббота</a></li>
+                <li id="sun"><a href="#s7" data-toggle="tab">Воскресение</a></li>
+                <!--<li><a href="#s8" data-toggle="tab">Другой день</a></li> -->
+            </ul>
+
+            <div class="tabbable">
+                <div class="tab-content">
+                    <div class="tab-pane" id="s1">
+                    </div>
+                    <div class="tab-pane" id="s2">
+                        <p></p>
+                    </div>
+                    <div class="tab-pane" id="s3">
+                        <p></p>
+                    </div>
+                    <div class="tab-pane" id="s4">
+                        <p></p>
+                    </div>
+                    <div class="tab-pane" id="s5">
+                        <p></p>
+                    </div>
+                    <div class="tab-pane" id="s6">
+                        <p></p>
+                    </div>
+                    <div class="tab-pane" id="s7">
+                        <p></p>
+                    </div>
+                    <div class="tab-pane" id="s8">
+                        <p></p>
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+            </div><!-- /.tabbable -->
+        </div>
+
+  <!--      <script type="text/template" id="task-template">
+                <% _.each(items,function(item,key,list){ %>
+                    <div class="note">
+              <span class="timestamp"><%=time%></span>
+                       <span class="datestamp"><%=date%></span>
+                         <p class="textstamp"><%=text%></p>
+                 </div>
+                <% }) %>
+
+
+
+        </script>
+
+ -->
+
+
+
+        <div class="footer navbar-fixed-bottom">
+            <div class="container">
+                <form class="form-horizontal" id="add_task" role="form" onsubmit="return checkForm(this)">
+                    <p style="display:inline; padding-left:5px">Дата:</p>
+                    <input type="date" name="date" id="date" >
+                    <p style="display:inline; padding-left:5px">Время:</p>
+                    <input type="time" name="time" id="time" autocomplete="on">
+                    <span class="error"></span>
+                    <textarea class="form-control" id="text" name="text" rows="4"></textarea>
+                    <button type="submit" id="submit_new_task" class="btn btn-block btn-lg btn-success">Записать</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="json2.js"></script>
+    </body>
+</html>
