@@ -1,2 +1,2 @@
 # AkimSolovyov.github.io
-test
+Learning + experimenting
