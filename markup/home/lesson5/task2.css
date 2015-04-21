@@ -22,70 +22,135 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 288px;
-    height: 460px;
+    min-width: 288px;
+    min-height: 460px;
     border-radius: 5px;
     border: 4px solid #ee8129;
-    overflow: hidden;
-    box-shadow: 0px2px 13px 0.13px #0874b2;
+    //overflow: hidden;
+    box-shadow: 0px 0px 12.87px 0.13px rgba(8, 116, 178, 0.4);
+}
+
+.orange {
+    background-color: #ee8129;
 }
 
 .price_box_head {
-    height: 73px;
     margin-bottom: 0
 }
 
 .price_box_head h3 {
     color: #fff;
     font: 700 24px / 68px 'Trebuchet MS';
+    text-align: center;
     text-transform: uppercase;
 }
 
 .price_box_body h3 {
-    color: #000;
+    color: #35495a;
     font: 400 24px / 68px 'Trebuchet MS';
     text-transform: uppercase;
 }
 
 .price_box_body {
-    position: relative;
-    height: 100%;
     background-color: white;
+    padding-bottom: 33px;
+}
+/* Price Box Main Text style  */
+
+.price_box_text {
+    font-family: 'Trebuchet MS';
+    color: #35495a;
+    display: block;
+    position: relative;
+    text-align: center;
 }
 
 .price_box_text_sup {
-    display: inline-block;
-    font-family: 'Trebuchet MS';
-    font-size: 19px;
+    display: inline;
+    font-size: 36px;
     font-weight: 700;
+    letter-spacing: -1.8px;
+    position: relative;
+    bottom: 35px;
 }
 
 .price_box_text_big {
-    display: inline-block;
-    font-family: 'Trebuchet MS';
-    font-size: 71px;
+    display: inline;
+    font-size: 72px;
     font-weight: 700;
+    letter-spacing: -3.6px;
 }
 
 .price_box_text_sub {
-    display: inline-block;
-    font-family: 'Trebuchet MS';
+    display: inline;
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 400;
+    position: relative;
+    top: 10px;
+}
+/* Price Box List style */
+
+.price_box_list {
+    margin: 27px 14px 0 14px;
+    color: #888c94;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    text-align: left;
 }
 
-.price_box_list {}
+.price_box_list ul {
+    //list-style-image: url(img/list_img.png); /* Hoped to make list image easy but margins ruined everything */
+    //list-style-position: inside;             /* Going to try background-image variant */
+    // text-align: justify;
+}
 
-.price_box_button {
-    width: 253px;
-    height: 38px;
-    box-shadow: 0px 3px 0px 0.00px #b3560b;
-    border-radius: 5px;
-    font: 700 14px / 16px 'Trebuchet MS';
-    color: #ffffff;
+.price_box_list li {
+    list-style: none;
+    background-color: #edf5fd;
+    min-width: 259px;
+    margin: 1px;
+    padding: 10px 0 9px 0;
+}
+
+.price_box_list li span {
+    background: url("img/list_img.png") no-repeat 0 0;
+    padding-left: 26px;
+    margin-left: 33px;
+}
+
+.price_box_list .text_uppercase {
     text-transform: uppercase;
 }
 
-.orange {
-    background-color: #ee8129;
+.price_box_list li:nth-child(even) {
+    background-color: #f5f5f6;
+}
+
+.price_box_list li:last-of-type {
+    margin-bottom: 18px;
+}
+/* Button style*/
+
+.price_box_button {
+    display: inline-block;
+    width: 253px;
+    height: 38px;
+    box-shadow: 0px 3px 0px 0px #b3560b;
+    -webkit-box-shadow: 0px 3px 0px 0px #b3560b;
+    -moz-box-shadow: 0px 3px 0px 0px #b3560b;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.price_box_button:active {
+    -webkit-box-shadow: inset 2px 2px 0px 1px rgba(179, 86, 11, 1);
+    -moz-box-shadow: inset 2px 2px 0px 1px rgba(179, 86, 11, 1);
+    box-shadow: inset 2px 2px 0px 1px rgba(179, 86, 11, 1);
 }
