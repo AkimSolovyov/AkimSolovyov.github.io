@@ -78,8 +78,6 @@ $(document).ready(function () {
             previous();
         }
 
-
-
         if (event.keyCode == "39" || event.keyCode == "34" || event.keyCode == "32") {
             next();
         }
