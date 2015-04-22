@@ -160,4 +160,10 @@ Going to try background-image variant */
      -webkit-box-shadow: inset 2px 2px 0px 1px rgba(179, 86, 11, 1);
      -moz-box-shadow: inset 2px 2px 0px 1px rgba(179, 86, 11, 1);
      box-shadow: inset 2px 2px 0px 1px rgba(179, 86, 11, 1);
+     outline: none;
+     border: none;
+ }
+
+ button:focus {
+     outline: 0;
  }
