@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To Do Notes</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/default.css" />
+
+</head>
+
+<body>
+
+    <div class="blackout">
+        <div id="container">
+            <div id="clock" class="light animated fadeInDown">
+                <div class="display">
+                    <div class="weekdays"></div>
+                    <div class="ampm"></div>
+                    <div class="digits"></div>
+
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs animated fadeInRight">
+                <li id="mon"><a href="#d1" data-toggle="tab">Понедельник</a>
+                </li>
+                <li id="tue"><a href="#d2" data-toggle="tab">Вторник</a>
+                </li>
+                <li id="wed"><a href="#d3" data-toggle="tab">Среда</a>
+                </li>
+                <li id="thu"><a href="#d4" data-toggle="tab">Четверг</a>
+                </li>
+                <li id="fri"><a href="#d5" data-toggle="tab">Пятница</a>
+                </li>
+                <li id="sat"><a href="#d6" data-toggle="tab">Суббота</a>
+                </li>
+                <li id="sun"><a href="#d7" data-toggle="tab">Воскресение</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" id="clear" class="btn">Clear</a>
+            <a href="javascript:void(0);" id="save" class="btn">Save</a>
+            <div class="tabbable animated fadeInLeft">
+                <div class="tab-content">
+                    <button class="addNote_button">
+                        <img src="data:image/png;base64,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" />
+                    </button>
+                    <div class="tab-pane" id="d1">
+
+                    </div>
+                    <div class="tab-pane" id="d2">
+                    </div>
+                    <div class="tab-pane" id="d3">
+                    </div>
+                    <div class="tab-pane" id="d4">
+                    </div>
+                    <div class="tab-pane" id="d5">
+
+                    </div>
+                    <div class="tab-pane" id="d6">
+                    </div>
+                    <div class="tab-pane" id="d7">
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.tabbable -->
+        </div>
+    </div>
+
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.ui.min.js"></script>
+    <script type="text/javascript" src="lib/moment.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+<!--
+    <div class="form_container">
+        <form class="form_popup">
+            <fieldset>
+
+
+                <legend>Добавить задачу</legend>
+
+
+                <div class="control-group">
+                    <label class="control-label" for="textinput">Тема:</label>
+                    <div class="controls">
+                        <input id="subject" name="textinput" type="text" placeholder="" class="input-large">
+
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="selectweekday">День недели:</label>
+                    <div class="controls">
+                        <select id="selectweekday" name="selectweekday" class="input-medium">
+                            <option>Понедельник</option>
+                            <option>Вторник</option>
+                            <option>Среда</option>
+                            <option>Четверг</option>
+                            <option>Пятница</option>
+                            <option>Суббота</option>
+                            <option>Воскресенье</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="textarea">Текст:</label>
+                    <div class="controls">
+                        <textarea id="textarea" name="textarea"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="control-group">
+                    <label class="control-label" for="button1id"></label>
+                    <div class="controls">
+                        <button id="button1id" name="button1id" class="btn btn-success">Создать</button>
+                        <button id="button2id" name="button2id" class="btn btn-info">Отмена</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+
+                        <div class="note draggable">
+                            <div class="note_content">
+                                <div class="subject" contenteditable>
+                                    <h5>Тема</h5>
+                                </div>
+                                <div class="text" contenteditable>Текст</div>
+                            </div>
+                        </div> -->
+
+</body>
+
+</html>
