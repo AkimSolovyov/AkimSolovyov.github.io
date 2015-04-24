@@ -15,7 +15,6 @@
  }
 
  .offers h1 {
-     font-family: 'Trebuchet MS', sans-serif;
      color: hsl(201, 55%, 37%);
      font-size: 30px;
      font-weight: 700;
@@ -71,7 +70,6 @@
  /* Price Box Main Text style  */
 
  .offers__price-box__body__text {
-     font-family: 'Trebuchet MS', sans-serif;
      color: #35495a;
      display: block;
      text-align: center;
@@ -114,7 +112,6 @@
  }
 
  .offers__price-box__body__list li {
-     font-family: "Trebuchet MS", sans-serif;
      list-style: none;
      background-color: #edf5fd;
      margin: 1px;
