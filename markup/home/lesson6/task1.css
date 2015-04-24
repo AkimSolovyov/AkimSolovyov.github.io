@@ -11,11 +11,12 @@
      -webkit-transform: translate(-50%, -50%);
      text-align: center;
      vertical-align: middle;
+     font-family: 'Trebuchet MS', sans-serif;
  }
 
  .offers h1 {
-     font-family: 'Trebuchet MS';
-     color: #40525c;
+     font-family: 'Trebuchet MS', sans-serif;
+     color: hsl(201, 55%, 37%);
      font-size: 30px;
      font-weight: 700;
      line-height: 25px;
@@ -50,7 +51,7 @@
 
  .offers__price-box__head h3 {
      color: #fff;
-     font: 700 24px / 63px 'Trebuchet MS';
+     font: 700 24px / 63px 'Trebuchet MS', sans-serif;
      text-align: center;
      text-transform: uppercase;
      vertical-align: middle;
@@ -64,13 +65,13 @@
 
  .offers__price-box__body h3 {
      color: #35495a;
-     font: 400 24px / 68px 'Trebuchet MS';
+     font: 400 24px / 68px 'Trebuchet MS', sans-serif;
      text-transform: uppercase;
  }
  /* Price Box Main Text style  */
 
  .offers__price-box__body__text {
-     font-family: 'Trebuchet MS';
+     font-family: 'Trebuchet MS', sans-serif;
      color: #35495a;
      display: block;
      text-align: center;
@@ -113,7 +114,7 @@
  }
 
  .offers__price-box__body__list li {
-     font-family: "Trebuchet MS";
+     font-family: "Trebuchet MS", sans-serif;
      list-style: none;
      background-color: #edf5fd;
      margin: 1px;
