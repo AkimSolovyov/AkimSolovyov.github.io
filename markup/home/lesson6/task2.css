@@ -59,8 +59,8 @@ absolute position. I don't know how to fix this stuff :(
 
 .reviews__item__content:after,
 .reviews__item__content:before {
-    right: 100%;
-    top: 50%;
+    right: 360px;
+    top: 35px;
     border: solid transparent;
     content: '';
     height: 0;
