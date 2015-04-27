@@ -3,37 +3,36 @@
 
 <head lang="en">
     <meta charset="UTF-8" />
-    <title>project</title>
+    <title>project1</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
-
-    <div class="header">
+    <div class="header" id="header">
         <div class="header__inner">
             <div class="logo">
-                <img src="blocks/img/logo.png">
+                <img class="logo__image" src="blocks/img/logo.png">
             </div>
 
             <div class="menu">
                 <ul class="menu__list">
                     <li class="menu__item menu__item_current_true">
-                        <a class="menu__link" href="#">Home</a>
+                        <a class="menu__link" href="#header">Home</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">About</a>
+                        <a class="menu__link" href="#about">About</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Portfolio</a>
+                        <a class="menu__link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Services</a>
+                        <a class="menu__link" href="#services">Services</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Pricing</a>
+                        <a class="menu__link" href="#pricing">Pricing</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Contact</a>
+                        <a class="menu__link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -44,15 +43,15 @@
     <!----------------------------- INTRO --------------------------------->
     <div class="intro">
         <h1 class="intro__title">
-            <span class="intro__title-first">We are specialist in</span>
+            <span class="intro__title-first">We are specialist in</span><br/>
             Responsive designs, Stationary And wordpress Themes </h1>
-        <div class="intro__annotation"></div>
+        <div class="intro__annotation">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</div>
         <a class="intro__button" href="#">Button Name</a>
     </div>
 
     <!----------------------------- OFFERS --------------------------------->
 
-    <div class="offers">
+    <div class="offers" id="pricing">
 
         <h1 class="offers__heading">We have a very flexible offers for you to choose</h1>
 
@@ -152,7 +151,7 @@
 
     </div>
     <!----------------------------- REVIEWS --------------------------------->
-    <div class="reviews">
+    <div class="reviews" id="contact">
         <h3 class="reviews__header"><span class="reviews__header__emphasized">What</span> Client Says</h3>
 
         <div class="reviews__item">

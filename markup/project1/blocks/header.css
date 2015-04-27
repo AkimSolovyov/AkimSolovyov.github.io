@@ -1,12 +1,10 @@
 .header {
-    /position: absolute;
     display: block;
     background: #fff;
     margin: 0;
     padding: 0;
-    top: 0;
     width: 100%;
-    min-height: 116px;
+    height: 117px;
     text-align: center;
 }
 
@@ -16,47 +14,4 @@
     margin: 0 10% 0 10%px;
 }
 
-.logo {
-    display: block;
-    float: left;
-    margin-top: 3%;
-}
 
-.menu {
-    margin-top: 3%;
-    line-height: inherit;
-    display: block;
-    float: right;
-    font-family: OpenSans, sans-serif;
-    color: #3070a8;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 22px;
-    text-align: left;
-}
-
-.menu__list {
-    text-align: justify;
-}
-
-.menu__item {
-    display: inline-block;
-    height: 50px;
-    padding: 0 3px 0 3px;
-    margin-right: 5px;
-    line-height: 40px;
-    font-size: 13px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.menu__item_current_true {}
-
-.menu__link {
-    display: inline-block;
-    padding: 0 5px 2px 5px;
-    color: #3070a8;
-    text-transform: uppercase;
-    text-decoration: none;
-    vertical-align: middle;
-}

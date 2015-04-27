@@ -1,0 +1,12 @@
+.logo {
+    position: relative;
+    float: left;
+    height: 117px;
+    width: 285px;
+}
+
+.logo__image {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+}
