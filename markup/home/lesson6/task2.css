@@ -51,6 +51,12 @@ body {
     bottom: 11px;
 }
 
+/* Honestly - I've tried to make content flexible in the right way,
+but pseudo-triangle-made-from-border ruined all completely with his
+absolute position. I don't know how to fix this stuff :(
+*/
+
+
 .reviews__item__content:after,
 .reviews__item__content:before {
     right: 100%;
