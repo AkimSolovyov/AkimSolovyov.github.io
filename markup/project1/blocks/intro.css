@@ -3,7 +3,7 @@
     display: block;
     background: url(img/i_bg.png) no-repeat 50% 50%;
     background-size: cover;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     /*font-family: "FuturaBT", sans-serif; */
     font-family: "Trebuchet MS", sans-serif;
@@ -28,7 +28,7 @@
 
 .intro__annotation {
     font-family: "Calibri", sans-serif;
-    color: #ffffff;
+    color: #fff;
     font-size: 20px;
     font-style: italic;
     letter-spacing: 0.4px;
@@ -48,4 +48,12 @@
     text-decoration: none;
     padding: 20px 80px 20px 80px;
     border: 1px solid #fff;
+     -webkit-transition: padding 0.4s ease-out 0.5s;
+     -moz-transition: padding 0.4s ease-out 0.5s;
+     -o-transition: padding 0.4s ease-out 0.5s;
+     transition: padding 0.4s ease-out 0.5s;
+}
+
+.intro__button:hover {
+    padding: 25px 90px 25px 90px;
 }
