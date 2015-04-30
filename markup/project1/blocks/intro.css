@@ -48,12 +48,13 @@
     text-decoration: none;
     padding: 20px 80px 20px 80px;
     border: 1px solid #fff;
-     -webkit-transition: padding 0.4s ease-out 0.5s;
-     -moz-transition: padding 0.4s ease-out 0.5s;
-     -o-transition: padding 0.4s ease-out 0.5s;
-     transition: padding 0.4s ease-out 0.5s;
+     -webkit-transition: padding 0.3s ease-out 0.4s;
+     -moz-transition: padding 0.3s ease-out 0.4s;
+     -o-transition: padding 0.3s ease-out 0.4s;
+     transition: padding 0.3s ease-out 0.4s;
 }
 
 .intro__button:hover {
     padding: 25px 90px 25px 90px;
+    background: rgba(255, 255, 255, 0.2);
 }
