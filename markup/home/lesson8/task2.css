@@ -1,34 +1,44 @@
 .page {
     padding: 0;
-    padding: 20% 10%;
-    width: 100%;
+    padding: 20% 5%;
+    width: 80%;
+    min-width: 250px;
     height: 100%;
-    font:'Arial', sans-serif;
+    font: 'Arial', sans-serif;
 }
 
 .arrow {
     position: relative;
     display: table;
     width: 80%;
-    height: 50px;
+    height: 45px;
+    margin-left: 15%;
     background: linear-gradient(to bottom, #ffdb79, #ffbc38);
-    z-index: 999px;
 }
 
 .arrow:after {
     content: '';
-	position: absolute;
-    right: -20px;
-	top: 9px;
-	width: 39px;
-	height: 39px;
-	background: linear-gradient(to bottom, #ffdb79, #ffbc38);
-	transform: rotate(45deg);
-
-
+    position: absolute;
+    right: -27px;
+    top: 34px;
+    width: 39px;
+    height: 39px;
+    background: white;
+    transform: rotate(30deg);
 }
 
-.arrow__head {
+.arrow:before {
+    content: '';
+    position: absolute;
+    right: -27px;
+    top: -15px;
+    width: 39px;
+    height: 39px;
+    background: white;
+    transform: rotate(60deg);
+}
+
+.arrow__body {
     display: table-cell;
     width: 100%;
     height: 56px;
@@ -47,7 +57,7 @@
     width: 65px;
     height: 25px;
     margin-top: 5px;
-    margin-right: 10px;
+    margin-right: 25px;
     overflow: visible;
     border: 1px solid #898989;
     font-size: 14px;
@@ -75,8 +85,13 @@
 }
 
 .arrow__text__link {
-	color: #000;
+    color: #000;
     margin-left: 1px;
     text-decoration: none;
-	border-bottom: 1px dotted;
+    border-bottom: 1px dotted;
+}
+
+.arrow__text__link:hover {
+    color: #fff;
+    border-bottom: 1px solid;
 }

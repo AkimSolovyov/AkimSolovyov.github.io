@@ -1,13 +1,15 @@
 .page {
     padding: 0;
-    padding: 20% 10%;
-    width: 100%;
+    padding: 20% 5%;
+    width: 80%;
+    min-width: 250px;
     height: 100%;
 }
 
 .arrow {
     position: relative;
     display: table;
+    margin-left: 15%;
     width: 80%;
     height: 50px;
     background-color: #FBCC52;
@@ -18,7 +20,6 @@
     display: inline;
     position: absolute;
     top: 0;
-    left: 100%;
     width: 5%;
     height: 0;
     border-style: solid;
@@ -26,7 +27,7 @@
     border-color: transparent transparent transparent #FBCC52;
 }
 
-.arrow__head {
+.arrow__body {
     display: table-cell;
     width: 100%;
     height: 56px;
