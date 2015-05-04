@@ -15,16 +15,18 @@
 .menu__list {
     margin-top: 40px;
     display: inline-block;
-
 }
 
 .menu__item {
     display: inline-block;
     padding: 0 3px 0 3px;
-    margin-right: 10px;
+    margin-right: 5px;
     line-height: 15px;
     text-align: right;
-
+    -webkit-transition: border-bottom 0.4s ease-out 0.2s;
+    -moz-transition: border-bottom 0.4s ease-out 0.2s;
+    -o-transition: border-bottom 0.4s ease-out 0.2s;
+    transition: border-bottom 0.4s ease-out 0.2s;
 }
 
 .menu__item_current_true {
@@ -43,6 +45,10 @@
     text-transform: uppercase;
     text-decoration: none;
     vertical-align: baseline;
+    -webkit-transition: color 0.2s ease-out 0.2s;
+    -moz-transition: color 0.2s ease-out 0.2s;
+    -o-transition: color 0.2s ease-out 0.2s;
+    transition: color 0.2s ease-out 0.2s;
 }
 
 .menu__item:hover {

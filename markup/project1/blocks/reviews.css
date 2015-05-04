@@ -1,6 +1,7 @@
 .reviews {
     display: inline-block;
     width: 100%;
+    margin:0 auto;
     background: url(img/bg.png);
     background-size: contain;
     padding-top: 58px;
@@ -16,16 +17,20 @@
     color: #3170a8;
 }
 
-.reviews__header__emphasized {
+.reviews__header-emphasized {
     color: #ee8129;
 }
 
 .reviews__item {
-    margin-top: 51px;
-    margin: auto;
+    margin-top: 50px;
+    margin-left: 30px;;
     text-align: left;
     display: inline-block;
 }
+/*
+.reviews__item:nth-child(even) {
+margin-left: 5%;
+} */
 
 .reviews__item__img {
     position: relative;
@@ -41,9 +46,9 @@
     background-color: #fff;
     margin-right: 43px;
     margin-bottom: 10px;
-    max-width: 363px;
+    padding-bottom: 2px;
+    max-width: 365px;
     border: 1px solid #fff;
-    \\bottom: 11px;
 }
 
 .reviews__item__content:after,
@@ -61,46 +66,45 @@
 .reviews__item__content:after {
     border-color: rgba(255, 255, 255, 0);
     border-right-color: #fff;
-    border-width: 15px;
-    margin-top: -15px;
+    border-width: 20px;
+    margin-top: -20px;
 }
 
 .reviews__item__content:before {
     border-color: rgba(255, 255, 255, 0);
     border-right-color: #fff;
-    border-width: 16px;
-    margin-top: -16px;
+    border-width: 20px;
+    margin-top: -20px;
 }
 
-.reviews__item__content__heading {
+.reviews__item__content-heading {
     border-bottom: 1px dashed #666;
     overflow: hidden;
     font: 700 italic 13px / 24px 'Trebuchet MS', sans-serif;
     color: #3070a8;
-    padding-bottom: 2px;
-
-    margin: 13px 20px 0px 16px;
+    padding-bottom: 4px;
+    margin: 10px 20px 0px 16px;
 }
 
-.reviews__item__content__heading__name {
+.reviews__item__heading-name {
     float: left;
     display: inline;
 }
 
-.reviews__item__content__heading__name:before {
+.reviews__item__heading-name:before {
     content: '- ';
     height: 0;
     width: 0;
     pointer-events: none;
 }
 
-.reviews__item__content__heading__type {
+.reviews__item__heading-type {
     display: inline;
     float: right;
 }
 
-.reviews__item__content__text {
+.reviews__item__text {
     font: 500 13px / 20px 'Trebuchet MS', sans-serif;
-    color: #666666;
-    margin: 12px 20px 4px 16px;
+    color: #666;
+    margin: 6px 20px 10px 16px;
 }

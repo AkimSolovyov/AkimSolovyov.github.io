@@ -2,15 +2,17 @@
 @import url("blocks/logo.css");
 @import url("blocks/menu.css");
 @import url("blocks/intro.css");
+@import url("blocks/benefits.css");
+@import url("blocks/info.css");
 @import url("blocks/offers.css");
 @import url("blocks/reviews.css");
-body {
+@import url("blocks/contacts.css");
+@import url("blocks/footer.css");
+@import url("blocks/queries.css");
+
+.page {
     background: #fff;
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    margin: 0;
-    padding: 0;
+    min-width: 535px;
 }
