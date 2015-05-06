@@ -7,7 +7,7 @@
  .gallery_slider {
      position: relative;
      width: auto;
-     height: auto;
+     height: 100%;
      text-align: center;
  }
 
@@ -52,10 +52,9 @@
  }
 
  .gallery img {
-     display: inline;
+     display: inline-block;
      width: 200px;
      height: 130px;
-     float: left;
      margin: 10px 10px 0 0;
      -webkit-transition: 1s;
      -moz-transition: 1s;
@@ -100,7 +99,7 @@
 
  .blackout {
      color: #000000;
-     position: fixed;
+     position: absolute;
      height: 100%;
      width: 100%;
      z-index: 999;
@@ -108,8 +107,9 @@
  }
 
  .gallery {
+     display: block;
      margin: 0;
-     position: absolute;
+     position: relative;
      top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
