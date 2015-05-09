@@ -1,0 +1,50 @@
+.page {
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: block;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+
+.gallery__blackout {}
+
+.gallery__headline {
+    color: #2d3950;
+    font-size: 41px;
+    font-weight: 400;
+}
+
+.gallery__headline-small {
+    color: #909090;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.gallery__container {}
+
+.gallery__item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.gallery__image {
+    width: 360px;
+    height: 260px;
+}
+
+.gallery__control-box {}
+
+.gallery__control {}
+
+.gallery__icon {}
+
+.galllery__preview-box {}
+
+.gallery__x-button {}
+
+.gallery__icon-preview {}

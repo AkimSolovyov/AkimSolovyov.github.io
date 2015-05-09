@@ -11,8 +11,8 @@
 @import url("blocks/queries.css");
 
 .page {
-    background: #fff;
     margin: 0;
     padding: 0;
     min-width: 535px;
+    background: #fff;
 }

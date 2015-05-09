@@ -1,28 +1,28 @@
 .menu {
     position: relative;
     display: block;
-    height: 100%;
-    line-height: 58px;
-    width: 65%;
     float: right;
-    font-family: "OpenSans", sans-serif;
+    width: 65%;
+    height: 100%;
     color: #3070a8;
-    font-size: 14px;
-    font-weight: 600;
     text-align: right;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
+    line-height: 58px;
 }
 
 .menu__list {
-    margin-top: 40px;
     display: inline-block;
+    margin-top: 40px;
 }
 
 .menu__item {
     display: inline-block;
-    padding: 0 3px 0 3px;
     margin-right: 5px;
-    line-height: 15px;
+    padding: 0 3px 0 3px;
     text-align: right;
+    line-height: 15px;
     -webkit-transition: border-bottom 0.4s ease-out 0.2s;
     -moz-transition: border-bottom 0.4s ease-out 0.2s;
     -o-transition: border-bottom 0.4s ease-out 0.2s;
@@ -39,12 +39,12 @@
 
 .menu__link {
     display: inline-block;
-    height: 52px;
     padding: 0 5px 0 5px;
+    height: 52px;
     color: #989898;
-    text-transform: uppercase;
-    text-decoration: none;
     vertical-align: baseline;
+    text-decoration: none;
+    text-transform: uppercase;
     -webkit-transition: color 0.2s ease-out 0.2s;
     -moz-transition: color 0.2s ease-out 0.2s;
     -o-transition: color 0.2s ease-out 0.2s;
