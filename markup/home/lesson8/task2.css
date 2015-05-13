@@ -13,6 +13,7 @@
     width: 80%;
     height: 45px;
     margin-left: 15%;
+    background: -webkit-linear-gradient(top, #ffdb79, #ffbc38);
     background: linear-gradient(to bottom, #ffdb79, #ffbc38);
 }
 
@@ -24,6 +25,8 @@
     width: 39px;
     height: 39px;
     background: white;
+    -webkit-transform: rotate(30deg);
+   -ms-transform: rotate(30deg);
     transform: rotate(30deg);
 }
 
@@ -35,6 +38,8 @@
     width: 39px;
     height: 39px;
     background: white;
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
     transform: rotate(60deg);
 }
 
@@ -62,6 +67,7 @@
     border: 1px solid #898989;
     font-size: 14px;
     border-radius: 3px;
+    background: -webkit-linear-gradient(top, #fcffff, #c4c4c4);
     background: linear-gradient(to bottom, #fcffff, #c4c4c4);
 }
 
