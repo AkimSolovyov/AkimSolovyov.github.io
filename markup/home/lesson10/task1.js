@@ -9,6 +9,7 @@ $(document).ready(function () {
         $("[data-number='" + item_number + "']").removeClass("gallery__image").addClass("gallery__image-preview");
         $(".galllery__preview-box").append(clone);
         $(".galllery__preview-box").show();
+        $(".gallery__container").hide();
         $(".gallery__blackout").show();
     });
 
