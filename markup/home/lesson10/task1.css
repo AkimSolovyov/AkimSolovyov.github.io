@@ -1,163 +1,220 @@
-.page {
-    padding: 0;
-    margin: 0;
-    background-color: #f6f9f9;
+.page
+{
     width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: #f6f9f9;
 }
 
-.gallery__blackout {
+.gallery__blackout
+{
     position: fixed;
     z-index: 100;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(255, 255, 255, .85);
+
     display: none;
+
+    background: rgba(255, 255, 255, .85);
 }
 
-.gallery {
+.gallery
+{
+    font-family: 'Lato', sans-serif;
+
     display: block;
+
     width: 100%;
-    height: auto;
-    text-align: center;
-    font-family: "Lato", sans-serif;
-    margin: 0 auto;
-    max-width: 1280px;
     min-width: 400px;
+    max-width: 1280px;
+    height: auto;
+    margin: 0 auto;
+
+    text-align: center;
 }
 
-.gallery__headline {
-    margin: 60px 0 23px 0;
-    color: #2d3950;
-    font-weight: 400;
+.gallery__headline
+{
     font-size: 41px;
-}
-
-.gallery__headline-small {
-    margin-bottom: 80px;
-    color: #909090;
     font-weight: 400;
+
+    margin: 60px 0 23px 0;
+
+    color: #2d3950;
+}
+
+.gallery__headline-small
+{
     font-size: 15px;
+    font-weight: 400;
     line-height: 23px;
+
+    margin-bottom: 80px;
+
+    color: #909090;
 }
 
-.gallery__container {
+.gallery__container
+{
     position: relative;
 }
 
-.gallery__item {
+.gallery__item
+{
     position: relative;
+
     display: inline-block;
-    margin: 5px 15px;
+
     width: 360px;
     height: 260px;
+    margin: 5px 15px;
+
     border-radius: 2px;
     background: rgba(37, 166, 247, 1);
 }
 
-.gallery__item:hover .gallery__image {
-    opacity: 0.3;
+.gallery__item:hover .gallery__image
+{
+    opacity: .3;
 }
 
-.gallery__item-cover {
+.gallery__item-cover
+{
     position: relative;
+
     display: inline-block;
+
     width: 360px;
     height: 260px;
+
     transition: .5s;
 }
 
-.gallery__image {
+.gallery__image
+{
     width: 360px;
     height: 260px;
 }
 
-.gallery__controls-container {
+.gallery__controls-container
+{
     position: relative;
     bottom: 58%;
     left: 0;
+
     display: inline-block;
 }
 
 .gallery__control-box-left,
-.gallery__control-box-right {
+.gallery__control-box-right
+{
     position: relative;
+
     display: inline-block;
-    margin: 0 3px;
+
     width: 40px;
     height: 40px;
-    border-radius: 2px;
+    margin: 0 3px;
+
     cursor: pointer;
+
     opacity: 1;
+    border-radius: 2px;
 }
 
 .gallery__control-box-left:hover,
-.gallery__control-box-right:hover {
-    opacity: 1;
+.gallery__control-box-right:hover
+{
     transition: .5s;
+
+    opacity: 1;
     background: rgba(37, 166, 247, 1);
 }
 
-.gallery__item:hover .gallery__icon {
+.gallery__item:hover .gallery__icon
+{
     opacity: 1;
 }
 
-.gallery__control {
+.gallery__control
+{
     position: relative;
     top: 12px;
     left: 1px;
+
     display: inline-block;
+
     opacity: 1;
 }
 
-.gallery__icon {
+.gallery__icon
+{
     position: relative;
+    bottom: 2px;
+
     display: block;
+
     width: 20px;
     height: 20px;
-    bottom: 2px;
+
     opacity: 0;
 }
 
-.galllery__preview-box {
+.galllery__preview-box
+{
     position: absolute;
-    max-width: 60%;
-    height: auto;
+    z-index: 101;
     top: 220px;
     right: 0;
     left: 0;
-    z-index: 101;
+
     display: block;
-    margin: auto;
     display: none;
+
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+
     text-align: center;
 }
 
-.gallery__image-preview {
-    display: inline-block;
+.gallery__image-preview
+{
     position: relative;
+
+    display: inline-block;
+
     width: 100%;
 }
 
-.gallery__x-button {
+.gallery__x-button
+{
     position: absolute;
-    right: 3%;
-    top: -20px;
-    background-color: #25a6f7;
-    height: 40px;
-    width: 40px;
     z-index: 102;
+    top: -20px;
+    right: 3%;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: #25a6f7;
 }
 
-.gallery__x-button:hover {
+.gallery__x-button:hover
+{
     transition: .2s;
+
     background-color: #f74c26;
 }
 
-.gallery__icon-preview {
+.gallery__icon-preview
+{
     position: relative;
+    top: 28%;
+
     width: 11px;
     height: 11px;
-    top: 28%;
 }

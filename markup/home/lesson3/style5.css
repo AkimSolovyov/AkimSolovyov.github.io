@@ -1,3 +1,17 @@
+table tr td:nth-child(2n+3)
+{
+    background: #f2f2de;
+}
+
+table tr:nth-child(even) td:nth-child(2n+2)
+{
+    background: #ddebf7;
+}
+
+table tr:nth-child(even) td:first-of-type
+{
+    background: #ddebf7;
+}
 table tr td:nth-child(2n+3) {
 background: #f2f2de;
 }

@@ -1,81 +1,107 @@
-.page {
-    padding: 0;
-    padding: 20% 5%;
+.page
+{
     width: 80%;
     min-width: 250px;
     height: 100%;
+    padding: 0;
+    padding: 20% 5%;
 }
 
-.arrow {
+.arrow
+{
     position: relative;
+
     display: table;
-    margin-left: 15%;
+
     width: 80%;
     height: 50px;
-    background-color: #FBCC52;
+    margin-left: 15%;
+
+    background-color: #fbcc52;
 }
 
-.arrow:after {
-    content: '';
-    display: inline;
+.arrow:after
+{
     position: absolute;
     top: 0;
+
+    display: inline;
+
     width: 5%;
     height: 0;
-    border-style: solid;
+
+    content: '';
+
     border-width: 28px 0 28px 16px;
-    border-color: transparent transparent transparent #FBCC52;
+    border-style: solid;
+    border-color: transparent transparent transparent #fbcc52;
 }
 
-.arrow__body {
+.arrow__body
+{
     display: table-cell;
+
     width: 100%;
     height: 56px;
 }
 
-.arrow__search_input {
-    margin: 5px 0 0 5px;
+.arrow__search_input
+{
     width: 99%;
     height: 25px;
+    margin: 5px 0 0 5px;
     padding: 0 5px;
-    box-shadow: inset 0 0 1px 1px #969696;
+
     border: 0;
+    box-shadow: inset 0 0 1px 1px #969696;
 }
 
-.arrow__button {
+.arrow__button
+{
+    font-size: 14px;
+
+    overflow: visible;
+
     width: 65px;
     height: 25px;
     margin-top: 5px;
     margin-right: 10px;
-    overflow: visible;
+
     border: 1px solid #898989;
-    font-size: 14px;
     border-radius: 3px;
     background: linear-gradient(to bottom, #fcffff, #c4c4c4);
 }
 
-.arrow__button:hover {
+.arrow__button:hover
+{
     box-shadow: inset 0 0 1px 1px #969696;
 }
 
-.arrow__button:active {
+.arrow__button:active
+{
     font-size: 12px;
 }
 
-.arrow__inner_bottom {
+.arrow__inner_bottom
+{
     position: absolute;
-    left: 0;
     top: 33px;
+    left: 0;
 }
 
-.arrow__checkbox {
+.arrow__checkbox
+{
     display: inline;
+
     margin: 0 0 5px 5px;
 }
 
-.arroww__checkbox__label {
-    display: inline;
-    vertical-align: top;
+.arroww__checkbox__label
+{
     font-size: 14px;
+
+    display: inline;
+
+    vertical-align: top;
     text-transform: lowercase;
 }

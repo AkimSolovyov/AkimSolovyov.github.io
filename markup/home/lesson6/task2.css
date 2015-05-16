@@ -1,54 +1,73 @@
-body {
-    padding: 0;
-    margin: auto;
+body
+{
     width: 100%;
     height: 100%;
+    margin: auto;
+    padding: 0;
 }
 
-.reviews {
+.reviews
+{
     display: inline-block;
+
     width: 100%;
-    background: url(img/bg.png);
-    background-size: contain;
     padding-top: 58px;
     padding-bottom: 79px;
+
     text-align: center;
+
+    background: url(img/bg.png);
+    background-size: contain;
 }
 
-.reviews__header {
+.reviews__header
+{
+    font: 400 40px / 18px 'Trebuchet MS', sans-serif;
+
     margin-bottom: 50px;
+
     text-align: center;
     text-transform: uppercase;
-    font: 400 40px / 18px 'Trebuchet MS', sans-serif;
+
     color: #3170a8;
 }
 
-.reviews__header__emphasized {
+.reviews__header__emphasized
+{
     color: #ee8129;
 }
 
-.reviews__item {
-    margin-top: 51px;
-    margin: auto;
-    text-align: left;
+.reviews__item
+{
     display: inline-block;
+
+    margin: auto;
+    margin-top: 51px;
+
+    text-align: left;
 }
 
-.reviews__item__img {
+.reviews__item__img
+{
     position: relative;
-    height: 99px;
+
     width: 98px;
+    height: 99px;
     margin-right: 22px;
 }
 
-.reviews__item__content {
-    display: inline-block;
+.reviews__item__content
+{
     position: relative;
-    background-color: #fff;
-    margin-right: 43px;
-    max-width: 363px;
-    border: 1px solid #fff;
     bottom: 11px;
+
+    display: inline-block;
+
+    max-width: 363px;
+    margin-right: 43px;
+
+    border: 1px solid #fff;
+    background-color: #fff;
 }
 
 /* Honestly - I've tried to make content flexible in the right way,
@@ -58,60 +77,78 @@ absolute position. I don't know how to fix this stuff :(
 
 
 .reviews__item__content:after,
-.reviews__item__content:before {
-    right: 360px;
-    top: 35px;
-    border: solid transparent;
-    content: '';
-    height: 0;
-    width: 0;
+.reviews__item__content:before
+{
     position: absolute;
+    top: 35px;
+    right: 360px;
+
+    width: 0;
+    height: 0;
+
+    content: '';
     pointer-events: none;
+
+    border: solid transparent;
 }
 
-.reviews__item__content:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-right-color: #fff;
-    border-width: 15px;
+.reviews__item__content:after
+{
     margin-top: -15px;
-}
 
-.reviews__item__content:before {
+    border-width: 15px;
     border-color: rgba(255, 255, 255, 0);
     border-right-color: #fff;
-    border-width: 16px;
-    margin-top: -16px;
 }
 
-.reviews__item__content__heading {
-    border-bottom: 1px dashed #666;
-    overflow: hidden;
+.reviews__item__content:before
+{
+    margin-top: -16px;
+
+    border-width: 16px;
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+}
+
+.reviews__item__content__heading
+{
     font: 700 italic 13px / 24px 'Trebuchet MS', sans-serif;
-    color: #3070a8;
+
+    overflow: hidden;
+
+    margin: 13px 20px 0 16px;
     padding-bottom: 2px;
 
-    margin: 13px 20px 0px 16px;
+    color: #3070a8;
+    border-bottom: 1px dashed #666;
 }
 
-.reviews__item__content__heading__name {
-    float: left;
+.reviews__item__content__heading__name
+{
     display: inline;
+    float: left;
 }
 
-.reviews__item__content__heading__name:before {
-    content: '- ';
-    height: 0;
+.reviews__item__content__heading__name:before
+{
     width: 0;
+    height: 0;
+
+    content: '- ';
     pointer-events: none;
 }
 
-.reviews__item__content__heading__type {
+.reviews__item__content__heading__type
+{
     display: inline;
     float: right;
 }
 
-.reviews__item__content__text {
+.reviews__item__content__text
+{
     font: 500 13px / 20px 'Trebuchet MS', sans-serif;
-    color: #666666;
+
     margin: 12px 20px 4px 16px;
+
+    color: #666;
 }

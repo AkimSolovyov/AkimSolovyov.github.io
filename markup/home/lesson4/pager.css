@@ -1,94 +1,131 @@
-body {
+body
+{
     background: rgb(250, 250, 250);
 }
 
-h1 {
-    text-align: center;
-    color: rgb(161, 58, 209);
+h1
+{
     font-size: 20px;
+
     margin-top: 20%;
+
+    text-align: center;
+
+    color: rgb(161, 58, 209);
 }
 
-.container {
-    color: rgb(161, 58, 209);
+.container
+{
     font-family: monospace;
     font-size: 10px;
-    margin: 0;
+
     position: absolute;
     top: 50%;
     left: 50%;
+
+    margin: 0;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
+
     -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     text-align: center;
-}
 
-.controls {
-    cursor: pointer;
-    font-size: 8px;
-    height: 20px;
-}
-
-.pages {
-    display: inline;
-    margin: 0 25px 10px 10px;
-}
-
-.pages a {
-    display: inline-block;
-    border: solid 1px #ddd;
-    padding: 7px 8px 7px 8px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 8px;
-}
-
-.pages a {
     color: rgb(161, 58, 209);
 }
 
-.pages a:hover {
-    background-color: rgb(161, 58, 209);
+.controls
+{
+    font-size: 8px;
+
+    height: 20px;
+
+    cursor: pointer;
+}
+
+.pages
+{
+    display: inline;
+
+    margin: 0 25px 10px 10px;
+}
+
+.pages a
+{
+    font-size: 8px;
+
+    display: inline-block;
+
+    padding: 7px 8px 7px 8px;
+
+    text-decoration: none;
+
+    border: solid 1px #ddd;
+    border-radius: 5px;
+}
+
+.pages a
+{
+    color: rgb(161, 58, 209);
+}
+
+.pages a:hover
+{
     color: white;
+    background-color: rgb(161, 58, 209);
 }
 
 
-.pages span {
-    color: black;
+.pages span
+{
     vertical-align: bottom;
+
+    color: black;
 }
 
-a.chosen  {
-    background-color: rgb(161, 58, 209);
+a.chosen
+{
     color: white;
+    background-color: rgb(161, 58, 209);
 }
 
 .controls_first,
-.controls_prev {
+.controls_prev
+{
     float: left;
+
     margin-top: 5px;
     padding-right: 15px;
+
     text-transform: uppercase;
 }
 
 .controls_first:before,
-.controls_prev:before {
-    content: "«";
+.controls_prev:before
+{
     font-size: 12px;
+
     padding-right: 2px;
+
+    content: '«';
 }
 
 .controls_next,
-.controls_last {
+.controls_last
+{
     float: right;
+
     margin-top: 5px;
     padding-right: 15px;
+
     text-transform: uppercase;
 }
 
 .controls_next:after,
-.controls_last:after {
-    content: "»";
+.controls_last:after
+{
     font-size: 12px;
+
     padding-left: 2px;
+
+    content: '»';
 }

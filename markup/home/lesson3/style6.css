@@ -1,3 +1,91 @@
+input[type='checkbox']
+{
+    display: none;
+}
+
+label
+{
+    font-size: 14px;
+
+    padding-right: 30px;
+    padding-left: 15px;
+
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+span
+{
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-left: 1px;
+    padding: 3px 7px 3px 7px;
+
+    color: white;
+    border-radius: 7px;
+}
+
+label[for='red']
+{
+    color: red;
+}
+
+label[for='green']
+{
+    color: green;
+}
+
+label[for='blue']
+{
+    color: blue;
+}
+
+.red
+{
+    background-color: red;
+}
+
+.green
+{
+    background-color: green;
+}
+
+.blue
+{
+    background-color: blue;
+}
+
+input[type='checkbox']:checked#red ~ label[for='red']
+{
+    color: rgba(255, 0, 0, .3);
+}
+
+input[type='checkbox']:checked#green ~ label[for='green']
+{
+    color: rgba(0, 128, 0, .3);
+}
+
+input[type='checkbox']:checked#blue ~ label[for='blue']
+{
+    color: rgba(0, 0, 255, .3);
+}
+
+input[type='checkbox']:checked#red ~ .red
+{
+    display: none;
+}
+
+input[type='checkbox']:checked#green ~ .green
+{
+    display: none;
+}
+
+input[type='checkbox']:checked#blue ~ .blue
+{
+    display: none;
+}
 input[type="checkbox"] {
     display: none;
 }

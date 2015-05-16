@@ -1,17 +1,21 @@
-.header {
+.header
+{
     display: block;
-    margin: 0;
-    padding: 0;
+
     width: 100%;
     height: 117px;
-    background: #fff;
+    margin: 0;
+    padding: 0;
+
     text-align: center;
+
+    background: #fff;
 }
 
-.header__inner {
+.header__inner
+{
     display: inline-block;
-    margin: 0 10% 0 10%;
+
     min-width: 80%;
+    margin: 0 10% 0 10%;
 }
-
-

@@ -1,65 +1,87 @@
-p:first-letter {
-    color: red;
+p:first-letter
+{
     font-size: 30px;
     font-weight: bold;
+
+    color: red;
 }
 
-h1 {
-    color: orange;
+h1
+{
+    font-weight: bold;
+
     text-align: right;
-    font-weight: bold;
+
+    color: orange;
 }
 
-em {
-    background-color: green;
-    color: #fff;
+em
+{
     font-weight: bold;
+
+    color: #fff;
+    background-color: green;
 }
 
 #allotment ul > li,
-#warehouse ul > li {
+#warehouse ul > li
+{
     font-weight: bold;
 }
 
-#allotment h2 {
+#allotment h2
+{
+    font-weight: bold;
+
     color: orange;
-    font-weight: bold;
 }
 
-#warehouse h2 {
+#warehouse h2
+{
+    font-weight: bold;
+
     color: blue;
-    font-weight: bold;
 }
 
-#allotment .fruits-list {
+#allotment .fruits-list
+{
     color: gray;
 }
 
-#warehouse .fruits-list {
+#warehouse .fruits-list
+{
     color: green;
 }
 
 .fruits-list,
-.vegetables-list {
+.vegetables-list
+{
     font-weight: normal;
 }
 
-.vegetables-list {
+.vegetables-list
+{
     color: red;
 }
 
-.students-table thead {
+.students-table thead
+{
     font-weight: bold;
+
     text-align: center;
 }
 
-.students-table tbody td:first-of-type {
-    color: orange;
+.students-table tbody td:first-of-type
+{
     font-weight: bold;
+
+    color: orange;
 }
 
-.students-table tbody td:nth-child(1n+2) {
+.students-table tbody td:nth-child(1n+2)
+{
+    text-align: center;
+
     color: white;
     background: green;
-    text-align: center;
 }

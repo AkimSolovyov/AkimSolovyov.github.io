@@ -1,3 +1,27 @@
+@charset='utf-8';
+a:link[href*='://']
+{
+    color: #f70;
+}
+
+a:link[href*='google']
+{
+    color: #666;
+}
+
+a:link[target='_blank']:after
+{
+    font-family: Cambria;
+
+    position: absolute;
+
+    margin-left: 5px;
+
+    content: '\21F1';
+    transform: rotate(90deg);
+
+    color: #f70;
+}
 @charset="utf-8";
 a:link[href*="://"] {
     color: #f70;
