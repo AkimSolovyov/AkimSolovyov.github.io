@@ -13,10 +13,11 @@
     <!-- Header block -->
 
     <div class="header">
-        <div class="container">
-            <div class="header-top">
+
+        <div class="header-top">
+            <div class="container">
                 <div class="logo">
-                    <a class="logo__link" href="">ABC University</a> <img class="logo__img" href="" alt="ABC University" />
+                    <a class="logo__link" href=""><img class="logo__img" src="img/ABC_logo.svg" alt="ABC University" />ABC University</a>
                 </div>
                 <div class="social">
                     <span class="social__text">Connect:</span>
@@ -25,35 +26,41 @@
                     <a class="social__link social__link_tw" rel="nofollow" href=""></a>
                 </div>
             </div>
+        </div>
 
-            <div class="header-middle">
+        <div class="header-middle">
+            <div class="container">
                 <h1 class="header-middle__heading">Welcome</h1>
                 <p class="header-middle__heading_text">College students can publish their couse notes, study together, build their acdemic reputations....</p>
             </div>
+        </div>
 
-            <div class="header-bottom">
+        <div class="header-bottom">
+            <div class="container">
                 <h4 class="header-bottom__heading">ABC University</h4>
                 <p class="header-bottom__text">In 1865, Ezra Cornell founded an institution "where any person can find instruction in any study." From the beginning, all students were welcome, regardless of race, gender, ideology, or socioeconomic status.</p>
                 <p class="header-bottom__text">Today, we invite you to join our talented and diverse students and accessible faculty who, together, form a living and learning community unmatched in its breadth of opportunities.</p>
 
             </div>
-
+        </div>
+        <div class="container">
             <div class="header-form-block">
-                <form name="header-form">
-                    <input type="text" name="select" value="Select Course">
-                    <input type="text" name="first_name" value="Firs Name">
-                    <input type="text" name="last_name" value="Last Name">
-                    <input type="tel" name="phone" value="Phone">
-                    <textarea cols="30" rows="3" wrap="physical">
-                        Adress
-                    </textarea>
-                    <input type="text" name="zip" value="Zip">
-                    <input type="email" name="email" value="Email">
-                    <input type="submit" name="submit" value="Submit">
+                <form name="header-form" id="header-form">
+                    <h3 class="header-form__heading">Get Started</h3>
+                    <input class="header-form__input" type="text" name="select" value="Select Course">
+                    <input class="header-form__input" type="text" name="first_name" value="Firs Name">
+                    <input class="header-form__input" type="text" name="last_name" value="Last Name">
+                    <input class="header-form__input" type="tel" name="phone" value="Phone">
+                    <div class="header-form__input" id="header-form_adress" contenteditable>Adress</div>
+                    <input type="hidden" id="header-form_adress-content" name="adress" />
+                    <input class="header-form__input" type="text" name="zip" value="Zip">
+                    <input class="header-form__input" type="email" name="email" value="Email">
+                    <input class="header-form__submit" type="submit" name="submit" value="Submit">
                 </form>
             </div>
 
         </div>
+    </div>
     </div>
 
     <!-- Middle block -->
@@ -102,7 +109,7 @@
     <div class="bottom-block">
         <div class="container">
             <button class="bottom-block__button">Click here now to get started</button>
-            <img class="bottom-block__img" src="img/student2.png" alt="student">
+            <img class="bottom-block__img" src="img/student.png" alt="student">
         </div>
     </div>
 
@@ -112,7 +119,8 @@
         <div class="container">
 
             <div class="logo logo_footer">
-                <a class="logo__link logo__link_footer" href="">ABC University</a> <img class="logo__img" href="" alt="ABC University" />
+
+                <a class="logo__link logo__link_footer" href=""><img class="logo__img" src="img/ABC_logo.svg" alt="ABC University" />ABC University</a>
             </div>
 
             <div class="social social_footer">
