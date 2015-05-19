@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-	width="40px" height="40px" viewBox="0 0 40 40">
-<clipPath id="clip0"><circle cx="20.50" cy="19.50" r="19.50"/></clipPath><defs>
-<symbol id="symbol0"><circle cx="20.50" cy="19.50" r="19.50"/></symbol></defs>
-<g><use xlink:href="#symbol0" x="0" y="0" width="40" height="40" fill="rgb(255,253,255)"/><use xlink:href="#symbol0" x="0" y="0" width="40" height="40" fill="none" stroke="rgb(229,229,229)" stroke-width="2.00px" clip-path="url(#clip0)"/></g><path fillRule="evenodd" d="M 26.09 19.68C 26.09 19.68 24.5 21.27 24.5 21.27 24.5 21.27 24.5 21.27 24.5 21.27 24.5 21.27 18.12 27.65 18.12 27.65 18.12 27.65 16.53 26.05 16.53 26.05 16.53 26.05 22.91 19.68 22.91 19.68 22.91 19.68 16.53 13.3 16.53 13.3 16.53 13.3 18.12 11.71 18.12 11.71 18.12 11.71 24.5 18.08 24.5 18.08 24.5 18.08 24.5 18.08 24.5 18.08 24.5 18.08 26.09 19.68 26.09 19.68Z" fill="rgb(135,135,135)"/></svg>

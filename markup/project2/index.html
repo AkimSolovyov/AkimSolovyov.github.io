@@ -47,7 +47,8 @@
             <div class="header-form-block">
                 <form name="header-form" id="header-form">
                     <h3 class="header-form__heading">Get Started</h3>
-                    <input class="header-form__input" type="text" name="select" value="Select Course">
+                    <div class="header-form__input" id="header-form_select">Select Course</div>
+                    <input id="header-form_select-content" type="hidden" name="select">
                     <input class="header-form__input" type="text" name="first_name" value="Firs Name">
                     <input class="header-form__input" type="text" name="last_name" value="Last Name">
                     <input class="header-form__input" type="tel" name="phone" value="Phone">
@@ -66,39 +67,51 @@
     <!-- Middle block -->
 
     <div class="middle-block">
-        <div class="container">
+        <div class="container container-border">
             <div class="pros">
                 <h2 class="middle-block__heading">why we are best</h2>
 
                 <div class="pros-item">
-                    <img class="pros-item__img" src="img/a1.jpg" alt="building" />
+                    <img class="pros-item__img" src="img/a1.jpg" alt="people" />
                     <h4 class="pros-item__heading">Quality environment</h4>
-                    <p class="pros-item__text">We guide our students to find their own academic paths by helping them to reason, analyze and understand in unprecedented ways. The undergraduate experience at Duke is characterized by a spirit of academic energy, exploration and challenge.</p>
+                    <div class="pros-item__content">
+                        <p class="pros-item__text">We guide our students to find their own academic paths by helping them to reason, analyze and understand in unprecedented ways. The undergraduate experience at Duke is characterized by a spirit of academic energy, exploration and challenge.</p>
+                    </div>
                     <a class="pros-item__link" href="#">View</a>
                 </div>
 
                 <div class="pros-item">
                     <img class="pros-item__img" src="img/a2.jpg" alt="people" />
                     <h4 class="pros-item__heading">Quality programs</h4>
-                    <p class="pros-item__text">We are a research university with resources to connect undergraduate education to the processes of inquiry and discovery. Duke students explore ideas by collaborating directly with our exceptional faculty in a program of study that focuses on interdisciplinary exploration.</p>
+                    <div class="pros-item__content">
+                        <p class="pros-item__text">We are a research university with resources to connect undergraduate education to the processes of inquiry and discovery. Duke students explore ideas by collaborating directly with our exceptional faculty in a program of study that focuses on interdisciplinary exploration.</p>
+                    </div>
                     <a class="pros-item__link" href="#">View</a>
                 </div>
 
                 <div class="pros-item">
                     <img class="pros-item__img" src="img/a3.jpg" alt="teacher" />
                     <h4 class="pros-item__heading">Excellent teachers</h4>
-                    <p class="pros-item__text">A student's education doesn't end at the classroom door. We provide an incredible variety of opportunities for students to enhance and supplement in-class learning with hands-on experiences, service in the community &#8212; both locally and globally &#8212; and development of leadership skills.</p>
+                    <div class="pros-item__content">
+                        <p class="pros-item__text">A student's education doesn't end at the classroom door. We provide an incredible variety of opportunities for students to enhance and supplement in-class learning with hands-on experiences, service in the community &#8212; both locally and globally &#8212; and development of leadership skills.</p>
+                    </div>
                     <a class="pros-item__link" href="#">View</a>
                 </div>
 
             </div>
+        </div>
 
-            <div class="about">
+        <div class="about">
+            <div class="container">
                 <h2 class="middle-block__heading">What students says about our university</h2>
-                <button class="about__slider-buttom about__slider-buttom-left"></button>
-                <button class="about__slider-buttom about__slider-buttom-right"></button>
-                <blockquote class="about__text">We guide our students to find their own academic paths by helping them to reason, analyze and understand in unprecedented ways. The undergraduate experience at Duke is characterized by a spirit of academic energy, exploration and challenge.</blockquote>
-                <cite class="about__cite">Amanda Persch</cite>
+                <div class="slider-control slider-control-left"><i class="slider-control__icon-left"></i>
+                </div>
+                <div class="slider-control slider-control-right"><i class="slider-control__icon-right"></i>
+                </div>
+
+                <blockquote class="about__text">We guide our students to find their own academic paths by helping them to reason, analyze and understand in unprecedented ways. The undergraduate experience at Duke is characterized by a spirit of academic energy, exploration and challenge.<cite class="about__cite">Amanda Persch</cite>
+                </blockquote>
+
             </div>
 
         </div>
