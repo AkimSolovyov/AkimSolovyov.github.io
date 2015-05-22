@@ -130,7 +130,7 @@
     padding-left: 16px;
     -webkit-transition-duration: .3s;
     transition-duration: .3s;
-    -webkit-transition-property: box-shadow, transform;
+    -webkit-transition-property: box-shadow, -webkit-transform;
     transition-property: box-shadow, transform;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -152,7 +152,7 @@
     cursor: pointer;
     -webkit-transition-duration: .3s;
     transition-duration: .3s;
-    -webkit-transition-property: box-shadow, transform;
+    -webkit-transition-property: box-shadow, -webkit-transform;
     transition-property: box-shadow, transform;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -183,6 +183,7 @@
 .header-form__input:focus,
 .header-form__input:active {
     -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
 }
@@ -245,7 +246,7 @@
     cursor: pointer;
     -webkit-transition-duration: .5s;
     transition-duration: .5s;
-    -webkit-transition-property: color, background-color, box-shadow, transform;
+    -webkit-transition-property: color, background-color, box-shadow, -webkit-transform;
     transition-property: color, background-color, box-shadow, transform;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -262,8 +263,10 @@
 }
 
 .header-form__submit:hover,
-.header-form__submit:focus {
+.header-form__submit:focus,
+.header-form__submit:active {
     -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
     color: white;
     background-color: #3498db;
@@ -272,6 +275,7 @@
 
 .header-form__submit:active {
     -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
 }
 
@@ -541,9 +545,10 @@
     transition-timing-function: ease-out;
     -webkit-transition-duration: .5s;
     transition-duration: .5s;
-    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
     transition-property: transform;
     -webkit-transform: scale(0);
+    -ms-transform: scale(0);
     transform: scale(0);
     border-radius: 50%;
     background: #3498db;
@@ -557,8 +562,10 @@
 }
 
 .pros-item__link:hover:before,
-.pros-item__link:focus:before {
+.pros-item__link:focus:before,
+.pros-item__link:active:before {
     -webkit-transform: scale(2);
+    -ms-transform: scale(2);
     transform: scale(2);
 }
 
@@ -595,10 +602,11 @@
 }
 
 .slider-control:hover:not(.slider-control-inactive),
-.slider-control:focus:not(.slider-control-inactive) {
+.slider-control:focus:not(.slider-control-inactive),
+.slider-control:active:not(.slider-control-inactive) {
     color: white;
     border-color: transparent;
-    background-color: rgba(52, 152, 219, 0.9);
+    background-color: rgba(52, 152, 219, .9);
 }
 
 .slider-control:active:not(.slider-control-inactive) {
@@ -673,6 +681,7 @@
 .about__cite {
     font-size: 13px;
     font-weight: 700;
+    font-style: normal;
     line-height: 42px;
     float: right;
     text-transform: uppercase;
@@ -702,9 +711,10 @@
     width: 540px;
     height: 60px;
     padding-left: 31px;
+    cursor: pointer;
     -webkit-transition-duration: .5s;
     transition-duration: .5s;
-    -webkit-transition-property: background-color, box-shadow, transform;
+    -webkit-transition-property: background-color, box-shadow, -webkit-transform;
     transition-property: background-color, box-shadow, transform;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -719,7 +729,6 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
-    cursor: pointer;
 }
 
 .bottom-block__button:after {
@@ -734,8 +743,10 @@
 }
 
 .bottom-block__button:hover,
-.bottom-block__button:focus {
+.bottom-block__button:focus,
+.bottom-block__button:active {
     -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
     background-color: #3498db;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
@@ -743,6 +754,7 @@
 
 .bottom-block__button:active {
     -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
 }
 
