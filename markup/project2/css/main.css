@@ -129,10 +129,10 @@
     height: 32px;
     margin-bottom: 10px;
     padding-left: 16px;
-     outline: 0;
-       text-align: left;
+    outline: 0;
+    text-align: left;
     border: 1px solid #e6e6e6;
-
+    position: relative;
     -webkit-transition-duration: .3s;
     transition-duration: .3s;
     -webkit-transition-property: box-shadow, -webkit-transform;
@@ -530,8 +530,6 @@
     border-radius: 50%;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-
-
 
 .pros-item__link:hover,
 .pros-item__link:focus,
