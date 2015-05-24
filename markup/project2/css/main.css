@@ -9,7 +9,7 @@
     padding: 0;
     color: #000;
     background-color: #fff;
-    -webkit-font-smoothing:subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container {
