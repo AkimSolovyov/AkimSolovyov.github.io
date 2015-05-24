@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) and (max-width: 799px) {
+@media only screen and (max-width: 799px) {
     .container {
         width: 300px;
     }
@@ -31,7 +31,7 @@
         text-align: center
     }
     .header-middle {
-        padding: 42px 0 184px 0;
+        padding: 43px 0 184px 0;
     }
     .header-middle__heading {
         font-size: 40px;
@@ -283,7 +283,7 @@
         width: 200px;
     }
     .header-middle {
-        padding: 95px 0 76px 0;
+        padding: 96px 0 76px 0;
     }
     .header-middle__heading_text {
         font-size: 25px;
@@ -393,14 +393,13 @@
         font-size: 13px;
         font-weight: 400;
         line-height: 20px;
-        float: none;
-        margin: -20px 0 0 280px;
+        float: right;
         padding: 0;
         text-align: left;
         color: #fff;
     }
     .social_footer {
-        margin: 10px 0 -8px 120px;
+        margin: 10px 0 -5px 120px;
     }
     .container-footer {
         position: relative;

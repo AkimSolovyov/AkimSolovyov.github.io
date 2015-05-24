@@ -3,6 +3,7 @@
     font-size: 13px;
     position: relative;
     width: 100%;
+    min-width: 320px;
     height: auto;
     margin: 0;
     padding: 0;
@@ -12,10 +13,10 @@
 
 .container {
     position: relative;
-    width: 990px;
+    width: 980px;
     height: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 2px 0 2px;
 }
 
 .container-border {
@@ -41,7 +42,7 @@
 
 .header-middle {
     width: 100%;
-    padding: 75px 0 54px 0;
+    padding: 76px 0 54px 0;
     color: #fff;
     background: url('../img/header_bg.jpg') no-repeat 50% 50%;
     background-size: cover;
@@ -463,7 +464,7 @@
 .pros-item {
     display: inline-block;
     width: 290px;
-    margin-right: 55px;
+    margin-right: 50px;
     padding: 0;
 }
 
@@ -516,10 +517,8 @@
     padding-top: 5px;
     -webkit-transition-duration: .3s;
     transition-duration: .3s;
-    -webkit-transition-property: border-color, color;
-    transition-property: border-color, color;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    -webkit-transition-property: border-color, color, background;
+    transition-property: border-color, color, background;
     text-align: center;
     vertical-align: middle;
     text-decoration: none;
@@ -528,48 +527,19 @@
     border: 1px solid #e8e8e8;
     border-radius: 50%;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
 }
 
-.pros-item__link:before {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: '';
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    -webkit-transition-duration: .5s;
-    transition-duration: .5s;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: transform;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-    border-radius: 50%;
-    background: #3498db;
-}
+
 
 .pros-item__link:hover,
 .pros-item__link:focus,
 .pros-item__link:active {
     color: white;
     border-color: transparent;
+    background: #3498db;
 }
 
-.pros-item__link:hover:before,
-.pros-item__link:focus:before,
-.pros-item__link:active:before {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-}
-
-.pros-item__link:active:before {
+.pros-item__link:active {
     background: #e74c3c;
 }
 
@@ -606,7 +576,7 @@
 .slider-control:active:not(.slider-control-inactive) {
     color: white;
     border-color: transparent;
-    background-color: rgba(52, 152, 219, .9);
+    background-color: #3498db;
 }
 
 .slider-control:active:not(.slider-control-inactive) {
