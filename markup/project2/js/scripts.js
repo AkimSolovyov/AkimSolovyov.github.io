@@ -5,8 +5,11 @@ $(document).ready(function () {
         $('#header-form_adress-content').val($('#header-form_adress').html());
     });
 
-    $('.header-form__input:not(#header-form_select)').click(function () {
-        document.execCommand('selectAll', false, null)
-
+    $('.header-form__input:not(#header-form_select, #header-form_adress)').click(function () {
+       this.setSelectionRange(0, this.value.length)
     });
+
+    $('#header-form_adress').click(function () {
+        document.execCommand('selectAll', false, null)
+      });
 })
