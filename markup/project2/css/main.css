@@ -187,6 +187,7 @@
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-appearance: none;
+    border-radius: 1px;
 }
 
 #header-form_select:hover,
@@ -196,12 +197,11 @@
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
     -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
     -webkit-appearance: none;
+    border-radius: 1px;
 }
-
-
 
 #header-form_select {
     line-height: 35px;
