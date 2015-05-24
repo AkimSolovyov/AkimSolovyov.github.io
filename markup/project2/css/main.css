@@ -176,7 +176,7 @@
     position: relative;
     -webkit-transition-duration: .3s;
     transition-duration: .3s;
-    -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+    -webkit-transition-property: box-shadow, -webkit-transform;
     transition-property: box-shadow, transform;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -186,6 +186,7 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-appearance: none;
 }
 
 #header-form_select:hover,
@@ -197,6 +198,7 @@
     transform: scale(1.1);
         box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
     -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
+    -webkit-appearance: none;
 }
 
 
