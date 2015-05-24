@@ -195,15 +195,11 @@
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
 }
 
-#header-form_select:hover,
-.header-form__input:hover,
-.header-form__input:focus,
-.header-form__input:active {
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
-}
+
 
 #header-form_select {
     line-height: 35px;
