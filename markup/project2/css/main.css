@@ -147,7 +147,7 @@
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
+   //-moz-osx-font-smoothing: grayscale;
     -webkit-appearance: none;
 }
 
@@ -181,7 +181,7 @@
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
+   // -moz-osx-font-smoothing: grayscale;
 }
 
 #header-form_select:after {
@@ -270,7 +270,7 @@
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
+   // -moz-osx-font-smoothing: grayscale;
 }
 
 .header-form__submit:hover,
@@ -381,7 +381,7 @@
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
+   // -moz-osx-font-smoothing: grayscale;
 }
 
 @-webkit-keyframes link-pulse {
@@ -578,7 +578,7 @@
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
+   // -moz-osx-font-smoothing: grayscale;
 }
 
 .slider-control:hover:not(.slider-control-inactive),
@@ -709,7 +709,7 @@
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
+   // -moz-osx-font-smoothing: grayscale;
 }
 
 .bottom-block__button:after {
