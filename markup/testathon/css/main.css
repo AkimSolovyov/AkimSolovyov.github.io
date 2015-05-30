@@ -1,31 +1,31 @@
 @font-face {
     font-family: HSPelight;
-    src: url(../fonts/hypatiasanspro-extralight.ttf);
+    src: url(fonts/hypatiasanspro-extralight.ttf);
 }
 
 @font-face {
     font-family: HSPlight;
-    src: url(../fonts/hypatiasanspro-light.ttf);
+    src: url(fonts/hypatiasanspro-light.ttf);
 }
 
 @font-face {
     font-family: HSPregular;
-    src: url(../fonts/hypatiasanspro-regular.ttf);
+    src: url(fonts/hypatiasanspro-regular.ttf);
 }
 
 @font-face {
     font-family: HSPbold;
-    src: url(../fonts/hypatiasanspro-bold.ttf);
+    src: url(fonts/hypatiasanspro-bold.ttf);
 }
 
 @font-face {
     font-family: HSPsbold;
-    src: url(../fonts/hypatiasanspro-semibold.ttf);
+    src: url(fonts/hypatiasanspro-semibold.ttf);
 }
 
 @font-face {
     font-family: HSPblack;
-    src: url(../fonts/hypatiasanspro-black.ttf);
+    src: url(fonts/hypatiasanspro-black.ttf);
 }
 
 .page {
