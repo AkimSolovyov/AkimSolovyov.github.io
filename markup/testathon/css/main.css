@@ -1,7 +1,8 @@
 
 @font-face {
     font-family: HSPlight;
-    src: url(../fonts/hypatiasanspro-light.ttf);
+    src: url(/hypatiasanspro-light.ttf);
+
 }
 
 .page {
@@ -9,7 +10,7 @@
     margin: 0 auto;
     border: 0;
     background: #fff;
-    font-family: HSPlight, Arial, sans-serif;
+    font-family:  HSPlight, Arial, sans-serif;
     font-weight: normal;
     font-size: 16px;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
@@ -116,7 +117,7 @@
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 23px;
+    font-size: 20px;
     padding-top: 20px;
     margin-top: 35px;
     -webkit-transition-duration: .5s;
@@ -202,7 +203,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 23px;
+    font-size: 20px;
     padding-top: 20px;
     margin-top: 35px;
     -webkit-transition-duration: .5s;
