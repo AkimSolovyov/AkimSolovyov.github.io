@@ -15,6 +15,7 @@
     color: #000;
     font-size: 16px;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+       -webkit-transform: translateZ(0);
 }
 
 .container {
@@ -307,9 +308,9 @@ padding-top: 60px;
     background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
     /* W3C */
-
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+    transition-delay: 0.3s;
     -webkit-transition-property: transform, opacity;
     transition-property: transform, opacity;
 }
@@ -320,6 +321,7 @@ padding-top: 60px;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     /* move the element up by 5px */
+    transition-delay: 0.3s;
 }
 
 .org-block__link:hover:before,
@@ -616,16 +618,12 @@ padding-top: 60px;
 }
 
 .bottom-nav__link-1:hover:before,
-.bottom-nav__link-1:focus:before,
 .bottom-nav__link-1:active:before,
 .bottom-nav__link-2:hover:before,
-.bottom-nav__link-2:focus:before,
 .bottom-nav__link-2:active:before,
 .bottom-nav__link-3:hover:before,
-.bottom-nav__link-3:focus:before,
 .bottom-nav__link-3:active:before,
 .bottom-nav__link-4:hover:before,
-.bottom-nav__link-4:focus:before,
 .bottom-nav__link-4:active:before {
     -webkit-animation-name: icon-pulse-grow;
     animation-name: icon-pulse-grow;
