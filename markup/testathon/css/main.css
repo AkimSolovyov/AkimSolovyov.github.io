@@ -12,6 +12,7 @@
     background: #fff;
     font-family: HSPlight, Arial, sans-serif;
     font-weight: normal;
+    color: #000;
     font-size: 16px;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
 }
@@ -236,6 +237,10 @@
 
 .orgs {
     background: #fff;
+}
+
+.orgs .block-header:first-of-type {
+padding-top: 60px;
 }
 
 .org-block {
@@ -503,14 +508,14 @@
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .staff-item__photo-leaders {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .staff-item__name {
