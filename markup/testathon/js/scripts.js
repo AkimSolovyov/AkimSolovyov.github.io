@@ -4,7 +4,7 @@
           function setHeight() {
     windowHeight = $(window).innerHeight();
     $('.for-tester').css('min-height', windowHeight-425);
-    $('.for-startup').css('min-height', windowHeight);
+    $('.for-startup').css('min-height', windowHeight-70);
               $('.for-startup').css('padding-top', windowHeight/10);
     $('.orgs').css('min-height', windowHeight);
     $('.staff').css('min-height', windowHeight);
