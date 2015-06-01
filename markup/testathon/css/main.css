@@ -27,7 +27,7 @@
     display: block;
     position: relative;
     width: 100%;
-    margin: 0;
+    margin: 10px 0 10px 0;
     padding: 0;
     text-align: left;
 }
@@ -316,9 +316,9 @@
 
 .partners-block {
     position: relative;
-    height: 230px;
+    height: 210px;
     margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
     background: #f8f8f8;
 }
 
