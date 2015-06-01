@@ -225,17 +225,9 @@
 .for-tester__reg-button-disabled {
     background: #acacac;
     pointer-events: none;
+    padding: 10px 5px;
 }
 
-.for-tester__reg-button-disabled:before {
-    content: 'Регистрация скоро откроется';
-    position: absolute;
-    background: #acacac;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding-top: 10px;
-}
 
 .for-startup__reg-button:hover,
 .for-startup__reg-button:active,
