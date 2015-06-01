@@ -1,8 +1,6 @@
-
 @font-face {
     font-family: HSPlight;
     src: url(../fonts/HypatiaSansPro-Light.ttf);
-
 }
 
 .page {
@@ -224,6 +222,21 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.for-tester__reg-button-disabled {
+    background: #acacac;
+    pointer-events: none;
+}
+
+.for-tester__reg-button-disabled:before {
+    content: 'Регистрация скоро откроется';
+    position: absolute;
+    background: #acacac;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+}
+
 .for-startup__reg-button:hover,
 .for-startup__reg-button:active,
 .for-startup__reg-button:focus {
@@ -239,7 +252,7 @@
 }
 
 .orgs .block-header:first-of-type {
-padding-top: 60px;
+    padding-top: 60px;
 }
 
 .org-block {
@@ -283,7 +296,6 @@ padding-top: 60px;
 
 @media only screen and (max-width: 1080px) {
     .org-block__content {
-
         right: 8%;
     }
 }
@@ -467,7 +479,6 @@ padding-top: 60px;
     width: 190px;
     margin: 35px 15px;
 }
-
 
 .staff-item__photo {
     width: 140px;
