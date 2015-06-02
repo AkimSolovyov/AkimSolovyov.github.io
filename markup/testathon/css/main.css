@@ -228,7 +228,6 @@
     padding: 10px 5px;
 }
 
-
 .for-startup__reg-button:hover,
 .for-startup__reg-button:active,
 .for-startup__reg-button:focus {
@@ -397,7 +396,6 @@
 
 .partners-block__logo {
     height: 60px;
-
 }
 
 .manager-contacts {
@@ -458,6 +456,7 @@
 .staff {
     background: url(../images/background.jpg) no-repeat 50% 50%;
     background-size: cover;
+    padding-bottom: 10px;
 }
 
 .staff-item {
@@ -498,6 +497,56 @@
     font-size: 15px;
 }
 
+.photos-block {
+    padding-bottom: 50px;
+    background: #fff;
+}
+
+.photos-block__text {
+    display: inline-block;
+    font-size: 20px;
+    width: 670px;
+    margin-bottom: 25px;
+}
+
+.photos-block__text-strike {
+    text-decoration: line-through;
+}
+
+.photos-block__link {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ff6e00;
+    font-weight: 600;
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -webkit-transition-property: color;
+    transition-property: color;
+}
+
+.photos-block__link:hover,
+.photos-block__link:focus .photos-block__link:active {
+    color: #1b1bc4;
+}
+
+.gallery__item {
+    width: 285px;
+}
+
+.gallery {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gallery-zoomed {
+    display: inline-block;
+}
+
+.gallery-zoomed .gallery__item {
+    width: 100%;
+}
+
 .bottom-nav {
     width: 100%;
     height: 50px;
@@ -510,7 +559,7 @@
 .bottom-nav__element {
     position: relative;
     display: inline-block;
-    width: 220px;
+    width: 180px;
     height: 60px;
     list-style: none;
     padding-bottom: 10px;
@@ -538,7 +587,7 @@
     content: "\f0a9";
     position: absolute;
     right: 1px;
-    padding: 0 10px;
+    padding: 0 5px;
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -550,7 +599,7 @@
     content: "\f0a9";
     position: absolute;
     right: 1px;
-    padding: 0 30px;
+    padding: 0 23px;
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -561,8 +610,8 @@
 .bottom-nav__link-3:before {
     content: "\f0a9";
     position: absolute;
-    right: -3px;
-    padding: 0 1px;
+    right: -8px;
+    padding: 0 0;
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -574,7 +623,19 @@
     content: "\f0aa";
     position: absolute;
     right: 1px;
-    padding: 0 25px;
+    padding: 0 18px;
+    font-family: FontAwesome;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.bottom-nav__link-5:before {
+    content: "\f0aa";
+    position: absolute;
+    right: 1px;
+    padding: 0 12px;
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
