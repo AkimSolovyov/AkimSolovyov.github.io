@@ -68,7 +68,7 @@ function show(id) {
 
     $("body,html").animate({
         "scrollTop": h
-    }, 1500, function () {
+    }, 1000, function () {
         //$('.bottom_nav_bg').css('display', 'none');
         // $('.s' + id + ' .bottom_nav_bg').css('display', 'block');
     });

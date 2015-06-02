@@ -537,10 +537,15 @@
 .gallery {
     width: 100%;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .gallery-zoomed {
     display: inline-block;
+}
+
+.gallery-zoomed:hover {
+    cursor: move;
 }
 
 .gallery-zoomed .gallery__item {
