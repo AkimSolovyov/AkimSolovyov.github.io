@@ -655,7 +655,9 @@
 .bottom-nav__link-3:hover:before,
 .bottom-nav__link-3:active:before,
 .bottom-nav__link-4:hover:before,
-.bottom-nav__link-4:active:before {
+.bottom-nav__link-4:active:before,
+.bottom-nav__link-5:hover:before,
+.bottom-nav__link-5:active:before {
     -webkit-animation-name: icon-pulse-grow;
     animation-name: icon-pulse-grow;
     -webkit-animation-duration: 0.3s;
