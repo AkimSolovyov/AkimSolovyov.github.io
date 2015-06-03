@@ -7,7 +7,8 @@ $(document).ready(function () {
         $('.for-startup').css('padding-top', windowHeight / 10);
         $('.orgs').css('min-height', windowHeight);
         $('.staff').css('min-height', windowHeight);
-        $('.photos-block').css('min-height', windowHeight + 50);
+        $('.photos-block').css('min-height', windowHeight - 20);
+        $('.photos-block').css('padding-top', windowHeight / 10);
     };
     setHeight();
 

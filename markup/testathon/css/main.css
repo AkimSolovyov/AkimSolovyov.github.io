@@ -531,17 +531,19 @@
 }
 
 .gallery__item {
-    width: 285px;
+    width: 275px;
 }
 
 .gallery {
-    width: 100%;
+    width: 935px;
     margin: 0 auto;
     cursor: pointer;
 }
 
 .gallery-zoomed {
     display: inline-block;
+    margin: 0 auto;
+    width: 935px;
 }
 
 .gallery-zoomed:hover {
@@ -549,7 +551,7 @@
 }
 
 .gallery-zoomed .gallery__item {
-    width: 100%;
+    width: 935px;
 }
 
 .bottom-nav {
@@ -563,9 +565,11 @@
 
 .bottom-nav__element {
     position: relative;
+    left: -25px;
     display: inline-block;
-    width: 180px;
+    width: 175px;
     height: 60px;
+    margin-right: 10px;
     list-style: none;
     padding-bottom: 10px;
     text-align: center;
@@ -592,7 +596,7 @@
     content: "\f0a9";
     position: absolute;
     right: 1px;
-    padding: 0 5px;
+    padding: 0;
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -604,7 +608,7 @@
     content: "\f0a9";
     position: absolute;
     right: 1px;
-    padding: 0 23px;
+    padding: 0 20px;
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -615,8 +619,8 @@
 .bottom-nav__link-3:before {
     content: "\f0a9";
     position: absolute;
-    right: -8px;
-    padding: 0 0;
+    right: -12px;
+    padding: 0;
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -628,7 +632,7 @@
     content: "\f0aa";
     position: absolute;
     right: 1px;
-    padding: 0 18px;
+    padding: 0 15px;
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -640,7 +644,7 @@
     content: "\f0a9";
     position: absolute;
     right: 1px;
-    padding: 0 12px;
+    padding: 0 8px;
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
