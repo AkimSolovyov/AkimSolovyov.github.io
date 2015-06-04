@@ -709,8 +709,8 @@
 .bottom-nav__link-1:before {
     content: "\f0a9";
     position: absolute;
-    right: 1px;
-    padding: 0;
+    right: 0;
+    padding: 0 1px;
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -734,7 +734,7 @@
     content: "\f0a9";
     position: absolute;
     right: -12px;
-    padding: 0;
+    padding: 0 1px;
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
