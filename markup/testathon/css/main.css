@@ -42,7 +42,11 @@
 .logo {
     position: relative;
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+.logo__img {
+    height: 105px;
 }
 
 .top-info {
@@ -315,7 +319,7 @@
 
 .partners-block {
     position: relative;
-    height: 210px;
+    height: 285px;
     margin-top: 20px;
     padding-top: 30px;
     background: #f8f8f8;

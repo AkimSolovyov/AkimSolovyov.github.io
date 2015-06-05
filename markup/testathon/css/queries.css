@@ -2,6 +2,9 @@
     .container {
         width: 320px;
     }
+    .logo {
+        margin-top: 40px;
+    }
     .logo__img {
         width: 320px;
         height: 100%;
@@ -88,7 +91,7 @@
     }
     .partners-block {
         position: relative;
-        height: 750px;
+        height: 830px;
         margin: 0 auto;
         padding-top: 10px;
         text-align: center;
@@ -350,7 +353,7 @@
     }
     .partners-block {
         position: relative;
-        height: 750px;
+        height: 830px;
         margin: 0 auto;
         padding-top: 10px;
         text-align: center;
@@ -577,7 +580,7 @@
     }
     .partners-block {
         position: relative;
-        height: 450px;
+        height: 490px;
         margin: 0 auto;
         padding-top: 10px;
         text-align: center;
