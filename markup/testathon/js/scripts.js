@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     function setHeight() {
         windowHeight = $(window).innerHeight();
+        windowWidth = $(window).innerWidth();
         $('.for-tester').css('min-height', windowHeight - 425);
         $('.for-startup').css('min-height', windowHeight - 50);
         $('.for-startup').css('padding-top', windowHeight / 10);
@@ -12,34 +13,61 @@ $(document).ready(function () {
     };
     setHeight();
     toggleMenu();
+    initGallery();
 
     $(window).resize(function () {
         setHeight();
+        initGallery();
     });
 
 
 
+    function initGallery() {
 
-    $('.gallery-zoomed').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        arrows: false,
-        fade: true,
-        cssEase: 'linear',
-        autoplay: true,
-        autoplaySpeed: 4000,
-        asNavFor: '.gallery'
-    });
+        if (windowWidth > 420) {
+            $('.gallery-zoomed').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows: false,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                cssEase: 'linear',
+                asNavFor: '.gallery'
+            });
 
-    $('.gallery').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.gallery-zoomed',
-        dots: false,
-        centerMode: true,
-        focusOnSelect: true
-    });
+            $('.gallery').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.gallery-zoomed',
+                dots: false,
+                centerMode: true,
+                focusOnSelect: true
+            });
+
+        } else {
+            $('.gallery-zoomed').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows: false,
+                fade: true,
+                cssEase: 'linear',
+                asNavFor: '.gallery'
+            });
+
+            $('.gallery').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.gallery-zoomed',
+                dots: false,
+                centerMode: true,
+                focusOnSelect: true
+            });
+
+        }
+    };
 
 
     function toggleMenu() {
@@ -80,10 +108,7 @@ function show(id) {
 
     $("body,html").animate({
         "scrollTop": h
-    }, 1000, function () {
-        //$('.bottom_nav_bg').css('display', 'none');
-        // $('.s' + id + ' .bottom_nav_bg').css('display', 'block');
-    });
+    }, 1000);
 
 }
 
