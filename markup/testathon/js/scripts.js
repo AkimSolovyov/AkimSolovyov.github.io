@@ -11,6 +11,7 @@ $(document).ready(function () {
         $('.photos-block').css('padding-top', windowHeight / 10);
     };
     setHeight();
+    toggleMenu();
 
     $(window).resize(function () {
         setHeight();
@@ -40,7 +41,17 @@ $(document).ready(function () {
         focusOnSelect: true
     });
 
+
+    function toggleMenu() {
+        $('.bottom-nav__btn').click(function () {
+            $('.bottom-nav').toggleClass('bottom-nav-expand')
+        })
+
+    }
+
 });
+
+
 
 var menu = 1;
 var omenu = 1;
@@ -76,4 +87,10 @@ function show(id) {
 
 }
 
-/********************Gallery**********************/
+function toggle_menu() {
+    $(".bottom-nav__link-hide").click(function () {
+        $(this).hide();
+        $(".bottom-nav__link-show").show();
+        console.log("click");
+    })
+}

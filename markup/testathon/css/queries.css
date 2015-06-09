@@ -178,11 +178,15 @@
     }
     .bottom-nav {
         width: 100%;
-        height: 190px;
+        height: 50px;
         position: fixed;
         bottom: 0;
         background: url(../images/nav_bg.png);
         z-index: 999;
+    }
+    .bottom-nav-expand {
+        display: block;
+        height: 220px;
     }
     .bottom-nav__element {
         position: relative;
@@ -241,8 +245,17 @@
         right: 0;
         padding: 1px;
     }
+    .bottom-nav__btn:before,
+    .bottom-nav__btn:after {
+        content: "\f039";
+        position: absolute;
+        right: -145px;
+        top: -10px;
+        padding: 1px;
+        display: inline-block;
+    }
     .footer {
-        height: 270px;
+        height: 130px;
         padding: 0;
     }
     .footer__block {
@@ -480,6 +493,9 @@
         margin-bottom: 5px;
         text-align: center;
     }
+    .bottom-nav__element-toggle {
+        display: none;
+    }
     .bottom-nav__link {
         width: 180px;
         height: 20px;
@@ -659,6 +675,9 @@
         list-style: none;
         padding-bottom: 0;
         text-align: center;
+    }
+    .bottom-nav__element-toggle {
+        display: none;
     }
     .bottom-nav__link {
         width: 200px;
