@@ -440,7 +440,7 @@
         font-weight: 600;
     }
     .staff {
-        padding-bottom: 250px;
+        padding-bottom: 0;
     }
     .staff-item {
         display: inline-block;
@@ -703,11 +703,11 @@
         margin-left: 20px;
         width: 320px;
         font-size: 18px;
-        margin: 20px;
-        10px;
+        margin: 10px 10px 40px 10px;
     }
     .manager-contacts__link {
-        top: 0;
+        top: -30px;
+        left: -30px;
         margin: 0 0 0 -10px;
         font-size: 18px;
         text-decoration: none;
@@ -715,7 +715,7 @@
         font-weight: 600;
     }
     .staff {
-        padding-bottom: 250px;
+        padding-bottom: 0;
     }
     .staff-item {
         display: inline-block;
