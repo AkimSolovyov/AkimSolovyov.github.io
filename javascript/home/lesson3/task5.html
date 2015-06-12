@@ -9,6 +9,32 @@
 <body>
 
     <script>
+        function renderChessboard(x, y) {
+            for (i = 1; i <= y; i++) {
+
+                if (i % 2) {
+                    for (j = 1; j <= x; j++) {
+                        if (j % 2) {
+                            document.write("#");
+                        } else {
+                            document.write("&nbsp");
+                        }
+                    }
+
+                } else {
+                    for (j = 1; j <= x; j++) {
+                        if (j % 2) {
+                            document.write("&nbsp");
+                        } else {
+
+                            document.write("#");
+                        }
+                    }
+                }
+                document.write('<br/>');
+            }
+        }
+        renderChessboard(8, 8);
     </script>
 
 </body>

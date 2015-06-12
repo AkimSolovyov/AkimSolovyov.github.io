@@ -9,6 +9,27 @@
 <body>
 
     <script>
+        function chekingPrime(number) {
+            if (number < 2) return false;
+            for (var i = 2; i < number; i++) {
+                if (number % i == 0)
+                    return false;
+            }
+            return true;
+        }
+
+
+
+        function searchingPrimes(from, till) {
+
+            for (i = from; i <= till; i++) {
+                if (chekingPrime(i)) {
+                    document.writeln(i)
+                };
+            }
+        }
+
+        searchingPrimes(2, 10); // from 2 to 10;
     </script>
 
 </body>
