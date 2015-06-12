@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task4</title>
+</head>
+
+<body>
+
+    <script>
+        // i've solved it already on CodeWars :)
+
+        var array = [];
+
+        function fizzBuzz(stringOne, stringTwo, numOne, numTwo) {
+            var stringOne = stringOne || "Fizz",
+                stringTwo = stringTwo || "Buzz",
+                numOne = numOne || 3,
+                numTwo = numTwo || 5;
+
+
+            for (var i = 1; i < 100; i++) {
+                if (!(i % numOne)) {
+                    if (!(i % numTwo)) {
+                        array.push(stringOne + stringTwo);
+
+                    } else {
+                        array.push(stringOne);
+
+                    }
+                } else if (!(i % numTwo)) {
+                    array.push(stringTwo);
+
+                } else {
+                    array.push(i);
+
+                }
+            }
+            return array;
+        };
+
+        function showArray() {
+            for (var j = 0; j < array.length; j++) {
+                document.write("array[" + j + "]=" + array[j] + "<br />");
+                console.log(array[j]);
+            }
+        }
+
+
+        fizzBuzz();
+        showArray();
+    </script>
+
+</body>
+
+</html>
