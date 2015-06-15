@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task1</title>
+</head>
+
+<body>
+
+    <script>
+        //  1, 1, 2, 3, 5, 8, 13, 21, 34…
+        // How i hate this stuff
+
+
+        // recursive variant
+        function fib(n) {
+            var temp;
+            if (n >= 2) {
+                return temp = fib(n - 1) + fib(n - 2)
+            } else {
+                return temp = n;
+            }
+        };
+
+        // cycle variant
+        function fib2(n) {
+            var a = 0,
+                b = 1,
+                c = 1;
+
+            for (var i = 1; i < n; i++) {
+                c = a + b;
+                a = b;
+                b = c;
+            }
+            return c;
+        };
+
+        // array variant
+        function fib3(n) {
+            var sequence = [];
+            for (var i = 0; i < n; i++) {
+
+                if (i >= 2) {
+                    sequence[i] = sequence[i - 1] + sequence[i - 2];
+                } else {
+                    sequence[0] = 1;
+                    sequence[1] = 1;
+                }
+            }
+
+            return sequence[n - 1];
+        };
+
+
+        // Magic...err.. Math :)
+        // Fn = (pow(((1+ sqrt(5))/2)n) - pow(((1- sqrt(5))/2)n)) / sqrt(5);
+
+        function fib4(n) {
+            var sqrt5 = Math.sqrt(5),
+                a = (1 + sqrt5) / 2,
+                b = (1 - sqrt5) / 2;
+            return Math.floor((Math.pow(a, n) - Math.pow(b, n)) / sqrt5);
+
+        };
+
+
+
+
+
+        document.write(fib(20) + " Через рекурсию" + "<br/>");
+        document.write(fib2(20) + " Через цикл" + "<br/>");
+        document.write(fib3(20) + " Через массив" + "<br/>");
+        document.write(fib4(200) + " Через матан" + "<br/>");
+    </script>
+
+</body>
+
+</html>
