@@ -9,6 +9,14 @@
 <body>
 
     <script>
+        function ellipsis(txt, threshold) {
+            if (txt.length > threshold) {
+                txt = txt.slice(0, threshold) + "...";
+            }
+            return txt;
+        };
+
+        document.write(ellipsis("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam", 50));
     </script>
 
 </body>
