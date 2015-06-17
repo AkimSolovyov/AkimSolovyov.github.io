@@ -319,7 +319,7 @@
 
 .partners-block {
     position: relative;
-    height: 285px;
+    height: 385px;
     margin-top: 20px;
     padding-top: 30px;
     background: #f8f8f8;
@@ -373,8 +373,6 @@
     opacity: 0;
     background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-    /* W3C */
-
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: transform, opacity;
@@ -386,7 +384,6 @@
 .partners-block__link:active {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    /* move the element up by 5px */
 }
 
 .partners-block__link:hover:before,
@@ -395,11 +392,18 @@
     opacity: 1;
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
-    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
 .partners-block__logo {
+    height: 55px;
+}
+
+.partners-block__logo-big {
     height: 60px;
+}
+
+.partners-block__logo-small {
+    height: 50px;
 }
 
 .manager-contacts {

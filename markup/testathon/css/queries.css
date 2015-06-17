@@ -93,7 +93,7 @@
     }
     .partners-block {
         position: relative;
-        height: 830px;
+        height: 1050px;
         margin: 0 auto;
         padding-top: 10px;
         text-align: center;
@@ -107,16 +107,17 @@
         height: 50px;
         font-size: 20px;
     }
+    .partners-block__text-invisible {
+        display: none;
+    }
     .row {
         text-align: center;
         margin: 0;
     }
     .partners-block__link {
-        display: block;
-        margin: 20px 10px 20px 0;
-    }
-    .partners-block__logo {
-        height: 55px;
+        width: 230px;
+        display: inline-block;
+        margin: 10px 10px 10px 0;
     }
     .partners-block__text-invisible {
         display: none;
@@ -389,7 +390,7 @@
     }
     .partners-block {
         position: relative;
-        height: 830px;
+        height: 1050px;
         margin: 0 auto;
         padding-top: 10px;
         text-align: center;
@@ -408,11 +409,9 @@
         margin: 0;
     }
     .partners-block__link {
-        display: block;
-        margin: 20px 10px 20px 0;
-    }
-    .partners-block__logo {
-        height: 55px;
+        width: 230px;
+        display: inline-block;
+        margin: 10px 10px 10px 0;
     }
     .partners-block__text-invisible {
         display: none;
@@ -664,7 +663,7 @@
     }
     .partners-block {
         position: relative;
-        height: 830px;
+        height: 930px;
         margin: 0 auto;
         padding-top: 10px;
         text-align: center;
@@ -683,11 +682,9 @@
         margin: 0;
     }
     .partners-block__link {
-        display: block;
+        width: 230px;
+        display: inline-block;
         margin: 20px 10px 20px 0;
-    }
-    .partners-block__logo {
-        height: 55px;
     }
     .partners-block__text-invisible {
         display: none;
@@ -894,7 +891,7 @@
     }
     .partners-block {
         position: relative;
-        height: 490px;
+        height: 610px;
         margin: 0 auto;
         padding-top: 10px;
         text-align: center;
@@ -912,10 +909,7 @@
         margin: 0 0 20px 0;
     }
     .partners-block__link {
-        margin: 10px 5px 5px 0;
-    }
-    .partners-block__logo {
-        height: 50px;
+        margin: 10px 20px 10px 0;
     }
     .partners-block__text-invisible {
         display: none;
