@@ -98,9 +98,6 @@
 .menu-item__link:hover {
     border-radius: 3px;
     background: -webkit-linear-gradient(90deg, #d7e0e4 0%, #fefeff 100%);
-    background: -moz-linear-gradient(90deg, #d7e0e4 0%, #fefeff 100%);
-    background: -o-linear-gradient(90deg, #d7e0e4 0%, #fefeff 100%);
-    background: -ms-linear-gradient(90deg, #d7e0e4 0%, #fefeff 100%);
     background: linear-gradient(0deg, #d7e0e4 0%, #fefeff 100%);
     color: #074162;
 }
@@ -112,7 +109,6 @@
     top: 48px;
     left: 0;
     border-radius: 5px;
-    background: -moz-linear-gradient(270deg, rgba(7, 65, 98, 1) 0%, rgba(6, 53, 80, 1) 73%, rgba(4, 38, 57, 1) 100%);
     /* ff3.6+ */
 
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(7, 65, 98, 1)), color-stop(73%, rgba(6, 53, 80, 1)), color-stop(100%, rgba(4, 38, 57, 1)));
@@ -120,11 +116,7 @@
 
     background: -webkit-linear-gradient(270deg, rgba(7, 65, 98, 1) 0%, rgba(6, 53, 80, 1) 73%, rgba(4, 38, 57, 1) 100%);
     /* safari5.1+,chrome10+ */
-
-    background: -o-linear-gradient(270deg, rgba(7, 65, 98, 1) 0%, rgba(6, 53, 80, 1) 73%, rgba(4, 38, 57, 1) 100%);
     /* opera 11.10+ */
-
-    background: -ms-linear-gradient(270deg, rgba(7, 65, 98, 1) 0%, rgba(6, 53, 80, 1) 73%, rgba(4, 38, 57, 1) 100%);
     /* ie10+ */
 
     background: linear-gradient(180deg, rgba(7, 65, 98, 1) 0%, rgba(6, 53, 80, 1) 73%, rgba(4, 38, 57, 1) 100%);
@@ -165,17 +157,12 @@
 .submenu-item__link:hover {
     border-radius: 3px;
     background: -webkit-linear-gradient(90deg, #d7e0e4 0%, #fefeff 100%);
-    background: -moz-linear-gradient(90deg, #d7e0e4 0%, #fefeff 100%);
-    background: -o-linear-gradient(90deg, #d7e0e4 0%, #fefeff 100%);
-    background: -ms-linear-gradient(90deg, #d7e0e4 0%, #fefeff 100%);
     background: linear-gradient(0deg, #d7e0e4 0%, #fefeff 100%);
     color: #074162;
 }
 
 .content {
     clear: both;
-    -webkit-box-shadow: 1px 1px 36px -10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 1px 36px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 1px 1px 36px -10px rgba(0, 0, 0, 0.75);
     border-radius: 8px;
 }
@@ -191,7 +178,6 @@
 .breadcrumbs {
     height: 48px;
     width: 100%;
-    background: -moz-linear-gradient(269deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 40%, rgba(191, 191, 191, 1) 100%);
     /* ff3.6+ */
 
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(237, 237, 237, 1)), color-stop(40%, rgba(237, 237, 237, 1)), color-stop(100%, rgba(191, 191, 191, 1)));
@@ -199,11 +185,7 @@
 
     background: -webkit-linear-gradient(269deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 40%, rgba(191, 191, 191, 1) 100%);
     /* safari5.1+,chrome10+ */
-
-    background: -o-linear-gradient(269deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 40%, rgba(191, 191, 191, 1) 100%);
     /* opera 11.10+ */
-
-    background: -ms-linear-gradient(269deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 40%, rgba(191, 191, 191, 1) 100%);
     /* ie10+ */
 
     background: linear-gradient(181deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 40%, rgba(191, 191, 191, 1) 100%);
@@ -227,6 +209,8 @@
     height: 26px;
     border-left: solid 1px #ccc;
     border-top: solid 2px #ccc;
+    -webkit-transform: rotate(134deg) skewX(-10deg) skewY(-10deg);
+    -ms-transform: rotate(134deg) skewX(-10deg) skewY(-10deg);
     transform: rotate(134deg) skewX(-10deg) skewY(-10deg);
     content: '';
 }
