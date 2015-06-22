@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task2</title>
+</head>
+
+<body>
+
+    <script>
+        var image = {
+            width: 100,
+            height: 400,
+            title: 'Cool image'
+        };
+
+        function multiplyNumeric(obj) {
+            var result = {};
+            for (var key in obj) {
+                if (!(isNaN(obj[key]))) {
+                    result[key] = obj[key] * 2;
+                } else {
+                    result[key] = obj[key];
+                }
+            }
+            return result;
+        }
+        console.dir(image);
+        console.dir(multiplyNumeric(image));
+    </script>
+
+</body>
+
+</html>

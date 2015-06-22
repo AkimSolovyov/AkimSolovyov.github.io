@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task3</title>
+</head>
+
+<body>
+
+    <script>
+        function calc() {
+            var array = [],
+                number = 0,
+                result = 0;
+
+            do {
+                number = prompt("Введите число", " ");
+                console.log(number);
+
+                if (isNaN(number)) {
+                    alert("Вы ввели не число!");
+                    break;
+                }
+                array.push(+number);
+
+            } while (number != null)
+
+            for (var i = 0; i < array.length; i++) {
+                result += array[i];
+            }
+            return document.write("Сумма всех введенных чисел: " + result);
+        }
+
+        calc();
+    </script>
+
+</body>
+
+</html>

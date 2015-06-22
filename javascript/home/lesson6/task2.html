@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task2</title>
+</head>
+
+<body>
+
+    <script>
+        var arr = ['HTML', 'JavaScript', 'CSS'],
+            arrSorted = [];
+
+
+
+        function sortArray(arr) {
+            arrSorted = arr.slice().sort();
+
+            return arrSorted;
+        }
+
+        sortArray(arr);
+
+        console.dir(arrSorted); // CSS, HTML, JavaScript
+        console.dir(arr); // HTML, JavaScript, CSS (без изменений)
+    </script>
+
+</body>
+
+</html>

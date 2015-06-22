@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task4</title>
+</head>
+
+<body>
+
+    <script>
+        var vasya = {
+            name: 'Вася',
+            age: 23
+        };
+        var masha = {
+            name: 'Маша',
+            age: 18
+        };
+        var vovochka = {
+            name: 'Вовочка',
+            age: 6
+        };
+
+        var people = [vasya, masha, vovochka];
+
+        people.sort(function (a, b) {
+            if (a.age < b.age) return -1;
+            if (a.age > b.age) return 1;
+            return 0;
+        });
+
+        for (var i = 0; i < people.length; i++) {
+            console.log(people[i].name + " - " + people[i].age);
+        }
+    </script>
+
+</body>
+
+</html>
