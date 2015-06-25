@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task2</title>
+</head>
+
+<body>
+
+    <script>
+        function addf(x) {
+            return function(y) {
+                return function(){
+                    alert(x + y);
+                }
+            }
+        }
+
+     console.log(addf(3)(4)());
+    </script>
+
+</body>
+
+</html>
