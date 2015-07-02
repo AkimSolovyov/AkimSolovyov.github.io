@@ -16,6 +16,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" type="text/css" media="all" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/queries.css" />
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery-2.1.3.min.js"></script>
@@ -58,7 +59,7 @@
         </div>
     </div>
 
-    <div class="top-info">
+    <div class="top-info animated slideInDown">
         <div class="container">
             <span class="top-info__text">Александр Кузняк &amp; GoIT</span>
             <span class="top-info__text">Образовательный 3х-этапный интенсив от эксперта в области  QA</span>
@@ -69,68 +70,95 @@
         <div class="container">
             <h2 class="block-header">Ты:</h2>
 
-            <div class="for-tester-block">
+            <div class="for-tester-block animated fadeInLeft delay-01s">
                 <img class="for-tester-block__img" src="images/i-14.png" alt="for-tester-icon">
-                <p class="for-tester-block__text">Уже прочел Савина, находишь баги во всем вокруг, тестируешь ложку дома, но не чувствуешь фундамента под своим будущим домом QA – добро пожаловать!</p>
+                <ul class="block-list">
+                    <li class="block-list__item">Перечитал Савина?</li>
+                    <li class="block-list__item">Взахлёб тестируешь мир вокруг?</li>
+                    <li class="block-list__item">Пока ещё не чувствуешь фундамент своего QA-дома?</li>
+                </ul>
+
+                <p class="for-tester-block__text">Добро пожаловать!</p>
             </div>
 
-            <div class="for-tester-block">
+            <div class="for-tester-block animated animated fadeInLeft delay-05s">
                 <img class="for-tester-block__img" src="images/i-1.png" alt="for-tester-icon">
-                <p class="for-tester-block__text">Уже прошел курсы QA, но рекрутеры все еще не штурмуют тебя в Линкедине и осознаешь, что твоих скиллов на данный момент недостаточно, чтобы быть мечтой IT-компаний –добро пожаловать!</p>
+                <ul class="block-list">
+                    <li class="block-list__item">Выпускник курсов QA?</li>
+                    <li class="block-list__item">Рекрутеры не рвутся штурмовать LinkedIn?
+
+                    </li>
+                    <li class="block-list__item">Твоих скиллов недостаточно, чтобы быть мечтой IT-компаний?</li>
+                </ul>
+
+                <p class="for-tester-block__text">Присоединяйся!</p>
             </div>
 
-            <div class="for-tester-block">
+            <div class="for-tester-block animated fadeInLeft delay-1s">
                 <img class="for-tester-block__img" src="images/i-6.png" alt="for-tester-icon">
-                <p class="for-tester-block__text">Уже получил заветную должность Junior QA, но хочешь быть на работе лучшим и поскорее вырасти в Middle , хочешь расти и двигаться вперед и перенять практики лучших в области Quality Assurance – добро пожаловать</p>
+                <ul class="block-list">
+                    <li class="block-list__item">Уже работаешь Junior QA?</li>
+                    <li class="block-list__item">Стремишься быть лучшим и вырасти в Middle?</li>
+                    <li class="block-list__item">Жаждешь двигаться вперед и усваивать практики от лидеров в области QA?</li>
+                </ul>
+
+                <p class="for-tester-block__text">Прыгай, — нам по пути!</p>
             </div>
 
         </div>
 
-        <div class="container">
-            <h2 class="block-header">Спикер</h2>
+
+    </div>
+
+    <div class="container">
+        <h2 class="block-header">Спикер</h2>
+    </div>
+
+    <div class="arrow animated fadeIn fadeInLeftBig delay-0.5s">
+        <div class="arrow__background">
         </div>
-
-        <div class="org-block">
-            <div class="org-block__arrow">
+        <div class="arrow__content">
+            <div class="arrow__picture">
+                <img class="arrow__picture-img" src="images/alex_kuznyak.jpeg" alt="" />
             </div>
-            <div class="org-block__content">
-                <div class="org-block__logo">
-                    <img class="org-block__logo-img" src="images/i-1.png" alt="" />
-                </div>
-                <p class="org-block__text">Алекснадр Кузняк – QA Consultant and Practice Leader at Ciklum, более 11 лет в IT, из которых 6 - в QA. Ранее занимал позицию QA Lead в компании Software MacKiev, позицию Senior QA Engineer в компании EngagePoint, а после прошел пусть от QA Lead-а киевской команды тестировщиков в одной из крупнейших аутсорсиногвых компаний Украины - Ciklum до Cross-location QA Manager и Head of QA &amp; Support департамента компании. Непосредственно участвовал в 100+ проектах и провел более 300 собеседований. Имеет большую экспертизу как в области Quality Assurance, так и в области подбора персонала. так и в области подбора персонала, управления командами и отделами поддержки и тестирования, технического и процессуального консалтинга, проектного менеджмента, консалтинга в области развития Softskills и работы с иностранными клиентами.
-
-                </p>
-            </div>
+            <p class="arrow__text"><b>Алекснадр Кузняк</b> – QA Consultant and Practice Leader at Ciklum, более 11 лет в IT, из которых 6 - в QA. Ранее занимал позицию QA Lead в компании Software MacKiev, позицию Senior QA Engineer в компании EngagePoint, а после прошел пусть от QA Lead-а киевской команды тестировщиков в одной из крупнейших аутсорсиногвых компаний Украины - Ciklum до Cross-location QA Manager и Head of QA &amp; Support департамента компании.
+                <br>
+                <br> Непосредственно участвовал в 100+ проектах и провел более 300 собеседований.
+                <br>
+                <br>Имеет большую экспертизу как в области Quality Assurance, так и в области подбора персонала. так и в области подбора персонала, управления командами и отделами поддержки и тестирования, технического и процессуального консалтинга, проектного менеджмента, консалтинга в области развития Softskills и работы с иностранными клиентами.
+            </p>
         </div>
     </div>
 
+    <div class="event-schedule-wrapper s2">
 
-    <div class="event-schedule event-schedule-day1">
-        <div class="container">
-            <div class=event-schedule__block>
-                <h3 class="event-schedule__block-header">День 1 – 16 июля, 19.00 – 22.30</h3>
-                <h2 class="block-header">Test documentation</h2>
+        <div class="event-schedule event-schedule-day1">
+            <div class="container">
+                <div class=event-schedule__block>
+                    <h3 class="event-schedule__block-header">День 1</h3>
+                    <h4 class="event-schedule__block-sub-header">16 июля, 19.00 – 22.30</h4>
+                    <h2 class="block-header">Test documentation</h2>
 
-                <div class="event-schedule__block__inner-column event-schedule__block__inner-column-left">
+                    <div class="event-schedule__block__inner-column event-schedule__block__inner-column-left">
 
-                    <ol class="event-plan">
-                        <h3 class="event-plan__header">Пройдем:</h3>
-                        <li class="event-plan__item">Основные виды QA-артефактов для работы: ТестПланы, Чек-Листы, Тест-Кейсы.</li>
-                        <li class="event-plan__item">Какие проблемы решает, чем полезна, в чём создавать.</li>
-                        <li class="event-plan__item">Вопросы и ответы.</li>
-                        <li class="event-plan__item">Как подойти к созданию и архитектуре тест документации.</li>
-                        <li class="event-plan__item">Почему каждый проект должен иметь уникальную тест-документацию и как понять что нужно, а что нет.</li>
-                        <li class="event-plan__item">Чего ни в коем случае нельзя делать.</li>
-                        <li class="event-plan__item">Вопросы и ответы.</li>
-                        <li class="event-plan__item">Плохие и хорошие примеры - разбор вместе с аудиторией.</li>
-                        <li class="event-plan__item">Вопросы и ответы.</li>
-                    </ol>
-
+                        <ol class="event-plan">
+                            <h3 class="event-plan__header">Усвоишь:</h3>
+                            <li class="event-plan__item">Основные виды QA-артефактов для работы: ТестПланы, Чек-Листы, Тест-Кейсы.</li>
+                            <li class="event-plan__item">Какие проблемы решает, чем полезна, в чём создавать.</li>
+                            <li class="event-plan__item">Вопросы и ответы.</li>
+                            <li class="event-plan__item">Как подойти к созданию и архитектуре тест документации.</li>
+                            <li class="event-plan__item">Почему каждый проект должен иметь уникальную тест-документацию и как понять что нужно, а что нет.</li>
+                            <li class="event-plan__item">Чего ни в коем случае нельзя делать.</li>
+                            <li class="event-plan__item">Вопросы и ответы.</li>
+                            <li class="event-plan__item">Плохие и хорошие примеры - разбор вместе с аудиторией.</li>
+                            <li class="event-plan__item">Вопросы и ответы.</li>
+                        </ol>
+                    </div>
 
                     <div class="event-schedule__block__inner-column event-schedule__block__inner-column-right">
 
                         <ol class="event-plan">
-                            <h3 class="event-plan__header">Получим:</h3>
+                            <h3 class="event-plan__header">Получишь:</h3>
                             <li class="event-plan__item">Поймешь разницу между различной документацией в тестировании.</li>
                             <li class="event-plan__item">Научишься подбирать тест документацию исходя из нужд проекта и тестирования.</li>
                             <li class="event-plan__item">Научишься избегать типичных ошибок.</li>
@@ -138,113 +166,125 @@
                             <li class="event-plan__item">Получишь Feedback по выполненному домашнему заданию: что было хорошо, что надо улучшить, чего не хватает.</li>
                         </ol>
                     </div>
-
                 </div>
+
+
 
             </div>
         </div>
-    </div>
 
-    <div class="event-schedule event-schedule-day2">
-        <div class="container">
-            <div class=event-schedule__block>
-                <h3 class="event-schedule__block-header">День 2 – 23 июля, 19.00 – 22.30</h3>
-                <h2 class="block-header">Bugs writing &amp; Reporting</h2>
 
-                <div class="event-schedule__block__inner-column event-schedule__block__inner-column-left">
+        <div class="event-schedule event-schedule-day2">
+            <div class="container">
+                <div class=event-schedule__block>
+                    <h3 class="event-schedule__block-header">День 2</h3>
+                    <h4 class="event-schedule__block-sub-header">23 июля, 19.00 – 22.30</h4>
+                    <h2 class="block-header">Bugs writing &amp; Reporting</h2>
 
-                    <ol class="event-plan">
-                        <h3 class="event-plan__header">Пройдем:</h3>
-                        <li class="event-plan__item">Что есть баг, а что есть его проявление?</li>
-                        <li class="event-plan__item">Что должно быть в баге и почему?</li>
-                        <li class="event-plan__item">Как правильно искать баги: базовые техники.</li>
-                        <li class="event-plan__item">Jira и тип Bug.</li>
-                        <li class="event-plan__item">Разбор template-а хорошего бага.</li>
-                        <li class="event-plan__item">Чего ни в коем случае нельзя делать.</li>
-                        <li class="event-plan__item">Вопросы и ответы.</li>
-                        <li class="event-plan__item">Репопты: тим-лиду, РМ-у (спринт), по продукту.</li>
-                        <li class="event-plan__item">Необходимость статистики и визуализации.</li>
-                        <li class="event-plan__item">Чего быть НЕ должно.</li>
-                        <li class="event-plan__item">Хорошие примеры - разбор вместе с аудиторией.</li>
-                        <li class="event-plan__item">Вопросы и ответы.</li>
-                        <li class="event-plan__item">Презентация домашнего задания.</li>
-                    </ol>
+                    <div class="event-schedule__block__inner-column event-schedule__block__inner-column-left">
 
+                        <ol class="event-plan">
+                            <h3 class="event-plan__header">Усвоишь:</h3>
+                            <li class="event-plan__item">Что есть баг, а что есть его проявление?</li>
+                            <li class="event-plan__item">Что должно быть в баге и почему?</li>
+                            <li class="event-plan__item">Как правильно искать баги: базовые техники.</li>
+                            <li class="event-plan__item">Jira и Bug.</li>
+                            <li class="event-plan__item">Разбор template-а хорошего бага.</li>
+                            <li class="event-plan__item">Чего ни в коем случае нельзя делать.</li>
+                            <li class="event-plan__item">Вопросы и ответы.</li>
+                            <li class="event-plan__item">Репопты: тим-лиду, РМ-у (спринт), по продукту.</li>
+                            <li class="event-plan__item">Необходимость статистики и визуализации.</li>
+                            <li class="event-plan__item">Чего быть НЕ должно.</li>
+                            <li class="event-plan__item">Хорошие примеры - разбор вместе с аудиторией.</li>
+                            <li class="event-plan__item">Вопросы и ответы.</li>
+                            <li class="event-plan__item">Презентация домашнего задания.</li>
+                        </ol>
+                    </div>
 
                     <div class="event-schedule__block__inner-column event-schedule__block__inner-column-right">
 
                         <ol class="event-plan">
-                            <h3 class="event-plan__header">Получим:</h3>
+                            <h3 class="event-plan__header">Получишь:</h3>
                             <li class="event-plan__item">Научишься правильно искать и записывать баги, докапываться до сути.</li>
                             <li class="event-plan__item">Научишься избегать типичных ошибок и траты времени в пустую.</li>
                             <li class="event-plan__item">Поймёшь как должны выглядеть разные репорты и в чём их ценность.</li>
                             <li class="event-plan__item">Поищешь баги на выбранном сайте, составишь репорт.</li>
-                            <li class="event-plan__item">Получишь Feedback по выполненному домашнему заданию: что было хорошо, что надо улучшить, чего не хватает.</li>
+                            <li class="event-plan__item">Получишь Feedback по выполненному домашнему заданию: что было хорошо, что улучшить, чего не хватает.</li>
                         </ol>
                     </div>
 
-                </div>
 
+
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="event-schedule event-schedule-day3">
-        <div class="container">
-            <div class=event-schedule__block>
-                <h3 class="event-schedule__block-header">День 3 – 30 июля, 19.00 – 22.30</h3>
-                <h2 class="block-header">CV creation, related email &amp; interview attending</h2>
+        <div class="event-schedule event-schedule-day3">
+            <div class="container">
+                <div class=event-schedule__block>
+                    <h3 class="event-schedule__block-header">День 3</h3>
+                    <h4 class="event-schedule__block-sub-header">30 июля, 19.00 – 22.30</h4>
+                    <h2 class="block-header">CV creation, related email &amp; interview attending</h2>
 
-                <div class="event-schedule__block__inner-column event-schedule__block__inner-column-left">
+                    <div class="event-schedule__block__inner-column event-schedule__block__inner-column-left">
 
-                    <ol class="event-plan">
-                        <h3 class="event-plan__header">Пройдем:</h3>
-                        <li class="event-plan__item">Почему не отвечают соискатели? Кто будет читать ваше CV.</li>
-                        <li class="event-plan__item">Структура: Что должно быть, а чего быть не должно.</li>
-                        <li class="event-plan__item">Ценность в каждой строчке, как НЕ делать, что такое.</li>
-                        <li class="event-plan__item">?дополнительная информация?</li>
-                        <li class="event-plan__item">Каждой вакансии - уникальный CV.</li>
-                        <li class="event-plan__item">Что такое сопутствующее письмо? Зачем оно нужно, что там должно быть.</li>
-                        <li class="event-plan__item">Как привлечь работодателя? Типичные ошибки.</li>
-                        <li class="event-plan__item">Как готовимся, как одеваемся, как себя ведём.</li>
-                        <li class="event-plan__item">Типичные вопросы на которые не нужны типичные ответы.</li>
-                        <li class="event-plan__item">Чего нельзя делать ни в коем случае.</li>
-                        <li class="event-plan__item">Вопросы и ответы.</li>
-                        <li class="event-plan__item">Презентация домашнего задания.</li>
-                    </ol>
-
+                        <ol class="event-plan">
+                            <h3 class="event-plan__header">Усвоишь:</h3>
+                            <li class="event-plan__item">Почему не отвечают соискатели? Кто будет читать ваше CV.</li>
+                            <li class="event-plan__item">Структура: Что должно быть, а чего быть не должно.</li>
+                            <li class="event-plan__item">Ценность в каждой строчке, как НЕ делать, что такое.</li>
+                            <li class="event-plan__item">Что такое «дополнительная информация»</li>
+                            <li class="event-plan__item">Каждой вакансии - уникальный CV.</li>
+                            <li class="event-plan__item">Вопросы и ответы.</li>
+                            <li class="event-plan__item">Что такое сопутствующее письмо? Зачем оно нужно, что там должно быть.</li>
+                            <li class="event-plan__item">Как привлечь работодателя? Типичные ошибки.</li>
+                            <li class="event-plan__item">Как готовимся, как одеваемся, как себя ведём.</li>
+                            <li class="event-plan__item">Типичные вопросы на которые не нужны типичные ответы.</li>
+                            <li class="event-plan__item">Чего нельзя делать никогда.</li>
+                            <li class="event-plan__item">Вопросы и ответы.</li>
+                            <li class="event-plan__item">Презентация домашнего задания.</li>
+                        </ol>
+                    </div>
 
                     <div class="event-schedule__block__inner-column event-schedule__block__inner-column-right">
 
                         <ol class="event-plan">
-                            <h3 class="event-plan__header">Получим:</h3>
-                            <li class="event-plan__item">Научишься понимать что важно в вашем CV и для кого.</li>
+                            <h3 class="event-plan__header">Получишь:</h3>
+                            <li class="event-plan__item">Поймёшь что важно в твоём CV и для кого.</li>
                             <li class="event-plan__item">Научишься писать сопутствующие письма.</li>
                             <li class="event-plan__item">Узнашеь лайфхаки, как правильно себя вести на собеседованиях.</li>
                             <li class="event-plan__item">Составишь базовую версию своего CV.</li>
-                            <li class="event-plan__item">Получишь Feedback по выполненному домашнему заданию: что было хорошо, что надо улучшить, чего не хватает.</li>
+                            <li class="event-plan__item">Получишь Feedback по выполненному домашнему заданию: что было хорошо, что улучшить, чего не хватает.</li>
                         </ol>
                     </div>
 
-                </div>
 
+
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="org-block">
-        <div class="org-block__arrow">
-
-        </div>
-        <div class="org-block__content">
-            <h2 class="block-header">Еще пара плюсов:</h2>
-
-            <p class="org-block__text">Будем рассматривать и тестировать реальный проект
-                <br> На каждом этапе мастер-класса будут блоки вопросов и ответов, поэтому пробелы сможешь легко заполнить четким ответом
-                <br> Александр Кузняк будет самостоятельно просматривать и давать фидбек по домашним заданиям
-                <br> Нетворкниг – возможность лично познакомиться с ……..</p>
-        </div>
+    <div class="container">
+        <h2 class="block-header">Больше полезностей на интенсиве:</h2>
     </div>
+
+    <div class="arrow">
+        <div class="arrow__background">
+        </div>
+        <div class="arrow__content">
+
+
+            <ul class="block-list block-list--arrow">
+                <li class="block-list__item block-list__item--arrow">Рассмотрим и протестируем реальный проект</li>
+                <li class="block-list__item block-list__item--arrow">Заполним все пробелы «не отходя от кассы», с помощью блока вопросов и ответов</li>
+                <li class="block-list__item block-list__item--arrow">Александр Кузняк лично даст фидбек по домашним заданиям</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
 
     <div class="prices">
         <div class="container">
@@ -272,7 +312,7 @@
 
             <div class="prices-block">
                 <h3 class="prices-block__heading">День 3:</h3>
-                <h4 class="prices-block__sub-heading">(CV design<em class="linethrough">creation</em>)</h4>
+                <h4 class="prices-block__sub-heading">(CV design)</h4>
                 <p class="prices-block__text">Тренинг – <em>400 грн</em>
                 </p>
                 <p class="prices-block__text">Или</p>
@@ -283,14 +323,11 @@
             <div class="prices-additional">
                 <p class="prices-additional__text">Или</p>
                 <p class="prices-additional__text prices-additional__text-big">3 тренинга – 1000 грн</p>
-                <p class="prices-additional__text-big">3 тренинга + д/з + Feedback = 1500 грн</p>
-                <p class="prices-additional__text-itallic">GoITCLub – скидка 50%</p>
+                <p class="prices-additional__text prices-additional__text--big">3 тренинга + д/з + Feedback = 1500 грн</p>
+                <p class="prices-additional__text prices-additional__text--itallic">GoITCLub – скидка 50%</p>
             </div>
 
-
             <a class="prices__buy-button" href="" target="_blank">Купить билеты</a>
-
-
 
         </div>
     </div>

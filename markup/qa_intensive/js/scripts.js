@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     function setHeight() {
         windowHeight = $(window).innerHeight();
-        $('.for-tester').css('min-height', windowHeight - 425);
+        $('.for-tester').css('min-height', windowHeight - 480);
         $('.for-startup').css('min-height', windowHeight - 50);
         $('.for-startup').css('padding-top', windowHeight / 10);
         $('.orgs').css('min-height', windowHeight);
@@ -42,56 +42,6 @@ $(document).ready(function () {
 
 });
 
-function initGallery() {
-    windowWidth = $(window).innerWidth();
-    if (windowWidth > 620) {
-        $('.gallery-zoomed').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            arrows: false,
-            fade: true,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            cssEase: 'linear',
-            asNavFor: '.gallery'
-        });
-
-        $('.gallery').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.gallery-zoomed',
-            dots: false,
-            centerMode: true,
-            focusOnSelect: true
-        });
-
-    } else {
-        $('.gallery-zoomed').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            arrows: false,
-            fade: true,
-            autoplay: false,
-            cssEase: 'linear',
-            asNavFor: '.gallery'
-        });
-
-        $('.gallery').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.gallery-zoomed',
-            dots: false,
-            centerMode: true,
-            focusOnSelect: true
-        });
-
-    }
-
-
-};
-
 
 function toggleMenu() {
     $('.bottom-nav__btn').click(function () {
@@ -103,7 +53,7 @@ function show(id) {
     var h = $('.s' + id).offset().top;
 
     if (id != 1) {
-        h = h + 30;
+        h = h - 100;
     }
 
     $("body,html").animate({
