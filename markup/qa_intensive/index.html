@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/queries.css" />
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
@@ -31,13 +32,11 @@
                 <a class="logo__link" href="http://goit.com.ua" target="_blank"><img class="logo__img" src="images/logo_white.png" />
                 </a>
             </div>
-
+            <div class="nav-toggle">
+                <a class="nav-toggle__btn" href="javascript:;"></a>
+            </div>
             <div class="top-nav">
                 <ul>
-                    <li class="top-nav__element top-nav__element-toggle">
-                        <a class="top-nav__btn" href="javascript:;"></a>
-                    </li>
-
                     <li class="top-nav__element">
                         <a class="top-nav__link" href="javascript:;" onClick="show(1);">Главная</a>
                     </li>
@@ -114,7 +113,7 @@
         <h2 class="block-header">Спикер</h2>
     </div>
 
-    <div class="arrow animated fadeIn fadeInLeftBig delay-0.5s">
+    <div class="arrow animated fadeInLeftBig delay-0.5s">
         <div class="arrow__background">
         </div>
         <div class="arrow__content">
@@ -265,10 +264,10 @@
         </div>
     </div>
     <div class="container">
-        <h2 class="block-header">Больше полезностей на интенсиве:</h2>
+        <h2 class="block-header s2_5">Больше полезностей на интенсиве:</h2>
     </div>
 
-    <div class="arrow">
+    <div class="arrow arrow--thin">
         <div class="arrow__background">
         </div>
         <div class="arrow__content">
@@ -286,7 +285,7 @@
 
 
 
-    <div class="prices">
+    <div class="prices s3">
         <div class="container">
             <h2 class="block-header">Стоимость</h2>
 
@@ -331,41 +330,46 @@
     </div>
 
 
-    <div class="container">
-        <h2 class="block-header">Как добраться?</h2>
-    </div>
-
-    <div class="contacts">
 
 
-        <div class="contacts__map" id="map-canvas"></div>
-        <div class="contacts__credentials">
-            <div class="contacts__content">
-                <h3 class="contacts__heading">Адрес:</h3>
-                <p class="contacts__text">Ул. Такая-то</p>
-                <p class="contacts__text">Адрест такой-то</p>
-            </div>
-        </div>
-    </div>
+    <div class="contacts s4">
 
-
-
-    <div class="manager-contacts">
         <div class="container">
-            <div class="manager-contacts__photo-block">
-                <img class="manager-contacts__img" src="" alt="" />
+            <h2 class="block-header">Как добраться?</h2>
+        </div>
+
+        <div class="contacts__inner">
+            <div class="contacts__map" id="map-canvas"></div>
+            <div class="contacts__credentials">
+                <div class="contacts__content">
+                    <h3 class="contacts__heading">Адрес:</h3>
+                    <p class="contacts__text">Ул. Такая-то</p>
+                    <p class="contacts__text">Адрест такой-то</p>
+                </div>
             </div>
-            <div class="manager-contacts__text-block">
-                <h3 class="manager-contacts__name">Татьяна Щербакова</h3>
-                <h4 class="manager-contacts__position">Community Manager</h4>
+        </div>
 
-                <tel class="manager-contacts__tel">+380635954028</tel>
+        <div class="manager-contacts">
+            <div class="container">
+                <div class="manager-contacts__photo-block">
+                    <img class="manager-contacts__img" src="images/tanya2.jpg" alt="Татьяна Щербакова" />
+                </div>
+                <div class="manager-contacts__text-block">
+                    <h3 class="manager-contacts__name">Татьяна Щербакова</h3>
+                    <h4 class="manager-contacts__position">Community Manager</h4>
+
+                    <tel class="manager-contacts__tel">+380635954028</tel>
 
 
-                <a class="manager-contacts__link manager-contacts__link-mail" href="mailto:tan9ioid@gmail.com">tan9ioid@gmail.com</a>
+                    <a class="manager-contacts__link manager-contacts__link-mail" href="mailto:tan9ioid@gmail.com">tan9ioid@gmail.com</a>
+                </div>
             </div>
         </div>
     </div>
+
+
+
+
 
 
     <div class="footer">

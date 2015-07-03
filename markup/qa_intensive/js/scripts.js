@@ -5,6 +5,7 @@ $(document).ready(function () {
         var mapOptions = {
             center: new google.maps.LatLng(50.439017, 30.498723),
             zoom: 17,
+            scrollwheel: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
 
@@ -25,27 +26,71 @@ $(document).ready(function () {
     function setHeight() {
         windowHeight = $(window).innerHeight();
         $('.for-tester').css('min-height', windowHeight - 480);
-        $('.for-startup').css('min-height', windowHeight - 50);
-        $('.for-startup').css('padding-top', windowHeight / 10);
-        $('.orgs').css('min-height', windowHeight);
-        $('.staff').css('min-height', windowHeight);
-        $('.photos-block').css('min-height', windowHeight - 20);
-        $('.photos-block').css('padding-top', windowHeight / 10);
+        $('.prices').css('min-height', windowHeight - 200);
+        $('.prices').css('padding-top', windowHeight / 10);
+        $('.contacts').css('min-height', windowHeight - 400);
+        $('.contacts').css('padding-top', windowHeight / 20);
     };
     setHeight();
     toggleMenu();
-    initGallery();
 
     $(window).resize(function () {
         setHeight();
+    });
+
+
+    /*********************** Waypoints ********************************/
+
+    $('.s2').waypoint(function () {
+        $('.event-schedule-day1').addClass('animated fadeInUp delay-1s');
+    }, {
+        offset: '120%'
+    });
+    $('.event-schedule-day2').waypoint(function () {
+        $('.event-schedule-day2').addClass('animated fadeInUp delay-1s');
+    }, {
+        offset: '150%'
+    });
+    $('.event-schedule-day3').waypoint(function () {
+        $('.event-schedule-day3').addClass('animated fadeInUp delay-1s');
+    }, {
+        offset: '150%'
+    });
+    $('.s2_5').waypoint(function () {
+        $('.arrow').addClass('animated fadeInLeftBig delay-0.5s');
+    }, {
+        offset: '100%'
+    });
+
+    $('.s3').waypoint(function () {
+        $('.prices-block').addClass('animated fadeInUp delay-1s');
+    }, {
+        offset: '100%'
+    });
+    $('.s3').waypoint(function () {
+        $('.prices__buy-button').addClass('animated fadeInUp delay-1s');
+    }, {
+        offset: '100%'
+    });
+    $('.s4').waypoint(function () {
+        $('.contacts__inner').addClass('animated fadeIn');
+    }, {
+        offset: '100%'
+    });
+
+    $('.s4').waypoint(function () {
+        $('.manager-contacts').addClass('animated fadeInUp');
+    }, {
+        offset: '100%'
     });
 
 });
 
 
 function toggleMenu() {
-    $('.bottom-nav__btn').click(function () {
-        $('.bottom-nav').toggleClass('bottom-nav-expand')
+    $('.nav-toggle__btn').click(function () {
+        $('.top-nav').toggleClass('top-nav-expand');
+        $('.top-nav__link').toggleClass('top-nav__link--element');
     })
 }
 
