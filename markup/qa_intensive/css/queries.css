@@ -754,12 +754,13 @@
         font-size: 13px;
     }
     .partners-block {
-        top: 2px;
+        top: 0;
         display: inline-block;
         margin-bottom: 10px;
         width: 310px;
     }
     .manager-contacts {
+        top: 0;
         display: inline-block;
         margin-bottom: 0;
         width: 400px;
