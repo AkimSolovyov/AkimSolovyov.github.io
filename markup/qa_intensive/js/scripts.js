@@ -70,6 +70,12 @@ $(document).ready(function () {
     }, {
         offset: '100%'
     });
+
+    $('.s3').waypoint(function () {
+        $('.prices-additional').addClass('animated fadeInUp delay-1s');
+    }, {
+        offset: '100%'
+    });
     $('.s4').waypoint(function () {
         $('.contacts__inner').addClass('animated fadeIn');
     }, {
