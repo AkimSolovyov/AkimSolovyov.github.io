@@ -482,25 +482,39 @@
         font-size: 15px;
         margin-bottom: 2px;
     }
-    .block-list--arrow {
-        position: relative;
-        left: 20px;
-        display: block;
-        margin: 50px 0 30px 0;
-        list-style: none;
-        text-align: left;
-        height: 150px;
-        width: 85%;
-        font-size: 18px;
-        font-weight: 400;
-    }
-    .block-list__item--arrow {
-        margin-bottom: 20px;
-        width: 90%;
-    }
-    .arrow--thin {
-        height: 280px;
+    .prices-additional {
+        display: inline-block;
         width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .prices-additional__content {
+        position: relative;
+        left: 0;
+        display: block;
+        width: 100%;
+    }
+    .prices-additional__text {
+        color: #000;
+        background: #f8f8f8;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 5px;
+        text-align: center
+    }
+    .prices-additional__text:first-of-type {
+        color: #000;
+        background: none;
+        text-align: center;
+    }
+    .prices-additional__text-big {
+        font-size: 16px;
+    }
+    .prices__button {
+        position: relative;
+        left: 0;
+        top: 10px;
+        display: inline-block;
     }
     .contacts__content {
         display: inline-block;
