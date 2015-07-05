@@ -57,7 +57,7 @@ $(document).ready(function () {
         offset: '150%'
     });
     $('.s2_5').waypoint(function () {
-        $('.arrow').addClass('animated fadeInLeftBig delay-0.5s');
+        $('.block-list--more').addClass('animated fadeInUp delay-0.5s');
     }, {
         offset: '100%'
     });
