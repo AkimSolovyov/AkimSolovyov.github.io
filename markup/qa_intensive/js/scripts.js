@@ -3,16 +3,14 @@ $(document).ready(function () {
     function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
         var mapOptions = {
-            center: new google.maps.LatLng(50.439017, 30.498723),
+            center: new google.maps.LatLng(50.4174791, 30.4768335),
             zoom: 17,
             scrollwheel: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
 
-
-
         var map = new google.maps.Map(mapCanvas, mapOptions)
-        var companyPos = new google.maps.LatLng(50.439017, 30.498723);
+        var companyPos = new google.maps.LatLng(50.417250, 30.476777);
         var companyMarker = new google.maps.Marker({
             position: companyPos,
             map: map,
