@@ -29,8 +29,10 @@ $(document).ready(function () {
         $('.contacts').css('min-height', windowHeight - 400);
         $('.contacts').css('padding-top', windowHeight / 20);
     };
+
     setHeight();
     toggleMenu();
+    $("#owl-example").owlCarousel();
 
     $(window).resize(function () {
         setHeight();
