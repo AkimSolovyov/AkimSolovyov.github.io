@@ -191,9 +191,9 @@
     }
     .prices-additional__text {
         color: #000;
-        background: #f8f8f8;
         font-size: 14px;
         font-weight: 500;
+        width: 90%;
         padding: 5px;
         text-align: center
     }
@@ -212,9 +212,9 @@
         display: inline-block;
         width: 220px;
         height: 35px;
-        color: #ff6e00;
-        background: #f8f8f8;
+        background: #ff6e00;
         text-decoration: none;
+        color: #fff;
         text-transform: uppercase;
         font-weight: 400;
         font-size: 16px;
@@ -515,6 +515,9 @@
         left: 0;
         top: 10px;
         display: inline-block;
+        background: #ff6e00;
+        text-decoration: none;
+        color: #fff;
     }
     .contacts__content {
         display: inline-block;
@@ -694,9 +697,9 @@
         display: inline-block;
         width: 220px;
         height: 35px;
-        color: #ff6e00;
-        background: #f8f8f8;
+        background: #ff6e00;
         text-decoration: none;
+        color: #fff;
         text-transform: uppercase;
         font-weight: 400;
         font-size: 16px;
