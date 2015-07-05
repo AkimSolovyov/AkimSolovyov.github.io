@@ -676,6 +676,7 @@
 
 .contacts {
     margin: 0 auto;
+    position: relative;
 }
 
 .contacts__inner {
@@ -739,10 +740,25 @@
     color: #9eadc4;
 }
 
+.contacts__managers_and_partners {
+    position: relative;
+}
+
 .manager-contacts {
     display: inline-block;
+    position: relative;
     margin: 10px 0 90px 0;
     width: 400px;
+    float: left;
+}
+
+.partners-block {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 170px;
+    float: right;
+    margin-top: 45px;
 }
 
 .manager-contacts__photo-block {
@@ -816,21 +832,13 @@
     display: block;
 }
 
-.partners-block {
-    position: relative;
-    top: -70px;
-    display: inline-block;
-    width: 400px;
-    height: 170px;
-}
-
 .partners-block-header {
     font-size: 20px;
     margin: 0;
 }
 
 .partners-block__link {
-    margin-top: 10px;
+    margin-top: 20px;
     display: inline-block;
     height: 100px;
     text-decoration: none;
@@ -896,6 +904,7 @@
     margin: 0 auto;
     text-align: center;
     color: #000;
+    clear: both;
 }
 
 .footer__block {

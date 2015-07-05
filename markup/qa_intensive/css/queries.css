@@ -286,6 +286,7 @@
     .manager-contacts {
         display: block;
         margin: 90px 0;
+        float: none;
     }
     .manager-contacts__text-block {
         position: relative;
@@ -335,6 +336,7 @@
         width: 90%;
         height: 170px;
         margin: 0 0 50px 0;
+        float: none;
     }
     .footer {
         height: 100px;
@@ -540,12 +542,22 @@
     .contacts__text {
         font-size: 13px;
     }
+    .manager-contacts {
+        display: inline-block;
+        float: none;
+        margin-bottom: 10px;
+    }
     .manager-contacts__text-block {
         position: relative;
         top: 0;
         display: inline-block;
         height: 170px;
         text-align: center;
+    }
+    .partners-block {
+        display: inline-block;
+        float: none;
+        margin-bottom: 10px;
     }
     .footer {
         height: 30px;
@@ -740,5 +752,16 @@
     }
     .contacts__text {
         font-size: 13px;
+    }
+    .partners-block {
+        top: 2px;
+        display: inline-block;
+        margin-bottom: 10px;
+        width: 310px;
+    }
+    .manager-contacts {
+        display: inline-block;
+        margin-bottom: 0;
+        width: 400px;
     }
 }
