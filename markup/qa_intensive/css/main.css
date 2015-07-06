@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0 auto;
     border: 0;
-    background: #fff;
+    background: #ffff;
     font-family: 'Roboto', 'Helvetica', sans-serif;
     font-weight: 100;
     color: #000;
@@ -339,11 +339,30 @@
     position: relative;
     top: 0;
     width: 600px;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 20px;
     vertical-align: top;
     text-align: left;
     z-index: 998;
+}
+
+.arrow__social {
+    position: relative;
+    top: -40px;
+    left: 50%;
+    ;
+    right: 20px;
+    width: 20%;
+}
+
+.arrow__social__link {
+    display: inline-block;
+    position: relative;
+}
+
+.arrow__social__icon {
+    height: 40px;
+    width: 40px;
 }
 
 .event-schedule-wrapper {
@@ -483,12 +502,12 @@
     background-size: cover;
     margin: 0 auto;
     text-align: center;
-    padding: 50px 0 50px 0;
-    margin-bottom: 50px;
+    padding: 50px 0 0 0;
+    margin-bottom: 70px;
 }
 
 .variants-block {
-    background: #f8f8f8;
+    background: #fff;
     width: 100%;
     margin: 20px 0;
     padding: 60px 0;
@@ -507,7 +526,7 @@
 
 .variants__table__row:nth-child(1) {
     background: rgba(255, 119, 44, 1);
-    color: #f8f8f8;
+    color: #fff;
     font-weight: 500;
 }
 
