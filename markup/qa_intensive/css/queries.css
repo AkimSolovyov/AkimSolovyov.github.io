@@ -349,16 +349,7 @@
         content: '\f0e0';
         position: absolute;
         display: none;
-        right: 15px;
-        top: 4px;
-        font-family: FontAwesome;
-        font-size: 13px;
-    }
-    .manager-contacts__link-fb:after {
-        content: '\f082';
-        position: absolute;
-        display: none;
-        right: 90px;
+        right: -5px;
         top: 4px;
         font-family: FontAwesome;
         font-size: 13px;
@@ -630,6 +621,15 @@
         display: inline-block;
         float: none;
         margin-bottom: 10px;
+    }
+    .manager-contacts__link-mail:after {
+        content: '\f0e0';
+        position: absolute;
+        display: none;
+        right: -5px;
+        top: 4px;
+        font-family: FontAwesome;
+        font-size: 13px;
     }
     .manager-contacts__text-block {
         position: relative;
