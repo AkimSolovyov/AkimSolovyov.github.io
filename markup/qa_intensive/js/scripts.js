@@ -95,6 +95,12 @@ $(document).ready(function () {
         offset: '100%'
     });
 
+    $('.s4').waypoint(function () {
+        $('.partners-block').addClass('animated fadeInUp');
+    }, {
+        offset: '100%'
+    });
+
 });
 
 
