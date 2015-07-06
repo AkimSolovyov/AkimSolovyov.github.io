@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task8</title>
+</head>
+
+<body>
+    <script>
+        var arr = ['link', 'menu', 'menu__item', 'menu__item', 'header', 'link', 'footer', 'sidebar', 'link'];
+        var arr2 = [];
+        var MyIteration = {};
+        var z = 0;
+        var syma = 0;
+        var index;
+        for (var i = 0; i < arr.length; i++) {
+            syma = 0;
+            for (var j = 0; j < litterations; j++) {
+                if (arr[i] == arr[j]) {
+                    syma++;
+                }
+                z = arr[i].toString();
+            }
+            MyIteration[z] = syma;
+        }
+
+        var lengthOgBJECT = Object.keys(MyIteration).length;
+        var max = 0;
+        for (var p in MyIteration) {
+            max = MyIteration[p];
+            for (var n in MyIteration) {
+                if (max < MyIteration[n]) {
+                    max = MyIteration[n];
+                    index = n;
+                }
+            }
+            console.log(MyIteration.index);
+            delete MyIteration.index;
+        }
+    </script>
+</body>
+
+</html>

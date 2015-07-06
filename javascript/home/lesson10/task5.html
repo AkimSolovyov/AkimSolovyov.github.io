@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task5</title>
+</head>
+
+<body>
+    <script>
+        function findLongest(str) {
+            var arr = str.split(' ');
+            var result = arr[0];
+
+            for (var i = 1; i < arr.length; i++) {
+                if (result.length < arr[i].length) {
+                    result = arr[i];
+                }
+            }
+            return result;
+        }
+        alert(findLongest('Web Development Tutorial'));
+    </script>
+</body>
+
+</html>
