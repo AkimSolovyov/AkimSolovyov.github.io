@@ -124,6 +124,13 @@
         width: 95%;
         font-size: 15px;
     }
+    .arrow__social {
+        position: relative;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
     .event-schedule__block {
         display: inline-block;
         margin: 0 auto;
@@ -164,30 +171,31 @@
         font-size: 15px;
         margin-bottom: 2px;
     }
-    .block-list--arrow {
-        position: relative;
-        left: 10px;
-        margin: 50px 0 30px 0;
-        list-style: none;
-        height: 150px;
-        width: 85%;
-        font-size: 16px;
-        font-weight: 400;
+    .more {
+        height: 250px;
     }
-    .block-list__item--arrow {
-        margin-bottom: 20px;
+    .variants__table {
+        margin: 0 auto;
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+    }
+    .variants__table__data:nth-child(1) {
+        text-align: center;
+        width: 10%;
+        font-weight: 500;
     }
     .prices-additional {
         display: inline-block;
-        width: 100%;
+        width: 300px;
         text-align: center;
-        margin: 0 auto;
+        margin: 20px auto;
     }
     .prices-additional__content {
         position: relative;
         left: 0;
         display: block;
-        width: 100%;
+        width: 96%;
     }
     .prices-additional__text {
         color: #000;
@@ -261,7 +269,7 @@
         left: 0;
         width: 100%;
         display: inline-block;
-        height: 160px;
+        height: 180px;
         margin: 0 auto;
         background: url(../images/background_top.jpg) 70%;
     }
@@ -270,7 +278,7 @@
         position: relative;
         width: 95%;
         margin: 0;
-        top: 0px;
+        top: 5px;
         left: 10px;
     }
     .contacts__heading {
@@ -285,7 +293,10 @@
     }
     .manager-contacts {
         display: block;
+        position: relative;
+        top: 20px;
         margin: 90px 0;
+        width: 98%;
         float: none;
     }
     .manager-contacts__text-block {
@@ -402,7 +413,7 @@
         width: 90%;
     }
     .top-info {
-        height: 100px;
+        height: 10px;
         font-size: 20px;
     }
     .block-header {
@@ -413,7 +424,7 @@
         display: inline-block;
         position: relative;
         width: 45%;
-        height: 300px;
+        height: 220px;
         text-align: center;
         margin: 0 auto;
         overflow: hidden;
@@ -462,6 +473,15 @@
         width: 95%;
         font-size: 15px;
     }
+    .arrow__social {
+        position: relative;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        top: 20px;
+        right: 0;
+        width: 80%;
+    }
     .event-schedule__block-header {
         font-size: 16px;
     }
@@ -493,11 +513,15 @@
         font-size: 15px;
         margin-bottom: 2px;
     }
+    .more {
+        height: 240px;
+        padding: 0;
+    }
     .prices-additional {
         display: inline-block;
-        width: 100%;
+        width: 90%;
         text-align: center;
-        margin: 0 auto;
+        margin: 10px auto;
     }
     .prices-additional__content {
         position: relative;
@@ -507,11 +531,11 @@
     }
     .prices-additional__text {
         color: #000;
-        background: #f8f8f8;
         font-size: 14px;
         font-weight: 500;
         padding: 5px;
-        text-align: center
+        text-align: center;
+        width: 90%;
     }
     .prices-additional__text:first-of-type {
         color: #000;
@@ -534,9 +558,10 @@
         display: inline-block;
         position: relative;
         width: 92%;
+        margin-left: 8px;
     }
     .contacts__heading {
-        font-size: 16px;
+        font-size: 14px;
         margin: 0;
     }
     .contacts__text {
@@ -613,9 +638,16 @@
     .top-nav__link {
         font-size: 18px;
     }
+    .for-tester {
+        position: relative;
+        background: #fff;
+        margin: 0 0 30px 0;
+        padding: 0;
+        height: auto;
+    }
     .arrow {
         height: 230px;
-        margin: 20px 0 50px 0;
+        margin: 30px 0 50px 0;
         position: relative;
     }
     .arrow__background {
@@ -660,11 +692,17 @@
         top: -10px;
         right: 10px;
         width: 460px;
-        font-size: 12px;
+        font-size: 15px;
         line-height: 15px;
         vertical-align: top;
         text-align: left;
         z-index: 998;
+    }
+    .arrow__social {
+        position: relative;
+        display: inline-block;
+        top: -45px;
+        width: 150px;
     }
     .block-list--arrow {
         position: relative;

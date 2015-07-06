@@ -60,6 +60,13 @@ $(document).ready(function () {
         offset: '100%'
     });
 
+    $('.s2_5').waypoint(function () {
+        $('.variants__table').addClass('animated fadeInUp delay-1s');
+    }, {
+        offset: '100%'
+    });
+
+
     $('.s3').waypoint(function () {
         $('.prices-block').addClass('animated fadeInUp delay-1s');
     }, {
