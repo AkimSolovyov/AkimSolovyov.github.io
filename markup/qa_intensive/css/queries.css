@@ -85,7 +85,7 @@
         margin-bottom: 80px;
     }
     .arrow {
-        height: 750px;
+        height: 600px;
         margin: 20px 0 50px 0;
         padding-top: 20px;
         position: relative;
@@ -185,16 +185,18 @@
         font-size: 13px;
     }
     .more {
+        display: inline-block;
         height: 300px;
-        width: 90%;
+        width: 95%;
     }
     .block-list--more {
         width: 90%;
         height: auto;
+        margin-top: 25px;
     }
     .variants__table {
         margin: 0 auto;
-        width: 90%;
+        width: 98%;
         border-collapse: collapse;
         font-size: 12px;
     }
@@ -218,8 +220,7 @@
     .prices-additional__content {
         position: relative;
         left: 0;
-        display: block;
-        width: 90%;
+        width: 95%;
     }
     .prices-additional__text {
         color: #000;
@@ -534,6 +535,11 @@
     }
     .event-schedule__block-header {
         font-size: 16px;
+    }
+    .event-schedule__block .block-header {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 500;
     }
     .event-schedule__block-sub-header {
         font-size: 16px;
