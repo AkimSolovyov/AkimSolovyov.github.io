@@ -25,7 +25,7 @@ $(document).ready(function () {
         windowHeight = $(window).innerHeight();
         $('.for-tester').css('min-height', windowHeight - 590);
         $('.prices').css('min-height', windowHeight - 200);
-        $('.prices').css('padding-top', windowHeight / 10);
+        $('.prices').css('padding-top', windowHeight / 15);
         $('.contacts').css('min-height', windowHeight - 400);
         $('.contacts').css('padding-top', windowHeight / 20);
     };

@@ -246,6 +246,10 @@
     padding: 15px 0 15px 0;
 }
 
+.block-header--white {
+    color: #fff;
+}
+
 .for-tester {
     position: relative;
     background: #fff;
@@ -666,12 +670,12 @@
     width: 96%;
     text-align: left;
     background: #f8f8f8;
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 
 .prices-additional__header {
     color: #000;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
     padding: 5px;
@@ -698,7 +702,7 @@
 }
 
 .prices-additional__text-big {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .prices__button {
