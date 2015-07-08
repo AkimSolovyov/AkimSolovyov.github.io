@@ -20,22 +20,12 @@ $(document).ready(function () {
     google.maps.event.addDomListener(window, 'load', initialize);
 
 
-
-    function setHeight() {
-        windowHeight = $(window).innerHeight();
-        $('.for-tester').css('min-height', windowHeight - 590);
-        $('.prices').css('min-height', windowHeight - 200);
-        $('.prices').css('padding-top', windowHeight / 15);
-        $('.contacts').css('min-height', windowHeight - 400);
-        $('.contacts').css('padding-top', windowHeight / 20);
-    };
     setHeight();
     toggleMenu();
 
     $(window).resize(function () {
         setHeight();
     });
-
 
     /*********************** Waypoints ********************************/
 
@@ -104,6 +94,16 @@ $(document).ready(function () {
 });
 
 
+function setHeight() {
+    windowHeight = $(window).innerHeight();
+    $('.for-tester').css('min-height', windowHeight - 590);
+    $('.prices').css('min-height', windowHeight - 200);
+    $('.prices').css('padding-top', windowHeight / 15);
+    $('.contacts').css('min-height', windowHeight - 400);
+    $('.contacts').css('padding-top', windowHeight / 20);
+};
+
+
 function toggleMenu() {
     $('.nav-toggle__btn').click(function () {
         $('.top-nav').toggleClass('top-nav-expand');
@@ -122,12 +122,4 @@ function show(id) {
         "scrollTop": h
     }, 1000);
 
-}
-
-function toggle_menu() {
-    $(".bottom-nav__link-hide").click(function () {
-        $(this).hide();
-        $(".bottom-nav__link-show").show();
-        console.log("click");
-    })
 }
