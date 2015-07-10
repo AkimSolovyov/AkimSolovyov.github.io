@@ -266,7 +266,6 @@
     margin: 0 auto;
     margin-top: 5px;
     text-align: center;
-    text-align: center;
 }
 
 .for-tester-block__img {
@@ -422,6 +421,8 @@
     list-style-type: none;
     counter-reset: counter;
     text-align: left;
+    padding-left: 60px;
+    width: 90%;
 }
 
 .event-plan__header {
@@ -438,6 +439,7 @@
     padding-left: 15px;
     counter-increment: counter;
     color: #000;
+    width: 100%;
 }
 
 .event-plan__item:before {
@@ -493,7 +495,7 @@
 }
 
 .more {
-    height: 160px;
+    height: 230px;
     padding: 0;
 }
 

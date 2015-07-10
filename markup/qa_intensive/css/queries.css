@@ -161,7 +161,7 @@
         width: 100%;
     }
     .event-plan {
-        width: 90%
+        width: 85%
     }
     .event-schedule__block .block-header {
         font-size: 18px;
@@ -186,7 +186,7 @@
     }
     .more {
         display: inline-block;
-        height: 300px;
+        height: 360px;
         width: 95%;
     }
     .block-list--more {
@@ -767,7 +767,7 @@
     .arrow__social {
         position: relative;
         display: inline-block;
-        top: -45px;
+        top: -30px;
         width: 100%;
     }
     .block-list--arrow {
