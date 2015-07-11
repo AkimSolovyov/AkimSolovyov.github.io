@@ -36,7 +36,7 @@
     display: inline-block;
     float: left;
     clear: both;
-    margin-top: 25px;
+    margin-top: 28px;
 }
 
 .logo__img {
@@ -303,7 +303,7 @@
 .arrow__background {
     position: relative;
     width: 85%;
-    height: 250px;
+    height: 280px;
     background: #f8f8f8;
 }
 
@@ -314,7 +314,7 @@
     right: -120px;
     height: 0;
     content: '';
-    border-width: 125px 0 125px 120px;
+    border-width: 140px 0 140px 120px;
     border-style: solid;
     border-color: transparent transparent transparent #f8f8f8;
 }
@@ -323,7 +323,7 @@
     line-height: 25px;
     position: absolute;
     z-index: 998;
-    top: 12px;
+    top: 0;
     left: -50px;
     width: 100%;
     margin: 0;
@@ -333,7 +333,7 @@
     display: inline-block;
     width: 220px;
     height: 220px;
-    margin: 0 25px 0 10px;
+    margin: 20px 25px 0 10px;
 }
 
 .arrow__picture-img {
@@ -349,15 +349,15 @@
     z-index: 998;
     top: 0;
     display: inline-block;
-    width: 600px;
+    width: 620px;
     text-align: left;
     vertical-align: top;
 }
 
 .arrow__social {
     position: relative;
-    top: -45px;
-    right: -60px;
+    top: -10px;
+    right: -80px;
     display: inline-block;
     width: 150px;
 }
@@ -368,8 +368,8 @@
 }
 
 .arrow__social__icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .event-schedule-wrapper {
@@ -589,7 +589,7 @@
 .prices-block {
     display: inline-block;
     width: 300px;
-    height: 450px;
+    height: 415px;
     margin: 20px 10px;
     background: #fff;
 }
@@ -610,8 +610,8 @@
 }
 
 .prices-block__text {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .prices-block__text:nth-of-type(1) {
@@ -619,8 +619,8 @@
 }
 
 .prices-block__text:nth-of-type(2) {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .prices-block__button {
@@ -629,7 +629,7 @@
     display: inline-block;
     width: 200px;
     height: 30px;
-    margin: 35px 30px 15px 30px;
+    margin: 15px 30px 10px 30px;
     padding-top: 10px;
     -webkit-transition-duration: .5s;
     transition-duration: .5s;
