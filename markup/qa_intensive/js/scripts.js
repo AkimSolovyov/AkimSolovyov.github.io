@@ -115,7 +115,7 @@ function show(id) {
     var h = $('.s' + id).offset().top;
 
     if (id != 1) {
-        h = h - 100;
+        h = h - 80;
     }
 
     $("body,html").animate({
