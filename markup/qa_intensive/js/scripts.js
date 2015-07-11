@@ -96,7 +96,7 @@ $(document).ready(function () {
 
 function setHeight() {
     windowHeight = $(window).innerHeight();
-    $('.for-tester').css('min-height', windowHeight - 590);
+    $('.for-tester').css('min-height', windowHeight - 600);
     $('.prices').css('min-height', windowHeight - 200);
     $('.prices').css('padding-top', windowHeight / 15);
     $('.contacts').css('min-height', windowHeight - 400);
