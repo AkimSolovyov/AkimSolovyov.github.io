@@ -325,10 +325,16 @@
     font-size: 18px;
 }
 
+.sub-header__box-wraper {
+    position: relative;
+    display: block;
+    left: 0;
+    width: 540px;
+}
+
 .sub-header__box {
     position: relative;
     display: inline-block;
-    left: -185px;
     height: 105px;
     width: 224px;
     border-width: 7px;
