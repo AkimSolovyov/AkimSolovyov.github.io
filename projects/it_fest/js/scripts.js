@@ -1,25 +1,5 @@
 $(document).ready(function () {
 
-    function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-            center: new google.maps.LatLng(50.4174791, 30.4768335),
-            zoom: 17,
-            scrollwheel: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-        var companyPos = new google.maps.LatLng(50.417250, 30.476777);
-        var companyMarker = new google.maps.Marker({
-            position: companyPos,
-            map: map,
-            title: "Company Name Head Office"
-        });
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-
-
 
     function setHeight() {
         windowHeight = $(window).innerHeight();
@@ -32,12 +12,65 @@ $(document).ready(function () {
 
     setHeight();
     toggleMenu();
-    $("#owl-example").owlCarousel();
+    $("#speakers").owlCarousel({
+        // Most important owl features
+        items: 4,
+        itemsCustom: false,
+        itemsDesktop: [1024, 4],
+        itemsDesktopSmall: [980, 3],
+        itemsTablet: [768, 2],
+        itemsTabletSmall: false,
+        itemsMobile: [479, 1],
+        singleItem: false,
+        itemsScaleUp: false,
+
+        //Basic Speeds
+        slideSpeed: 200,
+        paginationSpeed: 800,
+        rewindSpeed: 1000,
+
+        //Autoplay
+        autoPlay: false,
+        stopOnHover: false,
+
+        // Navigation
+        navigation: true,
+        navigationText: ["", ""],
+        rewindNav: false,
+        scrollPerPage: false,
+
+        //Pagination
+        pagination: false,
+        paginationNumbers: false,
+
+        // Responsive
+        responsive: true,
+        responsiveRefreshRate: 200,
+        responsiveBaseWidth: window,
+
+        // CSS Styles
+        baseClass: "owl-carousel",
+        theme: "owl-theme",
+
+        //Lazy load
+        lazyLoad: false,
+        lazyFollow: true,
+        lazyEffect: "fade",
+
+
+        //Mouse Events
+        dragBeforeAnimFinish: true,
+        mouseDrag: true,
+        touchDrag: true,
+
+
+    });
 
     $(window).resize(function () {
         setHeight();
     });
 
+    $("#speakers").owlCarousel();
 
     /*********************** Waypoints ********************************/
 

@@ -1,0 +1,391 @@
+     <table class="table-block__table">
+
+                    <tr class="table-block__table-row">
+                        <td class="table-block__table-data" rowspan="2">
+                            <span class="table-block__table-number">10 </span>
+                            <p class="table-block__table-text">
+                                возможностей развития в интерактивной зоне зоне
+                            </p>
+                        </td>
+
+                        <td class="table-block__table-data">
+                        </td>
+
+                        <td class="table-block__table-data" rowspan="2">
+                        </td>
+
+                        <td class="table-block__table-data" rowspan="2">
+                            <span class="table-block__table-number">37 </span>
+                            <p class="table-block__table-text">
+                                менторов GoIT у которых можно спросить совет по развитию
+                            </p>
+                        </td>
+                        <td class="table-block__table-data">
+                        </td>
+                    </tr>
+
+                    <tr class="table-block__table-row">
+                        <td class="table-block__table-data">
+                            <span class="table-block__table-number">7 </span>
+                            <p class="table-block__table-text">
+                                направлений докладов
+                            </p>
+                        </td>
+
+
+
+                        <td class="table-block__table-data">
+                        </td>
+
+                    </tr>
+
+                    <tr class="table-block__table-row">
+
+
+
+                        <td class="table-block__table-data">
+                        </td>
+                        
+                        <td class="table-block__table-data" colspan="2" rowspan="2">
+                            <p class="table-block__table-text">
+                                Более
+                            </p>
+                            <span class="table-block__table-number"> 2500</span>
+                            <p class="table-block__table-text">
+                                участников конференции
+                            </p>
+                        </td>
+                        <td class="table-block__table-data" rowspan="2">
+                            <span class="table-block__table-number">20 </span>
+                            <p class="table-block__table-text">
+                                докладов в основных линейках
+                            </p>
+                        </td>
+
+
+
+
+                        <td class="table-block__table-data">
+                        </td>
+                    </tr>
+
+                    <tr class="table-block__table-row">
+
+                        <td class="table-block__table-data" rowspan="2">
+                            <span class="table-block__table-number">15 </span>
+                            <p class="table-block__table-text">
+                                мастер-классов от приглашенных гуру в интерактивной зоне
+                            </p>
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr class="table-block__table-row">
+                        <td class="table-block__table-data" colspan="3">
+                            <span class="table-block__table-number">360 </span>
+                            <p class="table-block__table-text">
+                                минут термоядерного контента, который не отпустит еще долго
+                            </p>
+                        </td>
+                        <td class="table-block__table-data">
+                        </td>
+
+
+                    </tr>
+
+
+
+
+
+
+                    <tr class="table-block__table-row">
+                        <td class="table-block__table-data">
+                        </td>
+
+                        <td class="table-block__table-data" colspan="2">
+                            <span class="table-block__table-number">17 </span>
+                            <p class="table-block__table-text">
+                                спикеров senior уровня
+                            </p>
+                        </td>
+                        <td class="table-block__table-data">
+                        </td>
+                        <td class="table-block__table-data">
+                        </td>
+
+
+                    </tr>
+
+
+
+                </table>
+
+
+.table-block__table {
+    border-collapse: collapse;
+}
+
+.table-block__table-data {
+    border-width: 7px;
+    border-color: #ff6c00;
+    border-style: solid;
+}
+
+.table-block__table-row:nth-child(1) .table-block__table-data:nth-child(1) {
+    width: 233px;
+    height: 233px;
+}
+
+.table-block__table-row:nth-child(1) .table-block__table-data:nth-child(2) {
+    border: none;
+}
+
+.table-block__table-row:nth-child(1) .table-block__table-data:nth-child(3) {
+    border: none;
+}
+
+.table-block__table-row:nth-child(1) .table-block__table-data:nth-child(4) {
+    width: 233px;
+    height: 233px;
+}
+
+.table-block__table-row:nth-child(1) .table-block__table-data:nth-child(5) {
+    border: none;
+}
+
+.table-block__table-row:nth-child(2) .table-block__table-data:nth-child(1) {
+    position: relative;
+    width: 165px;
+    height: 165px;
+}
+
+.table-block__table-row:nth-child(2) .table-block__table-data:nth-child(2) {
+    border: none;
+}
+
+.table-block__table-row:nth-child(3) .table-block__table-data:nth-child(1) {
+    border: none;
+    height: 65px;
+}
+
+.table-block__table-row:nth-child(3) .table-block__table-data:nth-child(2) {
+    width: 226px;
+    height: 226px;
+    background-color: #ff6c00;
+    color: #fff;
+}
+
+.table-block__table-row:nth-child(3) .table-block__table-data:nth-child(3) {
+    width: 233px;
+    height: 233px;
+}
+
+.table-block__table-row:nth-child(3) .table-block__table-data:nth-child(4) {
+    border: none;
+}
+
+.table-block__table-row:nth-child(4) .table-block__table-data:nth-child(1) {
+    width: 233px;
+    height: 113px;
+}
+
+.table-block__table-row:nth-child(5) .table-block__table-data:nth-child(1) {
+    height: 113px;
+    width: 251px
+}
+
+.table-block__table-row:nth-child(5) .table-block__table-data:nth-child(2) {
+    border: none;
+}
+
+.table-block__table-row:nth-child(6) .table-block__table-data:nth-child(1) {
+    border: none;
+    width: 10px;
+}
+
+.table-block__table-row:nth-child(6) .table-block__table-data:nth-child(2) {
+    width: 164px;
+    height: 164px;
+}
+
+.table-block__table-row:nth-child(6) .table-block__table-data:nth-child(3) {
+    border: none;
+    width: 164px;
+}
+
+.table-block__table-row:nth-child(6) .table-block__table-data:nth-child(4) {
+    border: none;
+    width: 164px;
+}
+
+.table-block__table-row:nth-child(6) .table-block__table-data:nth-child(5) {
+    border: none;
+    width: 164px;
+}
+
+
+
+<div class="event-interactive-area-section__block">
+
+                <div class="event-interactive-area-section__block-pic">
+                    <img class="event-interactive-area-section__block-pic__img" href="" alt="" />
+                </div>
+                <div class="event-interactive-area-section__block-content">
+                    <h3 class="event-interactive-area-section__block-content__heading">Express advice от гуру FreeLance
+</h3>
+                    <h4 class="event-interactive-area-section__block-content__sub-heading">Приведи свой фриланс-имидж в порядок</h4>
+
+                    <p class="event-interactive-area-section__block-content__text">Получите консультацию от опытных фрилансеров из Upwork (Odesk). Прямо на месте тебе помогут идеально оформить профиль на фриланс биржах так, чтобы он выглядел максимально привлекательно для заказчиков.
+
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="event-interactive-area-section__block">
+
+                <div class="event-interactive-area-section__block-content">
+                    <h3 class="event-interactive-area-section__block-content__heading">Спроси как…
+</h3>
+
+
+                    <p class="event-interactive-area-section__block-content__text">Поймай в интерактивной зоне человека в футболке "Я QA/Frontend'ер/программист - спроси меня как". Задай любой интересующий тебя вопрос по теме и получи исчерпывающий ответ от специалиста.
+
+                    </p>
+
+                </div>
+
+
+                <div class="event-interactive-area-section__block-pic">
+                    <img class="event-interactive-area-section__block-pic__img" href="" alt="" />
+                </div>
+            </div>
+
+            <div class="event-interactive-area-section__block">
+
+                <div class="event-interactive-area-section__block-pic">
+                    <img class="event-interactive-area-section__block-pic__img" href="" alt="" />
+                </div>
+                <div class="event-interactive-area-section__block-content">
+                    <h3 class="event-interactive-area-section__block-content__heading">Спроси как 2…
+</h3>
+
+                    <p class="event-interactive-area-section__block-content__text">Поймай в интерактивной зоне человека в футболке "Я свитчер - спроси меня как". У него ты узнаешь, как найти вакансию своей мечты и получить работу в IТ сфере.
+
+
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="event-interactive-area-section__block">
+
+                <div class="event-interactive-area-section__block-content">
+                    <h3 class="event-interactive-area-section__block-content__heading">Найди ментора
+</h3>
+
+
+                    <p class="event-interactive-area-section__block-content__text">Хочешь развиваться в определенном направлении, но надоело натыкаться лбом на стены? Познакомься с ИТ-специалистом и попроси помочь тебе
+                    </p>
+
+                </div>
+
+
+                <div class="event-interactive-area-section__block-pic">
+                    <img class="event-interactive-area-section__block-pic__img" href="" alt="" />
+                </div>
+            </div>
+
+            <div class="event-interactive-area-section__block">
+
+                <div class="event-interactive-area-section__block-pic">
+                    <img class="event-interactive-area-section__block-pic__img" href="" alt="" />
+                </div>
+                <div class="event-interactive-area-section__block-content">
+                    <h3 class="event-interactive-area-section__block-content__heading">Розыгрыши призов от партнеров
+</h3>
+
+                    <p class="event-interactive-area-section__block-content__text">Даже при большом желании ты не уйдешь с пустыми руками. Мы и наши партнеры приготовили для тебя целую гору полезных подарков и призов.
+
+
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="event-interactive-area-section__block">
+
+                <div class="event-interactive-area-section__block-content">
+                    <h3 class="event-interactive-area-section__block-content__heading">Общение и нетворкинг
+</h3>
+
+
+                    <p class="event-interactive-area-section__block-content__text">Говорят “связи решают все”... Все, не все, но обмен опытом с коллегами, отличный совместный отдых, захватывающие дискуссии - всем этим мы обеспечим.
+
+                    </p>
+
+                </div>
+
+
+                <div class="event-interactive-area-section__block-pic">
+                    <img class="event-interactive-area-section__block-pic__img" href="" alt="" />
+                </div>
+            </div>
+
+            <div class="event-interactive-area-section__block">
+
+                <div class="event-interactive-area-section__block-pic">
+                    <img class="event-interactive-area-section__block-pic__img" href="" alt="" />
+                </div>
+                <div class="event-interactive-area-section__block-content">
+                    <h3 class="event-interactive-area-section__block-content__heading">Квест
+</h3>
+
+                    <p class="event-interactive-area-section__block-content__text">Кто первым решит все головоломки, изучит все подсказки и найдет ответ, получит приятный сюрприз
+                    </p>
+
+                    <p class="event-interactive-area-section__block-content__text">P.S. Для участников онлайн-трансляции свой квест с блекджеком и загадками ;)
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="event-interactive-area-section__block">
+
+                <div class="event-interactive-area-section__block-content">
+                    <h3 class="event-interactive-area-section__block-content__heading">Забор объявлений
+</h3>
+
+
+                    <p class="event-interactive-area-section__block-content__text">Повесь объявление в стиле “Обучу английскому взамен на JavaScript” и делись знаниями с другими участниками. Так можно не только ментора, но и девушку (парня) себе найти
+                    </p>
+
+                </div>
+
+
+                <div class="event-interactive-area-section__block-pic">
+                    <img class="event-interactive-area-section__block-pic__img" href="" alt="" />
+                </div>
+            </div>
+
+            <div class="event-interactive-area-section__block">
+
+                <div class="event-interactive-area-section__block-pic">
+                    <img class="event-interactive-area-section__block-pic__img" href="" alt="" />
+                </div>
+                <div class="event-interactive-area-section__block-content">
+                    <h3 class="event-interactive-area-section__block-content__heading">Homo onlinus
+</h3>
+
+                    <p class="event-interactive-area-section__block-content__text">Для тех, кто живет в сети, мы подготовили отдельные подарки. Активно пости в twitter или facebook с хэштегом #ITfest и не останешься без подарка
+
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
