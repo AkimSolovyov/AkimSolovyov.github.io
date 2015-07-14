@@ -591,7 +591,13 @@
     width: 300px;
     height: 415px;
     margin: 20px 10px;
-    background: #fff;
+    background: #f8f8f8;
+}
+
+.prices-block--column {
+    height: auto;
+    margin: 0 35px 25px 35px;
+    background: #f8f8f8;
 }
 
 .prices-block__heading {
@@ -681,8 +687,10 @@
     background: #f8f8f8;
 }
 
-.prices-additional--headless {
-    padding-top: 25px;
+.prices-additional--two-columns {
+    padding-top: 10px;
+    margin: 10px auto;
+    text-align: center;
 }
 
 .prices-additional__header {
