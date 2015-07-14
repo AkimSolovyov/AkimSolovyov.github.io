@@ -114,6 +114,8 @@ $(document).ready(function () {
 function setHeight() {
     windowHeight = $(window).innerHeight();
     $('.sub-header').css('min-height', windowHeight + 300);
+    $('.event-contacts-section').css('min-height', windowHeight - 150);
+
 };
 
 function toggleMenu() {
@@ -127,7 +129,7 @@ function show(id) {
     var h = $('.s' + id).offset().top;
 
     if (id != 1) {
-        h = h - 100;
+        h = h - 45;
     }
 
     $("body,html").animate({

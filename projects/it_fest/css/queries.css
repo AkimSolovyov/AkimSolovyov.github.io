@@ -1,9 +1,35 @@
 /* Large Devices, Wide Screens */
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+    .container {
+        position: relative;
+        width: 1024px;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .top-nav__element {
+        width: 88px;
+    }
+    .top-nav__element--registration {
+        width: 150px;
+    }
+    .top-nav__link {
+        width: 75px;
+        font-size: 14px;
+    }
+}
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+    .container {
+        position: relative;
+        width: 920px;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 768px) {}

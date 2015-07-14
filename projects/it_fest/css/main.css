@@ -758,6 +758,7 @@
     font-family: 'GothamProBlack', 'Helvetica', sans-serif;
     font-weight: 500;
     font-size: 42px;
+    padding-top: 15px;
 }
 
 .event-speakers-section__text {
@@ -785,6 +786,7 @@
     font-family: 'GothamProItalic', 'Helvetica', sans-serif;
     font-weight: 500;
     font-size: 20px;
+    padding-top: 15px;
 }
 
 .speaker-item {
@@ -827,7 +829,7 @@
 
 .event-interactive-area-section__heading {
     margin: 150px 0 0 0;
-    padding-top: 0;
+    padding-top: 15px;
     font-family: 'GothamProBlack', 'Helvetica', sans-serif;
     font-weight: 500;
     font-size: 42px;
@@ -928,7 +930,7 @@
 
 .event-prices-info-section__heading {
     margin: 120px 0 16px 0;
-    padding-top: 0;
+    padding-top: 15px;
     font-family: 'GothamProBlack', 'Helvetica', sans-serif;
     font-weight: 500;
     font-size: 42px;
