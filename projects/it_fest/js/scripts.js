@@ -1,17 +1,41 @@
 $(document).ready(function () {
+    var animatedHeader = (function () {
 
+        var docElem = document.documentElement,
+            header = document.querySelector('.js-header'),
+            didScroll = false,
+            changeHeaderOn = 300;
 
-    function setHeight() {
-        windowHeight = $(window).innerHeight();
-        $('.for-tester').css('min-height', windowHeight - 480);
-        $('.prices').css('min-height', windowHeight - 200);
-        $('.prices').css('padding-top', windowHeight / 10);
-        $('.contacts').css('min-height', windowHeight - 400);
-        $('.contacts').css('padding-top', windowHeight / 20);
-    };
+        function init() {
+            window.addEventListener('scroll', function (event) {
+                if (!didScroll) {
+                    didScroll = true;
+                    setTimeout(scrollPage, 250);
+                }
+            }, false);
+        }
+
+        function scrollPage() {
+            var sy = scrollY();
+            if (sy >= changeHeaderOn) {
+                $('.js-header').addClass('js-header-shrink');
+            } else {
+                $('.js-header').removeClass('js-header-shrink');
+            }
+            didScroll = false;
+        }
+
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+
+        init();
+
+    })();
 
     setHeight();
     toggleMenu();
+
     $("#speakers").owlCarousel({
         // Most important owl features
         items: 4,
@@ -63,68 +87,27 @@ $(document).ready(function () {
         mouseDrag: true,
         touchDrag: true,
 
-
     });
+
 
     $(window).resize(function () {
         setHeight();
     });
 
-    $("#speakers").owlCarousel();
-
-    /*********************** Waypoints ********************************/
 
     $('.s2').waypoint(function () {
         $('.event-schedule-day1').addClass('animated fadeInUp delay-1s');
     }, {
         offset: '120%'
     });
-    $('.event-schedule-day2').waypoint(function () {
-        $('.event-schedule-day2').addClass('animated fadeInUp delay-1s');
-    }, {
-        offset: '150%'
-    });
-    $('.event-schedule-day3').waypoint(function () {
-        $('.event-schedule-day3').addClass('animated fadeInUp delay-1s');
-    }, {
-        offset: '150%'
-    });
-    $('.s2_5').waypoint(function () {
-        $('.block-list--more').addClass('animated fadeInUp delay-0.5s');
-    }, {
-        offset: '100%'
-    });
-
-    $('.s3').waypoint(function () {
-        $('.prices-block').addClass('animated fadeInUp delay-1s');
-    }, {
-        offset: '100%'
-    });
-    $('.s3').waypoint(function () {
-        $('.prices__buy-button').addClass('animated fadeInUp delay-1s');
-    }, {
-        offset: '100%'
-    });
-
-    $('.s3').waypoint(function () {
-        $('.prices-additional').addClass('animated fadeInUp delay-1s');
-    }, {
-        offset: '100%'
-    });
-    $('.s4').waypoint(function () {
-        $('.contacts__inner').addClass('animated fadeIn');
-    }, {
-        offset: '100%'
-    });
-
-    $('.s4').waypoint(function () {
-        $('.manager-contacts').addClass('animated fadeInUp');
-    }, {
-        offset: '100%'
-    });
 
 });
 
+
+function setHeight() {
+    windowHeight = $(window).innerHeight();
+    $('.sub-header').css('min-height', windowHeight + 300);
+};
 
 function toggleMenu() {
     $('.nav-toggle__btn').click(function () {
@@ -144,12 +127,4 @@ function show(id) {
         "scrollTop": h
     }, 1000);
 
-}
-
-function toggle_menu() {
-    $(".bottom-nav__link-hide").click(function () {
-        $(this).hide();
-        $(".bottom-nav__link-show").show();
-        console.log("click");
-    })
 }

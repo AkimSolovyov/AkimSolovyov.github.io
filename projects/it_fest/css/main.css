@@ -112,11 +112,35 @@
 /*  ********* Header and Menu  ********** */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 85px;
-    z-index: 999;
+    z-index: 10000;
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
     background-color: #fff;
     box-shadow: 9px 16px 51px 0px rgba(0, 0, 1, 0.15);
+}
+
+.js-header-shrink {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    z-index: 10000;
+    overflow: hidden;
+    opacity: 0.85;
+    box-shadow: none;
+}
+
+.js-header-shrink:hover,
+.js-header-shrink:focus {
+    opacity: 1;
 }
 
 .header:after {
@@ -132,9 +156,18 @@
     float: left;
 }
 
+.js-header-shrink .logo {
+    margin-top: 7px;
+}
+
 .logo__img {
     width: 135px;
     height: 40px;
+}
+
+.js-header-shrink .logo__img {
+    width: 110px;
+    height: 30px;
 }
 
 .logo__link {
@@ -163,6 +196,11 @@
     text-align: center;
 }
 
+.js-header-shrink .top-nav__element {
+    width: 80px;
+    bottom: 12px;
+}
+
 .top-nav__element--registration {
     position: relative;
     display: inline-block;
@@ -178,6 +216,17 @@
     padding: 0;
     width: 180px;
     height: 40px;
+}
+
+.js-header-shrink .top-nav__element--registration {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100%;
+    margin-right: 3px;
+    list-style: none;
+    text-align: center;
+    top: -7px;
 }
 
 .top-nav__link {
@@ -197,12 +246,30 @@
     vertical-align: middle;
 }
 
+.js-header-shrink .top-nav__link {
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+    vertical-align: top;
+}
+
 .top-nav__link--registration {
     font-family: 'GothamProBlack', 'Helvetica', sans-serif;
     font-weight: 500;
     font-size: 14px;
     color: #fff;
     line-height: 40px;
+    text-decoration: none;
+    position: relative;
+}
+
+.js-header-shrink .top-nav__link--registration {
+    font-family: 'GothamProBlack', 'Helvetica', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    line-height: 30px;
     text-decoration: none;
     position: relative;
 }
@@ -294,6 +361,7 @@
     width: 100%;
     min-height: 990px;
     height: auto;
+    padding-top: 85px;
     background: url(../images/intro_bg.png) 100%;
     background-size: cover;
     box-shadow: inset 0px -16px 51px 0 rgba(0, 0, 0, 0.25);
