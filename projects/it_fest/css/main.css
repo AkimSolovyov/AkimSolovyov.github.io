@@ -481,7 +481,7 @@
 }
 
 .event-info-section__heading--orange {
-    margin: 165px 0 0 0;
+    margin: 50px 0 0 0;
     padding-top: 0;
     font-family: 'GothamProBlack', 'Helvetica', sans-serif;
     font-weight: 500;
@@ -498,6 +498,17 @@
     font-size: 16px;
     text-align: left;
     margin-bottom: 20px;
+}
+
+.event-info-section__hidden-info-block {
+    //visibility: hidden;
+    width: 580px;
+    font-family: 'GothamProLight', 'Helvetica', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 30px;
+    line-height: 16px
 }
 
 .event-info-section__info-block {

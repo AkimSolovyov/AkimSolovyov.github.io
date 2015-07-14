@@ -36,6 +36,13 @@ $(document).ready(function () {
     setHeight();
     toggleMenu();
 
+    $(".event-info-section__hidden-info-block").hide();
+
+    $(".js-hidden-block-toggle").click(function () {
+        $(".event-info-section__hidden-info-block").toggle("slow");
+        return false;
+    });
+
     $("#speakers").owlCarousel({
         // Most important owl features
         items: 4,
