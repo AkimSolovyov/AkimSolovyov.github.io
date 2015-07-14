@@ -68,7 +68,7 @@ function initGallery() {
     }
 
 
-};
+}
 
 
 function toggleMenu() {
