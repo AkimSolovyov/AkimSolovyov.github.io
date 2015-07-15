@@ -257,6 +257,10 @@
     background: #fff;
 }
 
+.for-tester--specials {
+    padding: 50px 0;
+}
+
 .for-tester .block-header {
     margin-bottom: 35px;
 }
@@ -272,6 +276,11 @@
     text-align: center;
 }
 
+.for-tester-block--speacials {
+    margin-top: 15px;
+    height: 220px;
+}
+
 .for-tester-block__img {
     width: 94px;
     height: 94px;
@@ -284,6 +293,10 @@
     height: 20px;
     font-weight: 400;
     text-align: center;
+}
+
+.for-tester-block__text--specials {
+    height: 80px;
 }
 
 .for-tester-block__text--big {

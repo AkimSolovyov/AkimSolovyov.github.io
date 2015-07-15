@@ -216,11 +216,14 @@
         height: 430px;
         margin: 20px 10px;
     }
-    .prices-block--column {
+    .prices-block--modified {
         display: inline-block;
         width: 90%;
         height: 150px;
         margin: 20px 10px;
+    }
+    .prices-block--modified .prices-block__button {
+        width: 220px;
     }
     .prices-additional__content {
         position: relative;
