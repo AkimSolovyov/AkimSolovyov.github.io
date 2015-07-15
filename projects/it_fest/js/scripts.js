@@ -39,7 +39,7 @@ $(document).ready(function () {
     $(".event-info-section__hidden-info-block").hide();
 
     $(".js-hidden-block-toggle").click(function () {
-        $(".event-info-section__hidden-info-block").toggle("slow");
+        $(".event-info-section__hidden-info-block").fadeToggle("slow", "linear");
         return false;
     });
 

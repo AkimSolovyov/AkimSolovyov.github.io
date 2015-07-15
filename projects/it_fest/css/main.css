@@ -120,7 +120,6 @@
     z-index: 10000;
     overflow: hidden;
     -webkit-transition: height, opacity 0.5s;
-    -moz-transition: height, opacity 0.5s;
     transition: height, opacity 0.5s;
     background-color: #fff;
     box-shadow: 9px 16px 51px 0px rgba(0, 0, 1, 0.15);
@@ -510,6 +509,7 @@
 }
 
 .event-info-section__hidden-info-block {
+    display: none;
     width: 580px;
     font-family: 'GothamProItalic', 'Helvetica', sans-serif;
     font-size: 14px;
