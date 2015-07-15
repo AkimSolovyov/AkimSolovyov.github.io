@@ -113,7 +113,7 @@ $(document).ready(function () {
 
 function setHeight() {
     windowHeight = $(window).innerHeight();
-    $('.sub-header').css('min-height', windowHeight + 300);
+    $('.sub-header').css('min-height', windowHeight + 400);
     $('.event-contacts-section').css('min-height', windowHeight - 150);
 
 };
