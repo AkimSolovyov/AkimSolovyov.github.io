@@ -437,10 +437,18 @@
 
 .event-plan {
     list-style-type: none;
+    text-align: left;
+    padding-left: 60px;
+    width: 90%;
+}
+
+.event-plan--numbers {
+    list-style-type: none;
     counter-reset: counter;
     text-align: left;
     padding-left: 60px;
     width: 90%;
+    margin-top: 10px;
 }
 
 .event-plan__header {
@@ -460,7 +468,12 @@
     width: 100%;
 }
 
-.event-plan__item:before {
+.event-plan__item--margined {
+    margin-left: 73px;
+    width: 90%;
+}
+
+.event-plan--numbers .event-plan__item:before {
     font-size: 16px;
     position: absolute;
     left: -25px;
@@ -471,6 +484,11 @@
 .event-plan__item-text {
     font-weight: normal;
     color: #000;
+}
+
+.event-plan__item-text--emphasized {
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .block-list {
@@ -519,6 +537,7 @@
 
 .more .block-header {
     padding: 0;
+    margin-bottom: 40px;
 }
 
 .emphasized {
