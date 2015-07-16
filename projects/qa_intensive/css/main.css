@@ -856,18 +856,18 @@
 .testimonials-item {
     position: relative;
     display: inline-block;
-    height: auto;
+    height: 450px;
     width: 90%;
     padding: 15px 5px 0 5px;
-    background: #fff;
+    background: #f8f8f8;
     border-bottom: 5px solid #4d4444;
     overflow: hidden;
 }
 
 .testimonials-item__photo {
     width: 75%;
-    height: 75%;
     margin-bottom: 2px;
+    border-radius: 50%;
 }
 
 .testimonials-item__name {
@@ -891,13 +891,47 @@
 }
 
 .testimonials-item__text {
+    position: relative;
     display: block;
     width: 96%;
-    margin: 5px;
+    margin: 5px 5px 0 5px;
     text-align: left;
     font-weight: 400;
     font-size: 14px;
     color: #000;
+    height: 150px;
+    overflow: hidden;
+}
+
+.testimonials-item__text:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: -3px;
+    background: url(../images/trasparent_white.png) repeat-x left bottom;
+}
+
+.testimonials-item__bottom {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.testimonials-item__see-more {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 50%;
+    left: 20%;
+    text-align: right;
+    text-decoration: none;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ff6c00;
+    margin-bottom: 10px;
 }
 
 .contacts {

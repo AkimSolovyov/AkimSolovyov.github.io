@@ -19,7 +19,7 @@ $(document).ready(function () {
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 
-
+    showMore();
     setHeight();
     toggleMenu();
 
@@ -171,6 +171,24 @@ function toggleMenu() {
         $('.top-nav').toggleClass('top-nav-expand');
         $('.top-nav__link').toggleClass('top-nav__link--element');
     })
+}
+
+
+function showMore() {
+    $('.js-see-more').click(function () {
+
+        $(this).parent().parent().css({
+            'height': 'auto'
+        });
+        $(this).parent().parent().find('.testimonials-item__text').css({
+            'height': 'auto',
+            'padding-bottom': '20px'
+        });
+
+        $(this).hide();
+
+    })
+
 }
 
 function show(id) {
