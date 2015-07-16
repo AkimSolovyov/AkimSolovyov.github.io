@@ -48,10 +48,10 @@ $(document).ready(function () {
         items: 4,
         itemsCustom: false,
         itemsDesktop: [1024, 4],
-        itemsDesktopSmall: [980, 3],
-        itemsTablet: [768, 2],
+        itemsDesktopSmall: [815, 3],
+        itemsTablet: [640, 2],
         itemsTabletSmall: false,
-        itemsMobile: [479, 1],
+        itemsMobile: [320, 1],
         singleItem: false,
         itemsScaleUp: false,
 

@@ -1,4 +1,7 @@
 @media only screen and (max-width: 639px) {
+    .page {
+        min-width: 320px;
+    }
     .container {
         width: 90%;
     }
@@ -131,6 +134,7 @@
         width: 100%;
     }
     .event-schedule__block {
+        box-sizing: padding-box;
         display: block;
         margin: 0 auto;
         width: 100%;
@@ -148,9 +152,8 @@
     }
     .event-schedule__block__inner-column {
         display: block;
-        width: 100%;
+        width: 95%;
         height: auto;
-        margin: 0;
     }
     .event-schedule__block__inner-column-left {
         float: none;
@@ -161,33 +164,41 @@
         width: 100%;
     }
     .event-plan {
-        width: 85%
+        width: 90%;
+        padding-left: 20px;
     }
     .event-schedule__block .block-header {
         font-size: 18px;
         font-weight: 600;
     }
     .event-plan__header {
-        font-size: 16px;
+        font-size: 14px;
         text-align: left;
     }
-    .event-plan__item {
-        font-size: 13px;
-        padding: 0 2px 0 5px;
-        margin-bottom: 2px;
-        width: 90%;
+    .event-plan__header--left-full {
+        text-align: center;
+        padding-left: 5%;
     }
-    .event-plan__item:before {
-        content: '<' counter(counter) '>';
-        position: absolute;
-        color: rgba(254, 90, 0, 1);
-        left: -25px;
+    .event-plan__header--left-half {
+        text-align: left;
+        padding-left: 7%;
+        font-size: 12px;
+    }
+    .event-plan__item {
+        position: relative;
         font-size: 13px;
+        padding: 0 2px 0 35px;
+        margin-bottom: 5px;
+        width: 80%;
     }
     .more {
         display: inline-block;
-        height: 360px;
-        width: 95%;
+        height: auto;
+        width: 100%;
+    }
+    .more .block-header {
+        padding: 0;
+        margin: 0 5px 40px 5px;
     }
     .block-list--more {
         width: 90%;
@@ -224,6 +235,7 @@
     }
     .prices-block--modified .prices-block__button {
         width: 220px;
+        margin: 10px 10px;
     }
     .prices-additional__content {
         position: relative;
@@ -277,6 +289,26 @@
         backface-visibility: hidden;
         -moz-osx-font-smoothing: grayscale;
     }
+    .testimonials {
+        height: auto;
+    }
+    .testimonials-item {
+        height: 80%;
+    }
+    .testimonials-item__see-more {
+        position: relative;
+        display: inline-block;
+        height: 20px;
+        width: 50%;
+        left: 20%;
+        text-align: right;
+        text-decoration: none;
+        margin: 0;
+        font-weight: 400;
+        font-size: 12px;
+        color: #ff6c00;
+        margin-bottom: 20px;
+    }
     .contacts {
         width: 100%;
         margin: 0 auto;
@@ -323,6 +355,22 @@
         font-size: 13px;
         font-weight: 400;
         margin: 3px 0;
+    }
+    .contacts__link {
+        font-size: 15px;
+        font-weight: 400;
+        position: relative;
+        -webkit-transition-duration: .7s;
+        transition-duration: .7s;
+        -webkit-transition-property: color;
+        transition-property: color;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .contacts__link:hover,
+    .contacts__link:focus,
+    .contacts__link:active {
+        color: #052f6d;
     }
     .manager-contacts {
         display: block;
@@ -567,18 +615,27 @@
         width: 100%;
     }
     .event-plan {
-        width: 80%
+        width: 90%
     }
     .event-plan__header {
         font-size: 16px;
         text-align: center;
+    }
+    .event-plan__header--left-full {
+        text-align: left;
+        padding-left: 5%;
+    }
+    .event-plan__header--left-half {
+        text-align: left;
+        padding-left: 7%;
+        font-size: 16px;
     }
     .event-plan__item {
         font-size: 15px;
         margin-bottom: 2px;
     }
     .more {
-        height: 240px;
+        height: auto;
         padding: 0;
     }
     .prices-additional {
