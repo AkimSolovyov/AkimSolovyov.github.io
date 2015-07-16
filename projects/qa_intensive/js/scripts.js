@@ -51,6 +51,13 @@ $(document).ready(function () {
     });
 
     $('.s2_5').waypoint(function () {
+        $('.for-tester--specials ').addClass('animated fadeInUp delay-1s');
+    }, {
+        offset: '100%'
+    });
+
+
+    $('.s2_5').waypoint(function () {
         $('.variants__table').addClass('animated fadeInUp delay-1s');
     }, {
         offset: '100%'

@@ -257,10 +257,6 @@
     background: #fff;
 }
 
-.for-tester--specials {
-    padding: 50px 0;
-}
-
 .for-tester .block-header {
     margin-bottom: 35px;
 }
@@ -493,19 +489,17 @@
 
 .block-list {
     font-size: 16px;
-    height: 120px;
     list-style: none;
     text-align: left;
 }
 
 .block-list--more {
-    font-size: 15px;
+    display: inline-block;
+    font-size: 16px;
     font-weight: 400;
     position: relative;
-    left: 0;
-    width: 96%;
-    height: 150px;
-    margin: 10px 0 20px 0;
+    width: 55%;
+    margin: 10px 0 60px 0;
     list-style: none;
     text-align: left;
 }
@@ -531,13 +525,14 @@
 }
 
 .more {
-    height: 230px;
-    padding: 0;
+    height: auto;
+    padding: 50px 0;
+    margin: 0 auto;
 }
 
 .more .block-header {
     padding: 0;
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
 }
 
 .emphasized {
@@ -556,7 +551,7 @@
 
 .variants-block {
     width: 100%;
-    margin: 20px 0;
+    margin: 25px 0;
     padding: 30px 0;
     background: #fff;
 }
