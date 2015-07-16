@@ -656,6 +656,11 @@
     font-weight: 600;
 }
 
+.prices-block__text--promo {
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .prices-block__heading--light,
 .prices-block__text--light {
     font-weight: 400;
@@ -718,6 +723,24 @@
     border-radius: 1px;
     background: #fd2020;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
+}
+
+.prices-block__link {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    -webkit-transition-duration: .7s;
+    transition-duration: .7s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    text-decoration: none;
+    color: #ff6e00;
+}
+
+.prices-block__link:hover,
+.prices-block__link:focus,
+.prices-block__link:active {
+    color: #0d52be;
 }
 
 .prices-block--modified {
