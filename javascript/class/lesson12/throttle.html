@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var f = function (a) {
+            console.log(a)
+        };
+
+        function throttle(func, time) {
+
+            var stateArgs,
+                stateThis,
+                flag = true;
+
+
+
+            return function wrap() {
+
+                if (!flag) {
+                    stateArgs = arguments;
+                    stateThis = this;
+                    return;
+                }
+
+
+                func.apply(this, arguments);
+                flag = false;
+
+                setTimeout(function* () {
+                    flag = true;
+                    if (stateArgs) {
+                        wrap.apply(stateThis, stateArgs);
+                        stateArgs = stateThis = null;
+                    }
+                }, time);
+
+            }
+            return wrap;
+        }
+
+
+
+        var f1000 = throttle(f, 1000);
+
+        f(1); // выполнится сразу же
+f(2); // игнор
+setTimeout(function() { f(3) }, 100); // игнор (рановато)
+setTimeout(function() { f(4) }, 1100); // выполнится (таймаут прошёл)
+setTimeout(function() { f(5) }, 1500); // игнор
+setTimeout(function() { f(6) }, 1600); // игнор
+setTimeout(function() { f(7) }, 2100); //
+setTimeout(function() { f(8) }, 2110); //
+setTimeout(function() { f(9) }, 2120); //
+    </script>
+</body>
+
+</html>

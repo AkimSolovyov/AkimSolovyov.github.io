@@ -36,15 +36,15 @@ Article.showStats(); // Всего: 3, Последняя: (дата) -->
     <script>
         function Article() {
             this.created = new Date();
-
             Article.count++;
             Article.last = this.created;
         }
-        Article.count = 0;
 
         Article.showStats = function () {
             console.log('Всего: ' + this.count + ', Последняя: ' + this.last);
         };
+
+        Article.count = 0;
 
         new Article();
         new Article();

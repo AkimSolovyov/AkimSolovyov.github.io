@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function f(x) {
+            alert(x);
+        }
+
+        var f = debounce(f, 1000);
+
+        function debounce(func, time) {
+            var flag = true;
+
+
+
+            return function () {
+
+
+                if (!flag) return;
+                func.apply(null, arguments);
+                flag = false;
+
+                setTimeout(function () {
+                flag = true;
+            }, time);
+            }
+        }
+
+
+
+        f(1); // выполнится сразу же
+        f(2); // игнор
+
+
+
+        setTimeout(function () {
+            f(3)
+        }, 100); // игнор (прошло только 100мс)
+        setTimeout(function () {
+            f(4)
+        }, 1100); // выполнится
+        setTimeout(function () {
+            f(5)
+        }, 1500); // игнор
+    </script>
+</body>
+
+</html>
