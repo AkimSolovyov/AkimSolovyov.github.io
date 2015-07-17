@@ -22,6 +22,53 @@
                 self._enabled = false;
             };
         }
+
+
+        function Fridge(power) {
+            Machine.apply(this, arguments);
+
+            var food = [];
+
+            this.addFood = function () {
+                if (!this._enabled) {
+                    throw new Error("Холодильник выключен");
+                }
+                if (food.length + arguments.length >= this._power / 100) {
+                    throw new Error("Нельзя добавить, не хватает мощности");
+                }
+                for (var i = 0; i < arguments.length; i++) {
+                    food.push(arguments[i]);
+                }
+            };
+
+            this.getFood = function () {
+                return food.slice();
+            };
+
+            this.filterFood = function (param) {
+                return food.filter(param);
+            };
+
+            this.removeFood = function (item) {
+                var index = food.indexOf(item);
+                if (index != -1) food.splice(index, 1);
+            };
+
+
+            var baseDisable = this.disable;
+            this.disable = function () {
+                if (food.length) {
+                    throw new Error("Не выключай! Испортится же!!!");
+                }
+                baseDisable();
+            };
+
+        }
+
+        var fridge = new Fridge(500);
+        fridge.enable();
+        fridge.addFood("кус-кус");
+        fridge.disable(); // ошибка, в холодильнике есть еда
     </script>
 
 </body>
