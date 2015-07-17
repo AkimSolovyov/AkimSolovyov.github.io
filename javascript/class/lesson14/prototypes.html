@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    /*
+    function Vihicle () {
+        this.doNoize = function() {console.log("WooWoo")};
+    }
+        var Mazda = new Vehicle, Toyota = new Vehicle;
+
+        console.log(Mazda.hasOwnProperty("doNoize")); //=> true
+         console.log(Mazda.doNoize == Toyota.doNoize); //=> false
+
+    function Vehicle () {}
+
+        Vehicle.prototype.doNoize = function() {console.log("WooWoo!")};
+
+        var Mazda = new Vehicle, Toyota = new Vehicle;
+
+
+        console.log(Mazda.hasOwnProperty("doNoize")); //=> false
+         console.log(Mazda.doNoize == Toyota.doNoize); //=> true
+
+        */
+
+     function Vehicle () {
+     this.canRoll = true;
+     }
+
+    Vehicle.prototype.doNoize = function() {
+        console.log("WooWoo");
+    };
+
+    function Moto(make) {
+        this.make = make;
+    }
+
+        Moto.prototype = Object.create(new Vehicle);
+        Moto.prototype.constructor = Moto; // Good practice
+
+        var ktm = new Moto("KTM");
+        console.log(ktm.canRoll); //=> true
+        console.log(ktm.doNoize()); //=> true
+        console.log(Moto.constructor == Moto);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
