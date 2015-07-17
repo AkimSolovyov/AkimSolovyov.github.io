@@ -671,8 +671,17 @@
 }
 
 .prices-block__text:nth-of-type(2) {
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    top: -15px;
+    margin-bottom: 0;
+}
+
+.prices-block__text:nth-of-type(3) {
     font-size: 18px;
     font-weight: 400;
+    margin: 45px 0 5px 0;
 }
 
 .prices-block__button {
