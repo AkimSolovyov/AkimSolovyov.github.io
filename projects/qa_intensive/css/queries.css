@@ -230,7 +230,7 @@
     .prices-block--modified {
         display: inline-block;
         width: 90%;
-        height: 200px;
+        height: auto;
         margin: 20px 10px;
     }
     .prices-block--modified .prices-block__button {
