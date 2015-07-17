@@ -637,8 +637,15 @@
 }
 
 .prices-block__heading {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.prices-block__heading--promo {
     font-size: 15px;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .prices-block__sub-heading {
@@ -676,6 +683,7 @@
     font-weight: 400;
     top: -15px;
     margin-bottom: 0;
+    text-decoration: underline
 }
 
 .prices-block__text:nth-of-type(3) {
@@ -749,7 +757,7 @@
 .prices-block__link:hover,
 .prices-block__link:focus,
 .prices-block__link:active {
-    color: #0d52be;
+    color: #000;
 }
 
 .prices-block--modified {
@@ -892,8 +900,6 @@
     text-align: center;
     margin: 0 auto;
 }
-
-.container {}
 
 .testimonials-carousel {
     box-sizing: border-box;
