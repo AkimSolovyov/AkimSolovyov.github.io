@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CoffeeMachine</title>
+</head>
+
+<body>
+    <script>
+        function Machine(power) {
+            this._power = power; // (1)
+
+            this._enabled = false;
+
+            this.enable = function () {
+                this._enabled = true;
+            };
+
+            this.disable = function () {
+                this._enabled = false;
+            };
+        }
+
+
+
+        function CoffeeMachine(power, capacity) {
+            Machine.apply(this, arguments);
+
+            this.waterAmount = 0;
+            var timer = 0;
+
+
+            // физическая константа - удельная теплоёмкость воды для getBoilTime
+            var WATER_HEAT_CAPACITY = 4200;
+
+            var self = this;
+
+            function getBoilTime() {
+                    return self.waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+                }
+                // "умная" установка свойства
+            this.waterAmount = function (amount) {
+                // вызов без параметра, значит режим геттера, возвращаем свойство
+                if (!arguments.length) return waterAmount;
+
+                // иначе режим сеттера
+                if (amount < 0) {
+                    throw new Error("Значение должно быть положительным");
+                }
+                if (amount > capacity) {
+                    throw new Error("Нельзя залить воды больше, чем " + capacity);
+                }
+
+                waterAmount = amount;
+            };
+
+            function onReady() {
+                alert('Кофе готово!');
+            }
+
+            this.enable = function () {
+                this._enabled = true;
+            }
+
+            var baseDisable = this.disable;
+
+            this.disable = function () {
+                baseDisable.call(this);
+                clearTimeout(timer);
+            }
+
+
+            this.run = function () {
+                if (this._enabled) {
+                    timer = setTimeout(onReady, getBoilTime.call(this));
+                } else {
+                    throw new Error("кофеварка выключена!");
+                }
+            };
+        }
+
+        // создаю кофеварку, мощностью 100000W чтобы кипятила быстро
+        var coffeeMachine = new CoffeeMachine(100000, 500);
+        coffeeMachine.waterAmount(450);
+        coffeeMachine.enable();
+        coffeeMachine.run();
+        coffeeMachine.disable();
+    </script>
+</body>
+
+</html>

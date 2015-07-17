@@ -1002,6 +1002,10 @@
     width: 100%;
 }
 
+.testimonials-item__bottom--modified {
+    visibility: hidden;
+}
+
 .testimonials-item__see-more {
     position: relative;
     display: inline-block;

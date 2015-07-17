@@ -309,6 +309,9 @@
         color: #ff6c00;
         margin-bottom: 20px;
     }
+    .testimonials-item__bottom--modified {
+       visibility: visible;
+   }
     .contacts {
         width: 100%;
         margin: 0 auto;
@@ -910,6 +913,9 @@
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         -moz-osx-font-smoothing: grayscale;
+    }
+    .testimonials-item__bottom--modified {
+        visibility: visible;
     }
     .contacts__content {
         display: inline-block;

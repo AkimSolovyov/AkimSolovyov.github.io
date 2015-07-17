@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fridge</title>
+</head>
+
+<body>
+    <script>
+        function Machine(power) {
+            this._power = power;
+            this._enabled = false;
+
+            var self = this;
+
+            this.enable = function () {
+                self._enabled = true;
+            };
+
+            this.disable = function () {
+                self._enabled = false;
+            };
+        }
+    </script>
+
+</body>
+
+</html>
