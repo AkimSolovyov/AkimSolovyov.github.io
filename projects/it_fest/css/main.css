@@ -648,13 +648,13 @@
     display: inline-block;
     width: 100%;
     color: #000;
-    font-family: 'GothamProBold', 'Helvetica', sans-serif;
-    font-weight: 700;
+    font-family: 'GothamProRegular', 'Helvetica', sans-serif;
+    font-weight: 100;
     font-size: 30px;
 }
 
 .puzzle-block__box--1 {
-    width: 226px;
+    width: 200px;
     height: 186px;
     padding-top: 40px;
     top: 0;
@@ -666,11 +666,11 @@
 }
 
 .puzzle-block__box--2 {
-    width: 158px;
-    height: 118px;
-    padding-top: 30px;
-    top: 78px;
-    left: 233px;
+    width: 130px;
+    height: 236px;
+    padding-top: 120px;
+    top: 137px;
+    right: 400px;
 }
 
 .puzzle-block__box--2 .puzzle-block__box-text {
@@ -678,11 +678,11 @@
 }
 
 .puzzle-block__box--3 {
-    width: 226px;
-    height: 176px;
-    padding-top: 50px;
+    width: 350px;
+    height: 120px;
+    padding-top: 10px;
     top: 0;
-    right: 327px;
+    right: 240px;
 }
 
 .puzzle-block__box--3 .puzzle-block__box-text {
@@ -690,7 +690,7 @@
 }
 
 .puzzle-block__box--4 {
-    width: 226px;
+    width: 200px;
     height: 176px;
     padding-top: 50px;
     top: 340px;
@@ -703,25 +703,26 @@
 }
 
 .puzzle-block__box--5 {
-    width: 300px;
-    height: 181px;
+    width: 260px;
+    height: 151px;
     padding-top: 45px;
     top: 233px;
-    left: 233px;
+    left: 207px;
     background-color: #ff6c00;
 }
 
 .puzzle-block__box--5 .puzzle-block__box-number {
     margin: 7px 0;
     width: 90%;
+    font-size: 40px;
 }
 
 .puzzle-block__box--6 {
-    width: 226px;
+    width: 200px;
     height: 176px;
     padding-top: 50px;
-    top: 465px;
-    left: 233px;
+    top: 435px;
+    left: 207px;
 }
 
 .puzzle-block__box--6 .puzzle-block__box-text {
@@ -730,11 +731,11 @@
 }
 
 .puzzle-block__box--7 {
-    width: 300px;
-    height: 100px;
-    padding-top: 5px;
-    bottom: 163px;
-    right: 244px;
+    width: 158px;
+    height: 118px;
+    padding-top: 30px;
+    top: 78px;
+    left: 207px;
 }
 
 .puzzle-block__box--7 .puzzle-block__box-number {
@@ -750,15 +751,15 @@
     height: 55px;
     padding-top: 15px;
     top: 156px;
-    right: 215px;
+    right: 195px;
 }
 
 .puzzle-block__box--9 {
-    width: 270px;
+    width: 200px;
     height: 55px;
     padding-top: 15px;
     top: 233px;
-    right: 195px;
+    right: 193px;
 }
 
 .puzzle-block__box--10 {
@@ -766,7 +767,7 @@
     height: 54px;
     padding-top: 15px;
     top: 310px;
-    right: 355px;
+    right: 283px;
 }
 
 .puzzle-block__box--10 .puzzle-block__box-text {
@@ -775,11 +776,11 @@
 }
 
 .puzzle-block__box--11 {
-    width: 152px;
+    width: 153px;
     height: 54px;
     padding-top: 15px;
     top: 310px;
-    right: 195px;
+    right: 123px;
 }
 
 .puzzle-block__box--11 .puzzle-block__box-text {
@@ -792,7 +793,7 @@
     height: 55px;
     padding-top: 18px;
     top: 386px;
-    right: 195px;
+    right: 123px;
 }
 
 .puzzle-block__box--12 .puzzle-block__box-text {
@@ -801,11 +802,11 @@
 }
 
 .puzzle-block__box--13 {
-    width: 130px;
-    height: 126px;
+    width: 117px;
+    height: 129px;
     padding-top: 20px;
-    top: 233px;
-    right: 58px;
+    top: 310px;
+    right: 0;
 }
 
 .puzzle-block__box--13 .puzzle-block__box-number {
