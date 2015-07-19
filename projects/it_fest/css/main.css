@@ -598,8 +598,8 @@
 .event-info-section__puzzle-block {
     position: relative;
     margin: 45px 0 200px 0;
-    width: 705px;
-    height: 735px;
+    width: 100%;
+    height: 748px;
 }
 
 .puzzle-block__box {
@@ -607,6 +607,14 @@
     display: block;
     border-width: 7px;
     border-color: #ff6c00;
+    border-style: solid;
+}
+
+.puzzle-block__box--another-color {
+    position: absolute;
+    display: block;
+    border-width: 7px;
+    border-color: #000;
     border-style: solid;
 }
 
@@ -634,6 +642,15 @@
 
 .puzzle-block__box-number--white {
     color: #fff;
+}
+
+.puzzle-block__box-number--black {
+    display: inline-block;
+    width: 100%;
+    color: #000;
+    font-family: 'GothamProBold', 'Helvetica', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
 }
 
 .puzzle-block__box--1 {
@@ -665,7 +682,7 @@
     height: 176px;
     padding-top: 50px;
     top: 0;
-    right: 0;
+    right: 327px;
 }
 
 .puzzle-block__box--3 .puzzle-block__box-text {
@@ -686,7 +703,7 @@
 }
 
 .puzzle-block__box--5 {
-    width: 226px;
+    width: 300px;
     height: 181px;
     padding-top: 45px;
     top: 233px;
@@ -694,17 +711,17 @@
     background-color: #ff6c00;
 }
 
-.puzzle-block__box--5 .puzzle-block__box-text {
+.puzzle-block__box--5 .puzzle-block__box-number {
     margin: 7px 0;
-    width: 135px;
+    width: 90%;
 }
 
 .puzzle-block__box--6 {
     width: 226px;
-    height: 166px;
-    padding-top: 60px;
-    top: 233px;
-    right: 0;
+    height: 176px;
+    padding-top: 50px;
+    top: 465px;
+    left: 233px;
 }
 
 .puzzle-block__box--6 .puzzle-block__box-text {
@@ -713,34 +730,86 @@
 }
 
 .puzzle-block__box--7 {
-    width: 344px;
-    height: 75px;
-    padding-top: 25px;
-    top: 466px;
-    left: 233px;
+    width: 300px;
+    height: 100px;
+    padding-top: 5px;
+    bottom: 163px;
+    right: 244px;
 }
 
 .puzzle-block__box--7 .puzzle-block__box-number {
-    width: 95px;
+    margin-top: 5px;
 }
 
 .puzzle-block__box--7 .puzzle-block__box-text {
-    text-align: left;
-    width: 200px;
-    margin-left: 5px;
+    display: inline-block;
 }
 
 .puzzle-block__box--8 {
-    width: 158px;
-    height: 118px;
-    padding-top: 30px;
-    bottom: 0;
-    left: 233px;
+    width: 105px;
+    height: 55px;
+    padding-top: 15px;
+    top: 156px;
+    right: 215px;
 }
 
-.puzzle-block__box--8 .puzzle-block__box-text {
+.puzzle-block__box--9 {
+    width: 270px;
+    height: 55px;
+    padding-top: 15px;
+    top: 233px;
+    right: 195px;
+}
+
+.puzzle-block__box--10 {
+    width: 110px;
+    height: 54px;
+    padding-top: 15px;
+    top: 310px;
+    right: 355px;
+}
+
+.puzzle-block__box--10 .puzzle-block__box-text {
     margin: 5px 0;
     width: 135px;
+}
+
+.puzzle-block__box--11 {
+    width: 152px;
+    height: 54px;
+    padding-top: 15px;
+    top: 310px;
+    right: 195px;
+}
+
+.puzzle-block__box--11 .puzzle-block__box-text {
+    margin: 5px 0;
+    width: 135px;
+}
+
+.puzzle-block__box--12 {
+    width: 270px;
+    height: 55px;
+    padding-top: 18px;
+    top: 386px;
+    right: 195px;
+}
+
+.puzzle-block__box--12 .puzzle-block__box-text {
+    margin: 5px 0;
+    width: 135px;
+}
+
+.puzzle-block__box--13 {
+    width: 130px;
+    height: 126px;
+    padding-top: 20px;
+    top: 233px;
+    right: 58px;
+}
+
+.puzzle-block__box--13 .puzzle-block__box-number {
+    margin: 15px 0 0 0;
 }
 /*  ********* Display #3 ********** */
 
@@ -1189,8 +1258,8 @@
     display: inline-block;
     background-color: #ff6c00;
     width: 186px;
-    padding-top: 12px;
-    height: 25px;
+    padding-top: 10px;
+    height: 28px;
     color: #fff;
     text-decoration: none;
 }
@@ -1206,13 +1275,11 @@
 
 .event-contacts-section {
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 10px;
     height: 500px;
 }
 
 .event-contacts-section__block-wrapper {
-    margin-top: 115px;
+    margin-top: 165px;
     height: 320px;
     width: 880px;
     border-width: 7px;
@@ -1249,8 +1316,8 @@
     display: block;
     background-color: #ff6c00;
     width: 200px;
-    padding-top: 12px;
-    height: 25px;
+    padding-top: 10px;
+    height: 28px;
     margin-left: 45px;
     color: #fff;
     text-decoration: none;
@@ -1326,4 +1393,23 @@
 .coordinator-block__mail:focus,
 .coordinator-block__mail:active {
     color: #ff6c00;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #ff6c00;
+    box-shadow: 0px -20px 61px 0px rgba(0, 0, 0, 0.3);
+}
+
+.footer__logo {
+    display: inline-block;
+    width: 45%;
+    margin-top: 10px;
+}
+
+.footer__logo-img {
+    width: 100px;
+    height: 100%;
 }
