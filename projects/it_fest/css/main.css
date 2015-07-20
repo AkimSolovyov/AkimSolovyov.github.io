@@ -136,7 +136,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #000;
+    background: #dee0e9;
     -webkit-transform: scale(0);
     transform: scale(0);
     -webkit-transition-property: transform;
@@ -150,7 +150,7 @@
 .button:hover,
 .button:focus,
 .button:active {
-    color: #fff;
+    color: #000;
 }
 
 .button:hover:before,
@@ -318,7 +318,6 @@
     font-family: 'GothamProBlack', 'Helvetica', sans-serif;
     font-weight: 500;
     font-size: 12px;
-    color: #fff;
     line-height: 30px;
     text-decoration: none;
     position: relative;
