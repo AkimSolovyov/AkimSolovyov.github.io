@@ -38,4 +38,63 @@
 @media only screen and (max-width: 480px) {}
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 479px) {
+    .page {
+        min-width: 320px;
+    }
+    .container {
+        width: 90%;
+    }
+    .logo {
+        position: relative;
+        display: inline-block;
+        margin-top: 20px;
+        left: 3%;
+        float: left;
+    }
+    .top-nav {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        top: 20px;
+        text-align: center;
+        clear: both;
+    }
+    .top-nav__element {
+        position: relative;
+        display: inline-block;
+        width: 90%;
+        margin-bottom: 2px;
+        padding-top: 10px;
+    }
+    .nav-toggle {
+        position: relative;
+        display: inline-block;
+        float: right;
+        right: 3%;
+    }
+    .nav-toggle__btn {
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
+    .nav-toggle__btn:before,
+    .nav-toggle__btn:after {
+        content: "\f039";
+        position: absolute;
+        display: block;
+        color: #000;
+        right: -5px;
+        top: 10px;
+        padding: 0 8px;
+        font-family: FontAwesome;
+        font-size: 35px;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        z-index: 1000;
+    }
+}
