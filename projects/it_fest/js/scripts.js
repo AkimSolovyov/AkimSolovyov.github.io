@@ -121,7 +121,8 @@ function setHeight() {
 function toggleMenu() {
     $('.nav-toggle__btn').click(function () {
         $('.top-nav').toggleClass('top-nav-expand');
-        $('.top-nav__link').toggleClass('top-nav__link--element');
+        $('.top-nav__link').toggleClass('top-nav__link--mob');
+        $('.top-nav__element--registration').toggleClass('top-nav__element--reg-mob');
     })
 }
 
