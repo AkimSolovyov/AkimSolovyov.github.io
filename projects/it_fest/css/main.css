@@ -1575,18 +1575,22 @@
 }
 
 .social-aside__link--vk {
+    display: none;
     background-position: 0;
 }
 
 .social-aside__link--youtb {
+    display: none;
     background-position: -152px;
 }
 
 .social-aside__link--tw {
+    display: none;
     background-position: -76px;
 }
 
 .social-aside__link--sl {
+    display: none;
     background-position: -190px;
 }
 
