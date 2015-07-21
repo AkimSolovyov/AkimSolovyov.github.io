@@ -35,6 +35,7 @@ $(document).ready(function () {
 
     setHeight();
     toggleMenu();
+    closeSocial();
 
     $(".event-info-section__hidden-info-block").hide();
 
@@ -125,6 +126,15 @@ function toggleMenu() {
         $('.top-nav__element--registration').toggleClass('top-nav__element--reg-mob');
     })
 }
+
+
+function closeSocial() {
+    $('.social-aside__link--close').click(function () {
+        $('.social-aside').hide();
+
+    })
+}
+
 
 function show(id) {
     var h = $('.s' + id).offset().top;

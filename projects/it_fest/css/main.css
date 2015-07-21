@@ -798,7 +798,11 @@
     height: 55px;
     padding-top: 15px;
     top: 156px;
-    right: 195px;
+    right: 193px;
+}
+
+.puzzle-block__box--8 .puzzle-block__box-number {
+    margin: 5px 0 0 0;
 }
 
 .puzzle-block__box--9 {
@@ -809,6 +813,10 @@
     right: 193px;
 }
 
+.puzzle-block__box--9 .puzzle-block__box-number {
+    margin: 5px 0 0 0;
+}
+
 .puzzle-block__box--10 {
     width: 110px;
     height: 54px;
@@ -817,9 +825,8 @@
     right: 283px;
 }
 
-.puzzle-block__box--10 .puzzle-block__box-text {
-    margin: 5px 0;
-    width: 135px;
+.puzzle-block__box--10 .puzzle-block__box-number {
+    margin: 5px 0 0 0;
 }
 
 .puzzle-block__box--11 {
@@ -830,9 +837,8 @@
     right: 123px;
 }
 
-.puzzle-block__box--11 .puzzle-block__box-text {
-    margin: 5px 0;
-    width: 135px;
+.puzzle-block__box--11 .puzzle-block__box-number {
+    margin: 5px 0 0 0;
 }
 
 .puzzle-block__box--12 {
@@ -843,9 +849,8 @@
     right: 123px;
 }
 
-.puzzle-block__box--12 .puzzle-block__box-text {
-    margin: 5px 0;
-    width: 135px;
+.puzzle-block__box--12 .puzzle-block__box-number {
+    margin: 5px 0 0 0;
 }
 
 .puzzle-block__box--13 {
@@ -857,7 +862,19 @@
 }
 
 .puzzle-block__box--13 .puzzle-block__box-number {
-    margin: 15px 0 0 0;
+    margin: 20px 0 0 0;
+}
+
+.puzzle-block__box--14 {
+    width: 186px;
+    height: 55px;
+    padding-top: 15px;
+    top: 233px;
+    right: 0;
+}
+
+.puzzle-block__box--14 .puzzle-block__box-number {
+    margin: 5px 0 0 0;
 }
 /*  ********* Display #3 ********** */
 
@@ -1531,4 +1548,64 @@
 .footer__link:focus:after,
 .footer__link:active:after {
     display: block;
+}
+
+.social-aside {
+    position: fixed;
+    height: 200px;
+    width: 30px;
+}
+
+.social-aside--right {
+    z-index: 2;
+    right: 5px;
+    top: 40%;
+}
+
+.social-aside__link {
+    display: inline-block;
+    background: url(../images/social_icons.png);
+    width: 28px;
+    height: 28px;
+    border-radius: 3px;
+}
+
+.social-aside__link--fb {
+    background-position: -38px;
+}
+
+.social-aside__link--vk {
+    background-position: 0;
+}
+
+.social-aside__link--youtb {
+    background-position: -152px;
+}
+
+.social-aside__link--tw {
+    background-position: -76px;
+}
+
+.social-aside__link--sl {
+    background-position: -190px;
+}
+
+.social-aside__link--close {
+    background: none;
+    position: relative;
+}
+
+.social-aside__link--close:after {
+    content: "\f00d";
+    position: absolute;
+    color: #000;
+    right: 0;
+    padding: 0 7px;
+    font-family: FontAwesome;
+    font-size: 18px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    z-index: 1000;
 }
