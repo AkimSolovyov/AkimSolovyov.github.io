@@ -52,7 +52,7 @@ $(document).ready(function () {
         itemsDesktopSmall: [815, 3],
         itemsTablet: [640, 2],
         itemsTabletSmall: false,
-        itemsMobile: [320, 1],
+        itemsMobile: [420, 1],
         singleItem: false,
         itemsScaleUp: false,
 

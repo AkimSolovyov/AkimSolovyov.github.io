@@ -1552,14 +1552,14 @@
 
 .social-aside {
     position: fixed;
-    height: 200px;
+    height: auto;
     width: 30px;
 }
 
 .social-aside--right {
-    z-index: 2;
-    right: 5px;
-    top: 40%;
+    z-index: 9999;
+    right: 2px;
+    top: 33%;
 }
 
 .social-aside__link {
