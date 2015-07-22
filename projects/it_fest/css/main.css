@@ -1613,3 +1613,7 @@
     transition-timing-function: ease-out;
     z-index: 1000;
 }
+
+.event-info-section__puzzle-block-mobile-section {
+    display: none;
+}
