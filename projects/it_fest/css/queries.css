@@ -497,9 +497,11 @@
         width: 100%;
     }
     .event-contacts-section__join-us-block {
-        width: 400px;
+        width: 40%;
+        max-width: 400px;
     }
     .join-us-block__heading {
+        font-size: 28px;
         margin-left: 0;
         font-weight: 300;
     }
@@ -507,6 +509,9 @@
         margin: 10px 0 20px 0;
         padding: 0;
         left: 0;
+    }
+    .join-us-block__link {
+        margin: 0;
     }
     .event-contacts-section__coordinator-block {}
     .coordinator-block__photo {
