@@ -1465,6 +1465,7 @@
     position: relative;
     width: 100%;
     height: 50px;
+    bottom: -10px;
     background: #ff6c00;
     box-shadow: 0px -20px 61px 0px rgba(0, 0, 0, 0.3);
 }
@@ -1480,6 +1481,7 @@
     display: inline-block;
     width: 100px;
     margin-right: 50px;
+    margin-left: 10%;
 }
 
 .footer__logo:after {
@@ -1503,15 +1505,18 @@
     text-align: left;
     line-height: 30px;
     vertical-align: top;
-    width: 75%;
+    width: 50%;
     height: 30px;
     padding-bottom: 10px;
+    padding-top: 7px;
 }
 
 .footer__credits-text {
     width: 100%;
     font-family: "GothamProLight", 'Helvetica', sans-serif;
     font-size: 12px;
+    line-height: 14px;
+    margin: 2px 0 2px 0
 }
 
 .footer__link {

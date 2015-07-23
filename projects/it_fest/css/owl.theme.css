@@ -14,7 +14,7 @@
     display: inline-block;
     font-family: FontAwesome;
     margin: 5px;
-    padding: 3px 25px;
+    padding: 3px 10px;
     filter: Alpha(Opacity=50);
     /*IE7 fix*/
 
@@ -25,8 +25,9 @@
 
 .owl-theme .owl-controls .owl-buttons div:first-of-type {
     position: absolute;
-    left: -20px;
+    left: 0;
     top: 25px;
+    left: -10px;
 }
 
 .owl-theme .owl-controls .owl-buttons div:first-of-type:after {
@@ -38,8 +39,9 @@
 
 .owl-theme .owl-controls .owl-buttons div:last-of-type {
     position: absolute;
-    right: -20px;
+    right: 0;
     top: 25px;
+    right: -10px;
 }
 
 .owl-theme .owl-controls .owl-buttons div:last-of-type:after {
