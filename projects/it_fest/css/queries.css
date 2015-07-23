@@ -1644,7 +1644,7 @@
         z-index: 1000;
     }
     .nav-form__btn {
-        display: none;
+        display: block;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
