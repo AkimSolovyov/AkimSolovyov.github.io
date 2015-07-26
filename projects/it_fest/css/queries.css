@@ -57,7 +57,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1100px) {
     .container {
-        width: 90%;
+        width: 96%;
     }
     .header {
         position: fixed;
@@ -1542,11 +1542,8 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-    .page {
-        min-width: 320px;
-    }
     .container {
-        width: 90%;
+        width: 88%;
     }
     .header {
         position: fixed;
@@ -1809,7 +1806,7 @@
     }
     .sub-header__online {
         position: absolute;
-        left: 55%;
+        left: 52%;
         bottom: 0;
         width: 132px;
         height: 75px;
@@ -1832,7 +1829,7 @@
     .event-info-section__heading--orange {
         width: 100%;
         height: auto;
-        margin: 170px 0 10px 0;
+        margin: 200px 0 10px 0;
         padding-top: 20px;
         font-size: 22px;
         text-align: center;
@@ -1862,7 +1859,7 @@
         z-index: 2;
     }
     .event-info-section__info-block--book {
-        top: 350px;
+        top: 380px;
         right: 0;
         width: 100%;
     }
@@ -1919,7 +1916,7 @@
         padding: 15px;
         font-family: 'GothamProRegular', 'Helvetica', sans-serif;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
     }
     .puzzle-table-mobile__data:nth-child(1) {
         width: 10%;
@@ -2597,7 +2594,7 @@
         z-index: 1000;
     }
     .nav-form__btn {
-        display: none;
+        display: inline-block;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2609,7 +2606,7 @@
         height: 50px;
         color: #000;
         position: absolute;
-        top: 12px;
+        top: 7px;
         right: 45px;
     }
     .nav-form__btn:after {
@@ -2748,7 +2745,7 @@
     .event-info-section__heading--orange {
         width: 100%;
         height: auto;
-        margin: 170px 0 10px 0;
+        margin: 220px 0 10px 0;
         padding-top: 20px;
         font-size: 22px;
         text-align: center;
@@ -2769,7 +2766,7 @@
         text-align: left;
         padding: 0 10px;
         margin-top: 180px;
-        line-height: 16px
+        line-height: 14px
     }
     .event-info-section__info-block {
         position: absolute;
@@ -2833,23 +2830,23 @@
     }
     .puzzle-table-mobile__data {
         text-align: left;
-        padding: 15px;
+        padding: 10px;
         font-family: 'GothamProRegular', 'Helvetica', sans-serif;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
     }
     .puzzle-table-mobile__data:nth-child(1) {
-        width: 10%;
+        width: auto;
         text-align: left;
         text-align: center;
         color: #ff6c00;
         font-family: 'GothamProBold', 'Helvetica', sans-serif;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 18px;
     }
     .puzzle-table-mobile__data:nth-child(2) {
         text-align: left;
-        width: 90%;
+        width: auto;
     }
     .puzzle-table-mobile__row:nth-child(1) {
         background-color: #ff6c00;

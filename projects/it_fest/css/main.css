@@ -883,6 +883,7 @@
 /*  ********* Display #3 ********** */
 
 .event-speakers-section {
+    width: 100%;
     position: relative;
     box-shadow: inset 0px -16px 51px 0 rgba(0, 0, 0, 0.25);
     padding-bottom: 80px;
