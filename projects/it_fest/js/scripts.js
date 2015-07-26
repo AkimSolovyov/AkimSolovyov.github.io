@@ -109,6 +109,56 @@ $(document).ready(function () {
     }, {
         offset: '120%'
     });
+
+
+    function log(obj) {
+        $('#response').text(JSON.stringify(obj));
+    }
+
+    // create a new instance of the Mandrill class with your API key
+    var m = new mandrill.Mandrill('PiO9LcolFIs57A1H2URuEQ');
+
+    // create a variable for the API call parameters
+
+
+
+
+    $('#sendEmail').click(function () {
+        var name = $('.sign-up__name').val(),
+            phone = $('.sign-up__phone').val(),
+            email = $('.sign-up__email').val(),
+            date = new Date();
+
+        date = date.toDateString();
+
+        var params = {
+            "message": {
+                "from_email": "itfest@goit.com.ua",
+                "to": [{
+                    "email": "itfest@goit.com.ua"
+            }],
+                "subject": "Лиды с IT Fest " + date,
+                "html": '<p>Имя:' + name + '<br>' +
+                    'Телефон:' + phone + '<br>' +
+                    'Email:' + email + '</p>',
+                'autotext': 'true',
+                'track_opens': 'true'
+            }
+        }
+
+        m.messages.send(params, function (res) {
+            log(res);
+        }, function (err) {
+            log(err);
+        })
+
+        $('.sign-up-form-block').toggle();
+        $('.curtain').toggle();
+        return false;
+    });
+
+
+
 });
 
 
@@ -140,11 +190,8 @@ function toggleForm() {
         $('.sign-up-form-block').toggle();
         $('.curtain').toggle();
         $('.sign-up__name').focus();
-
-
     })
 }
-
 
 
 function show(id) {
