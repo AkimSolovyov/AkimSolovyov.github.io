@@ -30,7 +30,6 @@
 </head>
 
 <body class="page">
-
     <!-- Google Tag Manager -->
     <noscript>
         <iframe src="//www.googletagmanager.com/ns.html?id=GTM-P4XPFL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -74,7 +73,7 @@
     <!-- End SiteHeart code -->
 
     <!--  ********* Display #1 ********** -->
-
+    <div class="curtain"></div>
     <div class="top-info-section s1">
         <div class="header js-header">
             <div class="logo">
@@ -82,7 +81,7 @@
                 </a>
             </div>
             <div class="nav-toggle">
-                <a class="nav-form__btn" href="javascript:;"></a>
+                <a class="nav-form__btn js-form-btn" href="javascript:;"></a>
                 <a class="nav-toggle__btn" href="javascript:;"></a>
             </div>
             <div class="top-nav">
@@ -120,13 +119,34 @@
                     </li>
 
                     <li class="top-nav__element--registration">
-                        <a class="top-nav__link--registration button button--orange" href="javascript:;" onclick="show(8);">Купить билет</a>
+                        <a class="top-nav__link--registration button button--orange js-form-btn" href="javascript:;">Принять участие</a>
                     </li>
 
                 </ul>
             </div>
 
         </div>
+
+
+        <div class="sign-up-form-block">
+            <div class="sign-up-form-block__head">
+                <h2 class="sign-up-form-block__heading">Подать заявку!</h2>
+
+            </div>
+            <form action="" class="sign-up">
+                <h3 class="sign-up__label">Имя:</h3>
+                <input type="text" class="sign-up__name" autofocus required>
+                <h3 class="sign-up__label">Телефон:</h3>
+                <input type="tel" name="tel" class="sign-up__phone" required>
+                <h3 class="sign-up__label">Email:</h3>
+                <input type="email" class="sign-up__email" required>
+                <input type="submit" class="sign-up__send button" value="Принять участие">
+
+            </form>
+
+        </div>
+
+
 
         <div class="sub-header">
             <div class="container">

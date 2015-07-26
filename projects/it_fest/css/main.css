@@ -126,6 +126,10 @@
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
+    font-family: 'GothamProRegular', 'Helvetica', sans-serif;
+    font-weight: 100;
+    color: #000;
+    font-size: 16px;
 }
 
 .button:before {
@@ -264,14 +268,14 @@
     background-color: #ff6c00;
     margin: 0;
     padding: 0;
-    width: 130px;
+    width: 145px;
     height: 40px;
 }
 
 .js-header-shrink .top-nav__element--registration {
     position: relative;
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 100%;
     margin-right: 3px;
     list-style: none;
@@ -306,8 +310,8 @@
 
 .top-nav__link--registration {
     display: inline-block;
-    font-family: 'GothamProBlack', 'Helvetica', sans-serif;
-    font-weight: 500;
+    font-family: 'GothamProRegular', 'Helvetica', sans-serif;
+    font-weight: 700;
     font-size: 14px;
     width: 100%;
     height: 100%;
@@ -317,8 +321,8 @@
 }
 
 .js-header-shrink .top-nav__link--registration {
-    font-family: 'GothamProBlack', 'Helvetica', sans-serif;
-    font-weight: 500;
+    font-family: 'GothamProRegular', 'Helvetica', sans-serif;
+    font-weight: 700;
     font-size: 12px;
     line-height: 30px;
     text-decoration: none;
@@ -1323,7 +1327,7 @@
     display: inline-block;
     background-color: #ff6c00;
     width: 186px;
-    padding-top: 14px;
+    padding-top: 10px;
     height: 28px;
     color: #fff;
     text-decoration: none;
@@ -1382,7 +1386,7 @@
     display: block;
     background-color: #ff6c00;
     width: 200px;
-    padding-top: 14px;
+    padding-top: 10px;
     height: 28px;
     margin-left: 45px;
     color: #fff;
@@ -1562,7 +1566,7 @@
 }
 
 .social-aside--right {
-    z-index: 9999;
+    z-index: 999;
     right: 2px;
     top: 33%;
 }
@@ -1621,4 +1625,100 @@
 
 .event-info-section__puzzle-block-mobile-section {
     display: none;
+}
+
+.sign-up-form-block {
+    display: none;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    min-height: 340px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    background: #fff;
+    border: 4px solid #ff6c00;
+    z-index: 1001;
+}
+
+.sign-up {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sign-up-form-block__head {
+    position: relative;
+    height: 40px;
+    display: block;
+    background: #ff6c00;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.sign-up-form-block__heading {
+    margin: 0 auto;
+    color: #fff;
+}
+
+.sign-up__label {
+    margin: 7px;
+    padding: 2px;
+    ;
+}
+
+.sign-up__name,
+.sign-up__phone,
+.sign-up__email {
+    display: inline-block;
+    width: 80%;
+}
+
+.sign-up__send {
+    margin: 20px 0 10px 0;
+    color: #fff;
+    padding: 10px 0;
+    width: 80%;
+    background: #ff6c00;
+    border: 0;
+    border-radius: 1px;
+    outline: 0;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: transform, color;
+    transition-property: transform, color;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+
+.sign-up__send:hover,
+.sign-up__send:focus,
+.sign-up__send:active {
+    color: #000;
+    transform: scale(1.1)
+}
+
+.curtain {
+    display: none;
+    position: fixed;
+    background: #000;
+    opacity: 0.7;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
 }

@@ -36,6 +36,7 @@ $(document).ready(function () {
     setHeight();
     toggleMenu();
     closeSocial();
+    toggleForm();
 
     $(".event-info-section__hidden-info-block").hide();
 
@@ -108,7 +109,6 @@ $(document).ready(function () {
     }, {
         offset: '120%'
     });
-
 });
 
 
@@ -134,6 +134,17 @@ function closeSocial() {
 
     })
 }
+
+function toggleForm() {
+    $('.js-form-btn').click(function () {
+        $('.sign-up-form-block').toggle();
+        $('.curtain').toggle();
+        $('.sign-up__name').focus();
+
+
+    })
+}
+
 
 
 function show(id) {

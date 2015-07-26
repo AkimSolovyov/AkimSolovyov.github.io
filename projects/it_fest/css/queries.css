@@ -585,7 +585,7 @@
         display: block;
     }
     .social-aside--right {
-        z-index: 9999;
+        z-index: 999;
         right: 2px;
         top: 100px;
     }
@@ -1513,7 +1513,7 @@
         display: block;
     }
     .social-aside--right {
-        z-index: 9999;
+        z-index: 999;
         right: 2px;
         top: 100px;
     }
@@ -1787,7 +1787,7 @@
     }
     .sub-header__online {
         position: absolute;
-        left: 58%;
+        left: 55%;
         bottom: 0;
         width: 132px;
         height: 75px;
@@ -2437,7 +2437,7 @@
         display: block;
     }
     .social-aside--right {
-        z-index: 9999;
+        z-index: 999;
         right: 2px;
         transform: scale(0.8);
     }
@@ -3400,7 +3400,7 @@
         display: block;
     }
     .social-aside--right {
-        z-index: 9999;
+        z-index: 999;
         right: 2px;
         transform: scale(0.8);
     }
