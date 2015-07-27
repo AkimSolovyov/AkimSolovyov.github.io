@@ -151,8 +151,6 @@
     transition-timing-function: ease-out;
 }
 
-.button--orange:before {}
-
 .button:hover,
 .button:focus,
 .button:active {
@@ -1635,7 +1633,7 @@
     width: 100%;
     max-width: 270px;
     height: auto;
-    min-height: 340px;
+    min-height: 350px;
     left: 50%;
     top: 50%;
     -webkit-transform: translate3d(-50%, -50%, 0);
@@ -1660,18 +1658,19 @@
     background: #ff6c00;
     text-align: center;
     margin-bottom: 15px;
-    padding: 5px;
+    padding: 15px 0 5px 0;
 }
 
 .sign-up-form-block__heading {
     margin: 0 auto;
     color: #fff;
+    font-family: 'GothamProBold', 'Helvetica', sans-serif;
+    font-size: 22px;
 }
 
 .sign-up__label {
     margin: 7px;
     padding: 2px;
-    ;
 }
 
 .sign-up__name,
@@ -1682,9 +1681,9 @@
 }
 
 .sign-up__send {
-    margin: 20px 0 10px 0;
+    margin: 25px 0 10px 0;
     color: #fff;
-    padding: 10px 0;
+    padding: 12px 0;
     width: 80%;
     background: #ff6c00;
     border: 0;
@@ -1700,8 +1699,8 @@
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    -webkit-transition-property: transform, color;
-    transition-property: transform, color;
+    -webkit-transition-property: background, color;
+    transition-property: background, color;
     -webkit-transition-duration: 0.8s;
     transition-duration: 0.8s;
     cursor: pointer;
@@ -1711,7 +1710,7 @@
 .sign-up__send:focus,
 .sign-up__send:active {
     color: #000;
-    transform: scale(1.1)
+    background: #dee0e9;
 }
 
 .curtain {

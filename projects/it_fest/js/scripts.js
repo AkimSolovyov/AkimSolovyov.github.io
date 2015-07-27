@@ -118,8 +118,6 @@ $(document).ready(function () {
     // create a new instance of the Mandrill class with your API key
     var m = new mandrill.Mandrill('PiO9LcolFIs57A1H2URuEQ');
 
-    // create a variable for the API call parameters
-
 
 
 
@@ -128,6 +126,7 @@ $(document).ready(function () {
             phone = $('.sign-up__phone').val(),
             email = $('.sign-up__email').val(),
             date = new Date();
+
 
         date = date.toDateString();
 
@@ -154,12 +153,20 @@ $(document).ready(function () {
 
         $('.sign-up-form-block').toggle();
         $('.curtain').toggle();
+
+        if (ticketType == "online") {
+            window.location = "https://itfest-online.ticketforevent.com/ru/?draft_mode=on";
+        }
+
+        window.location = "https://itfest.ticketforevent.com/ru/?draft_mode=on";
         return false;
     });
 
 
 
 });
+
+var ticketType = "offline";
 
 
 function setHeight() {
@@ -186,13 +193,16 @@ function closeSocial() {
 }
 
 function toggleForm() {
-    $('.js-form-btn').click(function () {
+    $('.js-form-btn, .curtain').click(function () {
         $('.sign-up-form-block').toggle();
         $('.curtain').toggle();
         $('.sign-up__name').focus();
+        if ($(this).hasClass("js-form-btn--online")) { //check if online ticket is chosen
+            ticketType = "online";
+        }
+        return false;
     })
 }
-
 
 function show(id) {
     var h = $('.s' + id).offset().top;
