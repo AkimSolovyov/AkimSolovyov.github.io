@@ -155,13 +155,12 @@ $(document).ready(function () {
         $('.curtain').toggle();
 
         if (ticketType == "online") {
-            window.location = "https://itfest-online.ticketforevent.com/ru/?draft_mode=on";
+            window.open("https://itfest-online.ticketforevent.com/ru/?draft_mode=on", '_blank');
         }
 
-        window.location = "https://itfest.ticketforevent.com/ru/?draft_mode=on";
+        window.open("https://itfest.ticketforevent.com/ru/?draft_mode=on", '_blank');
         return false;
     });
-
 
 
 });
