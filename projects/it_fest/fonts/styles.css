@@ -41,33 +41,42 @@
 .icon-1:before {
   content: "a";
 }
-.icon-2:before {
+.icon-nov:before {
   content: "b";
 }
-.icon-3:before {
+.icon-2:before {
   content: "c";
 }
-.icon-4:before {
+.icon-3:before {
   content: "d";
 }
-.icon-5:before {
+.icon-4:before {
   content: "e";
 }
-.icon-6:before {
+.icon-5:before {
   content: "f";
 }
-.icon-7:before {
+.icon-6:before {
   content: "g";
 }
-.icon-8:before {
+.icon-7:before {
   content: "h";
 }
-.icon-9:before {
+.icon-8:before {
   content: "i";
 }
-.icon-10:before {
+.icon-9:before {
   content: "j";
 }
-.icon-11:before {
+.icon-10:before {
   content: "k";
+}
+.icon-11:before {
+  content: "l";
+}
+.icon-all:before {
+  content: "m";
+}
+.icon-jun:before {
+  content: "n";
 }

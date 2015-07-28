@@ -89,6 +89,14 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "itfest-icons";
+    src: url("fonts/itfest-icons.eot");
+    src: url("fonts/itfest-icons.eot?#iefix") format("embedded-opentype"), url("fonts/itfest-icons.woff") format("woff"), url("fonts/itfest-icons.ttf") format("truetype"), url("fonts/itfest-icons.svg#itfest-icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .page {
     padding: 0;
     margin: 0 auto;
