@@ -21,16 +21,9 @@
     position: relative;
     top: 15px;
     left: 65px;
-    *zoom: 1;
     width: 80%;
     border: none;
     position: relative;
-}
-
-.tabs:before,
-.tabs:after {
-    content: " ";
-    display: table;
 }
 
 .tabs:after {
@@ -88,7 +81,7 @@
 }
 
 .tabs-link--alerts:before {
-    content: url(../img/i4.png) 50%;
+    content: url(../img/i4.png);
     position: absolute;
     height: 10px;
     top: 3px;
