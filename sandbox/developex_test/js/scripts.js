@@ -19,5 +19,27 @@
         });
 
 
+        $('.add-note-input').click(function (e) {
+            $(this).css('z-index', '999');
+            $('.overlay').fadeIn(300);
+        });
+
+        $('.overlay').click(function (e) {
+            $('.overlay').fadeOut(300, function () {
+                $('.add-note-input').css('z-index', '1');
+            });
+        });
+
+        $('.comments-block').children().hover(function () {
+            $(this).siblings().stop().fadeTo(500, 0.3);
+        }, function () {
+            $(this).siblings().stop().fadeTo(500, 1);
+        });
+        //area 2
+        $('.content-block').children().hover(function () {
+            $(this).siblings().stop().fadeTo(500, 0.3);
+        }, function () {
+            $(this).siblings().stop().fadeTo(500, 1);
+        });
 
     });
