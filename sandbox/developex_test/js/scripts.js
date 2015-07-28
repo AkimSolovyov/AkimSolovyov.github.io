@@ -11,4 +11,13 @@
                 event.preventDefault();
             }
         });
+
+        $(".content-block-comment-button-block").hide();
+
+        $(".content-block-comment-text").click(function () {
+            $(this).next().next().toggle();
+        });
+
+
+
     });

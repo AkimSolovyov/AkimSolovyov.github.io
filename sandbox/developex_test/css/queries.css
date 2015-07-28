@@ -1,0 +1,206 @@
+@media only screen and (min-width: 480px) and (max-width: 790px) {
+    .page {
+        font-size: 14px;
+    }
+    .container {
+        display: inline-block;
+        width: 96%;
+        max-width: 785px;
+    }
+    .tabs {
+        position: relative;
+        top: 15px;
+        left: 0px;
+        width: 90%;
+    }
+    .tabs-head section {
+        position: relative;
+        display: none;
+        margin-top: 115px;
+        width: 100%;
+        left: -20px;
+    }
+    .tabs-link {
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        vertical-align: baseline;
+        font-family: "Helvetica Bold", "Arial", sans-serif;
+        color: #666;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: left;
+        margin-right: 28px;
+        left: -30px;
+    }
+    .tabs-link--notes:before {
+        content: url(../img/i1.png);
+        position: absolute;
+        top: -1px;
+        left: -22px;
+    }
+    .tabs-link--annotations:before {
+        content: url(../img/i2.png);
+        position: absolute;
+        top: -2px;
+        left: -22px;
+    }
+    .tabs-link--events:before {
+        content: url(../img/i3.png);
+        position: absolute;
+        top: -3px;
+        left: -22px;
+    }
+    .tabs-link--alerts:before {
+        content: url(../img/i4.png) 50%;
+        position: absolute;
+        height: 10px;
+        top: 0;
+        left: -22px;
+    }
+    .is-active {
+        color: #409ac4;
+    }
+    .add-note-input {
+        width: 97%;
+    }
+    .content-block {
+        position: relative;
+        width: 100%;
+        left: 10px;
+    }
+    .content-block-counter {
+        position: relative;
+        display: inline-block;
+        background: url(../img/cloud.png) no-repeat;
+        height: 42px;
+        width: 37px;
+        top: 0px;
+        margin-right: 15px;
+    }
+    .content-block-counter-num {
+        display: inline-block;
+        color: #fff;
+        font-size: 18px;
+        padding: 8px 14px;
+    }
+    .content-block-heading {
+        display: inline-block;
+        font-family: "Helvetica Bold", "Arial", sans-serif;
+        color: #666;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .blue {
+        color: #409ac4;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .content-block-topic-comment {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        padding-left: 50px;
+        overflow: none;
+    }
+    .topic-comment-pic {
+        left: 0;
+    }
+    .topic-comment-img {
+        width: 40px;
+        height: 40px;
+    }
+    .topic-comment-contents {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        left: 5px;
+    }
+    .topic-content-text {
+        width: 90%;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .topic-content-sub-text {
+        font-size: 14px;
+        width: 95%
+    }
+    .topic-content-link {
+        font-size: 14px;
+        width: 90%
+    }
+    .content-block-comment {
+        position: relative;
+        padding-left: 75px;
+        margin-bottom: 30px;
+        width: 80%;
+        padding-bottom: 20px;
+    }
+    .content-block-comment-status {
+        width: 70px;
+        top: 20px;
+        left: 0;
+        color: #999;
+        font-size: 12px;
+    }
+    .content-block-comment-link {
+        width: 70px;
+        top: 2px;
+        left: 0;
+        font-size: 12px;
+    }
+    .content-block-comment-status--following {
+        top: 0;
+    }
+    .content-block-comment-link--unfollow {
+        top: 20px;
+    }
+    .content-block-comment-pic {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        width: 38px;
+        height: 38px;
+    }
+    .content-block-comment-contents {
+        position: relative;
+        display: inline-block;
+        margin-left: 45px;
+        width: 90%;
+    }
+    .content-block-comment-text {
+        width: 90%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .content-block-comment-name {
+        font-size: 14px;
+    }
+    .content-block-comment-sub-text {
+        font-size: 12px;
+    }
+    .content-block-comment-button-block {
+        width: 150px;
+        right: none;
+        left: 20px;
+        ;
+        bottom: auto;
+        text-align: left;
+    }
+    .content-block-comment-button {
+        display: inline-block;
+        position: relative;
+        color: #666;
+        width: 50px;
+        font-size: 12px;
+        font-weight: 400;
+        text-decoration: none;
+        margin-left: 0;
+    }
+    .content-block-comment-button--share:before {
+        left: -20px;
+    }
+    .content-block-comment-button--delete:before {
+        left: -15px;
+    }
+}
