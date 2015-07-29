@@ -1890,7 +1890,7 @@
     -moz-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
     background: #fff;
-    border: 7px solid #ff6c00;
+    border: 5px solid #ff6c00;
     z-index: 1001;
     padding-bottom: 20px;
 }
@@ -1948,19 +1948,13 @@
     display: inline-block;
     position: relative;
     vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
     -webkit-transition-property: background, color;
     transition-property: background, color;
     -webkit-transition-duration: 0.8s;
     transition-duration: 0.8s;
     cursor: pointer;
     font-family: 'GothamProBold', 'Helvetica', sans-serif;
+    font-size: 16px;
     font-weight: 300;
 }
 
