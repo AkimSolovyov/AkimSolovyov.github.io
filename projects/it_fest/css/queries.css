@@ -1090,6 +1090,77 @@
     }
     /*  ********* Display #4 ********** */
 
+    .event-timeline-section-table {
+        display: none;
+    }
+    .event-timeline-section-table--mobile {
+        display: inline-block;
+        width: 98%;
+        max-width: 500px;
+    }
+    .event-timeline-section {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .event-timeline-section__header {
+        width: 100%;
+        height: auto;
+        margin: 0 0 30px 0;
+        padding-top: 10px;
+    }
+    .event-timeline-section__text {
+        width: 100%;
+        margin: 5px 0 10px 0;
+        text-align: left;
+        line-height: 20px;
+    }
+    .event-timeline-section__table-legend {
+        position: relative;
+        display: inline-block;
+        text-align: left;
+        left: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .table-legend {
+        font-family: 'GothamProBold', 'Helvetica', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+        padding-left: 40px;
+        margin: 20px 0;
+        display: block;
+    }
+    .event-timeline-section-table__data {
+        text-align: left;
+        padding: 25px 0 25px 25px;
+    }
+    .event-timeline-section-table--mobile .event-timeline-section-table__row:nth-child(1) .event-timeline-section-table__data {
+        padding: 20px 0 15px 25px;
+        border-bottom: 7px solid #dee0e9;
+    }
+    .event-timeline-section-table--mobile .event-timeline-section-table__row:nth-child(14) .event-timeline-section-table__data {
+        padding: 20px 0 15px 25px;
+        border-top: 7px solid #dee0e9;
+        border-bottom: 7px solid #dee0e9;
+    }
+    .event-timeline-section-table__header {
+        font-size: 26px;
+    }
+    .event-timeline-section-table__text {
+        font-size: 14px;
+    }
+    .event-timeline-section-table__subject {
+        font-size: 18px;
+    }
+    .event-timeline-section-table__subject--empty {
+        font-size: 18px;
+    }
+    .event-timeline-section-table__description {
+        font-size: 14px;
+    }
+    /*  ********* Display #5 ********** */
+
     .event-interactive-area-section {
         position: relative;
         box-shadow: inset 0px -16px 51px 0 rgba(0, 0, 0, 0.25);
@@ -1539,6 +1610,12 @@
         right: 2px;
         top: 100px;
     }
+    .event-timeline-section-table {
+        display: none;
+    }
+    .event-timeline-section-table--mobile {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
@@ -1966,7 +2043,7 @@
         width: 100%;
         height: auto;
         margin: 0 0 30px 0;
-        padding-top: 10px;
+        padding-top: 20px;
         font-size: 22px;
         text-align: center;
     }
@@ -2015,6 +2092,80 @@
         font-size: 13px;
     }
     /*  ********* Display #4 ********** */
+
+    .event-timeline-section-table {
+        display: none;
+    }
+    .event-timeline-section-table--mobile {
+        display: inline-block;
+        width: 98%;
+    }
+    .event-timeline-section {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .event-timeline-section__header {
+        width: 100%;
+        height: auto;
+        margin: 0 0 30px 0;
+        padding-top: 10px;
+        font-size: 22px;
+        text-align: center;
+    }
+    .event-timeline-section__text {
+        width: 100%;
+        margin: 5px 0 10px 0;
+        text-align: left;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .event-timeline-section__table-legend {
+        position: relative;
+        display: inline-block;
+        text-align: left;
+        left: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .table-legend {
+        font-family: 'GothamProBold', 'Helvetica', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+        padding-left: 40px;
+        margin: 20px 0;
+        display: block;
+    }
+    .event-timeline-section-table__data {
+        text-align: left;
+        padding: 25px 0 25px 25px;
+    }
+    .event-timeline-section-table--mobile .event-timeline-section-table__row:nth-child(1) .event-timeline-section-table__data {
+        padding: 20px 0 15px 25px;
+        border-bottom: 7px solid #dee0e9;
+    }
+    .event-timeline-section-table--mobile .event-timeline-section-table__row:nth-child(14) .event-timeline-section-table__data {
+        padding: 20px 0 15px 25px;
+        border-top: 7px solid #dee0e9;
+        border-bottom: 7px solid #dee0e9;
+    }
+    .event-timeline-section-table__header {
+        font-size: 26px;
+    }
+    .event-timeline-section-table__text {
+        font-size: 14px;
+    }
+    .event-timeline-section-table__subject {
+        font-size: 18px;
+    }
+    .event-timeline-section-table__subject--empty {
+        font-size: 18px;
+    }
+    .event-timeline-section-table__description {
+        font-size: 14px;
+        width: 85%;
+    }
+    /*  ********* Display #5 ********** */
 
     .event-interactive-area-section {
         position: relative;
@@ -2463,6 +2614,12 @@
     #sh_button {
         transform: scale(0.8);
     }
+    .event-timeline-section-table {
+        display: none;
+    }
+    .event-timeline-section-table--mobile {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 240px) and (max-width: 319px) {
@@ -2873,8 +3030,6 @@
         font-weight: 900;
         font-size: 12px;
     }
-    /*  ********* Display #3 ********** */
-
     .event-speakers-section {
         padding-bottom: 30px;
         padding-top: 30px;
@@ -2931,7 +3086,82 @@
         text-align: center;
         font-size: 13px;
     }
-    /*  ********* Display #4 ********** */
+    /*  ********* Display #3 ********** */
+
+    .event-timeline-section-table {
+        display: none;
+    }
+    .event-timeline-section-table--mobile {
+        display: inline-block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .event-timeline-section {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .event-timeline-section__header {
+        width: 100%;
+        height: auto;
+        margin: 0 0 30px 0;
+        padding-top: 10px;
+        font-size: 22px;
+        text-align: center;
+    }
+    .event-timeline-section__text {
+        width: 100%;
+        margin: 5px 0 10px 0;
+        text-align: left;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .event-timeline-section__table-legend {
+        position: relative;
+        display: inline-block;
+        text-align: left;
+        left: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .table-legend {
+        font-family: 'GothamProBold', 'Helvetica', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+        padding-left: 40px;
+        margin: 30px 0;
+        display: block;
+    }
+    .event-timeline-section-table__data {
+        text-align: left;
+        padding: 25px 0 25px 15px;
+    }
+    .event-timeline-section-table--mobile .event-timeline-section-table__row:nth-child(1) .event-timeline-section-table__data {
+        padding: 10px 0 15px 15px;
+        border-bottom: 7px solid #dee0e9;
+    }
+    .event-timeline-section-table--mobile .event-timeline-section-table__row:nth-child(14) .event-timeline-section-table__data {
+        padding: 10px 0 15px 15px;
+        border-top: 7px solid #dee0e9;
+        border-bottom: 7px solid #dee0e9;
+    }
+    .event-timeline-section-table__header {
+        font-size: 24px;
+    }
+    .event-timeline-section-table__text {
+        font-size: 12px;
+    }
+    .event-timeline-section-table__subject {
+        font-size: 16px;
+    }
+    .event-timeline-section-table__subject--empty {
+        font-size: 16px;
+    }
+    .event-timeline-section-table__description {
+        font-size: 12px;
+        width: 80%;
+    }
+    /*  ********* Display #5 ********** */
 
     .event-interactive-area-section {
         position: relative;
@@ -2960,7 +3190,7 @@
     }
     .event-interactive-area-section__interactive-area-block {
         position: relative;
-        display: block;
+        display: inline-block;
         border-width: 4px;
         border-color: #dee0e9;
         border-style: solid;
