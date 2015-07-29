@@ -1890,8 +1890,9 @@
     -moz-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
     background: #fff;
-    border: 4px solid #ff6c00;
+    border: 7px solid #ff6c00;
     z-index: 1001;
+    padding-bottom: 20px;
 }
 
 .sign-up {
@@ -1928,12 +1929,17 @@
 .sign-up__email {
     display: inline-block;
     width: 80%;
+    font-family: 'GothamProRegular', 'Helvetica', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 7px 0 3px 0;
+    vertical-align: middle;
 }
 
 .sign-up__send {
     margin: 25px 0 10px 0;
     color: #fff;
-    padding: 12px 0;
+    padding: 12px 0 10px 0;
     width: 80%;
     background: #ff6c00;
     border: 0;
@@ -1954,6 +1960,8 @@
     -webkit-transition-duration: 0.8s;
     transition-duration: 0.8s;
     cursor: pointer;
+    font-family: 'GothamProBold', 'Helvetica', sans-serif;
+    font-weight: 300;
 }
 
 .sign-up__send:hover,
