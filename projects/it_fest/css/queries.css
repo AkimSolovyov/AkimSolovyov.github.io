@@ -611,6 +611,9 @@
         right: 2px;
         top: 100px;
     }
+    .sign-up-form-block {
+        top: 55%;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -1616,6 +1619,9 @@
     .event-timeline-section-table--mobile {
         display: block;
     }
+    .sign-up-form-block {
+        top: 60%;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
@@ -2619,6 +2625,9 @@
     }
     .event-timeline-section-table--mobile {
         display: block;
+    }
+    .sign-up-form-block {
+        top: 60%;
     }
 }
 
@@ -3655,5 +3664,8 @@
     }
     #sh_button {
         display: none;
+    }
+    .sign-up-form-block {
+        top: 60%;
     }
 }
