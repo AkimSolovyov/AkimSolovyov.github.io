@@ -274,14 +274,14 @@
     background-color: #ff6c00;
     margin: 0;
     padding: 0;
-    width: 145px;
+    width: 155px;
     height: 40px;
 }
 
 .js-header-shrink .top-nav__element--registration {
     position: relative;
     display: inline-block;
-    width: 120px;
+    width: 130px;
     height: 100%;
     margin-right: 3px;
     list-style: none;
