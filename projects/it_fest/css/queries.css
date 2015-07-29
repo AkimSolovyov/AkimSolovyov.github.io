@@ -1110,11 +1110,13 @@
         height: auto;
         margin: 0 0 30px 0;
         padding-top: 10px;
+        font-size: 28px;
     }
     .event-timeline-section__text {
         width: 100%;
         margin: 5px 0 10px 0;
         text-align: left;
+        font-size: 15px;
         line-height: 20px;
     }
     .event-timeline-section__table-legend {
@@ -1620,7 +1622,7 @@
         display: block;
     }
     .sign-up-form-block {
-        top: 60%;
+        top: 55%;
     }
 }
 
@@ -2627,7 +2629,7 @@
         display: block;
     }
     .sign-up-form-block {
-        top: 60%;
+        top: 55%;
     }
 }
 
@@ -3666,6 +3668,6 @@
         display: none;
     }
     .sign-up-form-block {
-        top: 60%;
+        top: 55%;
     }
 }
