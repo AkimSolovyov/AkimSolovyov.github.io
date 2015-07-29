@@ -1135,6 +1135,14 @@
     margin: 0 0 10px 0;
 }
 
+.event-timeline-section-table__subject--empty {
+    display: inline-block;
+    width: 95%;
+    font-family: 'GothamProBold', 'Helvetica', sans-serif;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
 .event-timeline-section-table__description {
     font-family: 'GothamProRegular', 'Helvetica', sans-serif;
     width: 90%;
