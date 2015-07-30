@@ -33,7 +33,6 @@ $(document).ready(function () {
 
     })();
 
-    setHeight();
     toggleMenu();
     closeSocial();
     toggleForm();
@@ -152,28 +151,12 @@ $(document).ready(function () {
 
     });
 
-
-    $(window).resize(function () {
-        setHeight();
-    });
-
-
-    $('.s2').waypoint(function () {
-        $('.event-schedule-day1').addClass('animated fadeInUp delay-1s');
-    }, {
-        offset: '120%'
-    });
-
-
     function log(obj) {
         $('#response').text(JSON.stringify(obj));
     }
 
     // create a new instance of the Mandrill class with your API key
     var m = new mandrill.Mandrill('PiO9LcolFIs57A1H2URuEQ');
-
-
-
 
     $('#sendEmail').click(function () {
         var name = $('.sign-up__name').val(),
@@ -221,14 +204,6 @@ $(document).ready(function () {
 
 var ticketType = "offline";
 
-
-function setHeight() {
-    windowHeight = $(window).innerHeight();
-    //$('.sub-header').css('min-height', windowHeight + 100);
-    // $('.event-contacts-section').css('min-height', windowHeight - 150);
-
-};
-
 function toggleMenu() {
     $('.nav-toggle__btn').click(function () {
         $('.top-nav').toggleClass('top-nav-expand');
@@ -236,7 +211,6 @@ function toggleMenu() {
         $('.top-nav__element--registration').toggleClass('top-nav__element--reg-mob');
     })
 }
-
 
 function closeSocial() {
     $('.social-aside__link--close').click(function () {
