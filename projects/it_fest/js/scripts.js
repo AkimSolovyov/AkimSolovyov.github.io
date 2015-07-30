@@ -99,6 +99,60 @@ $(document).ready(function () {
     });
 
 
+    $("#infopartners").owlCarousel({
+        // Most important owl features
+        items: 4,
+        itemsCustom: false,
+        itemsDesktop: [1024, 3],
+        itemsDesktopSmall: [815, 2],
+        itemsTablet: [640, 1],
+        itemsTabletSmall: false,
+        itemsMobile: [420, 1],
+        singleItem: false,
+        itemsScaleUp: false,
+
+        //Basic Speeds
+        slideSpeed: 200,
+        paginationSpeed: 800,
+        rewindSpeed: 1000,
+
+        //Autoplay
+        autoPlay: false,
+        stopOnHover: false,
+
+        // Navigation
+        navigation: true,
+        navigationText: ["", ""],
+        rewindNav: false,
+        scrollPerPage: false,
+
+        //Pagination
+        pagination: false,
+        paginationNumbers: false,
+
+        // Responsive
+        responsive: true,
+        responsiveRefreshRate: 200,
+        responsiveBaseWidth: window,
+
+        // CSS Styles
+        baseClass: "owl-carousel",
+        theme: "owl-theme",
+
+        //Lazy load
+        lazyLoad: false,
+        lazyFollow: true,
+        lazyEffect: "fade",
+
+
+        //Mouse Events
+        dragBeforeAnimFinish: true,
+        mouseDrag: true,
+        touchDrag: true,
+
+    });
+
+
     $(window).resize(function () {
         setHeight();
     });
