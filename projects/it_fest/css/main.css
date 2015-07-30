@@ -97,6 +97,88 @@
     font-style: normal;
 }
 
+[data-icon]:before {
+    font-family: "itfest-icons" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "itfest-icons" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-n:before {
+    content: "n";
+}
+
+.icon-j:before {
+    content: "j";
+}
+
+.icon-a:before {
+    content: "a";
+}
+
+.icon-1:before {
+    content: "b";
+}
+
+.icon-2:before {
+    content: "c";
+}
+
+.icon-3:before {
+    content: "d";
+}
+
+.icon-4:before {
+    content: "e";
+}
+
+.icon-5:before {
+    content: "f";
+}
+
+.icon-6:before {
+    content: "g";
+}
+
+.icon-7:before {
+    content: "h";
+}
+
+.icon-8:before {
+    content: "i";
+}
+
+.icon-10:before {
+    content: "x";
+}
+
+.icon-11:before {
+    content: "k";
+}
+
+.icon-9:before {
+    content: "l";
+}
+
 .page {
     padding: 0;
     margin: 0 auto;
@@ -1012,24 +1094,6 @@
 }
 
 .table-legend--novice:before {
-    content: "b";
-    position: absolute;
-    color: #000;
-    top: -18px;
-    left: -15px;
-    font-family: "itfest-icons";
-    font-size: 65px;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-variant: normal !important;
-    text-transform: none !important;
-    speak: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.table-legend--junior:before {
     content: "n";
     position: absolute;
     color: #000;
@@ -1047,8 +1111,26 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.table-legend--junior:before {
+    content: "j";
+    position: absolute;
+    color: #000;
+    top: -18px;
+    left: -15px;
+    font-family: "itfest-icons";
+    font-size: 65px;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .table-legend--all:before {
-    content: "m";
+    content: "a";
     position: absolute;
     color: #000;
     top: -18px;
@@ -1166,7 +1248,7 @@
 }
 
 .event-timeline-section-table__description--all:before {
-    content: "m";
+    content: "a";
     position: absolute;
     color: #dcdfe7;
     top: -10px;
@@ -1184,7 +1266,7 @@
 }
 
 .event-timeline-section-table__description--jun:before {
-    content: "n";
+    content: "j";
     position: absolute;
     color: #dcdfe7;
     top: -10px;
@@ -1202,7 +1284,7 @@
 }
 
 .event-timeline-section-table__description--nov:before {
-    content: "b";
+    content: "n";
     position: absolute;
     color: #dcdfe7;
     top: -10px;
@@ -1253,7 +1335,7 @@
 
 .event-interactive-area-section__interactive-area-block {
     position: relative;
-    display: block;
+    display: table;
     border-width: 7px;
     border-color: #dee0e9;
     border-style: solid;
@@ -1270,14 +1352,16 @@
 
 .interactive-area-block__pic {
     width: 340px;
+    height: 100%;
+    position: relative;
 }
 
 .event-interactive-area-section__interactive-area-block--right .interactive-area-block__pic {
-    float: left;
+    text-align: center;
 }
 
 .event-interactive-area-section__interactive-area-block--left .interactive-area-block__pic {
-    float: right;
+    text-align: center;
 }
 
 .interactive-area-block__pic-img {
@@ -1286,12 +1370,20 @@
     height: 100%;
 }
 
-.interactive-area-block__content {
+.interactive-area-block_icon {
     display: inline-block;
-    width: 55%;
+    font-size: 200px;
+    position: relative;
+    top: 30px;
+}
+
+.interactive-area-block__content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 80%;
     height: 100%;
     text-align: left;
-    margin-left: 40px;
+    padding-left: 50px;
 }
 
 .interactive-area-block__content-heading {
