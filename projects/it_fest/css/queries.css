@@ -498,6 +498,9 @@
         position: relative;
         height: 100%;
     }
+    .infopartners {
+        padding: 10px 5px;
+    }
     .backup-block {
         padding-top: 80px;
         padding-bottom: 40px;
@@ -1388,6 +1391,20 @@
     .event-orgs-and-partners-section {
         position: relative;
         height: 100%;
+    }
+    .event-orgs-and-partners-section-header {
+        padding-top: 15px;
+        font-family: 'GothamProBlack', 'Helvetica', sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        color: #ff6c00;
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+    }
+    .infopartners {
+        padding: 10px 0;
+        margin-bottom: 80px;
     }
     .backup-block {
         position: relative;
@@ -2390,6 +2407,16 @@
     .event-orgs-and-partners-section {
         position: relative;
         height: 100%;
+    }
+    .event-orgs-and-partners-section-header {
+        font-size: 22px;
+        color: #ff6c00;
+        width: 100%;
+        text-align: center;
+    }
+    .infopartners {
+        padding: 10px 0;
+        margin-bottom: 50px;
     }
     .backup-block {
         position: relative;
@@ -3437,6 +3464,30 @@
     .event-orgs-and-partners-section {
         position: relative;
         height: 100%;
+    }
+    /*  ********* Display #7 ********** */
+
+    .event-orgs-and-partners-section {
+        position: relative;
+        height: auto;
+        padding-top: 50px;
+        box-shadow: inset 0px -16px 51px 0 rgba(0, 0, 0, 0.25);
+    }
+    .event-orgs-and-partners-section-header {
+        font-size: 22px;
+        color: #ff6c00;
+        width: 100%;
+        text-align: center;
+    }
+    .infopartners {
+        padding: 10px 0;
+        margin-bottom: 50px;
+    }
+    .infopartners-item {
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        padding-top: 20px;
     }
     .backup-block {
         position: relative;
