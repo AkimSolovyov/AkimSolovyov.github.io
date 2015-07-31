@@ -36,6 +36,7 @@ $(document).ready(function () {
     toggleMenu();
     closeSocial();
     toggleForm();
+    hoverBlock();
 
     $(".event-info-section__hidden-info-block").hide();
 
@@ -211,6 +212,30 @@ function toggleMenu() {
         $('.top-nav__element--registration').toggleClass('top-nav__element--reg-mob');
     })
 }
+
+function hoverBlock() {
+    $('.event-interactive-area-section__interactive-area-block').hover(
+
+        function () {
+            $(this).css({
+                'border-color': '#ff6c00'
+            });
+            $(this).children().find('.interactive-area-block_icon').css({
+                'color': '#ff6c00'
+            });
+
+        },
+        function () {
+            $(this).css({
+                'border-color': '#dee0e9'
+            });
+            $(this).children().find('.interactive-area-block_icon').css({
+                'color': '#000'
+            });
+        });
+}
+
+
 
 function closeSocial() {
     $('.social-aside__link--close').click(function () {
