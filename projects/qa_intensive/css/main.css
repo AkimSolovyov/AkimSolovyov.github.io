@@ -406,8 +406,9 @@
     -webkit-transform: translate3d(-50%, -50%, 0);
     -moz-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.8);
     z-index: 999;
+    padding: 10px 0;
 }
 
 .event-schedule__block-message .block-header {
