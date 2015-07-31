@@ -390,8 +390,33 @@
     background-size: cover;
 }
 
+.event-schedule-day1 .event-schedule__block-header,
+.event-schedule-day1 .event-schedule__block-sub-header,
+.event-schedule-day1 .block-header,
+.event-schedule-day1 .event-plan__header,
+.event-schedule-day1 .event-plan__item {
+    opacity: .3;
+}
+
+.event-schedule__block-message {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 999;
+}
+
+.event-schedule__block-message .block-header {
+    opacity: 1;
+}
+
 .event-schedule__block {
     display: inline-block;
+    position: relative;
     clear: both;
     width: 100%;
     height: auto;
@@ -636,6 +661,35 @@
     background: #f8f8f8;
 }
 
+.prices-block--disabled .prices-block__heading,
+.prices-block--disabled .prices-block__sub-heading,
+.prices-block--disabled .prices-block__text,
+.prices-block--disabled .prices-block__button--disabled {
+    opacity: .4;
+}
+
+.prices-block--message {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 52%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 999;
+}
+
+.prices-block--message .prices-block__button {
+    padding-top: 15px;
+    height: 55px;
+    z-index: 999;
+}
+
+.prices-block--disabled .prices-block__button--disabled {
+    pointer-events: none;
+}
+
 .prices-block__heading {
     font-size: 15px;
     font-weight: 300;
@@ -829,7 +883,7 @@
     display: inline-block;
     width: 96%;
     margin: 10px 0;
-    text-align: left;
+    text-align: center;
     background: #f8f8f8;
 }
 
@@ -850,10 +904,9 @@
 
 .prices-additional__content {
     position: relative;
-    left: 20px;
-    display: inline-block;
-    width: 60%;
-    padding: 5px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .prices-additional__text {
@@ -868,7 +921,12 @@
 }
 
 .prices-additional__text-big {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.prices-block__button--online {
+    margin: 0 0 25px 0;
 }
 
 .prices__button {
