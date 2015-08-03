@@ -1373,6 +1373,7 @@
     font-size: 200px;
     position: absolute;
     top: 10px;
+    cursor: default;
 }
 
 .interactive-area-block__content {
