@@ -1341,10 +1341,10 @@
     border-style: solid;
     background-color: #ffffff;
     width: 945px;
-    min-height: 205px;
+    height: 205px;
     margin-bottom: 37px;
     clear: both;
-    cursor: pointer;
+    padding-bottom: 10px;
 }
 
 .event-interactive-area-section__interactive-area-block:last-of-type {
