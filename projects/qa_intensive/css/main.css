@@ -398,11 +398,15 @@
     opacity: .3;
 }
 
+.event-schedule-day1 .event-schedule__block {
+    padding-bottom: 250px;
+}
+
 .event-schedule__block-message {
     position: absolute;
     width: 90%;
     left: 50%;
-    top: 50%;
+    bottom: -5%;
     -webkit-transform: translate3d(-50%, -50%, 0);
     -moz-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
@@ -410,6 +414,19 @@
     z-index: 999;
     padding: 5px 0;
     border: 3px solid #ff6e00;
+}
+
+.event-schedule__block-message__text {
+    text-align: left;
+    padding-left: 20px;
+    width: 70%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.event-schedule__block-message .block-list__item {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .event-schedule__block-message .block-header {

@@ -143,6 +143,12 @@
         height: auto;
         clear: both;
     }
+    .event-schedule-day1 .event-schedule__block {
+        padding-bottom: 300px;
+    }
+    .event-schedule__block-message {
+        bottom: -10%;
+    }
     .event-schedule__block-header {
         font-size: 14px;
     }
@@ -310,8 +316,8 @@
         margin-bottom: 20px;
     }
     .testimonials-item__bottom--modified {
-       visibility: visible;
-   }
+        visibility: visible;
+    }
     .contacts {
         width: 100%;
         margin: 0 auto;
