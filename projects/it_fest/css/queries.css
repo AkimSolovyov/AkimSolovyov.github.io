@@ -2687,9 +2687,6 @@
 }
 
 @media only screen and (min-width: 240px) and (max-width: 319px) {
-    .page {
-        min-width: 240px;
-    }
     .container {
         width: 96%;
     }
