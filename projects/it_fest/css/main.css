@@ -1500,7 +1500,7 @@
 .price-boxes__wrapper {
     display: block;
     width: 738px;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
 }
 
 .event-prices-info-section__price-box {
@@ -1576,7 +1576,7 @@
 
 .price-box__middle {
     width: 300px;
-    height: 180px;
+    height: 100px;
     border-left: 7px solid #ff6c00;
     border-top: 7px solid #ff6c00;
     border-right: 7px solid #ff6c00;
@@ -1591,6 +1591,7 @@
     border-color: #ff6c00;
     border-style: solid;
     background-color: #fff;
+    padding-top: 10px;
 }
 
 .price-box__date {
