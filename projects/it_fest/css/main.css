@@ -1663,12 +1663,14 @@
 
 .partners {
     padding: 10px 25px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .partners-item {
     position: relative;
     display: inline-block;
+    width: 100%;
+    text-align: left;
 }
 
 .partners-item__link {
@@ -1685,6 +1687,7 @@
     font-family: 'GothamProRegular', 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    padding-left: 60px;
 }
 
 .infopartners {
