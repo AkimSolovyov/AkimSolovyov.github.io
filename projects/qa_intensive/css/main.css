@@ -431,13 +431,14 @@
 }
 
 .event-schedule__block-message .block-list__item {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .event-schedule__block-message .block-header {
     opacity: 1;
 }
+
 
 .event-schedule__block-message-button {
     font-size: 16px;
@@ -734,6 +735,10 @@
     margin: 20px 10px;
     background: #f8f8f8;
 }
+
+.prices-block--mod{
+height: 250px;
+    width: 280px;}
 
 .prices-block--disabled .prices-block__heading,
 .prices-block--disabled .prices-block__sub-heading,

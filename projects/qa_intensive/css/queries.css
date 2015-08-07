@@ -144,10 +144,15 @@
         clear: both;
     }
     .event-schedule-day1 .event-schedule__block {
-        padding-bottom: 300px;
+        padding-bottom: 410px;
     }
+
+    .event-schedule-day2 .event-schedule__block {
+        padding-bottom: 390px;
+    }
+
     .event-schedule__block-message {
-        bottom: -10%;
+        bottom: -12%;
     }
     .event-schedule__block-header {
         font-size: 14px;
@@ -239,10 +244,18 @@
         height: auto;
         margin: 20px 10px;
     }
-    .prices-block--modified .prices-block__button {
-        width: 220px;
-        margin: 10px 10px;
+
+
+    .prices-block--mod{
+height: 220px;
+    width: 280px;}
+
+    .prices-block__button--online{
+        margin: 0 30px;
+    width: 240px;
+
     }
+
     .prices-additional__content {
         position: relative;
         left: 0;
