@@ -199,6 +199,7 @@ $(document).ready(function () {
         }
 
         window.open("https://itfest.ticketforevent.com/ru/?draft_mode=on", '_blank');
+        $('.sign-up').trigger( 'reset' );
         return false;
     });
 
