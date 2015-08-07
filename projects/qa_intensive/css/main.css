@@ -394,12 +394,18 @@
 .event-schedule-day1 .event-schedule__block-sub-header,
 .event-schedule-day1 .block-header,
 .event-schedule-day1 .event-plan__header,
-.event-schedule-day1 .event-plan__item {
+.event-schedule-day1 .event-plan__item,
+.event-schedule-day2 .event-schedule__block-header,
+.event-schedule-day2 .event-schedule__block-sub-header,
+.event-schedule-day2 .block-header,
+.event-schedule-day2 .event-plan__header,
+.event-schedule-day2 .event-plan__item {
     opacity: .3;
 }
 
-.event-schedule-day1 .event-schedule__block {
-    padding-bottom: 250px;
+.event-schedule-day1 .event-schedule__block,
+.event-schedule-day2 .event-schedule__block {
+    padding-bottom: 310px;
 }
 
 .event-schedule__block-message {
@@ -431,6 +437,55 @@
 
 .event-schedule__block-message .block-header {
     opacity: 1;
+}
+
+.event-schedule__block-message-button {
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    height: 35px;
+    margin: 0 0 10px 0;
+    padding-top: 15px;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-property: color, background-color, box-shadow, -webkit-transform;
+    transition-property: color, background-color, box-shadow, transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0;
+    border-radius: 1px;
+    outline: 0;
+    background: #ff6e00;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.event-schedule__block-message-button:hover,
+.event-schedule__block-message-button:focus,
+.event-schedule__block-message-button:active {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: perspective(1px) scale(1.1);
+    border-radius: 1px;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
+}
+
+.event-schedule__block-message-button:active {
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: perspective(1px) scale(1.0);
+    border-radius: 1px;
+    background: #fd2020;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
 }
 
 .event-schedule__block {
