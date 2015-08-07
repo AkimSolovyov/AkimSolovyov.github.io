@@ -161,6 +161,7 @@ $(document).ready(function () {
 
     $('#sendEmail').click(function () {
         var name = $('.sign-up__name').val(),
+            surname = $('.sign-up__surname').val(),
             phone = $('.sign-up__phone').val(),
             email = $('.sign-up__email').val(),
             date = new Date();
@@ -176,6 +177,7 @@ $(document).ready(function () {
             }],
                 "subject": "Лиды с IT Fest " + date,
                 "html": '<p>Имя:' + name + '<br>' +
+                'Фамилия:' + surname + '<br>' +
                     'Телефон:' + phone + '<br>' +
                     'Email:' + email + '</p>',
                 'autotext': 'true',

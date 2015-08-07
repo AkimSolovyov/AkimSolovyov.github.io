@@ -2482,6 +2482,20 @@
         bottom: 0;
         right: 20px;
     }
+    .partners {
+        padding: 10px 25px;
+        margin-bottom: 70px;
+    }
+    .partners-item {
+        text-align: center;
+    }
+    .partners-item__logo {
+        width: 250px;
+    }
+    .partners__description {
+        text-align: center;
+        padding-left: 15px;
+    }
     .event-contacts-section {
         position: relative;
         height: auto;
@@ -3251,12 +3265,12 @@
     }
     .event-interactive-area-section__interactive-area-block {
         position: relative;
-        display: block;
+        display: inline-block;
         border-width: 7px;
         border-color: #dee0e9;
         border-style: solid;
         background-color: #ffffff;
-        width: 95%;
+        width: 90%;
         min-height: 205px;
         margin-bottom: 37px;
         clear: both;
@@ -3520,6 +3534,7 @@
         font-family: 'GothamProBlack', 'Helvetica', sans-serif;
         font-size: 20px;
         margin: 0;
+        text-align: center;
     }
     .backup-block__text {
         font-family: 'GothamProRegular', 'Helvetica', sans-serif;
@@ -3539,6 +3554,21 @@
         color: #fff;
         text-decoration: none;
         display: inline-block;
+    }
+    .partners {
+        padding: 10px 25px;
+        margin-bottom: 70px;
+    }
+    .partners-item {
+        text-align: center;
+    }
+    .partners-item__logo {
+        width: 200px;
+    }
+    .partners__description {
+        text-align: center;
+        padding-left: 15px;
+        font-size: 12px;
     }
     .event-orgs-and-partners-section__flag {
         display: none;

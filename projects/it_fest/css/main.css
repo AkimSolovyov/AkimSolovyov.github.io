@@ -2088,6 +2088,7 @@
 }
 
 .sign-up__name,
+.sign-up__surname,
 .sign-up__phone,
 .sign-up__email {
     display: inline-block;
