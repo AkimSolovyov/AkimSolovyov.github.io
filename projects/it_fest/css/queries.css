@@ -1,7 +1,4 @@
 @media only screen and (min-width: 1099px) and (max-width: 1265px) {
-    .container {
-        width: 92%;
-    }
     .top-nav__element {
         position: relative;
         display: inline-block;

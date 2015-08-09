@@ -152,12 +152,13 @@ $(document).ready(function () {
 
     });
 
+    var m = new mandrill.Mandrill('PiO9LcolFIs57A1H2URuEQ');
+
     function log(obj) {
         $('#response').text(JSON.stringify(obj));
     }
 
-    // create a new instance of the Mandrill class with your API key
-    var m = new mandrill.Mandrill('PiO9LcolFIs57A1H2URuEQ');
+
 
     $('#sendEmail').click(function () {
         var name = $('.sign-up__name').val(),
@@ -165,7 +166,6 @@ $(document).ready(function () {
             phone = $('.sign-up__phone').val(),
             email = $('.sign-up__email').val(),
             date = new Date();
-
 
         date = date.toDateString();
 
@@ -177,19 +177,19 @@ $(document).ready(function () {
             }],
                 "subject": "Лиды с IT Fest " + date,
                 "html": '<p>Имя:' + name + '<br>' +
-                'Фамилия:' + surname + '<br>' +
+                    'Фамилия:' + surname + '<br>' +
                     'Телефон:' + phone + '<br>' +
                     'Email:' + email + '</p>',
                 'autotext': 'true',
                 'track_opens': 'true'
             }
-        }
+        };
 
         m.messages.send(params, function (res) {
             log(res);
         }, function (err) {
             log(err);
-        })
+        });
 
         $('.sign-up-form-block').toggle();
         $('.curtain').toggle();
@@ -199,7 +199,7 @@ $(document).ready(function () {
         }
 
         window.open("https://itfest.ticketforevent.com/ru/?draft_mode=on", '_blank');
-        $('.sign-up').trigger( 'reset' );
+        $('.sign-up').trigger('reset');
         return false;
     });
 
