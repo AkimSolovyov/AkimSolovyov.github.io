@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--    <form action="/" name="myform">
+    <input type="text" name="input1" id="input1">
+
+
+    </form>
+
+    <script>
+        (function(){
+            'use strict';
+
+            var input = document.getElementById('input1');
+                input.addEventListener('focus', function() {
+                    alert('focus');
+                });
+
+            input.addEventListener('blur', function() {
+                    alert('blur');
+                });
+
+
+    </script>-->
+
+
+    <style>
+        .error {
+            background: red;
+        }
+    </style>
+
+
+    <form action="#" id="form">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <button type="submit">submit</button>
+
+    </form>
+
+    <script>
+        (function () {
+            'use strict';
+            var elem = document.getElementById('form');
+            elem.addEventListener('submit', function (e) {
+                e.preventDefault();
+                alert('submit');
+            }, true);
+        });
+    </script>
+</body>
+
+</html>
