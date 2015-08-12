@@ -10,7 +10,7 @@ function Slider(selector, options) {
     var paginatorNode = sliderNode.querySelector('.slider__pagination');
 
     // Local variables;
-    var currentSlideIndex = options.currentSlide || 0;
+    var currentSlideIndex = options.currentSlide-1 || 0;
     var imagesCount = sliderImagesNode.children.length;
     var slideSize = options.direction === 'vertical' ? sliderImagesNode.offsetHeight : sliderImagesNode.offsetWidth;
 
