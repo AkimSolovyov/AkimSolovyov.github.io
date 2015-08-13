@@ -7,6 +7,8 @@
     font-style: normal;
     font-weight: normal;
 }
+
+
 /* font-family: "GothamProBold"; */
 
 @font-face {
@@ -16,6 +18,8 @@
     font-style: normal;
     font-weight: normal;
 }
+
+
 /* font-family: "GothamProBlack"; */
 
 @font-face {
@@ -25,6 +29,8 @@
     font-style: normal;
     font-weight: normal;
 }
+
+
 /* font-family: "GothamProItalic"; */
 
 @font-face {
@@ -34,6 +40,8 @@
     font-style: normal;
     font-weight: normal;
 }
+
+
 /* font-family: "GothamProMedium"; */
 
 @font-face {
@@ -43,6 +51,8 @@
     font-style: normal;
     font-weight: normal;
 }
+
+
 /* font-family: "GothamProLight"; */
 
 @font-face {
@@ -52,6 +62,8 @@
     font-style: normal;
     font-weight: normal;
 }
+
+
 /* font-family: "GothamProMediumItalic"; */
 
 @font-face {
@@ -61,6 +73,8 @@
     font-style: normal;
     font-weight: normal;
 }
+
+
 /* font-family: "GothamProLightItalic"; */
 
 @font-face {
@@ -70,6 +84,8 @@
     font-style: normal;
     font-weight: normal;
 }
+
+
 /* font-family: "GothamProBoldItalic"; */
 
 @font-face {
@@ -79,6 +95,8 @@
     font-style: normal;
     font-weight: normal;
 }
+
+
 /* font-family: "GothamProBlackItalic"; */
 
 @font-face {
@@ -253,6 +271,8 @@
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+
+
 /*  ********* Header and Menu  ********** */
 
 .header {
@@ -492,6 +512,8 @@
     transition-timing-function: ease-out;
     z-index: 1000;
 }
+
+
 /*  ********* Display #1 ********** */
 
 .sub-header {
@@ -605,6 +627,8 @@
     width: 282px;
     height: 135px;
 }
+
+
 /*  ********* Display #2 ********** */
 
 .event-info-section {
@@ -968,6 +992,8 @@
 .puzzle-block__box--14 .puzzle-block__box-number {
     margin: 5px 0 0 0;
 }
+
+
 /*  ********* Display #3 ********** */
 
 .event-speakers-section {
@@ -1038,6 +1064,8 @@
     font-size: 14px;
     color: #ff6c00;
 }
+
+
 /*  ********* Display #4 ********** */
 
 .event-timeline-section {
@@ -1300,6 +1328,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
 /*  ********* Display #5 ********** */
 
 .event-interactive-area-section {
@@ -1409,6 +1439,8 @@
     font-size: 14px;
     line-height: 16px;
 }
+
+
 /*  ********* Display #6 ********** */
 
 .event-prices-info-section {
@@ -1639,6 +1671,8 @@
     font-family: 'GothamProBlack', 'Helvetica', sans-serif;
     font-size: 20px;
 }
+
+
 /*  ********* Display #7 ********** */
 
 .event-orgs-and-partners-section {
@@ -1662,15 +1696,19 @@
 }
 
 .partners {
-    padding: 10px 25px;
+    display: block;
+    padding: 10px 0;
     margin-bottom: 70px;
+    width: 100%;
+    text-align: left;
 }
 
 .partners-item {
     position: relative;
     display: inline-block;
-    width: 100%;
+    width: 300px;
     text-align: left;
+    margin-right: 35px;
 }
 
 .partners-item__link {
@@ -1681,13 +1719,13 @@
 
 .partners-item__logo {
     width: 300px;
+    height: 70px;
 }
 
 .partners__description {
     font-family: 'GothamProRegular', 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    padding-left: 60px;
 }
 
 .infopartners {
@@ -1754,6 +1792,8 @@
     bottom: 0;
     right: 200px;
 }
+
+
 /*  ********* Display #8 ********** */
 
 .event-contacts-section {

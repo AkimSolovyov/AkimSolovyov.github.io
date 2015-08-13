@@ -251,7 +251,6 @@
         font-size: 15px;
     }
     /*  ********* Display #1 ********** */
-
     .sub-header__logo {
         position: absolute;
         left: 65%;
@@ -272,7 +271,6 @@
         z-index: 1;
     }
     /*  ********* Display #2 ********** */
-
     .event-info-section__heading--orange {
         width: 100%;
         height: auto;
@@ -402,7 +400,6 @@
         font-size: 26px;
     }
     /*  ********* Display #3 ********** */
-
     .event-speakers-section {
         padding-bottom: 30px;
         padding-top: 30px;
@@ -411,7 +408,6 @@
         margin: 15px 0 15px 0;
     }
     /*  ********* Display #4 ********** */
-
     .event-interactive-area-section {
         position: relative;
         box-shadow: inset 0px -16px 51px 0 rgba(0, 0, 0, 0.25);
@@ -426,7 +422,6 @@
         margin-left: 0;
     }
     /*  ********* Display #6 ********** */
-
     .event-prices-info-section {
         position: relative;
         background: url(../images/prices_bg.png) 90%;
@@ -493,7 +488,6 @@
         display: inline-block;
     }
     /*  ********* Display #7 ********** */
-
     .event-orgs-and-partners-section {
         position: relative;
         height: 100%;
@@ -815,7 +809,6 @@
         font-size: 15px;
     }
     /*  ********* Display #1 ********** */
-
     .sub-header {
         min-height: 700px;
         padding-top: 85px;
@@ -888,7 +881,6 @@
         z-index: 1;
     }
     /*  ********* Display #2 ********** */
-
     .event-info-section {
         min-height: 1000px;
         padding-bottom: 10px;
@@ -1038,7 +1030,6 @@
         font-size: 20px;
     }
     /*  ********* Display #3 ********** */
-
     .event-speakers-section {
         padding-bottom: 30px;
         padding-top: 30px;
@@ -1095,7 +1086,6 @@
         font-size: 13px;
     }
     /*  ********* Display #4 ********** */
-
     .event-timeline-section-table {
         display: none;
     }
@@ -1168,7 +1158,6 @@
         font-size: 14px;
     }
     /*  ********* Display #5 ********** */
-
     .event-interactive-area-section {
         position: relative;
         box-shadow: inset 0px -16px 51px 0 rgba(0, 0, 0, 0.25);
@@ -1258,7 +1247,6 @@
         padding: 0 10px;
     }
     /*  ********* Display #6 ********** */
-
     .event-prices-info-section {
         position: relative;
         background: url(../images/prices_bg.png) 90%;
@@ -1396,7 +1384,6 @@
         display: inline-block;
     }
     /*  ********* Display #7 ********** */
-
     .event-orgs-and-partners-section {
         position: relative;
         height: 100%;
@@ -1414,6 +1401,19 @@
     .infopartners {
         padding: 10px 0;
         margin-bottom: 80px;
+    }
+    .partners {
+        width: 90%;
+        padding: 10px 20px;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    .partners-item {
+        text-align: center;
+        width: 100%;
+        margin-right: 30px;
+        height: auto;
+        margin-bottom: 50px;
     }
     .backup-block {
         position: relative;
@@ -1848,7 +1848,6 @@
         font-size: 15px;
     }
     /*  ********* Display #1 ********** */
-
     .sub-header {
         min-height: 940px;
         padding-top: 85px;
@@ -1924,7 +1923,6 @@
         z-index: 1;
     }
     /*  ********* Display #2 ********** */
-
     .event-info-section {
         min-height: 1000px;
         padding-bottom: 10px;
@@ -2068,7 +2066,6 @@
         font-size: 14px;
     }
     /*  ********* Display #3 ********** */
-
     .event-speakers-section {
         padding-bottom: 30px;
         padding-top: 30px;
@@ -2126,7 +2123,6 @@
         font-size: 13px;
     }
     /*  ********* Display #4 ********** */
-
     .event-timeline-section-table {
         display: none;
     }
@@ -2200,7 +2196,6 @@
         width: 85%;
     }
     /*  ********* Display #5 ********** */
-
     .event-interactive-area-section {
         position: relative;
         box-shadow: inset 0px -16px 51px 0 rgba(0, 0, 0, 0.25);
@@ -2294,7 +2289,6 @@
         padding: 0 10px;
     }
     /*  ********* Display #6 ********** */
-
     .event-prices-info-section {
         position: relative;
         background: url(../images/prices_bg.png) 90%;
@@ -2425,7 +2419,6 @@
         display: inline-block;
     }
     /*  ********* Display #7 ********** */
-
     .event-orgs-and-partners-section {
         position: relative;
         height: 100%;
@@ -2435,6 +2428,28 @@
         color: #ff6c00;
         width: 100%;
         text-align: center;
+    }
+    .partners {
+        width: 85%;
+        padding: 10px 0;
+        margin-bottom: 70px;
+    }
+    .partners-item {
+        text-align: center;
+        width: 200px;
+        margin-right: 0;
+        height: auto;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+    .partners-item__logo {
+        width: 200px;
+        height: auto;
+    }
+    .partners__description {
+        text-align: center;
+        padding-left: 15px;
+        font-size: 12px;
     }
     .infopartners {
         padding: 10px 0;
@@ -2897,7 +2912,6 @@
         font-size: 15px;
     }
     /*  ********* Display #1 ********** */
-
     .sub-header {
         min-height: 680px;
         padding-top: 85px;
@@ -2958,7 +2972,6 @@
         display: none;
     }
     /*  ********* Display #2 ********** */
-
     .event-info-section {
         min-height: 1000px;
         padding-bottom: 10px;
@@ -3159,7 +3172,6 @@
         font-size: 13px;
     }
     /*  ********* Display #3 ********** */
-
     .event-timeline-section-table {
         display: none;
     }
@@ -3234,7 +3246,6 @@
         width: 80%;
     }
     /*  ********* Display #5 ********** */
-
     .event-interactive-area-section {
         position: relative;
         box-shadow: inset 0px -16px 51px 0 rgba(0, 0, 0, 0.25);
@@ -3309,7 +3320,6 @@
         padding: 0 10px;
     }
     /*  ********* Display #6 ********** */
-
     .event-prices-info-section {
         position: relative;
         background: url(../images/prices_bg.png) 90%;
@@ -3489,13 +3499,11 @@
         width: 30px;
     }
     /*  ********* Display #7 ********** */
-
     .event-orgs-and-partners-section {
         position: relative;
         height: 100%;
     }
     /*  ********* Display #7 ********** */
-
     .event-orgs-and-partners-section {
         position: relative;
         height: auto;
@@ -3553,14 +3561,21 @@
         display: inline-block;
     }
     .partners {
-        padding: 10px 25px;
+        width: 90%;
+        padding: 10px 0;
         margin-bottom: 70px;
+        text-align: center;
     }
     .partners-item {
         text-align: center;
+        width: 100%;
+        margin-right: 0;
+        height: auto;
+        margin-bottom: 30px;
     }
     .partners-item__logo {
         width: 200px;
+        height: auto;
     }
     .partners__description {
         text-align: center;
