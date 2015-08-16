@@ -399,12 +399,18 @@
 .event-schedule-day2 .event-schedule__block-sub-header,
 .event-schedule-day2 .block-header,
 .event-schedule-day2 .event-plan__header,
-.event-schedule-day2 .event-plan__item {
+.event-schedule-day2 .event-plan__item,
+.event-schedule-day3 .event-schedule__block-header,
+.event-schedule-day3 .event-schedule__block-sub-header,
+.event-schedule-day3 .block-header,
+.event-schedule-day3 .event-plan__header,
+.event-schedule-day3 .event-plan__item {
     opacity: .3;
 }
 
 .event-schedule-day1 .event-schedule__block,
-.event-schedule-day2 .event-schedule__block {
+.event-schedule-day2 .event-schedule__block,
+.event-schedule-day3 .event-schedule__block {
     padding-bottom: 310px;
 }
 
@@ -438,7 +444,6 @@
 .event-schedule__block-message .block-header {
     opacity: 1;
 }
-
 
 .event-schedule__block-message-button {
     font-size: 16px;
@@ -736,9 +741,10 @@
     background: #f8f8f8;
 }
 
-.prices-block--mod{
-height: 250px;
-    width: 280px;}
+.prices-block--mod {
+    height: 250px;
+    width: 280px;
+}
 
 .prices-block--disabled .prices-block__heading,
 .prices-block--disabled .prices-block__sub-heading,
