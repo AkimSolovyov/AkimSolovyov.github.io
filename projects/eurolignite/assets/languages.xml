@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+
+    <translation id="menu_intro">
+        <english>Intro
+            <span class="indicator">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </english>
+        <russian>О нас
+            <span class="indicator">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </russian>
+        <ukrainian>Про Компанію
+            <span class="indicator">
+                <i class="fa fa-angle-right"></i>
+            </span>
+
+        </ukrainian>
+        <italian>Introduzione</italian>
+    </translation>
+
+    <translation id="menu_evolution">
+        <english>Evolution
+            <span class="indicator">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </english>
+        <russian>Эволюция
+            <span class="indicator">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </russian>
+        <ukrainian>Еволюція
+            <span class="indicator">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </ukrainian>
+        <italian>Evoluzione</italian>
+    </translation>
+
+    <translation id="menu_features">
+        <english>What we offer
+            <span class="indicator">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </english>
+        <russian>Что мы предлагаем
+            <span class="indicator">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </russian>
+        <ukrainian>Що ми пропонуємо
+            <span class="indicator">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </ukrainian>
+        <italian>Cosa offriamo</italian>
+    </translation>
+
+    <translation id="menu_contact">
+        <english>Contacts
+            <span class="indicator">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </english>
+        <russian>Контакты
+            <span class="indicator">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </russian>
+        <ukrainian>Контакти
+            <span class="indicator">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </ukrainian>
+        <italian>Contatti</italian>
+    </translation>
+
+    <translation id="header_introduction">
+        <english>Introduction</english>
+        <russian>О нас</russian>
+        <ukrainian>Про Компанію</ukrainian>
+        <italian>Introduzione</italian>
+    </translation>
+
+    <translation id="intro_p1">
+        <english>Eurolignit Company – is a trading house that is
+            engaged in realization of lignite and production
+            of organic bio-fertilizer. We are young upcoming
+            company; our main activity is the sale of coal
+            products and production of bio-fertilizers based
+            on humic acids from lignite of our own mining.</english>
+        <russian>Компания Евролигнит - торговый дом, занимающийся
+            реализацией угольной продукции и производством органических
+            биоудобрений. Мы являемся молодой развивающейся компанией,
+            основной сферой деятельности которой является торговля угольной
+            продукцией и производством биоудобрений на основе гуминовых
+            кислот из бурого угля собственной добычи. </russian>
+        <ukrainian>Підприємство «Євролігніт» - торгівельний дім,
+            що займається реалізацією вугільної продукції та виробництвом
+            органічних біодобрив. Ми є молодою розвиваючоюся компанією,
+            основною сферою діяльності якої є торгівля вугільною продукцією
+            і виробництвом біодобрив на основі гумінових кислот
+            з бурого вугілля власного видобутку.</ukrainian>
+        <italian>La Compagnia “Eurolignite” è un’azienda ucraina operante
+            nel settore della produzione e vendita di prodotti carboniferi
+            e nella produzione di bio fertilizzanti organici. “Eurolignite” è una
+            compagnia giovane in costante e forte crescita, la cui attività
+            principale è l’estrazione e vendita di lignite e la produzione
+            di bio fertilizzanti a base di acidi umici derivati da lignite.</italian>
+    </translation>
+
+    <translation id="intro_p2">
+        <english>Eurolignit Company created as a separate unit of
+            the mining enterprise "Energy Investment Company"
+            for the trading and distribution of coal products
+            and related materials. Our parent company has one
+            of the largest in Ukraine deposits of lignite, and
+            for a long time is a successful supplier of products
+            in the domestic Ukrainian market and the markets of
+            neighboring countries.</english>
+        <russian>Компания Евролигнит создана как отдельное подразделение
+            горнодобывающего предприятия «Энергетическая инвестиционная
+            компания» для продажи и распространения угольной продукции
+            и сопутствующих материалов. Наша материнская компания владеет
+            одним из крупнейших в Украине месторождений Бурого Угля, и
+            уже значительное время является успешным поставщиком своей
+            продукции на внутреннем украинском рынке и на рынки
+            сопредельных государств. </russian>
+        <ukrainian>Компанія Євролігніт створена як окремий підрозділ
+            гірничодобувного підприємства «Енергетична інвестиційна
+            компанія» для продажу і розповсюдження вугільної продукції
+            та супутніх матеріалів. Наша материнська компанія володіє
+            одним з найбільших в Україні родовищ бурого вугілля, і вже
+            значний час є успішним постачальником своєї продукції на
+            внутрішньому українському ринку і на ринках сусідніх держав.</ukrainian>
+        <italian>La Compagnia “Eurolignite” è stata fondata come comparto
+            indipendente della casa madre “Società d’investimento energetico”
+            che si occupa della vendita e distribuzione dei prodotti carbonieri
+            e materiali congiunti. La casa madre è proprietaria di uno dei più
+            grandi giacimenti di lignite in Ucraina e già da qualche tempo è un
+            fornitore importante sia per il mercato nazionale sia per i mercati
+            esteri.</italian>
+    </translation>
+
+    <translation id="header_evolution">
+        <english>Evolution</english>
+        <russian>Эволюция</russian>
+        <ukrainian>Еволюція</ukrainian>
+        <italian>Evoluzione</italian>
+    </translation>
+
+    <translation id='evolution_p1'>
+        <english>Establishment of the Trade House is
+            associated with the desire to develop
+            new directions for the implementation
+            of a wide range of coal products, as
+            well as the organization of production
+            of humic acid from lignite, which
+            according to its physicochemical
+            properties is a material optimally
+            suitable for producing high-quality
+            biological fertilizers.</english>
+        <russian>Учреждение Торгового Дома связано с желанием
+            развивать новые направления деятельности по
+            реализации более широкого спектра угольной
+            продукции, а также организации производства
+            гуминовых кислот из лигнита, который по своим
+            физико-химическим свойствам является материалом
+            оптимально-пригодным для получения высококачественных
+            биологических удобрений.</russian>
+        <ukrainian>Заснування Торгівельного Дому пов'язано з бажанням
+            розвивати нові напрями діяльності щодо реалізації більш широкого
+            спектра вугільної продукції, а також організації виробництва
+            гумінових кислот з лігніту, який за своїми фізико-хімічними
+            властивостями є матеріалом оптимально-придатним для отримання
+            високоякісних біологічних добрив.</ukrainian>
+        <italian>La fondazione di “Eurolignite” è stata dettata dal desiderio
+            di sviluppare dei settori d’impiego nuovi per la vendita di prodotti
+            carbonieri di vasta gamma e per la produzione di acidi umici derivati
+            dalla lignite che date le sue caratteristiche fisico chimiche è un
+            ottimo materiale per ottenere fertilizzanti bio di alta qualità.</italian>
+    </translation>
+
+    <translation id='evolution_p2'>
+        <english>Currently the company plans to conduct
+            wide scale research and agronomic
+            approbation and bring to market an
+            entirely new, unique line of humic
+            fertilizer using a patented know-how
+            under its own brand.</english>
+        <russian>В настоящее время компания планирует
+            провести масштабные научные исследования и
+            агроапробацию и выпустить на рынок абсолютно
+            новую, уникальную линейку гуминокислотных удобрений
+            с использованием запатентованного ноу-хау под
+            собственной торговой маркой.</russian>
+        <ukrainian>В даний час компанія планує провести масштабні
+            наукові дослідження та агроапробацію і випустити на
+            ринок абсолютно нову, унікальну лінійку гумінокіслотних
+            добрив з використанням запатентованого ноу-хау під власною
+            торговою маркою.</ukrainian>
+        <italian>Attualmente la compagnia ha intenzione di intensificare
+            le indagini scientifiche e i test agricoli  e lanciare in commercio
+            una vasta gamma di bio fertilizzanti a base di acidi umici usando
+            know-how esclusivo brevettato con il proprio marchio..</italian>
+    </translation>
+
+    <translation id="header_horizons">
+        <english>New Horizons</english>
+        <russian>Новые Горизонты</russian>
+        <ukrainian>Нові Горизонти</ukrainian>
+        <italian>Nuovi Orizzonti</italian>
+    </translation>
+
+    <translation id="horizons_p1">
+        <english>Elaborating production cycle of the
+            enterprise built according to the best
+            international standards, to match the
+            highest quality standards. The company
+            plans to purchase a modern high-tech
+            equipment that will produce more than
+            1,000 tons of humic concentrate in a
+            year. We are recruiting highly qualified
+            scientific and technical staff, who will
+            ensure the best results in the production
+            of the entire range of products.</english>
+        <russian>Разрабатываемый производственный цикл
+            предприятия строится с учетом лучших мировых
+            стандартов, чтобы соответствовать самым высоким
+            требованиям качества продукции. Компания планирует
+            закупить современное высокотехнологическое оборудование,
+            что   позволит производить более 1000 тонн гуминового
+            концентрата в год. На предприятие идет подбор
+            высококвалифицированного научного и инженерно-технического
+            персонала, который позволит добиться лучших показателей
+            при производстве всего спектра продукции.</russian>
+        <ukrainian>Розроблювальний виробничий цикл підприємства
+            будується з урахуванням кращих світових стандартів,
+            щоб відповідати найвищим вимогам якості продукції.
+            Компанія планує закупити сучасне високотехнологічне
+            обладнання, що дозволить виробляти більше ніж 1000
+            тонн гумінового концентрату на рік. На підприємство
+            йде підбір висококваліфікованого наукового та
+            інженерно-технічного персоналу, який дозволить
+            домогтися кращих показників при виробництві
+            всього спектра продукції.</ukrainian>
+        <italian>L’azienda osserva gli standard migliori di produzione per
+            garantire tutti i requisiti di alta qualità dei propri prodotti.
+            E’ inoltre negli obiettivi della compagnia l’acquisto di macchinari moderni
+            ad alta tecnologia che le permetterà di incrementare la produzione,
+            arrivando a più di 1000 tonnellate di concentrato di acidi umici
+            prodotti l’anno. L’azienda si avvale di selezione del personale
+            altamente qualificato: tecnici, ingegneri, scienziati, tutto per
+            poter raggiungere gli obiettivi migliori della produzione.</italian>
+    </translation>
+
+    <translation id="horizons_p2">
+        <english>The company works on development of
+            its own distribution network and
+            actively cooperates with other
+            producers of fertilizers and
+            agrochemicals.</english>
+        <russian>Компания работает над развитием собственной
+            дистрибуционной сети и активно сотрудничает с другими
+            производителями удобрений и агрохимической продукции.</russian>
+        <ukrainian>Компанія працює над розвитком власної дистрибуційної
+            мережі та активно співпрацює з іншими виробниками добрив і
+            агрохімічної продукції.</ukrainian>
+        <italian>La compagnia sta sviluppando una vasta rete di distributori
+            e collabora con altri produttori di fertilizzanti.</italian>
+    </translation>
+
+    <translation id="header_offer_main">
+        <english>What we offer</english>
+        <russian>Что мы предлагаем</russian>
+        <ukrainian>Що ми пропонуємо</ukrainian>
+        <italian>Cosa Offriamo</italian>
+    </translation>
+
+    <translation id="header_offer1">
+        <english>Lignite</english>
+        <russian>Бурый уголь</russian>
+        <ukrainian>Буре вугілля</ukrainian>
+        <italian>Lignite</italian>
+    </translation>
+
+    <translation id="offer_p1">
+        <english>Coal products of our own extraction from
+            leading ukrainian supplier.</english>
+        <russian>Угольная продукция собственной
+            добычи от лидирующего поставщика Украины.</russian>
+        <ukrainian>Вугільна продукція власного видобутку від
+            лідируючого постачальника України.</ukrainian>
+        <italian>Estrazione e vendita della lignite dal produttore – leader del
+            settore sul mercato ucraino.</italian>
+    </translation>
+
+    <translation id="header_offer2">
+        <english>Biofertilizers</english>
+        <russian>Биоудобрения</russian>
+        <ukrainian>Біодобрива</ukrainian>
+        <italian>Bio fertilizzanti</italian>
+    </translation>
+
+    <translation id="offer_p2">
+        <english> Upcoming direction for production of eco
+            clean and safe fertilizer that match
+            standards of European manufacturers.</english>
+        <russian>Развивающиеся направление по производству
+            экологически чистых и безопасных удобрений по
+            стандартам европейских производителей. </russian>
+        <ukrainian>Розвиваючийся напрямок з виробництва екологічно чистих і
+            безпечних добрив за стандартами європейських виробників.</ukrainian>
+        <italian>Produzione di bio fertilizzanti secondo gli standard europei
+            per il rispetto dell’ambiente.</italian>
+    </translation>
+
+    <translation id="header_offer3">
+        <english>Logistics</english>
+        <russian>Логистика</russian>
+        <ukrainian>Логістика </ukrainian>
+        <italian>Logistica</italian>
+    </translation>
+
+    <translation id="offer_p3">
+        <english> Thanks to highly qualified partners in
+            logistics, we offer to our clients the
+            best individual logistic solutions.</english>
+        <russian>Благодаря высококвалифицированным партнерам в
+            сфере логистики, мы предлагаем нашим Клиентам выгодные
+            индивидуальные логистические решения. </russian>
+        <ukrainian>Завдяки висококваліфікованим партнерам у
+            сфері логістики, ми пропонуємо нашим Клієнтам вигідні
+            індивідуальні логістичні рішення.</ukrainian>
+        <italian>Grazie ai nostri partner di logistica qualificati siamo in grado
+            di offrire ai nostri clienti soluzioni individuali e comode
+            di logistica.</italian>
+    </translation>
+
+    <translation id="header_contacts">
+        <english>Contact Us</english>
+        <russian>Контакты</russian>
+        <ukrainian>Контакти</ukrainian>
+        <italian>Contatti</italian>
+    </translation>
+
+    <translation id="contacts_position1">
+        <english>Lignite sales director</english>
+        <russian>Директор по продаже угля</russian>
+        <ukrainian>Директор по продажам вугілля</ukrainian>
+        <italian>Direttore di vendita lignite</italian>
+    </translation>
+
+    <translation id="contacts_position2">
+        <english>Project coordinator</english>
+        <russian>Координатор проекта</russian>
+        <ukrainian>Координатор проекту</ukrainian>
+        <italian>Coordinatore del progetto</italian>
+    </translation>
+
+    <translation id="contacts_position3">
+        <english>Representative in Italy</english>
+        <russian>Представитель в Италии</russian>
+        <ukrainian>Представник у Італії</ukrainian>
+        <italian>Rappresentante per l’Italia</italian>
+    </translation>
+
+    <translation id="contacts_name1">
+        <english>Vasiliy Tereshchenko</english>
+        <russian>Терещенко Василий</russian>
+        <ukrainian>Терещенко Василій</ukrainian>
+        <italian>Tereschenko Vasiliy</italian>
+    </translation>
+
+    <translation id="contacts_name2">
+        <english>Konstantin Lazebnik</english>
+        <russian>Лазебник Константин</russian>
+        <ukrainian>Лазебнік Костянтин</ukrainian>
+        <italian>Lazebnyk Konstantin</italian>
+    </translation>
+
+    <translation id="contacts_name3">
+        <english>Elena Yermolenko</english>
+        <russian>Ермоленко Елена</russian>
+        <ukrainian>Єрмоленко Олена</ukrainian>
+        <italian>Yermolenko Elena</italian>
+    </translation>
+
+</translations>
