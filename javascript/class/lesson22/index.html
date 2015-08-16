@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://cdn.polyfill.io/v1/polyfill.js?features=Element.prototype.closest"></script>
+    <script src="js.js"></script>
+    <title>Menu static</title>
+</head>
+
+<body>
+
+    <script>
+        var menu = new Menu({
+            title: "Сладости",
+            items: [
+                "Торт",
+                "Пончик",
+                "Пирожное",
+                "Шоколадка",
+                "Мороженое"
+            ]
+        });
+
+        var elem = menu.getElem();
+
+        document.body.appendChild(elem);
+    </script>
+
+
+
+
+</body>
+
+</html>
