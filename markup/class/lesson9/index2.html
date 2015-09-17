@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .holder {
+            /*-width: 1000px;*/
+            margin: 50px auto;
+        }
+
+        .testimonial {
+            font-family: 'Myriad Pro', Arial, sans-serif;
+            /*white-space: nowrap;*/
+            vertical-align: top;
+        }
+
+        .testimonial__item {
+            display: inline-block;
+            width: 50%;
+            min-height: 85px;
+            white-space: normal;
+            margin-bottom: 30px;
+            vertical-align: top;
+            outline: 1px solid #f00;
+        }
+
+        .testimonial__inner {
+            margin: 0 20px 0 0;
+            position: relative;
+            vertical-align: top;
+        }
+
+        .testimonial__item:nth-child(even) .testimonial__inner {
+            margin: 0 0 0 20px;
+        }
+
+        .testimonial__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 5px;
+        }
+
+        .testimonial__title {
+            margin: 0 0 5px 115px;
+            color: #637f83;
+            font-size: 22px;
+        }
+
+        .testimonial__text {
+            margin: 0 0 0 115px;
+            color: #959595;
+            font-size: 14px;
+            line-height: 1.5em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="holder">
+        <div class="testimonial">
+            <div class="testimonial__item">
+                <div class="testimonial__inner">
+                    <img src="http://lorempixel.com/85/85/people/1/" alt="alt" class="testimonial__img" />
+                    <h2 class="testimonial__title">Lorem ipsum dolor</h2>
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum magni nulla odio vitae. Animi eaque eligendi esse excepturi impedit officiis perspiciatis quaerat quo tempore. Et eum harum labore voluptatibus.</p>
+                </div>
+            </div>
+            <div class="testimonial__item">
+                <div class="testimonial__inner">
+                    <img src="http://lorempixel.com/85/85/people/2/" alt="alt" class="testimonial__img" />
+                    <h2 class="testimonial__title">Lorem ipsum dolor</h2>
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum magni nulla odio vitae. Animi eaque eligendi esse excepturi impedit officiis perspiciatis quaerat quo tempore. Et eum harum labore voluptatibus.</p>
+                </div>
+            </div>
+            <div class="testimonial__item">
+                <div class="testimonial__inner">
+                    <h2 class="testimonial__title">Lorem ipsum dolor</h2>
+                    <img src="http://lorempixel.com/85/85/people/3/" alt="alt" class="testimonial__img" />
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum magni nulla odio vitae. Animi eaque eligendi esse excepturi impedit officiis perspiciatis quaerat quo tempore. Et eum harum labore voluptatibus.</p>
+                </div>
+            </div>
+            <div class="testimonial__item">
+                <div class="testimonial__inner">
+                    <h2 class="testimonial__title">Lorem ipsum dolor</h2>
+                    <img src="http://lorempixel.com/85/85/people/4/" alt="alt" class="testimonial__img" />
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum magni nulla odio vitae. Animi eaque eligendi esse excepturi impedit officiis perspiciatis quaerat quo tempore. Et eum harum labore voluptatibus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
