@@ -77,7 +77,17 @@ function startGame() {
 }
 
 function restartGame() {
-    location.reload();
+    //location.reload();
+    sfx_death.pause();
+    restart_button.style.display = 'none';
+    message.innerHTML = '';
+    bg.classList.remove('page--dead');
+    creep.classList.remove('creep-level-' + level);
+    creep.classList.remove('creep-level-' + level + '__standing');
+    creep.classList.remove('creep-level-' + level + '__shot');
+    setTimeout(function () {
+        startGame();
+    }, 2000);
 }
 
 function nextLevel() {
