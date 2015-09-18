@@ -3,7 +3,7 @@
 // Variables
 
 var music = 'on',
-    level = 1,
+    level = 5,
     //timeToDraw = Math.floor(Math.random() * 1000) + 100,
     timeToDraw = 700,
     readyToDraw = 'false',
@@ -103,7 +103,7 @@ function nextLevel() {
         console.log(timeToDraw);
         startGame();
     } else {
-        message.innerHTML = 'Nice Work! You\'ve Killed them All! ';
+        message.innerHTML = 'Well Done! You\'ve Killed them All! ';
         showCredits();
     }
 }
