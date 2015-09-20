@@ -3,7 +3,7 @@
 // Variables
 
 var music = 'on',
-    level = 5,
+    level = 1,
     //timeToDraw = Math.floor(Math.random() * 1000) + 100,
     timeToDraw = 700,
     readyToDraw = 'false',
