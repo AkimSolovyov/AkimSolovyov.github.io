@@ -1657,12 +1657,24 @@ you can use the generic selector below, but it's slower:
     content: "\e001";
 }
 
-.cbp_tmicon-mail:before {
-    content: "\e002";
+.cbp_tmicon-coffee:before {
+    font-family: Fontawesome, sans-serif;
+    content: "\f0f4";
 }
 
-.cbp_tmicon-earth:before {
-    content: "\e003";
+.cbp_tmicon-meal:before {
+    font-family: Fontawesome, sans-serif;
+    content: "\f0f5";
+}
+
+.cbp_tmicon-android:before {
+    font-family: Fontawesome, sans-serif;
+    content: "\f17b";
+}
+
+.cbp_tmicon-apple:before {
+    font-family: Fontawesome, sans-serif;
+    content: "\f179";
 }
 
 
