@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+Skip to content This repository Search Pull requests Issues Gist @AkimSolovyov Unwatch 1 Star 0 Fork 0 AkimSolovyov/AkimSolovyov.github.io Branch: master AkimSolovyov.github.io/projects/mbs/css/styles.css @AkimSolovyovAkimSolovyov 3 days ago upd 1 contributor RawBlameHistory 1725 lines (1419 sloc) 29.5 KB @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700);
 
@@ -304,28 +304,6 @@ Animations
     }
 }
 
-
-/* ==========================================================================
-Waypoinsts
-========================================================================== */
-
-.wp1,
-.wp2,
-.wp3,
-.wp4,
-.wp5,
-.wp6,
-.wp7,
-.wp8,
-.wp9 {
-    visibility: hidden;
-}
-
-.wp2 {
-    -webkit-animation-delay: 0.3s;
-    animation-delay: 0.3s;
-}
-
 .bounceInLeft,
 .bounceInRight,
 .fadeInUp,
@@ -438,7 +416,8 @@ Hero
 .hero h1 {
     position: relative;
     color: #fff;
-    font-size: 130px;
+    font-size: 140px;
+    line-height: 130px;
     z-index: 6;
     text-shadow: 1px 3px 1px #2a2a2a;
 }
@@ -576,106 +555,42 @@ Intro
 
 
 /* ==========================================================================
-Features-stack
+.testimonial-slider
 ========================================================================== */
 
-.features {
-    position: relative;
+.testimonial-slider {
+    background-color: #078190;
+    background-size: cover;
 }
 
-.features p {
-    margin-bottom: 0;
-    padding-bottom: 0;
+.testimonial-slider .avatar {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    vertical-align: middle;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 3px #fff;
+    background-color: #fff;
 }
 
-.features h3 {
-    margin: 0 0 20px 0;
+.testimonial-slider .avatar img {
+    width: 200px;
+    height: auto;
 }
 
-.features span.icon {
-    font-size: 35px;
-    color: #FF5274;
-    font-weight: bold;
-}
-
-.features .feature-icon {
-    display: inline-block;
-    vertical-align: top;
-    padding: 6px 0 0 0;
-    margin-right: 20px;
-    width: 35px;
-}
-
-.features .feature-content {
-    display: inline-block;
-    width: 75%;
-}
-
-.features .intro-icon {
-    display: inline-block;
-    vertical-align: top;
-    padding: 6px 0 0 0;
-    margin-right: 20px;
-}
-
-.features .intro-content {
-    display: inline-block;
-    width: 80%;
+.testimonial-slider h2 {
     color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 30px 0;
 }
 
-.features ul.features-stack {
-    margin-top: 50px;
-}
-
-.features ul.features-stack li {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: solid 1px #E6E9EA;
-}
-
-.features ul.features-stack li:last-child {
-    padding-bottom: 0px;
-    border-bottom: none;
-}
-
-.features .device-showcase {
-    position: absolute;
-    bottom: -365px;
-    right: 61%;
-}
-
-.features .responsive-feature-img,
-.features-extra .responsive-feature-img {
-    display: none;
-}
-
-.devices {
-    position: relative;
-}
-
-
-/* ==========================================================================
-.features-extra
-========================================================================== */
-
-.features-extra {
-    position: relative;
-    z-index: 3;
-}
-
-.features-extra .btn {
-    margin-top: 20px;
-}
-
-.features-extra .macbook-wrap {
-    position: absolute;
-    width: 916px;
-    height: 540px;
-    background: url("../img/macbook-pro.png") no-repeat center center;
-    top: 114px;
-    z-index: 4;
-    left: 50%;
+.testimonial-slider p {
+    color: #53e8e3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 
@@ -724,47 +639,6 @@ Features-stack
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: 7;
-}
-
-
-/* ==========================================================================
-.testimonial-slider
-========================================================================== */
-
-.testimonial-slider {
-    /*background: url("../img/testimonials-bg.jpg") no-repeat center center;*/
-    background-color: #078190;
-    background-size: cover;
-}
-
-.testimonial-slider .avatar {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    vertical-align: middle;
-    overflow: hidden;
-    border-radius: 50%;
-    border: solid 3px #fff;
-    background-color: #fff;
-}
-
-.testimonial-slider .avatar img {
-    width: 200px;
-    height: auto;
-}
-
-.testimonial-slider h2 {
-    color: #fff;
-    font-size: 40px;
-    font-weight: 300;
-    font-style: italic;
-    margin: 30px 0;
-}
-
-.testimonial-slider p {
-    color: #53e8e3;
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 
@@ -1512,7 +1386,7 @@ you can use the generic selector below, but it's slower:
     content: '';
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 40px;
     width: 10px;
     background: #53e8e3;
     left: 20%;

@@ -302,5 +302,8 @@
                                     display: inline-block;
                                     width: 100%;
                                 }
+                                .btn-large {
+                                    padding: 25px 30px;
+                                }
                             }
                             @media screen and (max-width:320px) {}
