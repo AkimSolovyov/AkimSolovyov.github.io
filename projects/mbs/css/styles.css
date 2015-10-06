@@ -1,4 +1,4 @@
-Skip to content This repository Search Pull requests Issues Gist @AkimSolovyov Unwatch 1 Star 0 Fork 0 AkimSolovyov/AkimSolovyov.github.io Branch: master AkimSolovyov.github.io/projects/mbs/css/styles.css @AkimSolovyovAkimSolovyov 3 days ago upd 1 contributor RawBlameHistory 1725 lines (1419 sloc) 29.5 KB @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700);
 
@@ -174,6 +174,19 @@ ul li {
 
 .section-padding {
     padding: 120px 0;
+}
+
+.intro-content h5 {
+    height: 50px;
+    font-weight: 700;
+}
+
+.icon-infinity {
+    font-family: cursive;
+    font-size: 70px;
+    vertical-align: super;
+    line-height: 35px;
+    font-weight: 100;
 }
 
 
