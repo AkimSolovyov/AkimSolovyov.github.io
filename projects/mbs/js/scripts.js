@@ -4,7 +4,7 @@ $(document).ready(function () {
     function setHeight() {
         windowHeight = $(window).innerHeight();
         $('.hero').css('min-height', windowHeight);
-        $('.hero .hero-content').css('padding-top', windowHeight / 4);
+        $('.hero .hero-content').css('padding-top', windowHeight / 6);
 
 
     };
@@ -55,21 +55,17 @@ $(document).ready(function () {
                     "border-bottom": "none",
                     "padding": "30px 0 25px 0"
                 });
-                $('header .member-actions').css({
-                    "top": "26px",
-                });
+
                 $('header .navicon').css({
-                    "top": "34px",
+                    "top": "48px",
                 });
             } else {
                 $('section.navigation').removeClass('fixed');
                 $('header').css({
                     "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
-                    "padding": "30px 0 25px 0"
+                    "padding": "30px 0 65px 0"
                 });
-                $('header .member-actions').css({
-                    "top": "41px",
-                });
+
                 $('header .navicon').css({
                     "top": "48px",
                 });

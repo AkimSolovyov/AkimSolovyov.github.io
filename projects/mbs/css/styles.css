@@ -296,7 +296,7 @@ Hero
     z-index: 6;
     font-family: 'Myriad-Apple-Text';
     font-weight: 100;
-    margin: 0;
+    margin: 20px 0 0 0;
 }
 
 .hero h2 {
@@ -321,8 +321,6 @@ Hero
     line-height: 80px;
     vertical-align: middle;
 }
-
-.hero-content__logo-text--concated {}
 
 .hero-content__about {
     color: #fff;
@@ -443,7 +441,7 @@ Intro
 }
 
 .intro-features {
-    margin-top: 10px;
+    margin-top: 50px;
     z-index: 7;
     position: relative;
 }
@@ -457,16 +455,20 @@ Intro
 .subjects {
     margin: 0 auto;
     text-align: center;
-    width: 40%;
+    width: 45%;
 }
 
 .subjects__text {
-    margin: 0;
-    color: #3D4351;
-    font-size: 18px;
+    margin: 5% 0;
+    color: #fff;
+    font-size: 16px;
     font-weight: 400;
     text-align: justify;
-    padding-left: 10%;
+    z-index: 6;
+    position: relative;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 20px 0;
 }
 
 
@@ -595,7 +597,7 @@ Footer
 footer {
     background-color: #078190;
     position: relative;
-    padding: 20px 0 120px 0;
+    padding: 20px 5px 120px 5px;
 }
 
 footer p {
