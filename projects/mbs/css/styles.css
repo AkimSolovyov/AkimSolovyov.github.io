@@ -16,20 +16,7 @@ Typography
 p {
     font-size: 15px;
     line-height: 29px;
-    color: rgba(28, 54, 83, 0.6);
     padding-bottom: 20px;
-}
-
-h1 {
-    font-family: 'Myriad-Apple-Text';
-    font-size: 50px;
-    font-weight: 100;
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: 300;
-    color: #3D4351;
 }
 
 h3 {
@@ -37,14 +24,12 @@ h3 {
     font-size: 34px;
     margin-bottom: 20px;
     color: #fff;
-    /*    text-shadow: 1px 2px 1px #535353;*/
     text-align: center;
 }
 
 h4 {
     color: #fff;
     font-size: 22px;
-    /*    text-shadow: 1px 2px 1px #292929;*/
     text-align: center;
 }
 
@@ -53,12 +38,10 @@ h5 {
     color: #fff;
     font-weight: 500;
     text-align: center;
-    /*    text-shadow: 1px 2px 1px #292929;*/
 }
 
 .section-heading {
     margin-bottom: 80px;
-    /* font-family: "Open Sans", sans-serif;*/
 }
 
 .section-heading--inverted {
@@ -224,7 +207,7 @@ Navigation
     position: absolute;
     top: 0;
     right: 15px;
-    z-index: 999999;
+    z-index: 9999;
     padding: 10px 35px 16px 0;
     cursor: pointer;
 }
@@ -311,11 +294,23 @@ Hero
     font-size: 90px;
     line-height: 130px;
     z-index: 6;
-    /*   text-shadow: 1px 3px 1px #2a2a2a;*/
+    font-family: 'Myriad-Apple-Text';
     font-weight: 100;
+    margin: 0;
 }
 
-.iphone-logo {
+.hero h2 {
+    color: #fff;
+    z-index: 6;
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    position: relative;
+    margin: 0;
+}
+
+.hero-content__logo {
     display: inline-block;
     border: 4px solid #fff;
     border-radius: 25px;
@@ -327,20 +322,31 @@ Hero
     vertical-align: middle;
 }
 
-.iphone-logo-text {}
+.hero-content__logo-text--concated {}
 
-.hero p.intro {
+.hero-content__about {
     color: #fff;
+    z-index: 6;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    margin: 0;
+    font-size: 30px;
+}
+
+.hero-content__about-sub {
+    color: #fff;
+    z-index: 6;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
     font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 80px;
 }
 
-.hero .hero-content {
-    padding-top: 10%;
+.intro-content--text-block h4 {
+    font-size: 18px;
+    color: #000;
 }
 
-.video-overlay {
+.filter-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -437,28 +443,30 @@ Intro
 }
 
 .intro-features {
-    margin-top: 5%;
+    margin-top: 10px;
     z-index: 7;
     position: relative;
 }
 
-.intro span.icon {
-    font-size: 40px;
-    color: #00d2cb;
-    font-weight: bold;
-}
-
-.intro-icon {
-    display: inline-block;
-    vertical-align: top;
-    padding: 6px 0 0 0;
-    margin-right: 20px;
-    width: 40px;
-}
-
 .intro-content {
     display: inline-block;
-    width: 80%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.subjects {
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+}
+
+.subjects__text {
+    margin: 0;
+    color: #3D4351;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    padding-left: 10%;
 }
 
 
@@ -514,16 +522,6 @@ Intro
     position: relative;
 }
 
-.hero-strip i {
-    font-family: "Nunito", sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    color: #F69D52;
-    vertical-align: top;
-    margin-left: -8px;
-    font-style: normal;
-}
-
 .hero-strip h2 {
     color: #fff;
     margin: 0 0 20px 0;
@@ -572,7 +570,7 @@ To top
     width: 100%;
     height: 100%;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: #0a464e;
 }
 
 .to-top .to-top-wrap a:hover,
@@ -595,8 +593,9 @@ Footer
 ========================================================================== */
 
 footer {
-    background-color: #3D4351;
+    background-color: #078190;
     position: relative;
+    padding: 20px 0 120px 0;
 }
 
 footer p {
@@ -609,7 +608,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #FF5274;
+    color: #53e8e3;
 }
 
 footer ul.footer-group {
@@ -639,72 +638,36 @@ footer ul.footer-group li:last-child {
     margin-right: 0;
 }
 
-footer span.fa-heart {
-    color: #ff415c;
-    font-size: 15px;
-    margin: 0 2px;
+.manager {
+    margin: 0 auto;
+    text-align: right;
 }
 
-footer .social-share {
-    position: absolute;
-    background-color: #373D4A;
-    right: 0;
-    width: 40%;
-    height: 100%;
-    padding: 142px 0 0 70px;
+.manager__photo {
+    border-radius: 50%;
+    width: 200px;
 }
 
-footer .social-share p {
+.manager-contacts-block {
+    margin-top: 40px;
+}
+
+.manager__contacts {
     color: #fff;
-    text-transform: uppercase;
-    padding-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-footer .social-share a.twitter-share {
-    height: 60px;
-    width: 60px;
-    background-color: #1AB4EF;
-    border-radius: 3px;
-    font-size: 22px;
-    display: inline-block;
-    text-align: center;
-    margin-right: 20px;
+.manager__mail {
+    display: block;
 }
 
-footer .social-share a.twitter-share:hover,
-footer .social-share a.twitter-share:focus {
-    background-color: #1590BF;
+.manager__phone {
+    display: block;
 }
 
-footer .social-share a.facebook-share:hover,
-footer .social-share a.facebook-share:focus {
-    background-color: #324C85;
-}
-
-footer .social-share a.facebook-share {
-    height: 60px;
-    width: 60px;
-    background-color: #3B5898;
-    border-radius: 3px;
-    font-size: 22px;
-    display: inline-block;
-    text-align: center;
-}
-
-footer .social-share a {
-    color: #fff;
-}
-
-footer .social-share a:hover {
-    color: #fff;
-}
-
-footer .social-share a i {
-    margin-top: 20px;
-}
-
-footer .footer-links {
-    margin: 120px 0 120px 0;
+.manager__skype {
+    display: block;
 }
 
 .tickets__price {
@@ -733,17 +696,19 @@ footer .footer-links {
 
 .partners-logo {
     margin-top: 30px;
+    text-align: center;
 }
 
 .partners-logo__link {
-    display: inline-block;
-    width: 220px;
-    height: 220px;
+    display: block;
+    width: auto;
+    height: 240px;
+    margin-bottom: 5px;
 }
 
 .partners-logo__img {
-    height: 220px;
-    width: 220px;
+    height: 240px;
+    width: 250px;
 }
 
 
@@ -773,528 +738,6 @@ Icon font (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: inline-block;
-}
-
-
-/* Use the following CSS code if you want to have a class per icon */
-
-
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
-
-.icon-mobile,
-.icon-laptop,
-.icon-desktop,
-.icon-tablet,
-.icon-phone,
-.icon-document,
-.icon-documents,
-.icon-search,
-.icon-clipboard,
-.icon-newspaper,
-.icon-notebook,
-.icon-book-open,
-.icon-browser,
-.icon-calendar,
-.icon-presentation,
-.icon-picture,
-.icon-pictures,
-.icon-video,
-.icon-camera,
-.icon-printer,
-.icon-toolbox,
-.icon-briefcase,
-.icon-wallet,
-.icon-gift,
-.icon-bargraph,
-.icon-grid,
-.icon-expand,
-.icon-focus,
-.icon-edit,
-.icon-adjustments,
-.icon-ribbon,
-.icon-hourglass,
-.icon-lock,
-.icon-megaphone,
-.icon-shield,
-.icon-trophy,
-.icon-flag,
-.icon-map,
-.icon-puzzle,
-.icon-basket,
-.icon-envelope,
-.icon-streetsign,
-.icon-telescope,
-.icon-gears,
-.icon-key,
-.icon-paperclip,
-.icon-attachment,
-.icon-pricetags,
-.icon-lightbulb,
-.icon-layers,
-.icon-pencil,
-.icon-tools,
-.icon-tools-2,
-.icon-scissors,
-.icon-paintbrush,
-.icon-magnifying-glass,
-.icon-circle-compass,
-.icon-linegraph,
-.icon-mic,
-.icon-strategy,
-.icon-beaker,
-.icon-caution,
-.icon-recycle,
-.icon-anchor,
-.icon-profile-male,
-.icon-profile-female,
-.icon-bike,
-.icon-wine,
-.icon-hotairballoon,
-.icon-globe,
-.icon-genius,
-.icon-map-pin,
-.icon-dial,
-.icon-chat,
-.icon-heart,
-.icon-cloud,
-.icon-upload,
-.icon-download,
-.icon-target,
-.icon-hazardous,
-.icon-piechart,
-.icon-speedometer,
-.icon-global,
-.icon-compass,
-.icon-lifesaver,
-.icon-clock,
-.icon-aperture,
-.icon-quote,
-.icon-scope,
-.icon-alarmclock,
-.icon-refresh,
-.icon-happy,
-.icon-sad,
-.icon-facebook,
-.icon-twitter,
-.icon-googleplus,
-.icon-rss,
-.icon-tumblr,
-.icon-linkedin,
-.icon-dribbble {
-    font-family: 'et-line';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
-}
-
-.icon-mobile:before {
-    content: "\e000";
-}
-
-.icon-laptop:before {
-    content: "\e001";
-}
-
-.icon-desktop:before {
-    content: "\e002";
-}
-
-.icon-tablet:before {
-    content: "\e003";
-}
-
-.icon-phone:before {
-    content: "\e004";
-}
-
-.icon-document:before {
-    content: "\e005";
-}
-
-.icon-documents:before {
-    content: "\e006";
-}
-
-.icon-search:before {
-    content: "\e007";
-}
-
-.icon-clipboard:before {
-    content: "\e008";
-}
-
-.icon-newspaper:before {
-    content: "\e009";
-}
-
-.icon-notebook:before {
-    content: "\e00a";
-}
-
-.icon-book-open:before {
-    content: "\e00b";
-}
-
-.icon-browser:before {
-    content: "\e00c";
-}
-
-.icon-calendar:before {
-    content: "\e00d";
-}
-
-.icon-presentation:before {
-    content: "\e00e";
-}
-
-.icon-picture:before {
-    content: "\e00f";
-}
-
-.icon-pictures:before {
-    content: "\e010";
-}
-
-.icon-video:before {
-    content: "\e011";
-}
-
-.icon-camera:before {
-    content: "\e012";
-}
-
-.icon-printer:before {
-    content: "\e013";
-}
-
-.icon-toolbox:before {
-    content: "\e014";
-}
-
-.icon-briefcase:before {
-    content: "\e015";
-}
-
-.icon-wallet:before {
-    content: "\e016";
-}
-
-.icon-gift:before {
-    content: "\e017";
-}
-
-.icon-bargraph:before {
-    content: "\e018";
-}
-
-.icon-grid:before {
-    content: "\e019";
-}
-
-.icon-expand:before {
-    content: "\e01a";
-}
-
-.icon-focus:before {
-    content: "\e01b";
-}
-
-.icon-edit:before {
-    content: "\e01c";
-}
-
-.icon-adjustments:before {
-    content: "\e01d";
-}
-
-.icon-ribbon:before {
-    content: "\e01e";
-}
-
-.icon-hourglass:before {
-    content: "\e01f";
-}
-
-.icon-lock:before {
-    content: "\e020";
-}
-
-.icon-megaphone:before {
-    content: "\e021";
-}
-
-.icon-shield:before {
-    content: "\e022";
-}
-
-.icon-trophy:before {
-    content: "\e023";
-}
-
-.icon-flag:before {
-    content: "\e024";
-}
-
-.icon-map:before {
-    content: "\e025";
-}
-
-.icon-puzzle:before {
-    content: "\e026";
-}
-
-.icon-basket:before {
-    content: "\e027";
-}
-
-.icon-envelope:before {
-    content: "\e028";
-}
-
-.icon-streetsign:before {
-    content: "\e029";
-}
-
-.icon-telescope:before {
-    content: "\e02a";
-}
-
-.icon-gears:before {
-    content: "\e02b";
-}
-
-.icon-key:before {
-    content: "\e02c";
-}
-
-.icon-paperclip:before {
-    content: "\e02d";
-}
-
-.icon-attachment:before {
-    content: "\e02e";
-}
-
-.icon-pricetags:before {
-    content: "\e02f";
-}
-
-.icon-lightbulb:before {
-    content: "\e030";
-}
-
-.icon-layers:before {
-    content: "\e031";
-}
-
-.icon-pencil:before {
-    content: "\e032";
-}
-
-.icon-tools:before {
-    content: "\e033";
-}
-
-.icon-tools-2:before {
-    content: "\e034";
-}
-
-.icon-scissors:before {
-    content: "\e035";
-}
-
-.icon-paintbrush:before {
-    content: "\e036";
-}
-
-.icon-magnifying-glass:before {
-    content: "\e037";
-}
-
-.icon-circle-compass:before {
-    content: "\e038";
-}
-
-.icon-linegraph:before {
-    content: "\e039";
-}
-
-.icon-mic:before {
-    content: "\e03a";
-}
-
-.icon-strategy:before {
-    content: "\e03b";
-}
-
-.icon-beaker:before {
-    content: "\e03c";
-}
-
-.icon-caution:before {
-    content: "\e03d";
-}
-
-.icon-recycle:before {
-    content: "\e03e";
-}
-
-.icon-anchor:before {
-    content: "\e03f";
-}
-
-.icon-profile-male:before {
-    content: "\e040";
-}
-
-.icon-profile-female:before {
-    content: "\e041";
-}
-
-.icon-bike:before {
-    content: "\e042";
-}
-
-.icon-wine:before {
-    content: "\e043";
-}
-
-.icon-hotairballoon:before {
-    content: "\e044";
-}
-
-.icon-globe:before {
-    content: "\e045";
-}
-
-.icon-genius:before {
-    content: "\e046";
-}
-
-.icon-map-pin:before {
-    content: "\e047";
-}
-
-.icon-dial:before {
-    content: "\e048";
-}
-
-.icon-chat:before {
-    content: "\e049";
-}
-
-.icon-heart:before {
-    content: "\e04a";
-}
-
-.icon-cloud:before {
-    content: "\e04b";
-}
-
-.icon-upload:before {
-    content: "\e04c";
-}
-
-.icon-download:before {
-    content: "\e04d";
-}
-
-.icon-target:before {
-    content: "\e04e";
-}
-
-.icon-hazardous:before {
-    content: "\e04f";
-}
-
-.icon-piechart:before {
-    content: "\e050";
-}
-
-.icon-speedometer:before {
-    content: "\e051";
-}
-
-.icon-global:before {
-    content: "\e052";
-}
-
-.icon-compass:before {
-    content: "\e053";
-}
-
-.icon-lifesaver:before {
-    content: "\e054";
-}
-
-.icon-clock:before {
-    content: "\e055";
-}
-
-.icon-aperture:before {
-    content: "\e056";
-}
-
-.icon-quote:before {
-    content: "\e057";
-}
-
-.icon-scope:before {
-    content: "\e058";
-}
-
-.icon-alarmclock:before {
-    content: "\e059";
-}
-
-.icon-refresh:before {
-    content: "\e05a";
-}
-
-.icon-happy:before {
-    content: "\e05b";
-}
-
-.icon-sad:before {
-    content: "\e05c";
-}
-
-.icon-facebook:before {
-    content: "\e05d";
-}
-
-.icon-twitter:before {
-    content: "\e05e";
-}
-
-.icon-googleplus:before {
-    content: "\e05f";
-}
-
-.icon-rss:before {
-    content: "\e060";
-}
-
-.icon-tumblr:before {
-    content: "\e061";
-}
-
-.icon-linkedin:before {
-    content: "\e062";
-}
-
-.icon-dribbble:before {
-    content: "\e063";
 }
 
 @font-face {
@@ -1351,7 +794,7 @@ you can use the generic selector below, but it's slower:
 }
 
 .cbp_tmtimeline > li .cbp_tmtime span:last-child {
-    font-size: 2.9em;
+    font-size: 2.6em;
     color: #078190;
     font-weight: 500;
     position: relative;
@@ -1369,13 +812,12 @@ you can use the generic selector below, but it's slower:
     margin: 0 10% 15px 25%;
     background: #078190;
     color: #fff;
-    padding: 1.2em;
-    font-size: 1.2em;
+    padding: 1em 0.8em 0.2em 0.8em;
+    font-size: 1em;
     font-weight: 300;
     line-height: 1.4;
     position: relative;
     border-radius: 5px;
-    padding-top: 35px;
 }
 
 .cbp_tmtimeline > li .cbp_tmlabel p {
@@ -1394,10 +836,11 @@ you can use the generic selector below, but it's slower:
 
 .cbp_tmtimeline > li .cbp_tmlabel h2 {
     margin-top: 0px;
-    padding: 0 0 10px 0;
+    padding: 10px 0 10px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     color: #fff;
     font-weight: 400;
+    font-size: 1.6em;
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel h2 {

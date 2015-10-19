@@ -19,7 +19,12 @@ $(document).ready(function () {
 
     /***************** Initiate Flexslider ******************/
     $('.flexslider').flexslider({
-        animation: "slide"
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 320,
+        itemMargin: 5,
+        minItems: 1,
+        maxItems: 2
     });
 
 
@@ -90,13 +95,5 @@ $(document).ready(function () {
         });
 
     });
-
-
-
-
-
-
-
-
 
 });

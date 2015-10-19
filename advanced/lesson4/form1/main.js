@@ -78,6 +78,7 @@ function validaRegistrationData(formData) {
         },
         password: function (value) {
             var regexp = /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/g;
+            var regexp2 = /\d/g;
             if (!value) {
                 return 'Password is required';
             }
