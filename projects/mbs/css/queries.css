@@ -259,7 +259,11 @@
                                 .subjects {
                                     margin: 0 auto;
                                     text-align: justify;
-                                    width: 85%;
+                                    text-align-last: justify;
+                                    width: 90%;
+                                }
+                                .subjects-text {
+                                    font-size: 18px;
                                 }
                                 .manager {
                                     margin: 0 auto;

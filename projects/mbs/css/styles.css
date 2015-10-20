@@ -86,7 +86,7 @@ ul li {
 }
 
 .section-padding {
-    padding: 100px 0 100px 0;
+    padding: 100px 0 0 0;
 }
 
 .intro-content h5 {
@@ -391,13 +391,14 @@ Intro
 .subjects {
     margin: 0 auto;
     text-align: center;
+    padding: 60px 0;
     width: 100%;
 }
 
 .subjects-text {
     margin: 5% 0;
     color: #3D4351;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
     text-align: justify;
     z-index: 6;
@@ -415,6 +416,7 @@ Intro
 .speakers-slider {
     background-color: #078190;
     background-size: cover;
+    padding-bottom: 100px;
 }
 
 .speaker-photo {
@@ -852,12 +854,16 @@ To top
     position: relative;
 }
 
+.partners {
+    padding-bottom: 100px;
+}
+
 .partners-text {
     font-size: 30px;
 }
 
 .partners-logo {
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
 }
 
