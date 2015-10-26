@@ -25,7 +25,7 @@ $(document).ready(function () {
         }
 
         var map = new google.maps.Map(mapCanvas, mapOptions)
-        var companyPos = new google.maps.LatLng(50.447556, 30.422345);
+        var companyPos = new google.maps.LatLng(50.447594, 30.422886);
         var companyMarker = new google.maps.Marker({
             position: companyPos,
             map: map,
