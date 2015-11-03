@@ -1,11 +1,9 @@
 'use strict';
 
-$(document).ready(function () {
-    init();
-});
+$(document).ready(init);
 
 function init() {
-    $('#contactform').submit(function (event) {
+    $('#contactform').submit(function(event) {
         processRegistration(this);
         event.preventDefault();
     });
@@ -13,7 +11,7 @@ function init() {
 
 function processRegistration(form) {
     var data = getRegistrationFormData();
-    var errors = validaRegistrationData(data);
+    var errors = validateRegistrationData(data);
 
     $('.error', $(form)).text('');
 
@@ -21,98 +19,118 @@ function processRegistration(form) {
         highlightErrors(form, errors);
     } else {
         console.log('DATA IS VALID', data);
-        alert('SUCCESS');
     }
 }
 
 function getRegistrationFormData() {
     var formData = {
-        name: $('#name').val(),
-        email: $('#email').val(),
-        username: $('#username').val(),
-        password: $('#password').val(),
+        name:       $('#name').val(),
+        email:      $('#email').val(),
+        username:   $('#username').val(),
+        password:   $('#password').val(),
         repassword: $('#repassword').val(),
-        month: $('#month').find(":selected").val(),
-        day: $('#day').val(),
-        year: $('#year').val(),
-        gender: $('#gender').find(":selected").val()
+        month:      $('#month').find(":selected").val(),
+        day:        $('#day').val(),
+        year:       $('#year').val(),
+        phone:      $('#phone').val(),
+        gender:     $('#gender').find(":selected").val()
     };
 
     return formData;
 }
 
-function validaRegistrationData(formData) {
+function validateRegistrationData(formData) {
     var validationRules = {
-        name: function (value) {
-            var regexp = /^[а-яА-ЯёЁa-zA-Z]+$/g;
+        name: function(value) {
             if (!value) {
-                return 'Name is required';
+                return 'Required';
             }
 
-            if (!(regexp.test(value))) {
-                return 'Only Latin/Cyrillic letters without spaces, please';
-            }
-
-        },
-        email: function (value) {
-            var regexp = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/g;
-            if (!value) {
-                return 'Email is required';
-            }
-
-            if (!(regexp.test(value))) {
-                return 'Valid email format required';
-            }
-
-
-        },
-        username: function (value) {
-            var regexp = /^[а-яА-ЯёЁa-zA-Z]+$/g;
-            if (!value) {
-                return 'Name is required';
-            }
-
-            if (!(regexp.test(value))) {
-                return 'Only Latin/Cyrillic letters without spaces, please';
+            if ( !value.match(/^[a-zа-яiъї]+$/i) ) {
+                return 'Should contain only letters latin/cyrillic';
             }
         },
-        password: function (value) {
-            var regexp = /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/g;
-            var regexp2 = /\d/g;
+
+        email: function(value) {
+            value = value || '';
+
             if (!value) {
-                return 'Password is required';
+                return 'Required';
+            }
+
+            var emailRe = /^([\w\-_+]+(?:\.[\w\-_+]+)*)@((?:[a-z0-9\-]+\.)*[a-z0-9][a-z0-9\-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+
+            if ( !emailRe.test(value) ) {
+                return 'Wrong email format';
+            }
+        },
+
+        username: function(value) {
+            if (!value) {
+                return 'Required';
+            }
+
+            if ( !value.match(/^[a-zа-яiъї]+$/i) ) {
+                return 'Should contain only letters latin/cyrillic';
+            }
+        },
+
+        password: function(value) {
+            if (!value) {
+                return 'Required';
             }
 
             if (value.length < 8) {
-                return 'Password is too short';
+                return 'Should contain at least 8 characters';
             }
 
-            if (!(regexp.test(value))) {
-                return 'Only Latin letters, numbers, special symbols, min 8 chars: one letter, one digit and one special symbol ';
+            if ( !value.match(/\d/) ) {
+                return 'Should contain at least one digit';
+            }
+
+            if ( !value.match(/[^\da-z]/i) ) {
+                return 'Should contain at least one special character';
+            }
+
+            if ( !value.match(/[A-Z]/) ) {
+                return 'Should contain at least one uppercase letter';
             }
 
         },
-        repassword: function (value) {
+
+        repassword: function(value) {
+            if (!value) {
+                return 'Required';
+            }
 
         },
-        month: function (value) {
 
-        },
-        day: function (value) {
-
-        },
-        year: function (value) {
-
-        },
-        gender: function (value) {
+        phone: function(value) {
+            if ( !value.match(/^[0-9+()\- ]*$/) ) {
+                return 'Wrong number';
+            }
 
         }
     };
 
     var errors = validateData(validationRules, formData);
 
-    // TODO extrachecks like date existence, password === repassword.
-    // Do them manually and add errors to errors object
+    // Validate password equality
+    if ( formData.password !== formData.repassword ) {
+        errors = errors || {};
+        errors.repassword = 'Should be equal to password';
+    }
+
+    // Validate birthday
+    var birthday = new Date(+formData.year, +formData.month-1, +formData.day);
+
+    if ( isNaN( birthday.getTime() ) ) {
+        errors = errors || {};
+        errors.birthday = 'Invalid date';
+    } else if ( birthday > new Date() ) {
+        errors = errors || {};
+        errors.birthday = 'Date should not be in future';
+    }
 
     return errors;
 }
@@ -130,15 +148,16 @@ function validateData(validationRules, data) {
     var errors = {};
 
     for (var field in data) {
-        var value = data[field];
-        var fieldError = validationRules[field](value);
+        var value      = data[field];
+        var validator  = validationRules[field] || function() {};
+        var fieldError = validator(value);
 
         if (fieldError) {
             errors[field] = fieldError;
         }
     }
 
-    if (Object.keys(errors).length) {
+    if ( Object.keys(errors).length ) {
         return errors;
     } else {
         return;
