@@ -1,0 +1,224 @@
+<manifest alg="2" build="2015.0.2.310" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="FTP" domain="itfest.goit.com.ua" resolutions="1x,2x" timestamp="1441363731162" ftp_hostname="ftp://goit.ftp.ukraine.com.ua" ftp_rootfolder="//goit.com.ua/itfest/ver2/">
+  <folder name="css">
+    <file name="site_global.css" crc="4052507572"/>
+    <file name="thanks.css" crc="4006120093" ref="thanks"/>
+    <file name="index.css" crc="219987092" ref="index"/>
+    <file name="master_______-a.css" crc="320245279" ref="index:thanks"/>
+  </folder>
+  <folder name="fonts">
+    <file name="bebasbold.woff" crc="3872933733"/>
+    <file name="bebasbold.eot" crc="149665998"/>
+    <file name="gothamproregular.woff" crc="3004998"/>
+    <file name="gothamproregular.eot" crc="486531196"/>
+    <file name="bebaslight.woff" crc="4275329447"/>
+    <file name="bebaslight.eot" crc="352091223"/>
+    <file name="gothamprobold.woff" crc="4023489260"/>
+    <file name="gothamprobold.eot" crc="377327821"/>
+    <file name="gothamprolightitalic.woff" crc="3908411826"/>
+    <file name="gothamprolightitalic.eot" crc="514021045"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="196614522" ref="index:thanks"/>
+    <file name="museutils.js" crc="275725342" ref="index:thanks"/>
+    <file name="jquery.watch.js" crc="3999102769" ref="index:thanks"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="185257658" ref="index:thanks"/>
+    <file name="pie.js" crc="3827607177" ref="index:thanks"/>
+    <file name="webpro.js" crc="3883484123" ref="index"/>
+    <file name="musewpslideshow.js" crc="360574455" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="342093292" ref="index"/>
+    <file name="touchswipe.js" crc="4218319045" ref="index"/>
+    <file name="musewpdisclosure.js" crc="404074387" ref="index"/>
+    <file name="form_check.php" crc="3932029206" ref="index"/>
+    <file name="form_throttle.php" crc="314685628" ref="index"/>
+    <file name="form_process.php" crc="401030677" ref="index"/>
+    <file name="form-u937.php" crc="157381333" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="dman_facingright.png" crc="300813799" seo="true" ref="index"/>
+    <file name="dman_facingright_2x.png" crc="3874806481" seo="true" ref="index"/>
+    <file name="noun_18457_cc.png" crc="4124249785" seo="true" ref="index"/>
+    <file name="noun_18457_cc_2x.png" crc="239071574" seo="true" ref="index"/>
+    <file name="noun_33145_cc.png" crc="519330948" seo="true" ref="index"/>
+    <file name="noun_33145_cc_2x.png" crc="3805303726" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104310.jpg" crc="4196969401" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104310_2x.jpg" crc="4115888454" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104321.jpg" crc="4257110877" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104321_2x.jpg" crc="359562043" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104337.jpg" crc="4130106872" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104337_2x.jpg" crc="269070160" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104431.jpg" crc="4166034708" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104431_2x.jpg" crc="49327013" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104356.jpg" crc="377295822" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104356_2x.jpg" crc="77903803" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104409.jpg" crc="414089865" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104409_2x.jpg" crc="403546807" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104511.jpg" crc="3975389570" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104511_2x.jpg" crc="499962999" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104454.jpg" crc="89175876" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104454_2x.jpg" crc="3778645245" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104502.jpg" crc="262486688" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104502_2x.jpg" crc="4215265306" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104443.jpg" crc="3795563727" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104443_2x.jpg" crc="49308328" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104517.jpg" crc="507653989" seo="true" ref="index"/>
+    <file name="снимок экрана 2015-09-03 в 104517_2x.jpg" crc="409803594" seo="true" ref="index"/>
+    <file name="puzankov.jpg" crc="232505571" seo="true" ref="index"/>
+    <file name="puzankov_2x.jpg" crc="323688659" seo="true" ref="index"/>
+    <file name="baglay.jpg" crc="441545863" seo="true" ref="index"/>
+    <file name="baglay_2x.jpg" crc="4255295314" seo="true" ref="index"/>
+    <file name="andrusenko.jpg" crc="83417144" seo="true" ref="index"/>
+    <file name="andrusenko_2x.jpg" crc="4013723775" seo="true" ref="index"/>
+    <file name="bogkova-2.jpg" crc="336362314" seo="true" ref="index"/>
+    <file name="bogkova-2_2x.jpg" crc="3872009841" seo="true" ref="index"/>
+    <file name="kuzniak.jpg" crc="4265962790" seo="true" ref="index"/>
+    <file name="kuzniak_2x.jpg" crc="168486796" seo="true" ref="index"/>
+    <file name="empty.jpg" crc="3828429604" seo="true" ref="index"/>
+    <file name="empty_2x.jpg" crc="4242134011" seo="true" ref="index"/>
+    <file name="kiev-at-night-1920x1200-wide-wallpapersnet.jpg" crc="336805580" ref="index"/>
+    <file name="hands.png" crc="475026015" seo="true" ref="index"/>
+    <file name="hands_2x.png" crc="3904795572" seo="true" ref="index"/>
+    <file name="1noun_192230.png" crc="4001808926" seo="true" ref="index"/>
+    <file name="1noun_192230_2x.png" crc="3839125954" seo="true" ref="index"/>
+    <file name="1noun_70354_cc.png" crc="428280797" seo="true" ref="index"/>
+    <file name="1noun_70354_cc_2x.png" crc="19333159" seo="true" ref="index"/>
+    <file name="1noun_14997_cc.png" crc="155308418" seo="true" ref="index"/>
+    <file name="1noun_14997_cc_2x.png" crc="188850479" seo="true" ref="index"/>
+    <file name="u948-17.png" crc="3852563209" ref="index"/>
+    <file name="u948-17-r.png" crc="66759025" ref="index"/>
+    <file name="u948-17-m.png" crc="200025576" ref="index"/>
+    <file name="u948-17-fs.png" crc="135934109" ref="index"/>
+    <file name="u948-17_2x.png" crc="3781399051" ref="index"/>
+    <file name="u948-17-r_2x.png" crc="115772213" ref="index"/>
+    <file name="u948-17-m_2x.png" crc="4051878295" ref="index"/>
+    <file name="u948-17-fs_2x.png" crc="510950107" ref="index"/>
+    <file name="radiobuttonunchecked.png" crc="232010369" ref="index"/>
+    <file name="radiobuttonunchecked_2x.png" crc="4022614340" ref="index"/>
+    <file name="radiobuttonuncheckedrollover.png" crc="173297973" ref="index"/>
+    <file name="radiobuttonuncheckedrollover_2x.png" crc="3844774889" ref="index"/>
+    <file name="radiobuttonuncheckedmousedown.png" crc="210422217" ref="index"/>
+    <file name="radiobuttonuncheckedmousedown_2x.png" crc="184971016" ref="index"/>
+    <file name="radiobuttonchecked.png" crc="424951658" ref="index"/>
+    <file name="radiobuttonchecked_2x.png" crc="4250438086" ref="index"/>
+    <file name="radiobuttoncheckedrollover.png" crc="135556972" ref="index"/>
+    <file name="radiobuttoncheckedrollover_2x.png" crc="150698565" ref="index"/>
+    <file name="radiobuttoncheckedmousedown.png" crc="475385202" ref="index"/>
+    <file name="radiobuttoncheckedmousedown_2x.png" crc="54398052" ref="index"/>
+    <file name="luxoft.png" crc="3811628848" seo="true" ref="index"/>
+    <file name="luxoft_2x.png" crc="4113024346" seo="true" ref="index"/>
+    <file name="grossum.png" crc="4269299210" seo="true" ref="index"/>
+    <file name="grossum_2x.png" crc="203862166" seo="true" ref="index"/>
+    <file name="bb.png" crc="174698655" seo="true" ref="index"/>
+    <file name="bb_2x.png" crc="4013665702" seo="true" ref="index"/>
+    <file name="boteon.jpg" crc="341651541" seo="true" ref="index"/>
+    <file name="boteon_2x.jpg" crc="29263759" seo="true" ref="index"/>
+    <file name="ex.png" crc="506266922" seo="true" ref="index"/>
+    <file name="ex_2x.png" crc="3798812081" seo="true" ref="index"/>
+    <file name="flash.png" crc="272013703" seo="true" ref="index"/>
+    <file name="flash_2x.png" crc="166425248" seo="true" ref="index"/>
+    <file name="karabas.png" crc="3876073689" seo="true" ref="index"/>
+    <file name="karabas_2x.png" crc="5774906" seo="true" ref="index"/>
+    <file name="fsr.png" crc="3985316328" seo="true" ref="index"/>
+    <file name="fsr_2x.png" crc="4123405921" seo="true" ref="index"/>
+    <file name="gameinn.png" crc="3825107477" seo="true" ref="index"/>
+    <file name="gameinn_2x.png" crc="4256800079" seo="true" ref="index"/>
+    <file name="zeo.png" crc="376145476" seo="true" ref="index"/>
+    <file name="zeo_2x.png" crc="501610313" seo="true" ref="index"/>
+    <file name="kniga.jpg" crc="101243853" seo="true" ref="index"/>
+    <file name="kniga_2x.jpg" crc="269281682" seo="true" ref="index"/>
+    <file name="superdeal.png" crc="136972747" seo="true" ref="index"/>
+    <file name="superdeal_2x.png" crc="238186110" seo="true" ref="index"/>
+    <file name="upwork.png" crc="4055003097" seo="true" ref="index"/>
+    <file name="upwork_2x.png" crc="2767371" seo="true" ref="index"/>
+    <file name="dataart.png" crc="96917416" seo="true" ref="index"/>
+    <file name="dataart_2x.png" crc="519366649" seo="true" ref="index"/>
+    <file name="digitalfuture.png" crc="4015177355" seo="true" ref="index"/>
+    <file name="digitalfuture_2x.png" crc="4030127358" seo="true" ref="index"/>
+    <file name="prom.jpg" crc="14619631" seo="true" ref="index"/>
+    <file name="prom_2x.jpg" crc="3824586017" seo="true" ref="index"/>
+    <file name="schastie.png" crc="3780628968" seo="true" ref="index"/>
+    <file name="schastie_2x.png" crc="3976164094" seo="true" ref="index"/>
+    <file name="impact.jpg" crc="4249921711" seo="true" ref="index"/>
+    <file name="impact_2x.jpg" crc="94271722" seo="true" ref="index"/>
+    <file name="intersog_labs.png" crc="4132720298" seo="true" ref="index"/>
+    <file name="intersog_labs_2x.png" crc="282131840" seo="true" ref="index"/>
+    <file name="artjoker.png" crc="4038383473" seo="true" ref="index"/>
+    <file name="artjoker_2x.png" crc="395437211" seo="true" ref="index"/>
+    <file name="enguide.png" crc="268417185" seo="true" ref="index"/>
+    <file name="enguide_2x.png" crc="260455901" seo="true" ref="index"/>
+    <file name="reklamaster.png" crc="4209863608" seo="true" ref="index"/>
+    <file name="reklamaster_2x.png" crc="156609492" seo="true" ref="index"/>
+    <file name="hh.jpg" crc="3777278159" seo="true" ref="index"/>
+    <file name="hh_2x.jpg" crc="4185385560" seo="true" ref="index"/>
+    <file name="impulse.png" crc="524950219" seo="true" ref="index"/>
+    <file name="impulse_2x.png" crc="3846674028" seo="true" ref="index"/>
+    <file name="itbursa.jpg" crc="212974778" seo="true" ref="index"/>
+    <file name="itbursa_2x.jpg" crc="3951167340" seo="true" ref="index"/>
+    <file name="aisec.png" crc="422847198" seo="true" ref="index"/>
+    <file name="aisec_2x.png" crc="521568578" seo="true" ref="index"/>
+    <file name="epam.png" crc="212832733" seo="true" ref="index"/>
+    <file name="epam_2x.png" crc="3965578475" seo="true" ref="index"/>
+    <file name="platforma.png" crc="234381054" seo="true" ref="index"/>
+    <file name="platforma_2x.png" crc="252661146" seo="true" ref="index"/>
+    <file name="hillel.png" crc="3959038969" seo="true" ref="index"/>
+    <file name="hillel_2x.png" crc="108066678" seo="true" ref="index"/>
+    <file name="inno.png" crc="109537407" seo="true" ref="index"/>
+    <file name="inno_2x.png" crc="316542263" seo="true" ref="index"/>
+    <file name="itexpert.png" crc="4170299272" seo="true" ref="index"/>
+    <file name="itexpert_2x.png" crc="158388962" seo="true" ref="index"/>
+    <file name="qa.png" crc="4040265583" seo="true" ref="index"/>
+    <file name="qa_2x.png" crc="4125558009" seo="true" ref="index"/>
+    <file name="dopomoga.png" crc="4240736797" seo="true" ref="index"/>
+    <file name="dopomoga_2x.png" crc="3782725111" seo="true" ref="index"/>
+    <file name="startup.png" crc="145687690" seo="true" ref="index"/>
+    <file name="startup_2x.png" crc="72550919" seo="true" ref="index"/>
+    <file name="iforum.png" crc="280493896" seo="true" ref="index"/>
+    <file name="iforum_2x.png" crc="4280641459" seo="true" ref="index"/>
+    <file name="trud.jpg" crc="3856672820" seo="true" ref="index"/>
+    <file name="trud_2x.jpg" crc="148013612" seo="true" ref="index"/>
+    <file name="logo1.png" crc="419664549" seo="true" ref="index"/>
+    <file name="logo1_2x.png" crc="3801281256" seo="true" ref="index"/>
+    <file name="seeans.png" crc="214899485" seo="true" ref="index"/>
+    <file name="seeans_2x.png" crc="417567065" seo="true" ref="index"/>
+    <file name="fri.png" crc="65871617" seo="true" ref="index"/>
+    <file name="fri_2x.png" crc="3905949562" seo="true" ref="index"/>
+    <file name="svc.png" crc="3826456973" seo="true" ref="index"/>
+    <file name="svc_2x.png" crc="476703253" seo="true" ref="index"/>
+    <file name="lohika.png" crc="24556102" seo="true" ref="index"/>
+    <file name="lohika_2x.png" crc="4239507259" seo="true" ref="index"/>
+    <file name="zno.png" crc="3854029287" seo="true" ref="index"/>
+    <file name="zno_2x.png" crc="294085443" seo="true" ref="index"/>
+    <file name="itvdn.png" crc="186136252" seo="true" ref="index"/>
+    <file name="itvdn_2x.png" crc="4042993584" seo="true" ref="index"/>
+    <file name="vum.png" crc="65941654" seo="true" ref="index"/>
+    <file name="vum_2x.png" crc="4050238989" seo="true" ref="index"/>
+    <file name="rabota.jpg" crc="3772417314" seo="true" ref="index"/>
+    <file name="rabota_2x.jpg" crc="4278071827" seo="true" ref="index"/>
+    <file name="jci.png" crc="3908631907" seo="true" ref="index"/>
+    <file name="jci_2x.png" crc="4156981268" seo="true" ref="index"/>
+    <file name="kmda.png" crc="3999972612" seo="true" ref="index"/>
+    <file name="kmda_2x.png" crc="3917785260" seo="true" ref="index"/>
+    <file name="yes.png" crc="4049460686" seo="true" ref="index"/>
+    <file name="yes_2x.png" crc="383409448" seo="true" ref="index"/>
+    <file name="liga.jpg" crc="3966170809" seo="true" ref="index"/>
+    <file name="liga_2x.jpg" crc="4292826703" seo="true" ref="index"/>
+    <file name="goit-logo.svg" crc="127337493" ref="index:thanks"/>
+    <file name="goit-logo_poster_.png" crc="97001858" ref="index"/>
+    <file name="sprint-start_2.jpg" crc="4024397825" ref="index"/>
+    <file name="logo_itfest_4_vadim.svg" crc="4122880066" ref="index"/>
+    <file name="logo_itfest_4_vadim_poster_.png" crc="4106763959" ref="index"/>
+    <file name="21ff20eb8fa78288df44266a0f22fe6f.jpg" crc="437422463" ref="thanks"/>
+  </folder>
+  <file name="index.html" crc="4209547522" seo="true" mt="1441363690948" redirect="true"/>
+  <file name="thanks.html" crc="377652455" seo="true" mt="1441363646533" redirect="true"/>
+  <linkData>
+    <DESKTOP>
+      <page name="thanks" filename="thanks.html" muse_href="page:U992"/>
+      <page name="ITFest" filename="index.html" muse_href="page:U74">
+        <anchor name="form" html_id="form" muse_href="anchor:U69:U954"/>
+      </page>
+    </DESKTOP>
+    <ASSETS>
+      <asset filename="logo.pdf" muse_href="upload:U726"/>
+    </ASSETS>
+  </linkData>
+</manifest>
