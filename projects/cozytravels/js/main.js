@@ -333,7 +333,9 @@ Version: 1.0.2
 				"./images/back.jpg",
 				"./images/back2.jpg",
 				"./images/back3.jpg",
-				"./images/back4.jpg"
+				"./images/back4.jpg",
+				"./images/back5.jpg",
+				"./images/back6.jpg"
 			], {duration: 4000, fade: 1200});
 
 		} else if( $('body').hasClass('kenburns-background') ) { // KENBURNS BACKGROUND

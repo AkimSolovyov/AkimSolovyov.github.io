@@ -745,7 +745,7 @@ textarea::-webkit-input-placeholder {
   background:  rgba(0, 0, 0, 0.5);
   width: 100%;
   transform: skew(0deg, -4deg);
-  margin-top: -165px;
+  margin-top: -140px;
 }
 
 .site-logo a,
@@ -850,6 +850,10 @@ textarea::-webkit-input-placeholder {
   right: 7px;
 	border: 1px solid #fff;
 	border-radius: 50%;
+}
+
+.move-to.active {
+	pointer-events: none;
 }
 
 .light-style .site-nav ul li a.active:before {
@@ -2518,4 +2522,10 @@ body.mobile .tab-content>.active {
 }
 .image-4 {
 	background-image: url(./images/back4.jpg);
+}
+.image-5 {
+	background-image: url(./images/back5.jpg);
+}
+.image-6 {
+	background-image: url(./images/back6.jpg);
 }
