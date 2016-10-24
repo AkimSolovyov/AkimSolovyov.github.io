@@ -256,6 +256,17 @@ Version: 1.0.2
 			}
 		});
 
+		$(document).bind('DOMMouseScroll mousewheel', function(e){
+				 if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+					 $('.site-nav a.active').closest('li').prev('li').find('a.move-to').trigger('click');
+				 }
+				 else{
+					 $('.site-nav a.active').closest('li').next('li').find('a.move-to').trigger('click');
+				 }
+		 });
+
+
+
 	}
 
 
