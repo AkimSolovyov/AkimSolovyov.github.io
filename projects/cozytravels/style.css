@@ -1,5 +1,5 @@
 ﻿/* ==================================================================
-	1.0 CSS Reset
+CSS Reset
 ================================================================== */
 
 html, body, div, span, applet, object, iframe,
@@ -46,9 +46,8 @@ table {
 	border-spacing: 0;
 }
 
-
 /* ==================================================================
-	2.0 Bootstrap fix for WinPhone 8 and IE10
+Bootstrap fix for WinPhone 8 and IE10
 ================================================================== */
 
 @-webkit-viewport   { width: device-width; }
@@ -59,7 +58,7 @@ table {
 
 
 /* ==================================================================
-	3.0 Basic Document Styles
+Basic Document Styles
 ================================================================== */
 
 body {
@@ -78,10 +77,6 @@ body {
 	position: relative;
 }
 
-.light-style {
-	color: #333;
-}
-
 .youtube-background,
 .youtube-list-background {
 	background-color: #000;
@@ -98,7 +93,7 @@ textarea {
 
 
 /* ==================================================================
-	4.0 Typography
+Typography
 ================================================================== */
 
 h1, h2, h3, h4, h5, h6 {
@@ -211,7 +206,7 @@ strong {
 
 
 /* ==================================================================
-	5.0 Basic Layout Styles
+Basic Layout Styles
 ================================================================== */
 
 .text-left {
@@ -369,7 +364,7 @@ strong {
 
 
 /* ==================================================================
-	6.0 Forms
+Forms
 ================================================================== */
 
 input, textarea, select {
@@ -402,13 +397,6 @@ input, textarea, select {
 	        transition: background-color .3s ease, border .3s ease, color .3s ease;
 }
 
-.light-style input,
-.light-style textarea,
-.light-style select {
-	border-color: #333;
-	color: #333;
-}
-
 input.rounded , textarea.rounded , select.rounded  {
 	-webkit-border-radius: 21px;
 	-moz-border-radius: 21px;
@@ -438,11 +426,6 @@ form select {
 input:hover, textarea:hover, select:hover,
 input:focus, textarea:focus, select:focus {
 	color: #fff;
-}
-
-.light-style input:hover,.light-style textarea:hover,.light-style select:hover,
-.light-style input:focus,.light-style textarea:focus,.light-style select:focus {
-	color: #333;
 }
 
 input[type="submit"], button {
@@ -571,7 +554,7 @@ textarea::-webkit-input-placeholder {
 
 
 /* ==================================================================
-	7.0 Preloader
+Preloader
 ================================================================== */
 
 #preloader {
@@ -598,7 +581,7 @@ textarea::-webkit-input-placeholder {
 
 
 /* ==================================================================
-	8.0 Section Styles
+Section Styles
 ================================================================== */
 
 .main-container {
@@ -651,7 +634,7 @@ textarea::-webkit-input-placeholder {
 
 
 /* ==================================================================
-	9.0 Background Styles
+Background Styles
 ================================================================== */
 
 .cover-background {
@@ -727,13 +710,8 @@ textarea::-webkit-input-placeholder {
 
 
 /* ==================================================================
-	10.0 Navigation
+ Navigation
 ================================================================== */
-
-/*section .container {
-	background: rgba(0, 0, 0, 0.5);
-	padding: 30px;
-}*/
 
 .site-logo {
 	position: fixed;
@@ -856,17 +834,9 @@ textarea::-webkit-input-placeholder {
 	pointer-events: none;
 }
 
-.light-style .site-nav ul li a.active:before {
-	border: 1px solid #333;
-}
-
 /* Tooltip */
 .tooltip.left .tooltip-arrow {
 	border-left-color: #fff;
-}
-
-.light-style .tooltip.left .tooltip-arrow {
-	border-left-color: #333;
 }
 
 .tooltip-inner {
@@ -879,11 +849,6 @@ textarea::-webkit-input-placeholder {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-family: 'Open Sans', sans-serif;
-}
-
-.light-style .tooltip-inner {
-	color: #fff;
-	background-color: #333;
 }
 
 .tooltip.in {
@@ -932,104 +897,6 @@ textarea::-webkit-input-placeholder {
 .line.horizontal.left {
 	right: 0;
 }
-
-
-/* ==================================================================
-	11.0 Clock
-================================================================== */
-
-#clock {
-	color: #fff;
-	overflow: hidden;
-}
-
-.counter-container {
-	display: table;
-	margin: 0 auto;
-}
-
-#clock .counter-box {
-	display: block;
-	width: 160px;
-	text-align: center;
-	overflow: hidden;
-	padding: 10px 25px;
-	float: left;
-	margin: 25px 0;
-	position: relative;
-}
-
-#clock .number {
-	font-size: 80px;
-	text-align: center;
-	font-family: 'Monteserrat', sans-serif;
-	font-weight: 700;
-	line-height: 1;
-	margin-bottom: 10px;
-}
-
-#clock span {
-	display: block;
-	font-size: 21px;
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	padding-top: 10px;
-	position: relative;
-	overflow: hidden;
-}
-
-#clock span:before {
-	position: absolute;
-	content: '';
-	display: block;
-	width: 21px;
-	height: 1px;
-	background: #fff;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	top: 0px;
-}
-
-
-/*==================================================================
-	12.0 Services
-================================================================== */
-
-.service-icon {
-	font-size: 75px;
-	color: #fff;
-	margin-bottom: 20px;
-}
-
-.service h3 {
-	margin-bottom: 10px;
-}
-
-.feature-item {
-	text-align: left;
-	margin-bottom: 30px;
-}
-
-.feature-icon {
-    font-size: 40px;
-    color: #fff;
-	float: left;
-	width: 50px;
-	text-align: center;
-}
-
-.feature-text {
-	margin-left: 60px;
-}
-
-.feature-item h3 {
-	font-size: 21px;
-	margin-bottom: 10px;
-}
-
 
 /* Icon Tabs */
 .ico.nav-tabs {
@@ -1159,24 +1026,6 @@ textarea::-webkit-input-placeholder {
 	visibility: visible;
 }
 
-.light-style .ico.nav-tabs > li > a,
-.light-style .ico.nav-tabs > li > a:hover,
-.light-style .ico.nav-tabs > li > a > i,
-.light-style .ico.nav-tabs > li > a:hover > i,
-.light-style .ico.nav-tabs > li.active > a > i,
-.light-style .ico.nav-tabs > li > a > span,
-.light-style .ico.nav-tabs > li > a:hover > span,
-.light-style .ico.nav-tabs > li.active > a > span,
-.light-style .ico.nav-tabs > li.active > a,
-.light-style .ico.nav-tabs > li.active > a:hover,
-.light-style .ico.nav-tabs > li.active > a:focus {
-	color: #333;
-}
-
-.light-style .ico.nav-tabs > li > a > span:before {
-	background: #333;
-}
-
 /* Heading bock */
 .heading-block {
 	margin-bottom: 15px;
@@ -1202,7 +1051,7 @@ hr {
 
 
 /*==================================================================
-	13.0 Footer
+ Footer
 ================================================================== */
 
 .site-footer {
@@ -1286,7 +1135,7 @@ hr {
 
 
 /* ==================================================================
-	14.0 Buttons
+	Buttons
 ================================================================== */
 
 .btn:focus,
@@ -1307,7 +1156,7 @@ hr {
 	margin: 0 10px;
 }
 
-/*	14.1 Default Buttons
+/* Default Buttons
 	-------------------------------------------------------------- */
 .button {
 	display: inline-block;
@@ -1359,7 +1208,7 @@ hr {
 	margin: 0 0 0 5px;
 }
 
-/*	14.2  Button Styles
+/* Button Styles
 	-------------------------------------------------------------- */
 .button.button-rounded {
 	-webkit-border-radius: 26px;
@@ -1388,7 +1237,7 @@ hr {
 	color: #2196f3;
 }
 
-/*	14.3 Button Sizes
+/* Button Sizes
 	-------------------------------------------------------------- */
 .button.button-mini {
 	padding: 0 19px;
@@ -1435,7 +1284,12 @@ hr {
 	line-height: 48px;
 }
 
-/*	14.4 Button Colours
+.button.button-border.button-white.move-to {
+	position: relative;
+	bottom: 15px;
+}
+
+/* Button Colours
 	-------------------------------------------------------------- */
 
 /* Red */
@@ -1698,7 +1552,7 @@ hr {
 
 
 /* ==================================================================
-	15.0 Overlay Styles
+ Overlay Styles
 ================================================================== */
 
 .overlay {
@@ -1759,7 +1613,7 @@ hr {
 	background: #000717;
 }
 
-/*	15.2 Gradient Background Styles
+/* Gradient Background Styles
 	-------------------------------------------------------------- */
 .gradient-0 {
 	background: rgb(125,167,243); /* Old browsers */
@@ -2022,7 +1876,7 @@ hr {
 }
 
 /* ==================================================================
-	16.0 Shortcodes
+Shortcodes
 ================================================================== */
 
 .adress {
@@ -2046,6 +1900,7 @@ hr {
 }
 
 /* Lightbox */
+
 .nivo-lightbox-theme-default .nivo-lightbox-nav:hover {
 	background-color: rgba(0,0,0,0) !important;
 }
@@ -2065,6 +1920,7 @@ hr {
 }
 
 /* Play Button */
+
 .play-button {
 	width: 80px;
 	height: 80px;
@@ -2269,43 +2125,7 @@ hr {
 
 
 /* ==================================================================
-	17.0 Flexslider
-================================================================== */
-
-.flexslider.textslider {
-	margin: 0;
-	background: transparent;
-	border: 0px solid #fff;
-	position: relative;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	-o-border-radius: 0px;
-	border-radius: 0px;
-	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.2);
-	-moz-box-shadow: 0 0px 0px rgba(0,0,0,.2);
-	-o-box-shadow: 0 0px 0px rgba(0,0,0,.2);
-	box-shadow: 0 0px 0px rgba(0,0,0,.2);
-	zoom: 1;
-}
-
-.textslider h1 {
-	font-size: 72px;
-	font-weight: 200;
-}
-
-.textslider h2 {
-	font-size: 58px;
-	font-weight: 200;
-}
-
-.textslider h3 {
-	font-size: 40px;
-	font-weight: 200;
-}
-
-
-/* ==================================================================
-	18.0 Mobile
+ Mobile
 ================================================================== */
 
 body.mobile {
@@ -2341,7 +2161,7 @@ body.mobile .tab-content>.active {
 
 
 /* ==================================================================
-	19.0 Responsive
+  Responsive
 ================================================================== */
 
 @media(max-width:991px){
@@ -2378,21 +2198,6 @@ body.mobile .tab-content>.active {
 
 	h3 {
 		font-size: 26px;
-	}
-
-	.services .service {
-		padding-bottom: 50px;
-	}
-
-	.services .service:last-child {
-		padding-bottom: 0px;
-	}
-
-	#clock .counter-box {
-		display: inline-block;
-		float: none;
-		width: 170px;
-		padding: 15px 15px;
 	}
 
 }
@@ -2490,25 +2295,9 @@ body.mobile .tab-content>.active {
 
 }
 
-@media(max-width:640px){
-
-	.textslider h1 {
-		font-size: 48px;
-	}
-
-	.textslider h2 {
-		font-size: 30px;
-	}
-
-	.textslider h3 {
-		font-size: 24px;
-	}
-
-}
-
 
 /* ==================================================================
-	20.0 Image Backgrounds
+ Image Backgrounds
 ================================================================== */
 
 .image-1 {

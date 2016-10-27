@@ -264,9 +264,6 @@ Version: 1.0.2
 					 $('.site-nav a.active').closest('li').next('li').find('a.move-to').trigger('click');
 				 }
 		 });
-
-
-
 	}
 
 

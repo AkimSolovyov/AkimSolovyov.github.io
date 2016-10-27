@@ -14,11 +14,11 @@ $frm_message = stripcslashes($_POST['message']);
 Variables you can change
 ============================================== */
 
-$mailto = '@'; // Enter your mail addres here.
+$mailto = 'yjut.travels@gmail.com'; // Enter your mail addres here.
 $subject = $frm_subject; // Enter the subject here.
 
-$error_message = 'Error sending your message'; // Message displayed if an error occurs
-$success_message = 'Message Sent'; // Message displayed id the email has been sent successfully
+$error_message = 'Ошибка отправки сообщения'; // Message displayed if an error occurs
+$success_message = 'Сообщение отправлено'; // Message displayed id the email has been sent successfully
 
 
 /* ==============================================
