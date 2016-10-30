@@ -1,12 +1,3 @@
-/*
-Theme Name: Cany
-Description: Coming Soon
-Author: Bluminethemes
-Theme URI: http://bluminethemes.com/preview/themeforest/html/cany/
-Author URI: http://themeforest.net/user/Bluminethemes
-Version: 1.0.2
-*/
-
 (function($) {
 	"use strict";
 
@@ -181,7 +172,7 @@ Version: 1.0.2
 			$('#'+ currentSection + '').animate({
 				opacity: 1
 			},{
-				duration: 700,
+				duration: 500,
 				easing: 'easeOutQuad',
 				queue: true,
 				start: function() {
@@ -256,14 +247,33 @@ Version: 1.0.2
 			}
 		});
 
-		$(document).bind('DOMMouseScroll mousewheel', function(e){
+
+		function debounce(delay, callback) {
+		    var timeout = null;
+		    return function () {
+		        //
+		        // if a timeout has been registered before then
+		        // cancel it so that we can setup a fresh timeout
+		        //
+		        if (timeout) {
+		            clearTimeout(timeout);
+		        }
+		        var args = arguments;
+		        timeout = setTimeout(function () {
+		            callback.apply(null, args);
+		            timeout = null;
+		        }, delay);
+		    };
+		}
+
+		$(document).bind('DOMMouseScroll mousewheel', debounce( 500, function(e, delta){
 				 if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
 					 $('.site-nav a.active').closest('li').prev('li').find('a.move-to').trigger('click');
 				 }
 				 else{
 					 $('.site-nav a.active').closest('li').next('li').find('a.move-to').trigger('click');
 				 }
-		 });
+		 }));
 	}
 
 
@@ -435,7 +445,11 @@ Version: 1.0.2
 			theme: 'default',                           // The lightbox theme to use
 			keyboardNav: true,                          // Enable/Disable keyboard navigation (left/right/escape)
 			clickOverlayToClose: true,                  // If false clicking the "close" button will be the only way to close the lightbox
-			errorMessage: 'The requested content cannot be loaded. Please try again later.' // Error message when content can't be loaded
+			errorMessage: 'The requested content cannot be loaded. Please try again later.', // Error message when content can't be loaded
+			afterShowLightbox: function(){
+        var src = $('.nivo-lightbox-content > iframe').attr('src');
+        $('.nivo-lightbox-content > iframe').attr('src', src + '?autoplay=1');
+    }
 		});
 
 		// RESPONSIVE VIDEO - FITVIDS

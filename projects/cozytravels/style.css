@@ -27,8 +27,14 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html {
+	overflow: hidden;
+}
+
 body {
 	line-height: 1;
+	overflow: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -1055,9 +1061,9 @@ hr {
 ================================================================== */
 
 .site-footer {
-	background:  rgba(0, 0, 0, 0.5);
+	/*background:  rgba(0, 0, 0, 0.5);*/
 	position: fixed;
-	bottom: -65px;
+	bottom: 0px;
 	padding: 20px 0;
 	right: 0;
 	left: 0;
@@ -1074,7 +1080,8 @@ hr {
 	-o-transition: position .5s ease;
 	transition: position .5s ease;
 	text-align: center;
-	transform: skew(0deg, -3deg);
+	/*transform: skew(0deg, -3deg);*/
+
 
 }
 
@@ -1909,6 +1916,7 @@ Shortcodes
 	background: url(images/close.png) no-repeat scroll 0px 0px !important;
 	width: 32px !important;
 	height: 32px !important;
+	color: transparent;
 }
 
 .nivo-lightbox-theme-default .nivo-lightbox-prev {
