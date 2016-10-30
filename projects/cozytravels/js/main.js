@@ -353,7 +353,11 @@
 				"./images/back3.jpg",
 				"./images/back4.jpg",
 				"./images/back5.jpg",
-				"./images/back6.jpg"
+				"./images/back6.jpg",
+				"./images/back7.jpg",
+				"./images/back8.jpg",
+				"./images/back9.jpg",
+				"./images/back10.jpg"
 			], {duration: 4000, fade: 1200});
 
 		} else if( $('body').hasClass('kenburns-background') ) { // KENBURNS BACKGROUND

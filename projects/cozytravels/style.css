@@ -1099,15 +1099,17 @@ hr {
 	position: relative;
 	width: 100%;
 	margin: 0;
-	top: -45px;
+	top: 15px;
+	text-align: center;
 	height: 50px;
-	transform: skew(0deg, 3deg);
+	/*transform: skew(0deg, 3deg);*/
 }
 
 .socials-icons ul  {
 	margin: 0;
-	display: table;
-	float: right;
+	display: inline-block;
+	float: none;
+	padding-left: 75px;
 }
 
 .socials-icons li {
@@ -2325,4 +2327,16 @@ body.mobile .tab-content>.active {
 }
 .image-6 {
 	background-image: url(./images/back6.jpg);
+}
+.image-7 {
+	background-image: url(./images/back7.jpg);
+}
+.image-8 {
+	background-image: url(./images/back8.jpg);
+}
+.image-9 {
+	background-image: url(./images/back9.jpg);
+}
+.image-10 {
+	background-image: url(./images/back10.jpg);
 }
