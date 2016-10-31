@@ -111,35 +111,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Neucha', cursive;
 	font-size: 62px;
 	position: relative;
 	margin-bottom: 0px;
 }
 
 h2 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Neucha', cursive;
 	font-size: 48px;
 	position: relative;
 }
 
 h3 {
-	font-family: 'Raleway', sans-serif;
+font-family: 'Neucha', cursive;
 	font-size: 30px;
 }
 
 h4 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 22px;
+	font-family: 'Neucha', cursive;
+	font-size: 26px;
 }
 
 h5 {
-	font-family: 'Raleway', sans-serif;
+font-family: 'Neucha', cursive;
 	font-size: 20px;
 }
 
 h6 {
-	font-family: 'Raleway', sans-serif;
+font-family: 'Neucha', cursive;
 	font-size: 18px;
 }
 
@@ -148,7 +148,7 @@ p {
 }
 
 p.lead {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 21px;
 	padding: 0;
 	font-weight: 300;
@@ -193,6 +193,7 @@ p.lead {
 	text-transform: uppercase;
 	letter-spacing: 7px;
 	position: relative;
+	font-family: 'Neucha', cursive;
 }
 
 #tours .heading-block h4 {
@@ -797,8 +798,9 @@ Background Styles
 }
 
 .heading-name {
-	font-size: 100px;
+	font-size: 115px;
 	font-weight: bold;
+	font-family: 'Neucha', cursive;
 }
 
 .site-nav {
@@ -1161,9 +1163,13 @@ hr {
 
 .socials-icons li a i {
 	color: #fff;
-	font-size: 21px;
+	font-size: 32px;
 }
 
+.socials-icons .fa-vk {
+	position: relative;
+  top: 6px;
+}
 .socials-icons li a:hover i {
 	color: #fff;
 }
@@ -2361,9 +2367,9 @@ body.mobile .tab-content>.active {
 .image-2 {
 	background-image: url(./images/back2.jpg);
 }
-.image-3 {
+/*.image-3 {
 	background-image: url(./images/back3.jpg);
-}
+}*/
 .image-4 {
 	background-image: url(./images/back4.jpg);
 }
