@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 
 html {
 	overflow: hidden;
+	position: relative;
 	height: 100%;
 }
 
@@ -37,6 +38,7 @@ body {
 	line-height: 1;
 	overflow: hidden;
 	height: 100%;
+	position: relative;
 }
 ol, ul {
 	list-style: none;
@@ -404,6 +406,20 @@ Basic Layout Styles
 	position: relative;
 }
 
+.md-padded {
+	padding: 0 60px;
+}
+
+.md-padded p {
+	text-align: justify;
+	-ms-word-break: break-all;
+	 /*word-break: break-all;*/
+	     // Non standard for webkit
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	   -moz-hyphens: auto;
+	        hyphens: auto;
+}
 
 /* ==================================================================
 Forms
@@ -2170,6 +2186,13 @@ Shortcodes
 	color: #7DA7F3;
 }
 
+.mobile-swipe {
+	display: none;
+}
+.button-only-mobile {
+	display: none;
+}
+
 
 /* ==================================================================
  Mobile
@@ -2211,7 +2234,13 @@ body.mobile .tab-content>.active {
   Responsive
 ================================================================== */
 
-@media(max-width:991px){
+@media (min-width:992px){
+	.mobile .play-button.inline {
+		display: inline-block;
+	}
+}
+
+@media(max-width:991px) and (min-width:769px){
 
 	.section.fullscreen-element,
 	.fullscreen-element {
@@ -2246,10 +2275,39 @@ body.mobile .tab-content>.active {
 	h3 {
 		font-size: 26px;
 	}
+	body #home .buttons-group.animated {
+		display: inline-block ;
+	}
+	body #home .play-button.inline {
+		display: inline-block ;
+	}
+	#about p {
+		padding: 0 40px;
+	}
+	#tours p {
+		font-size: 16px;
+	}
+	#contact .col-md-10.col-md-offset-1.text-center {
+		padding: 0 20px;
+	}
+	input, textarea, select {
+		margin-bottom: 15px;
+	}
+	textarea {
+    resize: both;
+    height: 90px;
+	}
 
 }
 
 @media(max-width:768px){
+	.site-nav {
+		right: 0;
+	}
+
+	section, .section {
+		padding: 50px 20px;
+	}
 
 	.textslider h1 {
 		font-size: 62px;
@@ -2277,12 +2335,6 @@ body.mobile .tab-content>.active {
 		display: none;
 	}
 
-	.site-footer {
-		position: relative;
-		bottom: 0;
-		padding: 20px;
-	}
-
 	.copyright {
 		text-align: center;
 		padding: 0;
@@ -2308,24 +2360,16 @@ body.mobile .tab-content>.active {
 		display: inline-block;
 		float: none;
 	}
-
-	.socials-icons li a,
-	.socials-icons li a:hover,
-	.socials-icons li a i,
-	.socials-icons li a:hover i {
-		color: #333;
-	}
-
 	h1 {
 		font-size: 36px;
 	}
 
 	h2 {
-		font-size: 30px;
+		font-size: 20px;
 	}
 
 	h3 {
-		font-size: 26px;
+		font-size: 18px;
 	}
 
 	.nav-tabs>li {
@@ -2338,7 +2382,7 @@ body.mobile .tab-content>.active {
 		min-width: 100%;
 	}
 	.heading-name {
-		font-size: 40px;
+		font-size: 50px;
 	}
 	.play-button.inline {
     position: relative;
@@ -2352,7 +2396,162 @@ body.mobile .tab-content>.active {
     z-index: 0;
 	}
 	.buttons-group {
-		margin-top: 50px;
+		margin-top: 0;
+	}
+	.buttons-group .button {
+		margin-top: 35px;
+		position: relative;
+		left: 10px;
+	}
+	.site-nav ul {
+		width: 35px;
+	}
+	.site-nav ul li a span {
+		display: block;
+		width: 10px;
+		height: 10px;
+		background: #fff;
+		margin: 0 auto;
+		border-radius: 50%;
+	}
+	.site-nav ul li a:before {
+		content: '';
+		position: absolute;
+		top: 10px;
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
+		border: 1px solid transparent;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		border-radius: 50%;
+	}
+
+	.site-nav ul li a.active:before {
+		content: '';
+		position: absolute;
+		top: 10px;
+	  bottom: 10px;
+	  left: 10px;
+	  right: 10px;
+		border: 1px solid #fff;
+		border-radius: 50%;
+	}
+	.site-nav {
+		width: 35px;
+	}
+	.mobile-swipe {
+		display: block;
+	}
+	.desktop-block {
+		display: none !important;
+	}
+	.section.fullscreen-element .element-table,
+	.section.fullscreen-element .table-cell {
+		display: block;
+	}
+	.md-padded {
+		padding: 0 20px;
+	}
+	#home {
+		position: relative;
+	}
+	#home .section-container {
+		padding-top: 20vh;
+	}
+	.copyright {
+		display: none;
+	}
+	.socials-icons .fa-vk {
+		top: 0;
+	}
+	.socials-icons li a {
+		width: 25px;
+		height: 35px;
+	}
+	.socials-icons li a i {
+		font-size: 26px;
+	}
+	textarea {
+    resize: both;
+    height: 60px;
+	}
+	input, textarea, select {
+		margin-bottom: 6px;
+	}
+	.button-only-desktop {
+		display: none;
+	}
+	.button-only-mobile {
+		display: inline-block;
+	}
+	.button {
+		padding: 0 10px;
+	}
+	#about .section-container {
+		padding-top: 0;
+	}
+
+	#about .section-container p {
+		font-size: 15px;
+		line-height: 1.3em;
+		text-align: justify;
+		-ms-word-break: break-all;
+		 /*word-break: break-all;*/
+				 // Non standard for webkit
+		word-break: break-word;
+		-webkit-hyphens: auto;
+			 -moz-hyphens: auto;
+						hyphens: auto;
+	}
+	.section-header img {
+		width: 30px;
+	}
+	.section-header img.mountains {
+		width: 38px;
+	}
+	.section-header img.tent {
+    width: 42px;
+    position: relative;
+    top: 7px;
+    margin: 0;
+	}
+	.section-header img.pipe {
+    width: 38px;
+    margin: 0;
+    top: 5px;
+    position: relative;
+	}
+	#tours .section-container {
+		padding-top: 0;
+	}
+	.md-padded {
+		padding: 0 40px;
+	}
+	.md-padded p {
+		font-size: 16px;
+		line-height: 1.4em;
+	}
+	.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+		background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3Ny4xNzUgNDc3LjE3NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDc3LjE3NSA0NzcuMTc1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnPgoJPHBhdGggZD0iTTE0NS4xODgsMjM4LjU3NWwyMTUuNS0yMTUuNWM1LjMtNS4zLDUuMy0xMy44LDAtMTkuMXMtMTMuOC01LjMtMTkuMSwwbC0yMjUuMSwyMjUuMWMtNS4zLDUuMy01LjMsMTMuOCwwLDE5LjFsMjI1LjEsMjI1ICAgYzIuNiwyLjYsNi4xLDQsOS41LDRzNi45LTEuMyw5LjUtNGM1LjMtNS4zLDUuMy0xMy44LDAtMTkuMUwxNDUuMTg4LDIzOC41NzV6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==) !important;
+	}
+	.swiper-button-next, .swiper-container-rtl .swiper-button-pre {
+		background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3Ny4xNzUgNDc3LjE3NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDc3LjE3NSA0NzcuMTc1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnPgoJPHBhdGggZD0iTTM2MC43MzEsMjI5LjA3NWwtMjI1LjEtMjI1LjFjLTUuMy01LjMtMTMuOC01LjMtMTkuMSwwcy01LjMsMTMuOCwwLDE5LjFsMjE1LjUsMjE1LjVsLTIxNS41LDIxNS41ICAgYy01LjMsNS4zLTUuMywxMy44LDAsMTkuMWMyLjYsMi42LDYuMSw0LDkuNSw0YzMuNCwwLDYuOS0xLjMsOS41LTRsMjI1LjEtMjI1LjFDMzY1LjkzMSwyNDIuODc1LDM2NS45MzEsMjM0LjI3NSwzNjAuNzMxLDIyOS4wNzV6ICAgIiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==) !important;
+	}
+	#contact .section-container {
+		padding-top: 0;
+	}
+	.socials-icons ul {
+		padding-left: 50px;
+	}
+	html, body {
+		overflow: auto;
+	}
+	.overlay {
+		position: fixed;
 	}
 }
 
@@ -2397,3 +2596,27 @@ body.mobile .tab-content>.active {
 .image-12 {
 	background-image: url(./images/back12.jpg);
 }
+
+.swiper-container {
+			 width: 100%;
+			 height: 100%;
+	 }
+
+	 .swiper-slide {
+			 text-align: center;
+			 font-size: 18px;
+
+			 /* Center slide text vertically */
+			 display: -webkit-box;
+			 display: -ms-flexbox;
+			 display: -webkit-flex;
+			 display: flex;
+			 -webkit-box-pack: center;
+			 -ms-flex-pack: center;
+			 -webkit-justify-content: center;
+			 justify-content: center;
+			 -webkit-box-align: center;
+			 -ms-flex-align: center;
+			 -webkit-align-items: center;
+			 align-items: center;
+	 }
