@@ -2192,7 +2192,9 @@ Shortcodes
 .button-only-mobile {
 	display: none;
 }
-
+.only-mobile {
+	display: none;
+}
 
 /* ==================================================================
  Mobile
@@ -2297,7 +2299,6 @@ body.mobile .tab-content>.active {
     resize: both;
     height: 90px;
 	}
-
 }
 
 @media(max-width:768px){
@@ -2306,7 +2307,7 @@ body.mobile .tab-content>.active {
 	}
 
 	section, .section {
-		padding: 50px 20px;
+		padding: 15px 20px;
 	}
 
 	.textslider h1 {
@@ -2386,9 +2387,9 @@ body.mobile .tab-content>.active {
 	}
 	.play-button.inline {
     position: relative;
-    top: 0;
+    /*top: 0;
     left: 50%;
-		transform: translateX(-50%);
+		transform: translateX(-50%);*/
     margin-top: 0;
     margin-left: 10px;
     margin-right: 10px;
@@ -2396,7 +2397,8 @@ body.mobile .tab-content>.active {
     z-index: 0;
 	}
 	.buttons-group {
-		margin-top: 0;
+		margin: 0 auto;
+		text-align: center;
 	}
 	.buttons-group .button {
 		margin-top: 35px;
@@ -2477,15 +2479,25 @@ body.mobile .tab-content>.active {
 	}
 	textarea {
     resize: both;
-    height: 60px;
+    height: 50px;
 	}
 	input, textarea, select {
 		margin-bottom: 6px;
+		line-height: 16px;
+		padding: 4px 20px;
 	}
 	.button-only-desktop {
-		display: none;
+		display: none !important;
 	}
 	.button-only-mobile {
+		display: inline-block;
+	}
+	.only-mobile {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+	body.mobile .only-mobile a {
 		display: inline-block;
 	}
 	.button {
@@ -2496,7 +2508,7 @@ body.mobile .tab-content>.active {
 	}
 
 	#about .section-container p {
-		font-size: 15px;
+		font-size: 16px;
 		line-height: 1.3em;
 		text-align: justify;
 		-ms-word-break: break-all;
@@ -2548,10 +2560,28 @@ body.mobile .tab-content>.active {
 		padding-left: 50px;
 	}
 	html, body {
-		overflow: auto;
+		overflow: auto !important;
 	}
 	.overlay {
 		position: fixed;
+	}
+	.bottom-padding {
+    padding-bottom: 0px !important;
+	}
+	.section-title {
+		margin-bottom: 5px;
+	}
+	p {
+    margin-bottom: 5px;
+  }
+	#contact hr.animated {
+		display: none;
+	}
+	#contact .adress {
+		font-size: 14px;
+	}
+	#contact form {
+		margin-top: 5px;
 	}
 }
 
