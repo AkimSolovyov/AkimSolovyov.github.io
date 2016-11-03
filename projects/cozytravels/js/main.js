@@ -274,6 +274,24 @@
 					 $('.site-nav a.active').closest('li').next('li').find('a.move-to').trigger('click');
 				 }
 		 }));
+
+
+		 var ts;
+
+		 $(document).bind('touchstart', function(e) {
+		     ts = e.originalEvent.touches[0].clientY;
+		 });
+
+		 $(document).bind('touchmove', debounce( 500, function(e, delta){
+		     var te = e.originalEvent.changedTouches[0].clientY;
+		     if (ts > te) {
+					  $('.site-nav a.active').closest('li').prev('li').find('a.move-to').trigger('click');
+		     } else {
+		        $('.site-nav a.active').closest('li').next('li').find('a.move-to').trigger('click');
+		     }
+		 }));
+
+
 	}
 
 
