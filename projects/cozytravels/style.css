@@ -222,7 +222,7 @@ p.lead {
 }
 
 a, a > * {
-	color: #2a6496;
+	color: #fff;
 	text-decoration: none;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
@@ -234,6 +234,7 @@ a, a > * {
 a:hover, a > *:hover, a:focus {
 	text-decoration: none;
 	outline: 0;
+	color: #ccc;
 }
 
 em {
@@ -2579,6 +2580,10 @@ body.mobile .tab-content>.active {
 	}
 	#contact .adress {
 		font-size: 14px;
+	}
+	#contact .adress a,
+	#contact .adress a i { {
+		color: #fff !important;
 	}
 	#contact form {
 		margin-top: 5px;
