@@ -2559,9 +2559,9 @@ body.mobile .tab-content>.active {
 	.socials-icons ul {
 		padding-left: 50px;
 	}
-	html, body {
+	/*html, body {
 		overflow: auto !important;
-	}
+	}*/
 	.overlay {
 		position: fixed;
 	}
