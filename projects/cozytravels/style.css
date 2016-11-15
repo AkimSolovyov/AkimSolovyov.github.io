@@ -2197,6 +2197,51 @@ Shortcodes
 	display: none;
 }
 
+.toggled-description {
+}
+
+.banner-description-more {
+	display: none;
+	float: right;
+	width: calc(100% - 270px);
+}
+
+.toggled-banner {
+	display: none;
+	font-size: 16px;
+	line-height: 1.2em;
+	padding: 15px 20px;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.banner	{
+	display: inline-block;
+	width: 250px;
+	padding: 0 10px 10px 10px;
+	float:left;
+}
+
+.banner img {
+	width: 100%;
+	height: auto;
+}
+
+.banner-description {
+	float: right;
+	width: calc(100% - 270px);
+	display: inline-block;
+	text-align: left;
+}
+
+.banner-list {
+	list-style: circle !important;
+	margin-bottom: 5px;
+}
+
+.toggle {
+	margin: 5px 0 15px 0;
+}
+
 /* ==================================================================
  Mobile
 ================================================================== */
@@ -2222,6 +2267,11 @@ body.mobile .video-wrapper {
 body.mobile.animated .tab-content > .active,
 body.mobile .tab-content>.active {
 	visibility: visible;
+}
+
+body.mobile .mobile-swipe .toggled-banner {
+	background: transparent !important;
+	width: 300px;
 }
 
 @media all and (-ms-high-contrast:none){
@@ -2587,6 +2637,10 @@ body.mobile .tab-content>.active {
 	}
 	#contact form {
 		margin-top: 5px;
+	}
+	.mobile-swipe .toggled-banner {
+		background: transparent !important;
+		width: 300px;
 	}
 }
 

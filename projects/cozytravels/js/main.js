@@ -354,6 +354,21 @@
 
 	}
 
+	function toggleBanner() {
+		$('.toggle').click(function(e){
+			e.preventDefault();
+			$('.toggled-description').toggle(200);
+			$('.toggled-banner').toggle(200);
+		});
+
+		$('.toggle-more').click(function(e){
+			e.preventDefault();
+			$('.banner-description').toggle();
+			$('.banner-description-more').toggle();
+		});
+	}
+
+
 
 	// Animated Gradient
 	function animatedGradient() {
@@ -670,6 +685,7 @@
 		initNavigation();
 		initPlugins();
 		initContactForm();
+		toggleBanner();
 	});
 
 	// WINDOW.RESIZE FUNCTION
