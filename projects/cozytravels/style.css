@@ -2271,7 +2271,8 @@ body.mobile .tab-content>.active {
 
 body.mobile .mobile-swipe .toggled-banner {
 	background: transparent !important;
-	width: 300px;
+	width: 100%;
+	padding: 15px 0;
 }
 
 body.mobile .banner {
