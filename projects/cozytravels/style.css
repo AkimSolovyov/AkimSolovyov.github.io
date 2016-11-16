@@ -2274,6 +2274,10 @@ body.mobile .mobile-swipe .toggled-banner {
 	width: 300px;
 }
 
+body.mobile .banner {
+	float: none;
+}
+
 @media all and (-ms-high-contrast:none){
 	*::-ms-backdrop,
 	.animated .tab-content > .active,
@@ -2593,6 +2597,7 @@ body.mobile .mobile-swipe .toggled-banner {
 	}
 	.md-padded {
 		padding: 0 40px;
+		margin: 0 auto;
 	}
 	.md-padded p {
 		font-size: 16px;
@@ -2641,6 +2646,12 @@ body.mobile .mobile-swipe .toggled-banner {
 	.mobile-swipe .toggled-banner {
 		background: transparent !important;
 		width: 300px;
+	}
+	.mobile .banner {
+		float: none !important;
+	}
+	.toggled-banner .toggle {
+		display: block;
 	}
 }
 
