@@ -2276,7 +2276,8 @@ body.mobile .mobile-swipe .toggled-banner {
 }
 
 body.mobile .banner {
-	float: none;
+	float: none !important;
+	padding: 0 !important;
 }
 
 @media all and (-ms-high-contrast:none){
@@ -2651,6 +2652,7 @@ body.mobile .banner {
 	}
 	body.mobile .banner {
 		float: none !important;
+		padding: 0 !important;
 	}
 	.toggled-banner .toggle {
 		display: block;
