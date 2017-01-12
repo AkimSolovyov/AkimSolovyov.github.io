@@ -2656,7 +2656,7 @@ body.mobile .banner {
 		padding: 0 !important;
 	}
 	.toggled-banner .toggle {
-		display: block;
+		display: none;
 	}
 }
 
