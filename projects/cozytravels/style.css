@@ -146,7 +146,7 @@ font-family: 'Neucha', cursive;
 }
 
 p {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 p.lead {
@@ -377,7 +377,7 @@ Basic Layout Styles
 }
 
 .bottom-padding {
-	padding-bottom: 20px !important;
+	padding-bottom: 0 !important;
 }
 
 .csstransitions .animated,
@@ -2222,7 +2222,7 @@ Shortcodes
 }
 
 .banner img {
-	width: 100%;
+	width: 95%;
 	height: auto;
 }
 
