@@ -659,6 +659,10 @@ Section Styles
 	z-index: 10;
 }
 
+#gallery {
+	padding: 15px 0;
+}
+
 .section.fullscreen-element {
 	height: 10px; /* Fix */
 }
