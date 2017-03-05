@@ -1187,6 +1187,13 @@ hr {
 	position: relative;
   top: 6px;
 }
+
+.socials-icons .fa-instagram {
+	top: 5px;
+	left: 3px;
+	position: relative;
+}
+
 .socials-icons li a:hover i {
 	color: #fff;
 }

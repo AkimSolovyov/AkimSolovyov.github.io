@@ -22,6 +22,8 @@
 		<link rel="stylesheet" href="css/vegas.min.css">
 		<link rel="stylesheet" href="css/swiper.min.css">
 		<link rel="stylesheet" href="css/nivo-lightbox.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/elastislide.css">
 		<!-- <link rel="stylesheet" href="css/nivo-lightbox/themes/default/default.css" type="text/css"> -->
 
 		<!--[if lt IE 9]>
@@ -42,21 +44,21 @@
 		<script type="text/javascript" src="js/modernizr.js"></script>
 
 		<!-- FAVICONS -->
-		<link rel="shortcut icon" href="images/favicon.ico">
-		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="shortcut icon" href="images/favicon.ico?v=3">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=3">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png?v=3">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png?v=3">
 
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png" />
+		<link rel="shortcut icon" href="images/favicon.ico?v=3" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=3" />
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png?v=3" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png?v=3" />
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png?v=3" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png?v=3" />
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png?v=3" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png?v=3" />
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png?v=3" />
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png?v=3" />
 
 	</head>
 	<body class="slideshow-background" id="fullpage">
@@ -73,6 +75,7 @@
 				<li><a href="#home" title="Главная" class="move-to active"><span></span></a></li>
 				<li><a href="#about" title="О&nbsp;Нас" class="move-to"><span></span></a></li>
 				<li><a href="#tours" title="Поездки" class="move-to"><span></span></a></li>
+				<li><a href="#gallery" title="Фото" class="move-to"><span></span></a></li>
 				<li><a href="#contact" title="Контакты" class="move-to"><span></span></a></li>
 			</ul>
 		</nav>
@@ -209,8 +212,8 @@
 																	<li>скипассы </li>
 																</ul>
 																<ul class="banner-list"><strong>Стоимость 4,5 дня/4 ночи с человека:</strong>
-																	<li>2х местный номер - 2700 грн</li>
-																	<li>3х местный номер - 2550 грн</li>
+																	<li>2х местный номер - 3000 грн</li>
+																	<li>3х местный номер - 2700 грн</li>
 																	<li>4х местный номер - 2400 грн</li>
 																</ul>
 															</div>
@@ -279,6 +282,118 @@
 					</div>
 				</div>
 			</section>
+
+
+			<!-- ФОТО -->
+			<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+				<div class="rg-image-wrapper">
+					{{if itemsCount > 1}}
+						<div class="rg-image-nav">
+							<a href="#" class="rg-image-nav-prev">Previous Image</a>
+							<a href="#" class="rg-image-nav-next">Next Image</a>
+						</div>
+					{{/if}}
+					<div class="rg-image"></div>
+					<div class="rg-loading"></div>
+					<div class="rg-caption-wrapper">
+						<div class="rg-caption" style="display:none;">
+							<p></p>
+						</div>
+					</div>
+				</div>
+		  </script>
+
+			<section id="gallery" class="section home on-menu fullscreen-element">
+				<div class="section-container">
+					<div class="element-table">
+						<div class="table-cell">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12 text-center">
+
+										<div id="rg-gallery" class="rg-gallery">
+											<!-- <div class="rg-view"><a href="#" class="rg-view-full"></a>
+												<a href="#" class="rg-view-thumbs rg-view-selected"></a>
+											</div> -->
+											<div class="rg-thumbs">
+												<!-- Elastislide Carousel Thumbnail Viewer -->
+												<div class="es-carousel-wrapper">
+													<div class="es-nav">
+														<span class="es-nav-prev">Previous</span>
+														<span class="es-nav-next">Next</span>
+													</div>
+													<div class="es-carousel">
+														<ul style="width: 100%; display: block; margin-left: 0px;">
+															<li style="margin-right: 3px; width: 69px;" class="selected"><a href="#" style="border-width: 2px;"><img src="images/gallery/img001.jpg" data-large="images/gallery/img001.jpg" alt="image01" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img002.jpg" data-large="images/gallery/img002.jpg" alt="image02" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img003.jpg" data-large="images/gallery/img003.jpg" alt="image03" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img004.jpg" data-large="images/gallery/img004.jpg" alt="image04" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img005.jpg" data-large="images/gallery/img005.jpg" alt="image05" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img006.jpg" data-large="images/gallery/img006.jpg" alt="image06" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img007.jpg" data-large="images/gallery/img007.jpg" alt="image07" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img008.jpg" data-large="images/gallery/img008.jpg" alt="image08" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img009.jpg" data-large="images/gallery/img009.jpg" alt="image09" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img010.jpg" data-large="images/gallery/img010.jpg" alt="image10" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img011.jpg" data-large="images/gallery/img011.jpg" alt="image11" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img012.jpg" data-large="images/gallery/img012.jpg" alt="image12" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img013.jpg" data-large="images/gallery/img013.jpg" alt="image13" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img014.jpg" data-large="images/gallery/img014.jpg" alt="image14" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img015.jpg" data-large="images/gallery/img015.jpg" alt="image15" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img016.jpg" data-large="images/gallery/img016.jpg" alt="image16" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img017.jpg" data-large="images/gallery/img017.jpg" alt="image17" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img018.jpg" data-large="images/gallery/img018.jpg" alt="image18" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img019.jpg" data-large="images/gallery/img019.jpg" alt="image19" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img020.jpg" data-large="images/gallery/img020.jpg" alt="image20" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img021.jpg" data-large="images/gallery/img021.jpg" alt="image21" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img022.jpg" data-large="images/gallery/img022.jpg" alt="image22" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img023.jpg" data-large="images/gallery/img023.jpg" alt="image23" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img024.jpg" data-large="images/gallery/img024.jpg" alt="image24" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img025.jpg" data-large="images/gallery/img025.jpg" alt="image25" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img026.jpg" data-large="images/gallery/img026.jpg" alt="image26" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img027.jpg" data-large="images/gallery/img027.jpg" alt="image27" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img028.jpg" data-large="images/gallery/img028.jpg" alt="image28" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img029.jpg" data-large="images/gallery/img029.jpg" alt="image29" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img030.jpg" data-large="images/gallery/img030.jpg" alt="image30" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img031.jpg" data-large="images/gallery/img031.jpg" alt="image31" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img032.jpg" data-large="images/gallery/img032.jpg" alt="image32" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img033.jpg" data-large="images/gallery/img033.jpg" alt="image33" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img034.jpg" data-large="images/gallery/img034.jpg" alt="image34" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img035.jpg" data-large="images/gallery/img035.jpg" alt="image35" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img036.jpg" data-large="images/gallery/img036.jpg" alt="image36" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img037.jpg" data-large="images/gallery/img037.jpg" alt="image37" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img038.jpg" data-large="images/gallery/img038.jpg" alt="image38" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img039.jpg" data-large="images/gallery/img039.jpg" alt="image39" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img040.jpg" data-large="images/gallery/img040.jpg" alt="image40" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img041.jpg" data-large="images/gallery/img041.jpg" alt="image41" data-description="Pylypets 2017"></a></li>
+															<li style="margin-right: 3px; width: 69px;"><a href="#" style="border-width: 2px;"><img src="images/gallery/img042.jpg" data-large="images/gallery/img042.jpg" alt="image42" data-description="Pylypets 2017"></a></li>
+
+													</div>
+												<div class="es-nav"><span class="es-nav-prev" style="display: none;">Previous</span><span class="es-nav-next">Next</span></div></div>
+												<!-- End Elastislide Carousel Thumbnail Viewer -->
+											</div><!-- rg-thumbs -->
+
+										<!-- <div class="rg-image-wrapper">
+											<div class="rg-image-nav">
+												<a href="#" class="rg-image-nav-prev">Previous Image</a>
+												<a href="#" class="rg-image-nav-next">Next Image</a>
+											</div>
+											<div class="rg-image"><img src="images/1.jpg"></div>
+											<div class="rg-loading" style="display: none;"></div>
+											<div class="rg-caption-wrapper">
+												<div class="rg-caption">
+													<p>Pylypets 2017</p>
+												</div>
+											</div>
+										 </div> -->
+									 </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 
 			<!-- КОНТАКТЫ -->
 			<section id="contact" class="section on-menu fullscreen-element">
@@ -351,11 +466,12 @@
 
 		<!-- Footer -->
 		<footer class="site-footer">
-			<p class="copyright">© 2016 Cozy Travels</p>
+			<p class="copyright">© 2016-2017 Cozy Travels</p>
 			<nav class="socials-icons">
 				<ul>
 					<li><a href="https://www.facebook.com/%D0%A3%D0%AE%D0%A2-travels-1764708807111880/?ref=page_internal"><i class="ion-social-facebook"></i></a></li>
 					<li><a href="https://vk.com/cosy_travels"><i class="fa fa-vk"></i></a></li>
+					<li><a href="http://instagram.com/cozy_travels"><i class="fa fa-instagram"></i></a></li>
 				</ul>
 			</nav>
 		</footer>
@@ -368,6 +484,9 @@
 		<script type="text/javascript" src="js/plugins.min.js"></script>
 		<script type="text/javascript" src="js/scrolloverflow.js"></script>
 		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="js/gallery.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 
      <!-- Initialize Swiper -->
