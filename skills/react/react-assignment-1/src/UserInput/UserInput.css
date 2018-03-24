@@ -1,0 +1,7 @@
+.UserInput {
+    display: inline-block;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 0px #ccc;
+    border: none;
+}

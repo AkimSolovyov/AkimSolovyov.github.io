@@ -1,0 +1,10 @@
+.UserOutput {
+    margin: 25px 0;
+}
+
+.UserOutput p {
+    display: block;
+    text-align: left;
+    background: #fff;
+    padding: 7px 5px;
+}
