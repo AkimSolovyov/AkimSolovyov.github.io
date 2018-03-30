@@ -659,6 +659,10 @@ Section Styles
 	z-index: 10;
 }
 
+#gallery {
+	padding: 15px 0;
+}
+
 .section.fullscreen-element {
 	height: 10px; /* Fix */
 }
@@ -1187,6 +1191,13 @@ hr {
 	position: relative;
   top: 6px;
 }
+
+.socials-icons .fa-instagram {
+	top: 5px;
+	left: 3px;
+	position: relative;
+}
+
 .socials-icons li a:hover i {
 	color: #fff;
 }
