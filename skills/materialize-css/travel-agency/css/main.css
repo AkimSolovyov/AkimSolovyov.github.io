@@ -1,0 +1,31 @@
+#mobile-nav .user-view {
+  padding-top: 4px;
+  padding-bottom: 10px;
+}
+
+#search.section-search input {
+  padding: 5px;
+  font-size: 18px;
+  width: 90%;
+  border: 3px solid #f4f4f4;
+}
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+}
+
+/* label underline focus color */
+
+#contact .input-field input:focus,
+#contact .input-field textarea:focus {
+  border-bottom: 1px solid #00bcd4;
+  box-shadow: 0 1px 0 0 #00bcd4;
+}
+
+.section-footer .fa-2x {
+  margin: 5px;
+}
+
+#contact input[type="submit"] {
+  color: #fff;
+}
