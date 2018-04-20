@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars Api Sandbox</title>
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    
+    <nav class="yellow darken-3">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="\" class="brand-logo">Star Wars Api Sandbox</a>
+        </div>
+         <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="nav-link" id="people">People</a></li>
+          <li><a class="nav-link" id="planets">Planets</a></li>
+          <li><a class="nav-link" id="starships">Starships</a></li>
+          <li><a class="nav-link" id="search">Search</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- <div class="buttons">
+        <a class="waves-effect yellow darken-3 waves-light btn" id="people">People</a>
+        <a class="waves-effect yellow darken-3 waves-light btn" id="planets">Planets</a>
+        <a class="waves-effect yellow darken-3 waves-light btn" id="starships">Starships</a>
+      </div> -->
+
+      <ul class="pagination" style="display:none">
+        <li class="pagination-control pagination-control-prev waves-effect disabled yellow darken-3">
+          <a href="#!" data-page="prev">
+            <i class="material-icons">chevron_left</i>
+          </a>
+        </li>
+        <li class="pagination-control pagination-control-next waves-effect yellow darken-3">
+          <a href="#!" data-page="next">
+            <i class="material-icons">chevron_right</i>
+          </a>
+        </li>
+      </ul>
+
+      <div id="results" class="results"></div>
+
+       <!-- TO DO: Search context -->
+
+      <ul class="pagination" style="display:none">
+        <li class="pagination-control pagination-control-prev waves-effect disabled yellow darken-3">
+          <a href="#!" data-page="prev">
+            <i class="material-icons">chevron_left</i>
+          </a>
+        </li>
+        <li class="pagination-control pagination-control-next waves-effect yellow darken-3">
+          <a href="#!" data-page="next">
+            <i class="material-icons">chevron_right</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- jquery is added just to use get() -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
