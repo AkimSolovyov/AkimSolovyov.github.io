@@ -149,7 +149,7 @@
             <p>Terrain:  ${item.terrain} </p>
             <p>Diameter:  ${item.diameter} </p>
             <p>Rotation Period:  ${item.rotation_period} </p>
-          </div
+          </div>
         `;
         results.innerHTML += planet;
       });
@@ -239,7 +239,7 @@
 
 
     pagination.forEach(function(el){
-       var page_links = el.querySelectorAll('.pagination li');
+       var page_links = el.querySelectorAll('li');
     
        if (prev) {
          page_links[state.page_num].classList.add('disabled');
