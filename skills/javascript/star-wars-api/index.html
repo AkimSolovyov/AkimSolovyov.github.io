@@ -16,23 +16,23 @@
       <div class="container">
         <div class="nav-wrapper">
           <a href="\" class="brand-logo">Star Wars Api Sandbox</a>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
-         <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <ul class="right hide-on-med-and-down">
           <li><a class="nav-link" id="people">People</a></li>
           <li><a class="nav-link" id="planets">Planets</a></li>
           <li><a class="nav-link" id="starships">Starships</a></li>
-          <li><a class="nav-link" id="search">Search</a></li>
         </ul>
       </div>
     </nav>
 
-    <div class="container">
+    <ul class="sidenav" id="nav-mobile">
+      <li><a class="nav-link" id="people">People</a></li>
+      <li><a class="nav-link" id="planets">Planets</a></li>
+      <li><a class="nav-link" id="starships">Starships</a></li>
+    </ul>
 
-      <!-- <div class="buttons">
-        <a class="waves-effect yellow darken-3 waves-light btn" id="people">People</a>
-        <a class="waves-effect yellow darken-3 waves-light btn" id="planets">Planets</a>
-        <a class="waves-effect yellow darken-3 waves-light btn" id="starships">Starships</a>
-      </div> -->
+    <div class="container">
 
       <ul class="pagination" style="display:none">
         <li class="pagination-control pagination-control-prev waves-effect disabled yellow darken-3">
@@ -48,8 +48,6 @@
       </ul>
 
       <div id="results" class="results"></div>
-
-       <!-- TO DO: Search context -->
 
       <ul class="pagination" style="display:none">
         <li class="pagination-control pagination-control-prev waves-effect disabled yellow darken-3">

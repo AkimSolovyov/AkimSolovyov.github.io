@@ -11,6 +11,9 @@
     el.addEventListener('click', clickPage);
   });
 
+  const sideNav = document.querySelector('.sidenav');
+  M.Sidenav.init(sideNav, {});
+
   // Default state
   var state = {
     base_url: 'https://swapi.co/api/',
@@ -88,7 +91,6 @@
       });
     }
 
-    // TO DO: Search context 
   }
 
   function renderView(data, context) {
