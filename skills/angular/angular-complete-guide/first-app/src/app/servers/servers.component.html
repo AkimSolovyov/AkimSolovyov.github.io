@@ -1,0 +1,22 @@
+<button class="btn btn-danger" (click)="toggleDetails()">Display Details</button>
+<p *ngIf="detailsToggled" style="padding: 10px 0;">Secret Password or whatever</p>
+<ul *ngIf="logs.length">
+  <li *ngFor="let log of logs; let i = index" 
+  [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+  [ngClass]="{'white-text': i >=4}"
+  >{{log}}</li>
+</ul>
+
+<hr>
+<label>Server Name</label>
+<!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
+<input type="text" class="form-control" [(ngModel)]="serverName">
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
+<!-- <p [innerText]="allowNewServer"></p> -->
+<!-- <p>{{ serverCreationStatus }}</p> -->
+<hr>
+<p *ngIf="serverCreated">Server was created. Server name is {{ serverName }}</p>
+<app-server></app-server>
+<app-server></app-server>
+
+
