@@ -13,7 +13,9 @@ class ImageResults extends Component {
   };
 
   handleOpen = img => {
-    this.setState({ open: true, currentImg: img });
+    this.setState({ 
+      open: true, 
+      currentImg: img });
   };
 
   handleClose = () => {
@@ -32,7 +34,7 @@ class ImageResults extends Component {
               title={img.tags}
               key={img.id}
               subtitle={
-                <span>
+                <span className="">
                   by <strong>{img.user}</strong>
                 </span>
               }
